@@ -1,0 +1,947 @@
+﻿#tab-container {
+    width: auto;
+    z-index: 99;
+    position: relative;
+    height: 295px;
+}
+
+    #tab-container ul {
+        height: 60px;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+    }
+
+        #tab-container ul li {
+            height: 60px;
+            float: left;
+            width: 25%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+            #tab-container ul li a {
+                height: 50px;
+                display: block;
+                padding: 10px 5px 0px 5px;
+                line-height: 20px;
+                outline: none;
+                color: #FFF;
+                text-decoration: none;
+            }
+
+                #tab-container ul li a:hover {
+                    height: 50px;
+                    text-decoration: none;
+                    background-color: #F90;
+                    border: #06F; /*	border-style:solid 1px; */
+                }
+
+            #tab-container ul li.active {
+                background: #09F;
+                position: relative;
+            }
+
+            #tab-container ul li a.active {
+                font-weight: bold;
+                text-decoration: none;
+                background-color: #09F;
+            }
+
+    #tab-container .panel-container {
+        padding: 10px;
+        color: #FFF;
+    }
+
+.panel-container {
+    font-size: 12px; /*	float:right; */
+}
+
+hr {
+    border-color: #BBBBBB;
+    border-style: solid;
+    border-width: thin;
+}
+
+#buscador {
+    /*	background-color:#090; */
+    position: relative;
+    z-index: 100;
+}
+
+#menu {
+    margin-bottom: 15px;
+    background-color: #0C3082;
+    height: 70px;
+    line-height: 70px;
+    -webkit-box-shadow: 0px 4px 9px rgba(50, 50, 50, 0.86);
+    -moz-box-shadow: 0px 4px 9px rgba(50, 50, 50, 0.86);
+    box-shadow: 0px 4px 9px rgba(50, 50, 50, 0.86);
+}
+
+#logo {
+    width: 300px;
+    height: 65px;
+    float: left;
+    margin-left: 8%;
+    background-image: url(img/aviamktngwhite.png);
+    background-repeat: no-repeat;
+}
+
+#links {
+    float: left;
+    vertical-align: bottom;
+    color: #FFF;
+    height: 20px;
+    width: 600px;
+    font-size: 12px;
+}
+
+#puntos {
+    width: 270px;
+    /*	background-color:rgba(0,0,0,1);  */
+    height: 285px;
+    color: #FFF;
+    font-size: 12px;
+}
+
+#slides {
+    /*	width: 220px; */
+    /*	background-color:rgba(255,255,255,0.2); */
+    height: 285px;
+    color: #FFF;
+    font-size: 0.8em;
+    float: left;
+    width: 630px;
+}
+
+#promociones {
+    z-index: 0;
+    position: relative;
+}
+
+#marginBoxes {
+    margin: 5px; /*	border:1px solid #CCC;    */
+    /*	-moz-box-shadow: 0 0 10px #888;
+-webkit-box-shadow: 0 0 10px#888;
+box-shadow: 0 0 10px #888; */
+}
+
+#mercanciaBox {
+    position: relative;
+    z-index: 999;
+}
+
+#bannerDestinos {
+    min-height: 130px;
+    z-index: 0;
+    position: relative;
+}
+
+.pure-button-success, .pure-button-error, .pure-button-warning, .pure-button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pure-button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.pure-button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.pure-button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.pure-button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+#resultados {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.one-column-emphasis {
+    font-size: 11px;
+    width: 98%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+    .one-column-emphasis th {
+        font-size: 16px;
+        /* @alternate */
+        font-weight: normal;
+        color: #039;
+        padding: 12px 15px;
+        text-align: left;
+        /* @alternate */
+        font-weight: bold;
+    }
+
+    .one-column-emphasis td {
+        font-size: 13px;
+        color: #444;
+        border-top: 1px solid #B3D9FF;
+        padding: 8px 15px;
+        text-align: justify;
+    }
+
+.one-first {
+    background: #d0dafd;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+/*
+#one-column-emphasis tr:hover td {
+	color: #339;
+	background: #A9C5D3;
+	text-align: justify;
+}
+*/
+.Paso {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    float: left;
+}
+
+.PasoOn {
+    background-color: rgb(28, 184, 65);
+    color: #FFF;
+}
+
+.pasoTurn {
+    background-color: #f1c40f;
+    color: #FFF;
+}
+
+.PasoOff {
+    background-color: #999;
+    color: #FFF;
+}
+
+.PromoFooter {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulos {
+    background-color: #000000;
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: #7d7e7d;
+}
+
+.titulosVuelos {
+    background-color: #29ABE2;
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.titulosVehiculos {
+    background-color: #8CC63F;
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.titulosHoteles {
+    background-color: #FF931E;
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+.titulosEventos {
+    /* @alternate */
+    background: -moz-linear-gradient(top, #127dbd 0%, #014d67 100%);
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#127dbd), color-stop(100%,#014d67));
+    /* @alternate */
+    background: -webkit-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: -o-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: -ms-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: linear-gradient(to bottom, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: -moz-linear-gradient(top, rgba(251,251,251,1) 0%, rgba(229,229,229,1) 100%);
+    /* @alternate */
+    background: -o-linear-gradient(top, rgba(251,251,251,1) 0%,rgba(229,229,229,1) 100%);
+    /* @alternate */
+    background: -ms-linear-gradient(top, rgba(251,251,251,1) 0%,rgba(229,229,229,1) 100%);
+    /* @alternate */
+    background: #127dbd;
+    color: #FFF;
+    padding: 10px;
+    font-size: 16px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.titulosPrecio {
+    background-color: #F90;
+    color: #FFF;
+    font-size: 16px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    width: 20%;
+    float: right;
+    text-align: right;
+}
+
+
+.notificacion {
+    background-color: #333333;
+    color: #FFF;
+    padding: 10px;
+    font-size: 12px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.table {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#PuntosDisponibles {
+    color: #FFF;
+    background-color: #2ecc71;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+#PuntosExpirar {
+    margin: 10px 0px;
+    color: #FFF;
+    padding: 15px 10px;
+    background-color: #e74c3c;
+}
+
+#CarroCompras {
+    margin: 10px 0px;
+    background-color: #34495e;
+    padding: 15px 10px;
+}
+
+#PromoMerc {
+    height: 130px;
+    position: relative;
+    z-index: 100;
+}
+
+.contenedorTabPromos {
+    height: 250px;
+    max-width: 180px;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 25px;
+}
+
+.tabPromos {
+    height: 30%;
+    width: 100%;
+    background-color: rgba(0,153,255,0.6);
+    color: #FFF;
+    top: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.txticono {
+    float: left;
+    width: 55%;
+    padding: 5px;
+    font-size: 11px;
+    position: relative;
+    z-index: 10;
+}
+
+.icono {
+    float: right;
+    width: 35%;
+}
+
+.ciudad {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+}
+
+#vueloAdicional {
+    border: 1px solid white;
+    /*	background-color:#333;*/
+}
+
+.oculto {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.SeparadorTitulos {
+    height: 14px;
+}
+
+
+/*--------------------------------------------------------------------*/
+/*---------- CARRO DE COMPRAS ----------------------------------------*/
+#Navigation {
+    position: fixed;
+    z-index: 100;
+    top: 34px;
+    right: 20px;
+}
+
+.WrapperPoints {
+    z-index: 100;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 10px;
+    /*background-color: #E1E1E1;*/
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background-color: rgba(0,0,0,0.6);
+    border: 2px solid #fff;
+    box-shadow: #000000 0px 0px 5px;
+}
+/*-------------- AZUL -----------------------------------------------------------------------*/
+.ContenedorCarro {
+    width: 250px;
+    height: 60px;
+    margin-bottom: 5px;
+    background-color: #3f4c6b;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.ContenedorGlow {
+    width: 180px;
+    height: 60px;
+    border-right: solid 1px #c0c0ce;
+    float: left;
+    padding: 0px 5px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    /* @alternate */
+    background: rgb(192,192,206); /* Old browsers */
+    /* @alternate */
+    background: -moz-linear-gradient(top, rgba(192,192,206,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6+ */
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(192,192,206,1)), color-stop(100%,rgba(63,76,107,1))); /* Chrome,Safari4+ */
+    /* @alternate */
+    background: -webkit-linear-gradient(top, rgba(192,192,206,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10+,Safari5.1+ */
+    /* @alternate */
+    background: -o-linear-gradient(top, rgba(192,192,206,1) 0%,rgba(63,76,107,1) 100%); /* Opera 11.10+ */
+    /* @alternate */
+    background: -ms-linear-gradient(top, rgba(192,192,206,1) 0%,rgba(63,76,107,1) 100%); /* IE10+ */
+    /* @alternate */
+    background: linear-gradient(to bottom, rgba(192,192,206,1) 0%,rgba(63,76,107,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0c0ce', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+}
+
+.LabelPuntosFecha {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: #FFFFFF 1px dashed;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 170px;
+}
+
+.LabelPuntos {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.ContenedorIcono {
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.IconoBox {
+    float: left;
+    padding-left: 6px;
+    padding-top: 3px;
+}
+
+.DvFecha {
+    float: left;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/*-------------- NARANJA -----------------------------------------------------------------------*/
+.ContenedorCarroVencer {
+    margin-bottom: 5px;
+    width: 250px;
+    height: 60px;
+    background-color: #75890c;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.ContenedorGlowVencer {
+    width: 180px;
+    height: 60px;
+    border-right: solid 1px #a4b357;
+    float: left;
+    padding: 0px 5px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    /* @alternate */
+    background: rgb(164,179,87); /* Old browsers */
+    /* @alternate */
+    background: -moz-linear-gradient(top, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%); /* FF3.6+ */
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(164,179,87,1)), color-stop(100%,rgba(117,137,12,1))); /* Chrome,Safari4+ */
+    /* @alternate */
+    background: -webkit-linear-gradient(top, rgba(164,179,87,1) 0%,rgba(117,137,12,1) 100%); /* Chrome10+,Safari5.1+ */
+    /* @alternate */
+    background: -o-linear-gradient(top, rgba(164,179,87,1) 0%,rgba(117,137,12,1) 100%); /* Opera 11.10+ */
+    /* @alternate */
+    background: -ms-linear-gradient(top, rgba(164,179,87,1) 0%,rgba(117,137,12,1) 100%); /* IE10+ */
+    /* @alternate */
+    background: linear-gradient(to bottom, rgba(164,179,87,1) 0%,rgba(117,137,12,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c',GradientType=0 ); /* IE6-9 */
+}
+
+.LabelPuntosFechaVencer {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: #FFFFFF 1px dashed;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 170px;
+}
+
+.LabelPuntosVencer {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.ContenedorIconoVencer {
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.IconoBoxVencer {
+    float: left;
+    padding-left: 6px;
+    padding-top: 3px;
+}
+
+.DvFechaVencer {
+    float: left;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/*-------------- CARRO de COMPRAS --------------------------------------------------------------*/
+.ContenedorCarroShopping {
+    width: 250px;
+    height: 60px;
+    background-color: #ff7b0d;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.ContenedorGlowShopping {
+    width: 180px;
+    height: 60px;
+    border-right: solid 1px #ffa84c;
+    float: left;
+    padding: 0px 5px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    /* @alternate */
+    background: rgb(255,168,76); /* Old browsers */
+    /* @alternate */
+    background: -moz-linear-gradient(top, rgba(255,168,76,1) 0%, rgba(255,123,13,1) 100%); /* FF3.6+ */
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,168,76,1)), color-stop(100%,rgba(255,123,13,1))); /* Chrome,Safari4+ */
+    /* @alternate */
+    background: -webkit-linear-gradient(top, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* Chrome10+,Safari5.1+ */
+    /* @alternate */
+    background: -o-linear-gradient(top, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* Opera 11.10+ */
+    /* @alternate */
+    background: -ms-linear-gradient(top, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* IE10+ */
+    /* @alternate */
+    background: linear-gradient(to bottom, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+}
+
+.LabelPuntosFechaShopping {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: #FFFFFF 1px dashed;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 170px;
+}
+
+.LabelPuntosShopping {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.ContenedorIconoShopping {
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.IconoBoxShopping {
+    float: left;
+    padding-left: 6px;
+    padding-top: 3px;
+}
+
+.DvFechaShopping {
+    float: left;
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#caja {
+    width: 250px;
+    display: none;
+    padding: 5px;
+}
+
+#mostrar {
+    z-index: 10000;
+    color: #FFF;
+    font-size: 18px;
+    /* @alternate */
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid #FFF;
+    box-shadow: 0px 0px 5px #000;
+    display: block;
+    width: 250px;
+    /* @alternate */
+    padding: 5px;
+}
+
+#header {
+    background: #3572D0;
+    color: white;
+    font-family: Droid Sans;
+    font-size: 18px;
+    line-height: 1.6em;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 9999999;
+    box-shadow: 0px 10px 7px #888888;
+    -moz-box-shadow: 0px 10px 7px #888888;
+    -webkit-box-shadow: 0px 10px 7px #888888;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strenght=7, Direction=180, Color=�#888888�)";
+    filter: "progid:DXImageTransform.Microsoft.Shadow(Strenght=7, Direction=180, Color=�#888888�)";
+}
+
+/*----------------------------------------------------------------------------*/
+/*------ BUSCADOR EVENTOS ----------------------------------------------------*/
+
+#descripcion {
+    font-size: 11px;
+    text-align: justify;
+    width: 120px;
+}
+
+#smplMenu {
+    width: 750px;
+    height: 70px;
+    background-color: #276CB5;
+    color: #FFFFFF;
+}
+
+.Results {
+    /*float: left;*/
+    margin: 0;
+    width: 100%;
+    padding: 0 10px;
+}
+
+    .Results .Item {
+        /*float: left;*/
+        margin: 0;
+        padding: 10px 0;
+        width: 100%;
+        /*border-top:solid 1px rgba(0,9,161, 0.5);
+    border-bottom:solid 1px rgba(0,9,161, 0.5);*/
+    }
+
+        .Results .Item .condiciones {
+            /*float: left;*/
+            width: 98%;
+            height: 100px;
+            overflow: auto;
+            padding: 5px;
+            color: black;
+            font-size: 0.9em;
+            border: 2px solid #fff;
+        }
+
+.starsTodos {
+    float: right;
+    height: 16px;
+    color: black;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.stars1 {
+    float: right;
+    height: 16px;
+    width: 14px;
+    background: url(../../../Imagenes/starHotel.png) no-repeat left center;
+    margin-right: 15px;
+}
+
+.stars2 {
+    float: right;
+    height: 16px;
+    width: 28px;
+    background: url(../../../Imagenes/starHotel.png) repeat-x left center;
+    margin-right: 15px;
+}
+
+.stars3 {
+    float: right;
+    height: 16px;
+    width: 42px;
+    background: url(../../../Imagenes/starHotel.png) repeat-x left center;
+    margin-right: 15px;
+}
+
+.stars4 {
+    float: right;
+    height: 16px;
+    width: 56px;
+    background: url(../../../Imagenes/starHotel.png) repeat-x left center;
+    margin-right: 15px;
+}
+
+.stars5 {
+    float: right;
+    height: 16px;
+    width: 70px;
+    background: url(../../../Imagenes/starHotel.png) repeat-x left center;
+}
+
+a.tarifa {
+    position: relative; /* es la posici�n normal */
+    text-decoration: underline !important; /* forzar sin subrayado */
+    color: #1375A8 !important; /* forzar color del texto */
+    font-weight: bold !important; /* forzar negritas */
+}
+
+    a.tarifa:hover {
+        z-index: 999; /* va a estar por encima de todo */
+        background-color: #FFF; /* DEBE haber un color de fondo */
+    }
+
+    a.tarifa div {
+        display: none; /* el elemento va a estar oculto */
+    }
+
+    a.tarifa:hover div {
+        display: block; /* se fuerza a mostrar el bloque */
+        position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+        top: -20em;
+        left: -9em; /* donde va a estar */
+        width: 250px; /* el ancho por defecto que va a tener */
+        height: 200px;
+        padding: 10px; /* la separaci�n entre el contenido y los bordes */
+        /*background: Transparent url(../../Imagenes/tooltip.png) no-repeat center top;*/ /* el color de fondo por defecto */
+        color: #000; /* el color de los textos por defecto */
+        text-decoration: none;
+        text-align: left;
+        font-weight: normal;
+        z-index: 999;
+        overflow: auto;
+        font-size: 11px;
+    }
+
+.paginacion {
+    font-weight: bold;
+    font-size: 11px;
+    *font-size: 11px;
+    *overflow: visible;
+    padding: 3px 5px;
+    /* @alternate */
+    color: #fff;
+    /* @alternate */
+    color: rgba(255,255,255,1);
+    *color: #fff;
+    /* @alternate */
+    border: 1px solid #999;
+    /* @alternate */
+    border: 0 rgba(0,0,0,0);
+    background-color: #E6E6E6;
+    text-decoration: none;
+    border-radius: 4px;
+    -webkit-transition: .1s linear -webkit-box-shadow;
+    -moz-transition: .1s linear -moz-box-shadow;
+    -ms-transition: .1s linear box-shadow;
+    -o-transition: .1s linear box-shadow;
+    transition: .1s linear box-shadow;
+}
+
+.color-paginacion {
+    background-color: #818181;
+}
+
+.form {
+    width: 1004px;
+    margin: auto;
+}
+
+
+.button-xsmall {
+    font-size: 70%;
+}
+
+.button-small {
+    font-size: 85%;
+}
+
+.button-large {
+    font-size: 110%;
+}
+
+.button-xlarge {
+    font-size: 125%;
+}

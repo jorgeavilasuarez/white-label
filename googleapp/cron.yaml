@@ -1,0 +1,4 @@
+cron:
+- description: llama url para ejecutar session manager
+  url: /job
+  schedule: every 5 mins

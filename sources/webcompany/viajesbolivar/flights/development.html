@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/autocomplete.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/datepicker.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/inputdatepicker.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/menubutton.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/menu.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/menuitem.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/menuseparator.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/flatmenubutton.css">
+    <link rel="stylesheet" type="text/css" href="/sources/tools/third_party/closure-library/closure/goog/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/sources/tools/third_party/closure-library/closure/goog/css/css3button.css">
+    <link rel="stylesheet" type="text/css" href="/sources/tools/third_party/closure-library/closure/goog/css/roundedpanel.css">
+
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/hsvpalette.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/tab.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/tabbar.css">
+    <link rel="stylesheet" href="/sources/tools/third_party/closure-library/closure/goog/css/tabbar.css">    
+
+    
+
+    <link rel="stylesheet" href="/sources/flights/css/search.css">
+    <link rel="stylesheet" href="/sources/flights/css/results.css">
+    <link rel="stylesheet" href="/sources/flights/css/register.css">
+    <link rel="stylesheet" href="css/colors.css"><title>Vuelos</title>
+
+</head>
+<body style="background-color: whitesmoke">
+    <div id="wrap">
+        <div id="main">
+            <div class="panelPromociones">
+                <div class="buscador">
+                    <script id="widget_app_technocloud" data-target="technocloud" data-service="flights,hotels,cars" type="text/javascript">
+                        !function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'http';
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.async = 1;
+                                js.src = p + "://localhost:9810/module/development_flights/manager";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, "script", "widget_app_js_technocloud");
+                    </script>
+
+                </div>
+                <div class="contenidoPromo"></div>
+            </div>
+        </div>
+    </div>
+    <div id="technocloud1"></div>
+</body>
+</html>

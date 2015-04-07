@@ -1,0 +1,223 @@
+
+{namespace cars.template.results}
+
+
+/** 
+* dibuja columa izquierda
+*/
+{template .leftColumn}
+<div id="left_column">
+    <a class="{css button} {css green} {css botonNuevaBuscar}" href="javascript:void(0);">Volver a buscar</a>
+    <div class="{css search_filters}">
+        <!-- Supplier filtering -->
+        <div class="{css filter_container} {css filter_supplier}">
+            <div class="{css filter_title_container}">
+                <div class="{css filter_title}">
+                    Proveedor
+                </div>
+                <div class="{css filter_toggle}"></div>
+            </div>
+            <div class="{css filter_content} {css supplier} {css highlight_filter}">
+                <div class="{css filter_item_container} {css filter_active}">
+                    <label for="filter_supplier_Dollar">
+                        <input type="checkbox" id="filter_supplier_Dollar" name="supplier" value="Dollar" checked="">
+                        Dollar</label>
+                </div>
+            </div>
+            <div class="{css filter_container_shadow}"></div>
+        </div>
+        <div class="{css filter_container} {css filter_rating}">
+            <div class="{css filter_title_container}">
+                <div class="{css filter_title}">
+                    Calificación del proveedor
+                </div>
+                <div class="{css filter_toggle}"></div>
+            </div>
+            <div class="{css filter_content} {css rating} {css highlight_filter}">
+                <div class="{css filter_item_container} {css filter_active}">
+                    <label for="filter_rating_7">
+                        <input type="checkbox" id="filter_rating_7" name="rating" value="6.95">
+                        Muy Bueno: 7+
+                    </label>
+                </div>
+                <div class="{css filter_item_container} {css filter_active}">
+                    <label for="filter_rating_6">
+                        <input type="checkbox" id="filter_rating_6" name="rating" value="5.95">
+                        Bueno: 6+
+                    </label>
+                </div>
+            </div>
+            <div class="{css filter_container_shadow}"></div>
+        </div>
+        <div class="{css filter_container} {css filter_aircon}">
+            <div class="{css filter_title_container}">
+                <div class="{css filter_title}">
+                    Especificaciones del coche
+                </div>
+                <div class="{css filter_toggle}"></div>
+            </div>
+
+            <div class="{css filter_content} {css highlight_filter} {css aircon}">
+                <div class="{css filter_item_container} {css filter_active} {css aircondition}">
+                    <label for="chb_filter_aircon_yes">
+                        <input type="checkbox" id="chb_filter_aircon_yes" name="airConditioning" value="Yes">
+                        Con Aire Acondicionado</label>
+                </div>
+
+                <div class="{css filter_item_container} {css filter_active} {css transmission}">
+                    <label for="chb_filter_transmission_auto">
+                        <input type="checkbox" id="chb_filter_transmission_auto" name="transmission" value="Automatic">
+                        Transmisión Automática</label>
+                </div>
+
+                <div class="{css filter_item_container} {css filter_active} {css fourdoors}">
+                    <label for="chb_doors_four">
+                        <input type="checkbox" id="chb_doors_four" name="doors" value="four">
+                        4+ Puertas</label>
+                </div>
+
+                <div class="{css filter_item_container} {css filter_disabled} {css diesel_cars}">
+                    <label for="chb_diesel_cars">
+                        <input type="checkbox" id="chb_diesel_cars" name="fuelType" value="diesel" disabled="">
+                        Diesel</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{/template}
+
+
+/** 
+* dibuja los resultados de los vuelos
+*/
+{template .results} 
+<div class="{css inner_container}">
+    {call .leftColumn /}
+    <div class="{css clusters}"></div>    
+</div>
+<div style="clear: both;"></div>
+{/template}
+
+/**
+* 
+* dibuja un cluster
+*/
+{template .result}
+<div class="{css result_wrap}">
+    <div class="{css result_inner}">
+        <div class="{css rating_block}">
+            <div class="{css rating_supplied_by}">Suministrado por:</div>
+            <div class="{css rating_supplier}">
+                <img src="http://www.autos.metropolitan-touring.com/images/suppliers/dollar_logo.gif" title="Dollar">
+            </div>
+            <div class="{css rating_score}">
+                <div class="{css rating_score_text}">Muy Bueno</div>
+                <span class="{css rating_value}">7,0</span> <span class="{css rating_outoften}">/10</span><br>
+                <span class="{css rating_metric}">5000+ opiniones</span>
+            </div>
+        </div>
+
+        <div class="{css pop-up_outline} {css supplierInfoPopup}" style="display: none;">
+            <a id="close_x" class="{css close}" href="#">close</a>
+            <div id="feedback-pop-up_inner">
+                <img src="http://www.autos.metropolitan-touring.com/images/suppliers/dollar_logo_lrg.gif" title="Dollar" class="{css supplier_logo}">
+                <div class="{css pop-up_title}">
+                    <span>Valoración del cliente</span><br>
+                    Las Vegas Aeropuerto
+                </div>
+                <div class="{css pop-up_rating_block}">
+                    <span class="{css rating_textversion}">Muy Bueno</span><br>
+                    <span class="{css rating_value}">7,0</span> <span class="{css rating_outof}">/10</span><br>
+                    <span class="{css rating_reviews_num}">Puntuación basada en 5000+ comentarios</span>
+                </div>
+
+                <div class="{css feedback_wrapper}">
+                    <table cellpadding="0" cellspacing="2" class="{css feedback_table}">
+                        <tbody>
+                            <tr>
+                                <td class="{css feedback_rating_value}">7,2</td>
+                                <td>La relación calidad-precio de su alquiler</td>
+                            </tr>
+                            <tr style="zebra_stripe">
+                                <td class="{css feedback_rating_value}">6,4</td>
+                                <td>La "eficiencia" del personal del mostrador</td>
+                            </tr>
+                            <tr>
+                                <td class="{css feedback_rating_value}">5,3</td>
+                                <td>El tiempo de espera para retirar el vehículo</td>
+                            </tr>
+                            <tr>
+                                <td class="{css feedback_rating_value high_rating}">8,5</td>
+                                <td>El tiempo de espera para devolver el vehículo</td>
+                            </tr>
+                            <tr>
+                                <td class="{css feedback_rating_value}">7,1</td>
+                                <td>La limpieza del vehículo</td>
+                            </tr>
+                            <tr>
+                                <td class="{css feedback_rating_value}">6,9</td>
+                                <td>El estado general del vehículo</td>
+                            </tr>
+                            <tr>
+                                <td class="{css feedback_rating_value}">7,9</td>
+                                <td>La facilidad para localizar el mostrador de Dollar o al representante de la oficina</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="{css result_inner_left}">
+            <img class="{css result_img}" src="http://www.autos.metropolitan-touring.com/images/car_images/newsite/C/kia_rio.jpg" onerror="this.setAttribute('onerror','');this.src='http://www.autos.metropolitan-touring.com/images/car_images/newsite/noimage.gif';">
+            <div class="{css result_info}">
+
+                <h3 class="{css result_name}">
+                    <strong>Kia Rio</strong>
+                    o similar</h3>
+
+                <div class="{css selling-out}">¡La disponibilidad se está agotando!</div>
+                <div class="{css result_class}">Tipo:&nbsp;Económico</div>
+                <ul class="{css result_spec}">
+                    <li class="{css result_seats}">X&nbsp;4</li>
+                    <li class="{css result_doors}">X&nbsp;2</li>
+
+                    <li class="{css result_ac}">Sí</li>
+                    <li class="{css result_trans}">Automático</li>
+                </ul>
+
+                <ul class="{css result_included}">
+                    <li class="{css result_included_title}">Incluido en el precio totalmente GRATIS:</li>
+                    <li class="{css result_includes}" style="text-decoration: none; cursor: pointer;" aria-describedby="ui-tooltip-1">
+                        <span>Cancelación</span>
+                        <span style="padding-left: 16px; background-image: url('http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/information-sml.gif'); background-position: right center; background-repeat: no-repeat;"></span>
+                    </li>
+                    <li class="{css result_includes}" aria-describedby="ui-tooltip-3" style="cursor: pointer;">Cambios en la reserva</li>
+
+                    <li class="{css result_includes}">Protección contra el robo</li>
+                    <li class="{css result_includes}">Cobertura Parcial por Colisión (CDW)</li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="{css result_button}">
+            <div class="{css result_title}">
+                Precio por 3 días:
+            </div>
+
+            <div class="{css result_now}">
+                COP431,814.51
+            </div>
+            <div class="{css btn-wrap}">
+                <a class="{css button} {css green} {css botonImprimirCotizar}" href="javascript:void(0);" >Reservar</a>                
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div style="clear: both;"></div>
+{/template}

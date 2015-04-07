@@ -1,0 +1,1 @@
+python "C:\\Program Files (x86)\\Google\\google_appengine\\appcfg.py"  --email=javila@technocloud.com.co --passin rollback "D:\\Proyectos\\webapp"

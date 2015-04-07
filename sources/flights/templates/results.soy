@@ -1,0 +1,475 @@
+{namespace flights.template.results}
+
+/**
+* Contenedor general.
+*/
+{template .results}
+<div class="{css co} {css flightscontainer}">
+    <div class="{css ux-flights-results}">
+        <div class="{css ux-common-grid-row}">
+            <div class="{css ux-common-grid-col3}">
+                <a class="{css btnreturnsearch} {css background-color} {css border-color} {css text-color}" href="javascript:void(0);">Volver a buscar</a>
+            </div>
+            <div class="{css ux-common-grid-col3}">
+                <a class="{css guidesteps} {css background-color} {css border-color} {css text-color}" href="javascript:void(0);">1 Resultados </a>
+            </div>
+            <div class="{css ux-common-grid-col3}">
+                <a class="{css guidesteps}" href="javascript:void(0);">2 Solicitar </a>
+            </div>
+            <div class="{css ux-common-grid-col3}">
+                <a class="{css guidesteps}" href="javascript:void(0);">3 Comprar </a>
+            </div>
+        </div>
+
+        <div class="{css ux-common-grid-row}">
+            <div class="{css ux-common-grid-col3} {css results-left-grid-row} {css filters}">
+            </div>
+            <div class="{css ux-common-grid-col9} {css results-content-container}">
+                <div class="{css ux-common-grid-row}">
+                    <div class="{css ux-common-grid-col12}">
+                    </div>
+                </div>
+                <div class="{css results-content-wrapper} {css flights-results-content-wrapper}">
+                    <div class="{css clusters}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+/**
+* Filtros contenedor
+*/
+{template .filters}
+    <div class="{css search}">
+    </div>
+    <div class="{css filters-container}">
+        <div class="{css active-filters}" style="display:none;">
+        </div>
+        <div class="{css ux-common-filters} {css ux-flights-filters} {css border-color}">
+        </div>
+    </div>
+{/template}
+
+
+/**
+* @param currentFilters The filter object.
+* Filtros activos
+*/
+{template .currentFilters}
+
+<div class="{css ux-common-filter-section}">
+    <div class="{css ux-common-filter-header}" tabindex="0" role="tab" aria-expanded="true">
+        <h4>Filtros Activos</h4>
+    </div>
+    <div>
+        <div class="{css ux-common-filter-body}">
+            {foreach $filterType in $currentFilters}
+            <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                <li class="{css item} {css stops-all}">
+                    <label for="scales-all" class="{css ux-common-filter-all} {css  ux-common-filter-disabled} {css  selected} {css ux-common-filter-selected}">
+                        {foreach $value in $filterType.values}
+                        <a data-type="{$filterType.type}" data-value="{$value.value}" href="javascript:void(0);" class="{css btn-remove-filter} {css buy} {css btn-buy} {css flights-button} {css  background-color} {css border-color}">
+                            <span class="{css background-color} {css border-color} {css text-color}">{$value.label}</span>
+                        </a>
+                        {/foreach}
+                    </label>
+                </li>
+
+            </ul>
+            {/foreach}
+        </div>
+    </div>
+</div>
+{/template}
+
+/**
+* @param filterObject The filter object.
+* Filtro checkbox
+*/
+{template .filterCheckbox}
+<div class="{css ux-common-filter-section}" id="filter_{$filterObject.type}">
+    <div class="{css ux-common-filter-header}">
+        <h4>{$filterObject.title}</h4>
+        <span class="{css ux-common-filter-toggle}"></span>
+    </div>
+    <div class="{css ux-common-filter-body}">
+        <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+            <li class="{css item} {css stops-all}" style="">
+                <label for="{$filterObject.type}-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled selected} {css ux-common-filter-selected}">
+                    <input id="{$filterObject.type}-all" type="checkbox" name="stops" value="*" checked="" data-type="{$filterObject.type}" disabled="" class="{css ux-common-filter-disabled} {css all-input}">
+                    <span class="{css label}">Todas las {$filterObject.title}</span>
+                    <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{$filterObject.count}</span>
+                </label>
+            </li>
+            {foreach $filter in $filterObject.values}
+            <li class="{css item} {css stops}-{$filter.value}" style="">
+                <label for="{$filterObject.type}-{$filter.value}" class="{css  ux-common-filter-disabled}">
+                    <input id="{$filterObject.type}-{$filter.value}" {if $filter.checked == true} checked {/if}  {if $filter.disabled == true} disabled {/if} type="checkbox"  data-type="{$filterObject.type}" value="{$filter.value}" class="{css NONE} {css ux-common-filter-disabled} {css input-filter}" />
+                    {if $filterObject.type != 'airLines'}
+                        <span class="{css label}">{$filter.label}</span>
+                    {else}
+                        <img src="http://search.technocloud.com.co/static/images/airline/{$filter.value}.gif" title="{$filter.value}" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="{$filter.value}">
+                    {/if}
+                    <span id="count_{$filter.value}" class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$filter.count}</span>
+                </label>
+            </li>
+            {/foreach}
+        </ul>
+    </div>
+</div>
+{/template}
+
+/**
+* @param filterObject The filter object.
+* Filtro slider
+*/
+{template .filterSlider}
+   <div id="filter_{$filterObject.type}" class="{css ux-common-filter-section}">
+       <div class="{css ux-common-filter-header}">
+           <h4>{$filterObject.title}</h4>           
+       </div>
+       <div class="{css ux-common-filter-body}">
+           <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+               <li class="{css item} {css stops-all}" style="">
+                <label for="{$filterObject.type}-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled selected} {css ux-common-filter-selected}">
+                    <input id="{$filterObject.type}-all" type="checkbox" name="stops" value="*" checked="" data-type="{$filterObject.type}" disabled="" class="{css ux-common-filter-disabled} {css all-input}">
+                    <span class="{css label}">Todas las {$filterObject.title}</span>
+                    <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{$filterObject.count}</span>
+                 </label>
+               </li>
+               <li class="{css item} {css stops-all}" style="">
+                <label for="{$filterObject.type}-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled selected} {css ux-common-filter-selected}">
+                    <h4 class="{css display-label}"></h4>
+                 </label>
+               </li>
+               <li class="{css item} {css alliances-all}" style="">
+                   <label for="alliances" class="">                       
+                       <div class="{css goog-twothumbslider}" style="width: 100%; height: 20px">
+                           <div style="position: absolute; width: 100%; top: 9px; border: 1px solid rgb(12, 167, 198); overflow: hidden; height: 0;"></div>
+                           <div class="{css goog-twothumbslider-value-thumb}"></div>
+                           <div class="{css goog-twothumbslider-extent-thumb}"></div>
+                       </div>                       
+                   </label>
+               </li>
+               <li class="{css item} {css alliances-all}" style="">
+                   <label>
+                       <input type="button" data-type="{$filterObject.type}" class="{css filter-apply} {css buy} {css flights-button} {css background-color} {css border-color} {css text-color}" value="Filtrar"/>
+                       <input type="button" data-type="{$filterObject.type}" style="display: none;" class="{css filter-remove} {css buy} {css flights-button} {css background-color} {css border-color} {css text-color}" value="Remover Filtro"/>
+                   </label>
+               </li>
+           </ul>
+       </div>
+   </div>
+{/template}
+
+/**
+* @param tcAirSearchRSField The results.
+* Resultado de vuelos.
+*/
+{template .flights}
+<div id="{$tcAirSearchRSField['id']}" class="{css cluster} {css newCluster}">
+    <div class="{css cluster-content} {css border-color}">
+        <div class="{css fare-container}">
+            <div class="{css fare-detail}">
+                <div class="{css fare-detail-base}">
+                    <span class="{css fare-description}">{msg desc="Precio por adulto"}
+                        Total
+                        {/msg}
+                    </span>
+                    <span class="{css fare}">
+                        <span class="{css price-currency} {css COP}" style="">
+                            <em>
+                                <span class="{css currency} {css price-mask}">$</span>
+                                <a class="{css amount} {css price-amount}">{$tcAirSearchRSField['amountCurrencyShowField']}</a>
+                            </em>
+                        </span>
+                    </span>
+                </div>
+
+
+                {foreach $tcPassengerTypeField in $tcAirSearchRSField['tcPassengerTypeField']}
+                <ul class="{css fare-detail-items}">
+                    <li class="{css fare-detail-items-passenger}">{if $tcPassengerTypeField['typeGenField'] == '0'}
+                        <span class="{css item-detail}">{$tcPassengerTypeField['quantityField']} Adulto{if $tcPassengerTypeField['quantityField'] != '1'}s{/if}</span>
+                        {elseif $tcPassengerTypeField['typeGenField'] == '1'}
+                        <span class="{css item-detail}">{$tcPassengerTypeField['quantityField']} Niño{if $tcPassengerTypeField['quantityField'] != '1'}s{/if}</span>
+                        {elseif $tcPassengerTypeField['typeGenField'] == '2'}
+                        <span class="{css item-detail}">{$tcPassengerTypeField['quantityField']} Infante{if $tcPassengerTypeField['quantityField'] != '1'}s{/if}</span>
+                        {else}
+                        <span class="{css item-detail}">1 Otro</span>
+                        {/if}
+                        <span class="{css item-price}">
+                            <span class="{css price-currency} {css COP}" style="">
+                                <em>
+                                    <span class="{css currency} {css price-mask}">$</span>
+                                    <span data-passenger-type="{index($tcPassengerTypeField)}" data-id-itinerary="{$tcAirSearchRSField['id']}" class="{css amount} {css price-amount} {css price-passenger}">{$tcPassengerTypeField['passengerFareTotalShowField']}                                        
+                                    </span>
+                                </em>
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+                {/foreach}
+                <a data="{$tcAirSearchRSField['id']}" href="javascript:void(0);" class="{css buy} {css btn-buy} {css flights-button} {css background-color} {css border-color}">
+                    <span class="{css background-color} {css border-color} {css text-color}">Seleccionar</span>
+                </a>
+            </div>
+        </div>
+        <div class="{css itineraries}">
+            <div class="{css itineraries-container}">
+                {foreach $tcAirRouteField in $tcAirSearchRSField['tcAirRouteField']}
+                {foreach $tcAirItineraryField in $tcAirRouteField['tcAirItineraryField']}
+                <div class="{css sub-cluster} {css outbound}">
+                    <div class="{css item} {css data}">
+                        <span class="{css route-type}">
+                            <span class="{css route-info-item} {css type-icon}">
+                                <span class="{css main-sprite} {css icon-plane-outbound}"></span>
+                            </span>
+                            <span class="{css route-info-item} {css type}">{if not isFirst($tcAirRouteField)}
+                                <span class="{css itemiconoVuelta}">Vuelta</span>
+                                {else}
+                                <span class="{css itemiconoIda}">Ida</span>
+                                {/if}
+                            </span>
+                        </span>
+                        <span class="{css route-info}">
+                            <span class="{css route-info-wrapper}">
+                                <span class="{css route}">
+                                    <span class="{css route-info-item} {css city-departure}">{$tcAirRouteField['cityField']},</span>
+                                    <span class="{css route-info-item} {css airport}">
+                                        <span>{$tcAirRouteField['airportNameField']}</span>
+                                    </span>
+                                    <span class="{css route-info-item} {css arrow}">
+                                        <span class="{css main-sprite} {css icon-arrow}">a</span>
+                                    </span>
+                                    <span class="{css route-info-item} {css city-arrival}">{$tcAirRouteField['cityDestField']},</span>
+                                    <span class="{css route-info-item} {css airport}">
+                                        <span>{$tcAirRouteField['airportNameDestField']}</span>
+                                    </span>
+                                </span>
+                                <span class="{css route-info-item} {css date}">
+                                    <span>{$tcAirRouteField['dateField']}</span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    {foreach $tcFlightSegmentField in $tcAirItineraryField['tcFlightSegmentField']}
+                    {if isFirst($tcFlightSegmentField) == true}
+                    <ul class="{css itineraries-group} {css cluster-items-list}">
+                        <li class="{css item}  {css itinerary} {css cluster-item}">
+                            <label for="1-outbound-{$tcFlightSegmentField['rPHField']}">
+                                <ul>
+                                    <li class="{css radio}">
+                                        <input type="radio" name="radio_item_{$tcAirSearchRSField['id']}_{index($tcAirRouteField)}" checked="checked" value="{$tcAirItineraryField['rPHField']}">
+                                    </li>
+                                    <li class="{css leave}">
+                                        <span class="{css hour-text}">Sale:</span>
+                                        <span class="{css hour}">{$tcFlightSegmentField['departureTimeField']}</span>
+                                    </li>
+                                    <li class="{css route-arrow}">›</li>
+                                    <li class="{css arrive}">
+                                        <span class="{css hour-text}">Llega:</span>
+                                        <span class="{css hour}">{$tcFlightSegmentField['arrivalTimeField']}</span>
+                                    </li>
+                                    <li class="{css time}">
+                                        <span class="{css hour-text}">Duración:</span>
+                                        <span>{$tcFlightSegmentField['estimatedTimeField']}</span>
+                                    </li>
+                                    <li class="{css stops}">
+                                        <span class="{css text}"><a rph="{$tcAirSearchRSField['id']}" tcairroutefieldindex="{index($tcAirRouteField)}" tcflightsegmentfieldindex="{index($tcFlightSegmentField)}" class="{css stops-link}" href="javascript:void(0);">{$tcAirItineraryField['stopNameField']}</a></span>
+                                    </li>
+                                    <li class="{css airlines}">
+                                        <span class="{css airlines-container}">
+                                            <span class="{css airline-container}">
+                                                <span class="{css image} {css flights-title-tooltip}">
+                                                    <img src="http://search.technocloud.com.co/static/images/airline/{$tcFlightSegmentField['airLineOperatedField']}.gif" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="Avianca">
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </label>
+                        </li>
+                    </ul>
+                    {else}
+                    {/if}
+                    {/foreach}
+                </div>
+                {/foreach}
+                {/foreach}
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+
+/**
+* Popup de precios 
+* @param tcPassengerTypeField Los detalles de la tarifa por pasajero.
+*/
+{template .tooltipPrices}
+
+/** Tarifa */    
+{foreach $tcPassengerFareField in $tcPassengerTypeField['tcPassengerFareField']}
+{if isNonnull($tcPassengerFareField['passengerFareShowField']) == true}
+<div class="{css ux-common-grid-row}">
+    <div class="{css ux-common-grid-col9}">Tarifa </div>
+    <div class="{css ux-common-grid-col3}">{$tcPassengerFareField['passengerFareShowField']}</div>
+</div>
+{/if}
+{/foreach}
+
+/** Iva */    
+{foreach $tcPassengerFareField in $tcPassengerTypeField['tcPassengerFareField']}
+{if isNonnull($tcPassengerFareField['passengerIvaShowField']) == true}
+<div class="{css ux-common-grid-row}">
+    <div class="{css ux-common-grid-col9}">Iva de la tarifa </div>
+    <div class="{css ux-common-grid-col3}">{$tcPassengerFareField['passengerIvaShowField']}</div>
+</div>
+{/if}
+{/foreach}
+
+
+/** Iva Tarifa Administrativa */    
+{foreach $tcPassengerFareField in $tcPassengerTypeField['tcPassengerFareField']}
+{if isNonnull($tcPassengerFareField['passengerIvaTaShowField']) == true}
+<div class="{css ux-common-grid-row}">
+    <div class="{css ux-common-grid-col9}">Iva Tarifa Administrativa </div>
+    <div class="{css ux-common-grid-col3}">{$tcPassengerFareField['passengerIvaTaShowField']}</div>
+</div>
+{/if}
+{/foreach}
+
+/** Tasa Aeroportuaria*/    
+{foreach $tcPassengerFareField in $tcPassengerTypeField['tcPassengerFareField']}
+{if isNonnull($tcPassengerFareField['passengerTaxAirportShowField']) == true}
+<div class="{css ux-common-grid-row}">
+    <div class="{css ux-common-grid-col9}">Tasa Aeroportuaria </div>
+    <div class="{css ux-common-grid-col3}">{$tcPassengerFareField['passengerTaxAirportShowField']}</div>
+</div>
+{/if}
+{/foreach}
+
+/** Otros impuestos */    
+{foreach $tcPassengerFareField in $tcPassengerTypeField['tcPassengerFareField']}
+{if isNonnull($tcPassengerFareField['passengerOtherShowField']) == true}
+<div class="{css ux-common-grid-row}">
+    <div class="{css ux-common-grid-col9}">Otros impuestos </div>
+    <div class="{css ux-common-grid-col3}">{$tcPassengerFareField['passengerOtherShowField']}</div>
+</div>
+{/if}
+{/foreach}
+
+{/template}
+
+/**
+* Contenedor del popup
+*/
+{template .popup}
+<div class="{css ui-widget-overlay-popup}" style="display: none;">
+    <div class="{css flights-popup} {css popup-detail}  {css flights-popup-bottom} {css background-color}">
+        <div class="{css popup-border}"></div>
+        <div class="{css popup-container}">
+            <div class="{css popup-wrapper}">
+                <div class="{css popup-content}">
+                    <div class="{css detailPopup}">
+                        <div class="{css clusterPopup2} {css newClusterPopup2}">
+                            <div class="{css cluster-contentPopup} {css flights-clusterPopup}">
+                                <div class="{css itinerariesPopup}">
+                                    <div class="{css itineraries-containerPopup}">
+                                        <div class="{css sub-clusterPopup} {css outboundPopup}">
+                                            <div class="{css itemPopup} {css dataPopup}">
+                                                <div class="{css popup-header}">
+                                                    <span class="{css cityPopupTitle}">Detalle del Vuelo</span>
+                                                </div>
+                                            </div>
+                                            <div class="{css popup-inner-content}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="{css popup-close-button} {css popup-close}">×</span>
+    </div>
+</div>
+{/template}
+
+/**
+* @param tcAirItineraryField The results.
+* Detalle del vuelo.
+*/
+{template .popupContent}
+{foreach $tcFlightSegmentField in $tcAirItineraryField['tcFlightSegmentField']}
+<div class="{css popup-content}">
+    <div class="{css detail}">
+        <div class="{css segment}">
+            <ul class="{css detail-info}">
+                <li class="{css itinerary}">
+                    <span class="{css location}">Aerolinea:
+                        <span class="{css bold}">{$tcFlightSegmentField['airLineOperatedField']}</span>
+                        &nbsp;|&nbsp; Vuelo: <span class="{css number}">
+                            <span class="{css bold}">{$tcFlightSegmentField['numberFlightField']}</span>
+                        </span>
+                    </span>
+                </li>
+                <li class="{css data}">
+                    <span class="{css name}">
+                        <span class="{css bold}">Paradas</span>
+                        <span class="{css bold}">SinParada</span><br>
+                    </span>
+                </li>
+                <li class="{css data}">
+                    <span class="{css name}">
+                        <span class="{css bold}">Tiempo de vuelo</span>
+                        <span>{$tcFlightSegmentField['estimatedTimeField']}</span>
+                    </span><span class="{css airline}">
+                        <span class="{css logoPequeño}"></span>
+                        <img src="http://search.technocloud.com.co/static/images/airline/{$tcFlightSegmentField['airLineOperatedField']}.gif" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="Avianca">
+                    </span>
+                </li>
+                <li class="{css itinerary}">
+                    <span class="{css location}">Sale de
+                        <span class="{css bold}">{$tcFlightSegmentField['departureCityField']}</span>
+                        -
+                        <span class="{css bold}">{$tcFlightSegmentField['departureAirportNameField']}</span>
+                    </span><span class="{css date}">
+                        <span>{$tcFlightSegmentField['departureDateField']}</span>
+                    </span>
+                </li>
+                <li class="{css itinerary}">
+                    <span class="{css location}">Llega a
+                        <span class="{css bold}">{$tcFlightSegmentField['arrivalCityNameField']}</span>
+                        -
+                        <span class="{css bold}">{$tcFlightSegmentField['arrivalAirPortNameField']}</span>
+                    </span>
+                    <span class="{css date}">
+                        <span>{$tcFlightSegmentField['arrivalDateField']}</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <span class="{css time}">Hora de salida:
+            <span class="{css bold}">{$tcFlightSegmentField['departureTimeField']}</span>
+            &nbsp;|&nbsp; Hora de llegada:
+            <span class="{css bold}">{$tcFlightSegmentField['arrivalTimeField']}</span>
+        </span>
+        <div class="{css detail-footer}">
+            <div class="{css bottom-box}">
+                <span class="{css detail-local-hour}">Horarios en hora local de cada ciudad</span>
+                <div class="{css baggage}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/foreach}
+{/template}

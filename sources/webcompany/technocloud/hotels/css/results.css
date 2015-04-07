@@ -1,0 +1,5136 @@
+
+.container_general {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 320px;
+    z-index: 99999;
+    width: 1149px;
+    left: 0;
+    right: 0;
+}
+
+
+/* ========================================= clearfix == */
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.condicionesReserva {
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+}
+
+.imagenx {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif) no-repeat;
+    width: 10px;
+    height: 14px;
+}
+
+.botonBuscar {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton.png) no-repeat;
+    border: 0;
+    color: #000;
+    width: 162px;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-right: 30px;
+}
+
+.botonClick {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton.png) no-repeat;
+    border: 0;
+    color: #000;
+    padding: 8px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonNuevaBuscar {
+    /*background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botonNueva.png) no-repeat;*/
+    border: 0;
+    color: #000;
+    width: 170px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.botonFiltrar {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton.png) no-repeat;
+    border: 0;
+    color: #000;
+    width: 160px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonCotizar {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton3.png) no-repeat;
+    border: 0;
+    color: #000;
+    width: 84px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonCotizar2 {
+    /*background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton2.png) no-repeat;*/
+    border: 0;
+    color: #000;
+    width: 105px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonEnviarCotizar {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton4.png) no-repeat;
+    border: 0;
+    color: #000;
+    width: 155px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonEnviarCotizarAmarillo {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/btnEnviarCotizarAmarillo.png) no-repeat;
+    border: 0;
+    color: #000;
+    width: 155px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonImprimirCotizar {
+    background: #f95f5d;
+    border: 0;
+    color: white;
+    width: 95px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonImprimirGris {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton5.png) no-repeat;
+    border: 0;
+    color: #000;
+    width: 95px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonBuscar2 {
+    background: #FFF;
+    border: 0;
+    color: #390;
+    padding: 4px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonOferta {
+    padding: 4px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.botonCarro {
+    background: #390;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 5px;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    width: 160px;
+}
+
+.centered_contenedor {
+    width: 960px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin: 0 0 0 -480px;
+}
+
+#contenedor {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    width: 980px;
+    background: #FFF;
+}
+
+.content {
+    width: 100%;
+    top: 0;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contentOfertaAerea {
+    position: relative;
+    float: left;
+    padding: 0;
+    text-align: left;
+    /* @alternate */
+    width: 100%; /* <-- use this to tie width to viewport size */
+    /* @alternate */
+    width: 960px;
+    margin: 0 0 0 0;
+    top: 0; /* <-- use this for a set width */
+}
+/* Alineaciones */
+.alineacionIzquierda {
+    text-align: left;
+}
+
+.alineacionDerecha {
+    text-align: right;
+}
+
+.alineacionCentro {
+    text-align: center;
+}
+
+/* Banner Superior */
+
+#bannerSuperior {
+    position: relative;
+    float: left;
+    width: 960px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/fondo.jpg) repeat-x;
+    margin-left: 10px;
+}
+
+.logo {
+    position: absolute;
+    float: left;
+    top: 20px;
+    left: 10px;
+    /*margin:15px 0 20px 10px;*/
+    height: 65px;
+    z-index: 1;
+}
+
+.opcionesBanner {
+    position: relative;
+    float: right;
+    text-align: right;
+    width: 950px;
+    margin: 0;
+}
+
+.linkSesion {
+    color: #000;
+    font-weight: bold;
+}
+
+.loginPanel {
+    position: relative;
+    float: right;
+    width: 650px;
+    font-size: 12px;
+}
+
+    .loginPanel a {
+        color: #000;
+    }
+
+        .loginPanel a.botonBuscar {
+            color: #FFF;
+        }
+
+    .loginPanel .login {
+        width: 70%;
+    }
+
+    .loginPanel .errorLogin {
+        font-size: 11px;
+        color: #F00;
+    }
+
+/* Menu Principal */
+.menuPrincipal {
+    position: relative;
+    float: left;
+    width: 960px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/menu.png) no-repeat;
+}
+
+ul.dropdown {
+    height: 20px;
+    padding: 5px 0 10px 0;
+}
+
+    ul.dropdown li {
+        float: left;
+        line-height: 1.3em;
+        vertical-align: middle;
+        font-size: 15px;
+        text-align: center;
+        padding: 0 25px;
+        border-right: solid 1px #FFF;
+    }
+
+        ul.dropdown li a:link,
+        ul.dropdown li a:visited {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        ul.dropdown li a:hover {
+            color: #F60;
+        }
+
+#home .menuPrincipal #id0 a {
+    color: #F60;
+}
+
+#vuelos .menuPrincipal #id1 a {
+    color: #F60;
+}
+
+#disfruta .menuPrincipal #id3 a {
+    color: #F60;
+}
+
+#planea .menuPrincipal #id4 a {
+    color: #F60;
+}
+
+#explora .menuPrincipal #id5 a {
+    color: #F60;
+}
+
+#viaja .menuPrincipal #id6 a {
+    color: #F60;
+}
+
+#compra .menuPrincipal #id6 a {
+    color: #F60;
+}
+
+
+/* Pie Pagina */
+
+#piePagina {
+    position: relative;
+    float: left;
+    width: 940px;
+    height: 160px;
+    padding: 10px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pie.png) no-repeat top center;
+    color: #FFF;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: 10px 0 0 10px;
+}
+
+    #piePagina a {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    #piePagina div {
+        position: relative;
+        float: left;
+        padding: 5px;
+        height: 150px;
+        border-right: dashed 1px #FFF;
+    }
+
+        #piePagina div img {
+            margin: 0 0 5px 0;
+        }
+
+/* Autocompletar */
+.ac_results {
+    padding: 0px;
+    border: 1px solid black;
+    background-color: white;
+    overflow: hidden;
+    z-index: 9999999;
+}
+
+    .ac_results ul {
+        width: 100%;
+        list-style-position: outside;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .ac_results li {
+        margin: 0px;
+        /* @alternate */
+        padding: 2px 5px;
+        cursor: pointer;
+        display: block;
+        /* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+        /*width: 100%;*/
+        font: menu;
+        font-size: 12px;
+        /* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+        line-height: 16px;
+        overflow: hidden;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/airplane-icon.png) #EEE no-repeat 8px;
+        /* @alternate */
+        padding: 5px 0 5px 30px;
+        color: #000;
+    }
+
+        .ac_results li:hover {
+            background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/airplane-icon.png) #137FC0 no-repeat 8px;
+            color: #FFF;
+        }
+
+        .ac_results li:first-child {
+            background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/home_icon.png) #999 no-repeat 8px;
+        }
+
+.ac_loading {
+    background: white url('../JQuery/images/ui-anim_basic_16x16.gif') right center no-repeat;
+}
+
+.ac_odd {
+    background-color: #eee;
+}
+
+.ac_over {
+    background-color: #0E2B87;
+    color: #FFF;
+}
+
+/* Paneles */
+.panelCompleto {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+
+.panelIzquierdo {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 300px;
+    margin: 0 10px 0 0;
+}
+
+.panelDerecho {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 250px;
+}
+/* Buscador */
+.panelBuscador {
+    position: relative;
+    float: left;
+    width: 410px;
+    margin: 0 10px 0 0;
+}
+
+.panelBuscadorOfertaAerea {
+    position: relative;
+    float: left;
+    width: 410px;
+    margin: 0 10px 0 10px;
+}
+
+.tablaBuscadorVuelos {
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 0 0 5px 0;
+}
+
+.tablaBuscadorHoteles {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 9px 0;
+    float: left;
+}
+
+.tablaBuscadorAutos {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 34px;
+    margin: 0 0 5px 0;
+}
+
+.bordesBuscadorTop {
+    float: left;
+    position: relative;
+    padding: 0;
+    border: 0;
+    margin: 0 0 0 90px;
+    height: 10px;
+    width: 320px;
+}
+
+.bordesBuscadorBottom {
+    float: left;
+    position: relative;
+    padding: 0;
+    border: 0;
+    top: -1px;
+    margin: 0 0 0 90px;
+    height: 10px;
+    width: 320px;
+}
+
+.buscador {
+    position: relative;
+    padding: 0;
+    width: 410px;
+    font-size: 11px;
+    float: left;
+    overflow: hidden;
+}
+
+.contenidoBuscador {
+    padding: 5px;
+    overflow: hidden;
+    color: #FFF;
+    background: #137FC0;
+}
+
+.contenidoBuscadorAereo {
+    padding: 5px;
+    overflow: hidden;
+    color: #FFF;
+    background: #137FC0;
+}
+
+.botonBuscador {
+    background: #390;
+    border: solid 1px #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 3px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botonTrenes {
+    background: Transparent;
+    border: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.warningBuscador {
+    float: left;
+    position: relative;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/warning.png) no-repeat;
+    padding: 0 0 0 20px;
+    color: #FFF;
+    width: 280px;
+}
+
+.warningResultados {
+    float: left;
+    position: relative;
+    width: 935px;
+    height: 30px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/warning2.png) no-repeat 10px 5px;
+    padding: 10px;
+    color: #F60;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.contenidoCompleto {
+    padding: 5px;
+    overflow: auto;
+}
+
+    .contenidoCompleto ul {
+        list-style: disc;
+        padding: 0 0 0 30px;
+    }
+
+/* ---=== resultados vuelos ===--- */
+.tituloValor {
+    font-size: 16px;
+    font-weight: bold;
+    color: #106DA2;
+    font-family: verdana;
+}
+
+.tituloPrecioTotalVuelo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #106DA2;
+    font-family: verdana;
+}
+
+.tituloPrecioTotalVueloUSD {
+    font-size: 14px;
+    color: #106DA2;
+    font-family: verdana;
+}
+
+.divisionVuelos {
+    height: 1px;
+    color: #106DA2;
+}
+
+.resumenVuelos {
+    float: left;
+    position: relative;
+    width: 19%;
+    border-right: solid 1px #CCC;
+}
+
+    .resumenVuelos span.tituloResumen {
+        font-family: Verdana;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+.nuevaBusquedaVuelos {
+    float: left;
+    position: relative;
+    width: 172px;
+    padding: 5px;
+    text-align: center;
+}
+
+.seccionesVuelos {
+    width: 100%;
+    margin: 10px 0 0 0;
+    float: left;
+    position: relative;
+}
+
+.tituloSelecionVuelo {
+    font-size: 16px;
+    font-weight: bold;
+    color: #390;
+    float: left;
+    position: relative;
+    margin: 0 0 5px 0;
+    border-bottom: solid 1px #390;
+}
+
+.ConParada {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: verdana;
+    color: #036;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.SinParada {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: verdana;
+    color: #000;
+    text-decoration: none;
+    cursor: text;
+}
+
+/* ---=== panel reserva ===--- */
+.panelReserva {
+    position: relative;
+    padding: 0;
+    float: left;
+    font-size: 12px;
+    width: 880px;
+    margin: 0 0 10px 0;
+    background: #F1F1F1;
+}
+
+.titulosReserva {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana;
+    margin: 0 0 5px 0;
+}
+
+.contenidosReserva {
+    float: left;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+}
+
+    .contenidosReserva ul {
+        list-style: disc;
+        padding: 0 0 0 15px;
+    }
+
+    .contenidosReserva strong {
+        font-weight: bold;
+    }
+
+.condiciones {
+    width: 100%;
+    height: 90px;
+    overflow: auto;
+}
+
+    .condiciones ul {
+        list-style: disc;
+        padding: 0 0 0 15px;
+    }
+
+    .condiciones strong {
+        font-weight: bold;
+    }
+
+.recordReserva {
+    font-weight: bold;
+    color: #F00;
+}
+
+/* ---=== destino sugerido ===--- */
+.destinoSugerido {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 580px;
+}
+
+    .destinoSugerido .contenidoResultados {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .destinoSugerido .tituloResultados {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 22px;
+        padding: 5px;
+        background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 300px 0;
+        color: #FFF;
+        margin: 0 0 0 7px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .destinoSugerido .contenidoResultado {
+        position: relative;
+        float: left;
+        width: 580px;
+        padding: 0;
+    }
+
+    .destinoSugerido .pieResultados {
+        position: relative;
+        float: left;
+        width: 580px;
+        height: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieDestinoSugerido.gif) no-repeat;
+    }
+
+    .destinoSugerido .tituloMasDestinos {
+        float: left;
+        position: relative;
+        width: 540px;
+        padding: 5px 15px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .destinoSugerido .contenidoMasDestinos {
+        float: left;
+        position: relative;
+        width: 580px;
+        height: 70px;
+        overflow: hidden;
+    }
+
+    .destinoSugerido .masDestinos {
+        float: left;
+        position: relative;
+        width: 155px;
+        padding: 5px 0 5px 35px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/bullet2.png) no-repeat 15px 3px;
+    }
+
+        .destinoSugerido .masDestinos a {
+            font-size: 12px;
+            font-weight: bold;
+            color: #004590;
+        }
+/* ---=== explora destino ===--- */
+.imagenDestino {
+    float: left;
+    position: relative;
+    width: 260px;
+    background: #FFF;
+    margin-right: 5px;
+}
+
+    .imagenDestino img {
+        width: 250px;
+        height: 165px;
+        padding: 4px;
+        border: solid 1px #CCC;
+        margin: 0 0 10px 0;
+    }
+
+    .imagenDestino .galeriaDestino {
+        float: left;
+        position: relative;
+        width: 260px;
+        background: #FFF;
+    }
+
+        .imagenDestino .galeriaDestino img {
+            float: left;
+            position: relative;
+            width: 84px;
+            height: 60px;
+            margin: 0 2px 2px 0;
+            padding: 0;
+            border: 0;
+        }
+
+.descripcionDestino {
+    float: left;
+    position: relative;
+    width: 480px;
+    border-top: solid 1px #CCC;
+    padding: 25px 10px 10px 10px;
+    margin-right: 5px;
+}
+
+.bannerDestino {
+    float: left;
+    position: relative;
+    width: 200px;
+    background: #0F0;
+}
+
+.seleccionaDestino {
+    margin: 5px 5px 0 0;
+    float: right;
+    padding: 5px;
+    width: 390px;
+    height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/destino.png) no-repeat;
+}
+/* ---=== promociones index ===--- */
+#promocionesIndex {
+    position: relative;
+    float: left;
+    padding: 0;
+    width: 580px;
+    overflow: hidden;
+    margin-left: 80px;
+}
+
+    #promocionesIndex ul, #promocionesIndex li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #promocionesIndex li {
+        /* 
+		define width and height of list item (slide)
+		entire slider area will adjust according to the parameters provided here
+	*/
+        width: 420px;
+        height: 190px;
+        overflow: hidden;
+    }
+
+        #promocionesIndex li .planes {
+            width: 200px;
+            float: left;
+            position: relative;
+            margin: 0 5px;
+            background: #FFF;
+        }
+
+            #promocionesIndex li .planes .tituloPlan {
+                width: 200px;
+                height: 18px;
+                overflow: hidden;
+                font-weight: bold;
+                font-size: 13px;
+                color: #000;
+            }
+
+            #promocionesIndex li .planes .imagenPlanes {
+                float: left;
+                position: relative;
+                width: 190px;
+                padding: 4px;
+                background: #FFF;
+                border: solid 1px #CCC;
+                overflow: hidden;
+            }
+
+                #promocionesIndex li .planes .imagenPlanes img {
+                    width: 190px;
+                    height: 150px;
+                }
+
+#prevBtn, #nextBtn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+}
+
+#nextBtn {
+    left: 510px;
+}
+
+    #prevBtn a, #nextBtn a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/btn_prev.gif) no-repeat 0 0;
+    }
+
+    #nextBtn a {
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/btn_next.gif) no-repeat 0 0;
+    }
+
+#prevBtn, #nextBtn {
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    text-indent: -8000px;
+}
+
+/* ---=== viaja seguro ===--- */
+.seguro {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 540px;
+}
+
+    .seguro .contenidoResultados {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .seguro .tituloResultados {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 22px;
+        padding: 5px;
+        background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 300px 0;
+        color: #FFF;
+        margin: 0 0 0 7px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .seguro .contenidoResultado {
+        position: relative;
+        float: left;
+        width: 530px;
+        padding: 5px;
+    }
+
+    .seguro .pieResultados {
+        position: relative;
+        float: left;
+        width: 540px;
+        height: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieSeguro.gif) no-repeat;
+    }
+
+
+/* ---=== tours incluido ===--- */
+.toursIncluido {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 580px;
+    background: #FFF;
+}
+
+    .toursIncluido .contenidoResultados {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .toursIncluido .tituloTours {
+        position: relative;
+        float: left;
+        width: 250px;
+        height: 22px;
+        padding: 5px;
+        background: #390 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde2.gif) no-repeat 250px 0;
+        color: #FFF;
+        margin: 0 0 0 7px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .toursIncluido .contenidoTours {
+        position: relative;
+        float: left;
+        width: 560px;
+        padding: 5px;
+        border-bottom: dotted 1px #CCC;
+        margin: 5px;
+        height: 100px;
+        overflow: hidden;
+    }
+
+        .toursIncluido .contenidoTours .imagenTour {
+            position: relative;
+            float: left;
+            margin: 0 5px 5px 0;
+        }
+
+        .toursIncluido .contenidoTours .tituloTour {
+            position: relative;
+            float: left;
+            width: 190px;
+        }
+
+            .toursIncluido .contenidoTours .tituloTour a {
+                font-size: 14px;
+                color: #000;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        .toursIncluido .contenidoTours .precioTour {
+            position: relative;
+            float: left;
+            text-align: right;
+            color: #390;
+            width: 260px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .toursIncluido .contenidoTours .verDetalleTour {
+            position: relative;
+            float: left;
+            text-align: right;
+            margin: 5px 0 0 0;
+            width: 250px;
+            height: 24px;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 5px 0 0 5px;
+        }
+
+            .toursIncluido .contenidoTours .verDetalleTour a {
+                padding: 7px 18px;
+                color: #000;
+                text-decoration: none;
+                font-size: 12px;
+                font-weight: bold;
+                background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton3.png) no-repeat right;
+            }
+
+    .toursIncluido .pieTours {
+        position: relative;
+        float: left;
+        width: 580px;
+        height: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieOfertaTour.gif) no-repeat;
+    }
+/* ---=== promociones index ===--- */
+.panelPromociones {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 451px;
+}
+
+.panelPromocionesVuelos {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 640px;
+}
+
+.menuPromo {
+    padding: 5px;
+    height: 20px;
+    width: 530px;
+    float: left;
+    position: absolute;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/menuPromo.png) no-repeat;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+}
+
+.menuPromoVuelos {
+    padding: 5px;
+    height: 20px;
+    width: 630px;
+    float: left;
+    position: absolute;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/menuPromo.png);
+    bottom: 0;
+    left: 0;
+    text-align: right;
+}
+
+.imagenesPromo {
+    float: left;
+    position: relative;
+    width: 540px;
+}
+
+    .imagenesPromo img {
+        width: 540px;
+        height: 360px;
+    }
+
+.imagenesPromoVuelos {
+    float: left;
+    position: relative;
+    width: 640px;
+}
+
+    .imagenesPromoVuelos img {
+        width: 640px;
+        height: 320px;
+    }
+
+a.promo:link {
+    border: 0px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/promoOff.png) no-repeat;
+    color: #FFF;
+    padding: 3px 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a.promo:visited, a.promo:hover, a.promo:active, a.promo:focus {
+    color: #390;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/promoOn.png) no-repeat;
+    text-decoration: none;
+}
+/* ---=== panel noticias ===--- */
+.noticias {
+    position: relative;
+    float: left;
+    width: 300px;
+}
+
+    .noticias .contenidoNoticias {
+        padding: 5px;
+        overflow: auto;
+    }
+
+    .noticias .tituloNoticias {
+        position: relative;
+        float: left;
+        width: 100%;
+        margin: 0 0 10px 0;
+        font-size: 15px;
+        font-family: Yanone Kaffeesatz Regular;
+    }
+/* ---=== planea tu viaje ===--- */
+.planeaViaje {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 80px;
+    text-align: left;
+    font-size: 12px;
+    margin: 0 0 0 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/planeaViaje.png) no-repeat;
+}
+
+    .planeaViaje .tituloPlanea {
+        position: relative;
+        float: left;
+        padding: 5px 30px 0px 30px;
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+        color: #FFF;
+    }
+
+        .planeaViaje .tituloPlanea .textoPlanea {
+            position: relative;
+            float: right;
+            padding: 10px 30px;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: bold;
+            color: #FFF;
+        }
+/* ---=== panel resultados ===--- */
+.panelResultados {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+    margin: 0 0 20px 0;
+    border: 2px solid whitesmoke;
+    /*border-radius: 16px;*/
+}
+
+.panelResultadosPaginador {
+    float: left;
+    width: 100%;
+}
+
+.panelResultados .contenidoResultados {
+    padding: 0;
+    overflow: hidden;
+}
+
+.panelResultados .tituloResultados {
+    position: relative;
+    float: none;
+    width: 340px;
+    height: 22px;
+    padding: 5px;
+    background: #39c15c;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    /*border-radius: 13px;*/
+}
+
+.panelResultados .tituloHoteles {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 22px;
+    padding: 5px;
+    background-color: #39c15c;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    /*border-radius: 13px;*/
+}
+
+.panelResultados .tituloPlan {
+    position: relative;
+    float: left;
+    width: 540px;
+    height: 22px;
+    padding: 5px;
+    background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 540px 0;
+    color: #FFF;
+    margin: 0 0 0 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panelResultados .titulosResumen {
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 22px;
+    padding: 5px;
+    background-color: #95c428;
+    color: #FFF;
+    margin: 0 0 10px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    /*border-radius: 13px;*/
+}
+
+/*.panelResultados .pieResultados {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 10px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieResultados.gif) no-repeat;
+}*/
+
+/*.panelResultados .pieResumen {
+    position: relative;
+    float: left;
+    width: 960px;
+    height: 10px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieResumen.gif) no-repeat;
+}*/
+
+.panelResultados .contenidoResultado {
+    position: relative;
+    float: left;
+    width: 99%;
+    padding: 5px;
+}
+
+.panelResultados .contenidoResultados2 {
+    padding: 0;
+}
+
+.contenidoResultados2 {
+    padding: 0;
+}
+
+.titulosPanel {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0 0 5px 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+.tituloDetalleTarifa {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+.contenidosPanel {
+    float: left;
+    position: relative;
+    width: 642px;
+    padding: 0 0 10px 0;
+}
+
+.contenidoResultado {
+    float: left;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+}
+
+    .contenidoResultado ul {
+        list-style: disc;
+        padding: 0 0 0 15px;
+    }
+
+    .contenidoResultado strong {
+        font-weight: bold;
+    }
+
+.tituloTabla {
+    background: #F5F5F5;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+/* ---=== resultados planes ===--- */
+.planes {
+    float: left;
+    position: relative;
+    width: 280px;
+    background: #F1F1F1;
+    margin: 0 4px 5px 0;
+}
+
+.seleccionarPlan {
+    float: left;
+    position: relative;
+    width: 270px;
+    text-align: right;
+    background: #FFF;
+    padding: 0 10px 0 0;
+}
+
+    .seleccionarPlan .botonPlanes {
+        background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/seleccionar.png);
+        cursor: pointer;
+        width: 105px;
+        height: 25px;
+        border: 0;
+        padding: 0;
+    }
+
+.convenciones {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tituloResultadosPlanes {
+    float: left;
+    position: relative;
+    width: 130px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+    height: 55px;
+    overflow: hidden;
+}
+
+    .tituloResultadosPlanes a {
+        color: #000;
+        text-decoration: none;
+    }
+
+.contenidoResultadoPlanes {
+    padding: 10px;
+    overflow: hidden;
+}
+
+    .contenidoResultadoPlanes .imagen {
+        float: left;
+        position: relative;
+        width: 120px;
+        border: solid 1px #CCC;
+        padding: 1px;
+        background: #FFF;
+        margin: 0 5px 0 0;
+    }
+
+    .contenidoResultadoPlanes .descripcion {
+        float: left;
+        position: relative;
+        width: 130px;
+    }
+
+    .contenidoResultadoPlanes .oferta {
+        float: left;
+        position: relative;
+        width: 130px;
+        height: 44px;
+        text-align: right;
+    }
+
+    .contenidoResultadoPlanes .precioPlan {
+        float: left;
+        position: relative;
+        width: 265px;
+        text-align: right;
+        font-size: 15px;
+        font-weight: bold;
+        color: #000;
+    }
+
+/* ---=== detalle planes ===--- */
+.precioPlanes {
+    float: left;
+    position: relative;
+    color: #F90;
+    font-size: 14px;
+    font-weight: bold;
+    width: 320px;
+    text-align: center;
+    padding: 0 0 15px 0;
+    border-top: solid 1px #CCC;
+    border-bottom: solid 1px #CCC;
+    margin: 0 0 5px 0;
+}
+
+.fotoPlanes {
+    float: left;
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    border: solid 1px #CCC;
+    margin-right: 5px;
+}
+
+.galeriaPlanes {
+    float: left;
+    position: relative;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    width: 320px;
+    margin: 5px 0 0 0;
+}
+
+.clasificacion {
+    font-size: 12px;
+    font-weight: bold;
+    color: #004590;
+}
+
+.datosPlan {
+    float: left;
+    position: relative;
+    width: 320px;
+    margin: 0 15px 0 0;
+}
+
+.campoCuotas {
+    float: left;
+    position: relative;
+    /* @alternate */
+    color: #000;
+    font-size: 12px;
+    width: 260px;
+    height: 222px;
+    padding: 10px;
+    /* @alternate */
+    color: #FFF;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/calcular.png);
+}
+
+    .campoCuotas span.tituloCuotas {
+        color: #FFF;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+.volver {
+    font-size: 12px;
+    color: #004590;
+}
+
+.opcionesPlanes {
+    position: relative;
+    float: left;
+    width: 175px;
+}
+
+.botonDocumentacion {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botones.png) 0 0;
+    cursor: pointer;
+}
+
+.botonImprimir {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botones.png) 0 -43px;
+    cursor: pointer;
+}
+
+.botonEnviar {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botones.png) 0 -86px;
+    cursor: pointer;
+}
+
+.opcionesBoletin {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/btSuscribete.png);
+    cursor: pointer;
+}
+
+.botonContacta {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botones.png) 0 -129px;
+    cursor: pointer;
+}
+
+.botonDocumentacionOff {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botones.png) -171px 0;
+    cursor: pointer;
+}
+
+.botonDestinoOff {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botones.png) -171px 0;
+    cursor: pointer;
+}
+
+.botonImprimirOff {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botones.png) -171px -43px;
+    cursor: pointer;
+}
+
+.botonEnviarOff {
+    width: 171px;
+    height: 43px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botones.png) -171px -86px;
+    cursor: pointer;
+}
+
+.cotizadorPlan {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.verMas {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ---=== panel ofertas planes ===--- */
+.ofertasPlanes {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 370px;
+    margin: 0 10px 0 0;
+    background: #FFF;
+}
+
+    .ofertasPlanes .imagenPlanes img {
+        width: 350px;
+        height: 150px;
+    }
+
+    .ofertasPlanes .contenidoResultados {
+        padding: 0;
+        overflow: hidden;
+        font-size: 14px;
+    }
+
+    .ofertasPlanes .tituloResultados {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 22px;
+        padding: 5px;
+        background: #F60 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde3.gif) no-repeat 300px 0;
+        color: #FFF;
+        margin: 0 0 5px 7px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .ofertasPlanes .contenidoResultado {
+        position: relative;
+        float: left;
+        width: 360px;
+        padding: 5px;
+    }
+
+    .ofertasPlanes .pieResultados {
+        position: relative;
+        float: left;
+        width: 370px;
+        height: 10px;
+        margin-bottom: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieOfertasPlanes.gif) no-repeat;
+    }
+
+.contenidosPlanes {
+    float: left;
+    position: relative;
+    width: 355px;
+    padding: 0 0 10px 0;
+    font-size: 12px;
+}
+
+.contenidosSugeridos {
+    float: left;
+    position: relative;
+    width: 570px;
+}
+
+    .contenidosSugeridos .destinos {
+        float: left;
+        position: relative;
+        width: 185px;
+        margin: 0 4px 4px 0;
+    }
+
+        .contenidosSugeridos .destinos .imagenDestino {
+            float: left;
+            position: relative;
+            width: 180px;
+            height: 120px;
+            border: solid 1px #CCC;
+            padding: 2px;
+            margin: 5px 0 0 0;
+            background-color: #FFF;
+        }
+
+/* Tool Tips */
+a.moneda2 {
+    position: relative; /* es la posici�n normal */
+    text-decoration: none !important; /* forzar sin subrayado */
+    color: #000 !important; /* forzar color del texto */
+    font-weight: bold !important; /* forzar negritas */
+}
+
+    a.moneda2:hover {
+        z-index: 999; /* va a estar por encima de todo */
+    }
+
+    a.moneda2 div {
+        display: none; /* el elemento va a estar oculto */
+    }
+
+    a.moneda2:hover div {
+        display: block; /* se fuerza a mostrar el bloque */
+        position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+        top: -105px;
+        left: 0; /* donde va a estar */
+        width: 130px; /* el ancho por defecto que va a tener */
+        height: 95px;
+        padding: 5px 10px; /* la separaci�n entre el contenido y los bordes */
+        background: Transparent url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/moneda2.png) no-repeat center top; /* el color de fondo por defecto */
+        color: #FFF; /* el color de los textos por defecto */
+        text-decoration: none;
+        text-align: center;
+        z-index: 999;
+        font-size: 11px;
+        overflow: auto;
+    }
+
+a.moneda3 {
+    position: relative; /* es la posici�n normal */
+    text-decoration: none !important; /* forzar sin subrayado */
+    color: #000 !important; /* forzar color del texto */
+    font-weight: bold !important; /* forzar negritas */
+    cursor: default;
+}
+
+    a.moneda3:hover {
+        z-index: 999; /* va a estar por encima de todo */
+    }
+
+    a.moneda3 div {
+        display: none; /* el elemento va a estar oculto */
+    }
+
+    a.moneda3:hover div {
+        display: block; /* se fuerza a mostrar el bloque */
+        position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+        top: 10px;
+        left: 0; /* donde va a estar */
+        width: 220px; /* el ancho por defecto que va a tener */
+        height: 30px;
+        padding: 20px 10px 5px 10px; /* la separaci�n entre el contenido y los bordes */
+        background: Transparent url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/moneda3.png) no-repeat center top; /* el color de fondo por defecto */
+        color: #FFF; /* el color de los textos por defecto */
+        text-decoration: none;
+        text-align: center;
+        z-index: 999;
+        font-size: 11px;
+        overflow: auto;
+    }
+
+a.tarifa {
+    position: relative; /* es la posici�n normal */
+    text-decoration: underline !important; /* forzar sin subrayado */
+    color: #106DA2 !important; /* forzar color del texto */
+    font-weight: bold !important; /* forzar negritas */
+}
+
+    a.tarifa:hover {
+        z-index: 999; /* va a estar por encima de todo */
+        background-color: #FFF; /* DEBE haber un color de fondo */
+    }
+
+    a.tarifa div {
+        display: none; /* el elemento va a estar oculto */
+    }
+
+    a.tarifa:hover div {
+        display: block; /* se fuerza a mostrar el bloque */
+        position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+        top: -16em;
+        left: -8.5em; /* donde va a estar */
+        width: 250px; /* el ancho por defecto que va a tener */
+        height: 170px;
+        padding: 10px; /* la separaci�n entre el contenido y los bordes */
+        background: Transparent url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/tooltip.png) no-repeat center top; /* el color de fondo por defecto */
+        color: #FFF; /* el color de los textos por defecto */
+        text-decoration: none;
+        text-align: left;
+        font-weight: normal;
+        z-index: 999;
+        overflow: auto;
+    }
+
+a.impuestos {
+    position: relative; /* es la posici�n normal */
+    text-decoration: underline !important; /* forzar sin subrayado */
+    color: #106DA2 !important; /* forzar color del texto */
+    font-weight: bold !important; /* forzar negritas */
+}
+
+    a.impuestos:hover {
+        z-index: 999; /* va a estar por encima de todo */
+        background-color: #FFF; /* DEBE haber un color de fondo */
+    }
+
+    a.impuestos div {
+        display: none; /* el elemento va a estar oculto */
+    }
+
+    a.impuestos:hover div {
+        display: block; /* se fuerza a mostrar el bloque */
+        position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+        top: -130px;
+        left: -100px; /* donde va a estar */
+        width: 240px; /* el ancho por defecto que va a tener */
+        height: 110px;
+        padding: 10px; /* la separaci�n entre el contenido y los bordes */
+        background: Transparent url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/impuesto.png) no-repeat center top; /* el color de fondo por defecto */
+        color: #FFF; /* el color de los textos por defecto */
+        text-decoration: none;
+        text-align: left;
+        font-weight: normal;
+        z-index: 999;
+        overflow: auto;
+    }
+
+a.impuestosRela {
+    position: relative; /* es la posici�n normal */
+    text-decoration: underline !important; /* forzar sin subrayado */
+    color: #106DA2 !important; /* forzar color del texto */
+    font-weight: bold !important; /* forzar negritas */
+}
+
+    a.impuestosRela:hover {
+        z-index: 999; /* va a estar por encima de todo */
+        background-color: #FFF; /* DEBE haber un color de fondo */
+    }
+
+    a.impuestosRela div {
+        display: none; /* el elemento va a estar oculto */
+    }
+
+    a.impuestosRela:hover div {
+        display: block; /* se fuerza a mostrar el bloque */
+        position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+        top: -130px;
+        left: -140px; /* donde va a estar */
+        width: 240px; /* el ancho por defecto que va a tener */
+        height: 110px;
+        padding: 10px; /* la separaci�n entre el contenido y los bordes */
+        background: Transparent url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/impuestosRela.png) no-repeat center top; /* el color de fondo por defecto */
+        color: #FFF; /* el color de los textos por defecto */
+        text-decoration: none;
+        text-align: left;
+        font-weight: normal;
+        z-index: 999;
+        overflow: auto;
+    }
+
+a.valorTotal {
+    position: relative; /* es la posici�n normal */
+    text-decoration: underline !important; /* forzar sin subrayado */
+    color: #106DA2 !important; /* forzar color del texto */
+    font-weight: bold !important; /* forzar negritas */
+}
+
+    a.valorTotal:hover {
+        z-index: 999; /* va a estar por encima de todo */
+        background-color: #FFF; /* DEBE haber un color de fondo */
+    }
+
+    a.valorTotal div {
+        display: none; /* el elemento va a estar oculto */
+    }
+
+    a.valorTotal:hover div {
+        display: block; /* se fuerza a mostrar el bloque */
+        position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+        top: -105px;
+        left: -290px; /* donde va a estar */
+        width: 270px; /* el ancho por defecto que va a tener */
+        height: 180px;
+        padding: 10px; /* la separaci�n entre el contenido y los bordes */
+        background: Transparent url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/valorTotal.png) no-repeat center top; /* el color de fondo por defecto */
+        color: #FFF; /* el color de los textos por defecto */
+        text-decoration: none;
+        text-align: left;
+        font-weight: normal;
+        z-index: 999;
+        overflow: auto;
+    }
+
+a.ciudades {
+    position: relative; /* es la posici�n normal */
+    text-decoration: none !important; /* forzar sin subrayado */
+    color: #333 !important; /* forzar color del texto */
+    font-size: 11px;
+}
+
+    a.ciudades:hover {
+        z-index: 999; /* va a estar por encima de todo */
+        background-color: #FFF; /* DEBE haber un color de fondo */
+    }
+
+    a.ciudades div {
+        display: none; /* el elemento va a estar oculto */
+    }
+
+    a.ciudades:hover div {
+        display: block; /* se fuerza a mostrar el bloque */
+        position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+        top: 1.2em;
+        left: 0em; /* donde va a estar */
+        width: 125px; /* el ancho por defecto que va a tener */
+        padding: 3px; /* la separaci�n entre el contenido y los bordes */
+        background-color: #0080C0; /* el color de fondo por defecto */
+        color: #FFFFFF; /* el color de los textos por defecto */
+        z-index: 999;
+    }
+
+
+/* Mensaje Error */
+.mensajeError {
+    position: relative;
+    float: left;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    color: #000;
+    background-color: #FFF;
+}
+
+.contenidoError {
+    padding: 8px;
+    overflow: auto;
+}
+
+    .contenidoError img {
+        padding: 8px;
+        float: left;
+        margin: 0 10px 0 0;
+    }
+
+.tituloError {
+    font-size: 16px;
+    font-weight: bold;
+    color: #069;
+    margin: 0 0 10px 0;
+}
+
+.tituloSugerencia {
+    font-size: 16px;
+    font-weight: bold;
+    color: #069;
+    margin: 0 0 10px 0;
+}
+
+.tituloTipo {
+    font-size: 15px;
+    font-weight: bold;
+    color: #069;
+}
+
+/* Ventanas emergentes */
+.botonCerrar {
+    padding: 0px;
+    border: 0px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/close.png) no-repeat;
+}
+
+.ventana {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    height: 400px;
+    width: 510px;
+    overflow: auto;
+}
+
+.ventana2 {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+}
+
+.ventana3 {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    height: 400px;
+    width: 635px;
+    overflow: auto;
+}
+
+.ventana4 {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    width: 535px;
+    z-index: 999;
+}
+
+.ventana5 {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    width: 400px;
+    z-index: 999;
+}
+
+.ventanaBuscador {
+    background-color: Transparent;
+    border: 0;
+    padding: 0;
+    width: 320px;
+}
+
+.ventanaBoletin {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    width: 940px;
+    height: 600px;
+}
+
+.ventanaGaleria {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    height: 590px;
+}
+
+.ventanaPlanes {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    width: 730px;
+    height: 530px;
+}
+
+.ventanaComentarios {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    width: 450px;
+    height: 300px;
+}
+
+.ventanaSeguro {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    width: 550px;
+    height: 300px;
+}
+
+.ventanaPago {
+    background-color: #FFF;
+    border: solid 1px #106DA2;
+    padding: 10px;
+    width: 450px;
+    height: 300px;
+}
+
+.ventanaBanner {
+    background-color: Transparent;
+    border: 0;
+    padding: 0;
+    width: 680px;
+    height: 500px;
+}
+
+    .ventanaBanner .botonCerrar {
+        background: url(../JQuery/images/x.png) no-repeat;
+        width: 41px;
+        height: 41px;
+        cursor: pointer;
+    }
+
+.tituloTablaHotel {
+    font-weight: bold;
+    color: #000;
+    padding: 5px;
+    text-align: center;
+    background-color: #CEEEF1;
+}
+
+.stars {
+    height: 16px;
+    width: 16px;
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/starHotel.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Habitacion Hoteles */
+.habitacionColumna {
+    float: left;
+    position: relative;
+    width: 80px;
+}
+
+.huespedesColumna {
+    float: left;
+    position: relative;
+    width: 210px;
+}
+
+.huespedHotel {
+    float: left;
+    position: relative;
+    width: 80px;
+}
+
+.edadesColumna {
+    float: left;
+    position: relative;
+    width: 90px;
+}
+
+.edadHotel1 {
+    float: left;
+    position: relative;
+    width: 50px;
+}
+
+.edadHotel2 {
+    float: left;
+    position: relative;
+    width: 40px;
+}
+
+.bordeTablaPrecio {
+    border: solid 1px #CCC;
+    background-color: #FFF;
+    float: right;
+    position: relative;
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tituloPreciosHotel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #10ADDA;
+}
+
+.tituloPreciosPie {
+    font-size: 11px;
+}
+
+.bordeTablaHotel {
+    border: solid 1px #CCC;
+    background-color: #FFF;
+    /* @alternate */
+    float: right;
+    /* @alternate */
+    position: relative;
+    width: 130px;
+    /* @alternate */
+    float: right;
+    /* @alternate */
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+.csPintar {
+    font-size: 12px;
+    font-weight: bold;
+    color: #390;
+    background: #FFF;
+    padding: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0px;
+}
+
+.csNoPintar {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    background: #FFF;
+    padding: 2px;
+    text-decoration: underline;
+    cursor: pointer;
+    border: 0px;
+}
+
+/* Mi Cuenta*/
+.botonCuentaOn {
+    background-color: #004590;
+    padding: 5px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.botonCuentaOff {
+    background-color: #FFF;
+    color: #004590;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.cuenta {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 5px 0 5px 0;
+}
+
+.completoCuentaDetalle {
+    position: relative;
+    float: left;
+    padding: 5px;
+    text-align: left;
+    width: 935px;
+    border: solid 1px #004590;
+    font-size: 11px;
+    color: #000;
+    background-color: #FFF;
+    margin: 0 0 10px 0;
+}
+
+.completoCuentaBienvenida {
+    position: relative;
+    float: left;
+    padding: 25px 5px 5px 25px;
+    text-align: left;
+    width: 915px;
+    height: 280px;
+    border: solid 1px #004590;
+    /* @alternate */
+    font-size: 11px;
+    color: #FFBC15;
+    background: #FFF url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/bienvenida.jpg) no-repeat center center;
+    margin: 0 0 10px 0;
+    /* @alternate */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Login */
+.panelIngresar {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 310px;
+    margin: 0 10px 0 0;
+}
+
+    .panelIngresar .tituloIngresar {
+        position: relative;
+        float: left;
+        width: 250px;
+        height: 22px;
+        padding: 5px;
+        background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 250px 0;
+        color: #FFF;
+        margin: 0 0 0 7px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .panelIngresar .contenidoResultados {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .panelIngresar .contenidoResultado {
+        position: relative;
+        float: left;
+        width: 300px;
+        padding: 5px;
+    }
+
+    .panelIngresar .pieLogin {
+        position: relative;
+        float: left;
+        width: 310px;
+        height: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieLogin.gif) no-repeat;
+    }
+
+.panelRegistro {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 640px;
+}
+
+    .panelRegistro .tituloRegistro {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 22px;
+        padding: 5px;
+        background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 300px 0;
+        color: #FFF;
+        margin: 0 0 7px 7px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .panelRegistro .contenidoResultados {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .panelRegistro .contenidoResultado {
+        position: relative;
+        float: left;
+        width: 630px;
+        padding: 5px;
+    }
+
+    .panelRegistro .pieRegistro {
+        position: relative;
+        float: left;
+        width: 640px;
+        height: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieRegistro.gif) no-repeat;
+    }
+
+    .panelRegistro .pieDocumentacion {
+        position: relative;
+        float: left;
+        width: 630px;
+        height: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieDoc.gif) no-repeat;
+    }
+/* Carro Compras */
+.localizador {
+    position: relative;
+    color: #F60;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+}
+
+.recordCarro {
+    color: #F60;
+    font-weight: bold;
+}
+
+.valorTotalServicios {
+    position: relative;
+    width: 160px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    float: left;
+}
+
+.valorTotalServiciosPrecio {
+    position: relative;
+    width: 140px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.valorTotalCarrito {
+    position: relative;
+    padding: 5px;
+    text-align: right;
+    width: 330px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: verdana;
+    color: #106DA2;
+    float: right;
+}
+
+.precioCarrito {
+    font-size: 16px;
+    font-weight: bold;
+    color: #106DA2;
+}
+
+.botonPagar {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pagar.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.botonVuelo {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/vuelos.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.botonHotel {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/hoteles.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.botonAuto {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/autos.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.botonPaquete {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/planes.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.botonTren {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/tren.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
+.botonSeguro {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/seguro.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+/* ---=== panel contactenos ===--- */
+.panelContactenos {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 390px;
+    margin: 0 10px 0 0;
+}
+
+    .panelContactenos img {
+        width: 390px;
+    }
+
+.formularioContactenos {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 550px;
+    margin: 0;
+}
+/* Ofertas */
+.ofertasCrucero {
+    width: 435px;
+    float: left;
+    position: relative;
+    margin: 0 10px 10px 0;
+}
+
+.ofertasResultado {
+    width: 475px;
+    float: left;
+    position: relative;
+    margin: 0 5px 10px 0;
+}
+
+    .ofertasResultado .contenidoResultados {
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .ofertasResultado .tituloResultados {
+        position: relative;
+        float: left;
+        width: 340px;
+        height: 22px;
+        padding: 5px;
+        background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 340px 0;
+        color: #FFF;
+        margin: 0 0 7px 7px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+        .ofertasResultado .tituloResultados a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+    .ofertasResultado .contenidoResultado {
+        position: relative;
+        float: left;
+        width: 465px;
+        padding: 5px;
+    }
+
+        .ofertasResultado .contenidoResultado .imagenOferta {
+            float: left;
+            position: relative;
+            width: 165px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .ofertasResultado .contenidoResultado .descripcionOferta {
+            float: left;
+            position: relative;
+            font-size: 12px;
+            width: 295px;
+            height: 48px;
+            overflow: hidden;
+        }
+
+        .ofertasResultado .contenidoResultado .imagenOfertaPlan {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ofertasResultado .contenidoResultado .precioOferta {
+            float: left;
+            position: relative;
+            width: 295px;
+            color: #390;
+            font-size: 15px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .ofertasResultado .contenidoResultado .precioOferta1 {
+            float: left;
+            position: relative;
+            width: 170px;
+            padding: 10px;
+            color: #F90;
+            margin-right: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            border: solid 1px #CCC;
+        }
+
+        .ofertasResultado .contenidoResultado .precioOferta2 {
+            float: left;
+            position: relative;
+            width: 90px;
+            padding: 25px 0 0 0;
+            height: 70px;
+            color: #FFF;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/fondoValor.png) no-repeat;
+        }
+
+    .ofertasResultado .contenidoResultados .verDetalleOferta {
+        float: right;
+        position: relative;
+        margin: 10px 5px 0 0;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton2.png) no-repeat;
+        width: 100px;
+        height: 24px;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px 0 0 5px;
+    }
+
+        .ofertasResultado .contenidoResultados .verDetalleOferta a {
+            color: #000;
+            padding: 3px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+        }
+/*detalleofertas*/
+.precioPlanes .verDetalleOferta {
+    float: right;
+    position: relative;
+    margin: 10px 5px 0 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton2.png) no-repeat;
+    width: 100px;
+    height: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 0 0 5px;
+}
+
+    .precioPlanes.verDetalleOferta a {
+        color: #000;
+        padding: 3px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+.tab_content .verDetalleOferta {
+    float: right;
+    position: relative;
+    margin: 10px 5px 0 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton2.png) no-repeat;
+    width: 100px;
+    height: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 0 0 5px;
+}
+
+    .tab_content.verDetalleOferta a {
+        color: #000;
+        padding: 3px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+.btnReservar {
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    background: none !important;
+}
+
+ul.btnReservar li.active {
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    background: none !important;
+}
+
+ul.btnReservar li.inactive {
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    background: none !important;
+    position: relative;
+    top: -3px;
+    left: 10px;
+}
+
+ul.btnReservar li {
+    top: 0;
+    float: left;
+    margin: 0 5px 0 0;
+    padding: 5px;
+    border: 0;
+    overflow: hidden;
+    position: relative;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    background: none !important;
+}
+
+
+.ofertasResultado .pieResultados {
+    position: relative;
+    float: left;
+    width: 475px;
+    height: 10px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/piePlanes.gif) no-repeat;
+}
+
+.titulosOfertas {
+    float: left;
+    position: relative;
+    width: 469px;
+    height: 7px;
+    padding: 15px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/tituloOfertas.png) no-repeat;
+}
+
+.linkPromoPaquete {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.linkPromoPlan {
+    color: #004590;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.linkPromoPlan2 {
+    color: #004590;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.precioPromo {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tituloPlanResul {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana;
+}
+
+.contenidoOfertas {
+    float: left;
+    position: relative;
+    width: 469px;
+    padding: 5px 15px 5px 15px;
+    font-size: 12px;
+    overflow: auto;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/fondoOfertas.png) repeat-y;
+}
+
+.pieOfertas {
+    float: left;
+    position: relative;
+    width: 499px;
+    height: 15px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieOfertas.png) no-repeat;
+}
+
+.imagenCategoria {
+    float: left;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.precioOferta {
+    font-size: 20px;
+    font-weight: bold;
+    color: #106DA2;
+}
+
+h4.trigger {
+    padding: 0;
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.contenidoResultado .linkUtilidades {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    cursor: text;
+}
+
+h4.trigger a {
+    color: #106DA2;
+    text-decoration: none;
+    display: block;
+}
+
+    h4.trigger a:hover {
+        color: #000;
+    }
+
+.toggle_container {
+    padding: 1%;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: normal;
+    background: #FFF;
+    border-bottom: solid 1px #106DA2;
+    margin: 0 0 5px 0;
+    width: 98%;
+    float: left;
+}
+
+    .toggle_container a {
+        color: #106DA2;
+        text-decoration: underline;
+    }
+
+    .toggle_container ul {
+        list-style: disc;
+        padding: 0 0 0 20px;
+    }
+
+    .toggle_container strong {
+        font-weight: bold;
+    }
+
+.toggle_container_Preguntas {
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: Arial;
+    border-bottom: solid 1px #106DA2;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    width: 465px;
+}
+
+    .toggle_container_Preguntas a {
+        color: #106DA2;
+        text-decoration: underline;
+    }
+
+.imagenUtilitarios {
+    float: left;
+    position: relative;
+    padding: 5px;
+}
+
+.toggle_container_Crucero {
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: solid 1px #106DA2;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    width: 415px;
+}
+
+    .toggle_container_Crucero a {
+        color: #106DA2;
+        text-decoration: underline;
+    }
+/* detalle destino */
+.tituloDestino {
+    float: left;
+    position: relative;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    width: 880px;
+    border-bottom: solid 1px #2898D7;
+    margin: 0 0 10px 0;
+}
+
+    .tituloDestino select {
+        color: #000;
+        font-size: 15px;
+        font-family: Verdana;
+    }
+
+.tituloQuienes {
+    font-weight: bold;
+}
+
+.tituloNoticias {
+    font-weight: bold;
+}
+
+
+/* Galeria Destino Sugerido */
+div#feature_list {
+    width: 641px;
+    height: 264px;
+    overflow: hidden;
+    position: relative;
+}
+
+    div#feature_list ul {
+        position: absolute;
+        top: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+ul#galeria {
+    left: 0;
+    z-index: 2;
+    width: 130px;
+}
+
+    ul#galeria li {
+        height: 88px;
+    }
+
+        ul#galeria li img {
+            padding: 0;
+            border: none;
+            float: left;
+            margin: 0;
+            width: 130px;
+            height: 88px;
+        }
+
+        ul#galeria li a {
+            display: block;
+            padding: 0;
+            height: 88px;
+            outline: none;
+        }
+
+            ul#galeria li a:hover {
+                text-decoration: underline;
+            }
+
+            ul#galeria li a.current {
+            }
+
+                ul#galeria li a.current:hover {
+                    text-decoration: none;
+                    cursor: default;
+                }
+
+ul#output {
+    right: 0;
+    width: 511px;
+    height: 268px;
+    position: relative;
+}
+
+    ul#output li {
+        position: absolute;
+        width: 511px;
+        height: 268px;
+    }
+
+        ul#output li a {
+            position: absolute;
+            padding: 0;
+        }
+
+            ul#output li a img {
+                width: 511px;
+                height: 268px;
+            }
+
+/* Banners Inferiores */
+.banners {
+    float: left;
+    position: relative;
+    width: 370px;
+}
+
+    .banners .bannersInterno {
+        float: left;
+        position: relative;
+        margin: 0 10px 0 0;
+        width: 370px;
+    }
+
+    .banners img {
+        width: 370px;
+    }
+
+    .banners a {
+        cursor: default;
+    }
+
+/*Banners Vuelos*/
+
+.bannersVuelos {
+    float: left;
+    position: relative;
+    width: 310px;
+}
+
+    .bannersVuelos .bannersInterno {
+        float: left;
+        position: relative;
+        width: 310px;
+    }
+
+    .bannersVuelos img {
+        width: 310px;
+        height: 167px;
+    }
+
+    .bannersVuelos a {
+        cursor: default;
+    }
+
+
+/* Tarifas */
+.panelTarifas {
+    position: relative;
+    float: left;
+    font-size: 12px;
+    width: 880px;
+    margin: 0 0 10px 0;
+    background: #F1F1F1;
+    color: #000;
+}
+/*
+	ptlc = panel top left corner
+	ptrc = panel top right corner
+	pblc = pane bottom left corner
+	pbrc = panel bottom right corner
+	plb = panel left border
+	prb = panel right border
+	ptb = panel top border
+	pbb = panel bottom border 
+*/
+
+/*.ptlc, .ptlc2, .ptlc3, .ptrc, .pblc, .pbrc {
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.ptlc {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/ptlc.gif);
+    background-position: 0% 0%;
+}
+
+.ptlc2 {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/ptlc2.gif);
+    background-position: 0% 0%;
+}
+
+.ptlc3 {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/ptlc3.gif);
+    background-position: 0% 0%;
+}
+
+.ptrc {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/ptrc.gif);
+    background-position: 100% 0%;
+}
+
+.pblc {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pblc.gif);
+    background-position: 0% 100%;
+}
+
+.pbrc {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pbrc.gif);
+    background-position: 100% 100%;
+}
+
+.ptb, .pbb {
+    background-color: transparent;
+    background-repeat: repeat-x;
+}
+
+.ptb {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/ptb.gif);
+    background-position: 0% 0%;
+}
+
+.pbb {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pbb.gif);
+    background-position: 50% 100%;
+}
+
+.prb {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/prb.gif);
+    background-position: 100% 0%;
+    background-repeat: repeat-y;
+}
+
+.plb {
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/plb.gif);
+    background-position: 0% 100%;
+    background-repeat: repeat-y;
+}*/
+
+.formaBuscar {
+    width: 98%;
+}
+
+.botonRegresar {
+    width: 106px;
+    height: 60px;
+    border: 0;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/botonRegresar.jpg);
+    cursor: pointer;
+}
+
+
+/*
+ *  File:         demo_table.css
+ *  CVS:          $Id$
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       Allan Jardine
+ *  Created:      Tue May 12 06:47:22 BST 2009
+ *  Modified:     $Date$ by $Author$
+ *  Language:     CSS
+ *  Project:      DataTables
+ *
+ *  Copyright 2009 Allan Jardine. All Rights Reserved.
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ *
+ * The styles given here are suitable for the demos that are used with the standard DataTables
+ * distribution (see www.datatables.net). You will most likely wish to modify these styles to
+ * meet the layout requirements of your site.
+ *
+ * Common issues:
+ *   'full_numbers' pagination - I use an extra selector on the body tag to ensure that there is
+ *     no conflict between the two pagination types. If you want to use full_numbers pagination
+ *     ensure that you either have "example_alt_pagination" as a body class name, or better yet,
+ *     modify that selector.
+ *   Note that the path used for Images is relative. All images are by default located in
+ *     ../images/ - relative to this CSS file.
+ */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+
+.dataTables_wrapper {
+    position: relative;
+    min-height: 302px;
+    clear: both;
+}
+
+.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 30px;
+    margin: -15px 0 0 -125px;
+    padding: 14px 0 2px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    background-color: white;
+}
+
+.dataTables_length {
+    width: 40%;
+    float: left;
+}
+
+.dataTables_filter {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.dataTables_info {
+    width: 60%;
+    float: left;
+}
+
+.dataTables_paginate {
+    width: 44px;
+    float: right;
+    text-align: right;
+    cursor: pointer;
+}
+
+/* Pagination nested */
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+    height: 19px;
+    width: 19px;
+    margin: 0 0 0 3px;
+    float: left;
+    cursor: pointer;
+}
+
+.paginate_disabled_previous {
+    background-image: url('../images/back_disabled.jpg');
+}
+
+.paginate_enabled_previous {
+    background-image: url('../images/back_enabled.jpg');
+}
+
+.paginate_disabled_next {
+    background-image: url('../images/forward_disabled.jpg');
+}
+
+.paginate_enabled_next {
+    background-image: url('../images/forward_enabled.jpg');
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+table.display {
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    /* Note Firefox 3.5 and before have a bug with border-collapse
+	 * ( https://bugzilla.mozilla.org/show%5Fbug.cgi?id=155955 ) 
+	 * border-spacing: 0; is one possible option. Conditional-css.com is
+	 * useful for this kind of thing
+	 *
+	 * Further note IE 6/7 has problems when calculating widths with border width.
+	 * It subtracts one px relative to the other browsers from the first column, and
+	 * adds one to the end...
+	 *
+	 * If you want that effect I'd suggest setting a border-top/left on th/td's and 
+	 * then filling in the gaps with other borders.
+	 */
+}
+
+    table.display thead th {
+        padding: 3px 18px 3px 10px;
+        border-bottom: 1px solid black;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    table.display tfoot th {
+        padding: 3px 18px 3px 10px;
+        border-top: 1px solid black;
+        font-weight: bold;
+    }
+
+    table.display tr.heading2 td {
+        border-bottom: 1px solid #aaa;
+    }
+
+    table.display td {
+        padding: 3px 10px;
+    }
+
+        table.display td.center {
+            text-align: center;
+        }
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+.sorting_asc {
+    background: url('../images/sort_asc.png') no-repeat center right;
+}
+
+.sorting_desc {
+    background: url('../images/sort_desc.png') no-repeat center right;
+}
+
+.sorting {
+    background: url('../images/sort_both.png') no-repeat center right;
+}
+
+.sorting_asc_disabled {
+    background: url('../images/sort_asc_disabled.png') no-repeat center right;
+}
+
+.sorting_desc_disabled {
+    background: url('../images/sort_desc_disabled.png') no-repeat center right;
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+table.display tr.odd.gradeA {
+    background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+    background-color: #eeffee;
+}
+
+table.display tr.odd.gradeA {
+    background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+    background-color: #eeffee;
+}
+
+table.display tr.odd.gradeC {
+    background-color: #ddddff;
+}
+
+table.display tr.even.gradeC {
+    background-color: #eeeeff;
+}
+
+table.display tr.odd.gradeX {
+    background-color: #ffdddd;
+}
+
+table.display tr.even.gradeX {
+    background-color: #ffeeee;
+}
+
+table.display tr.odd.gradeU {
+    background-color: #ddd;
+}
+
+table.display tr.even.gradeU {
+    background-color: #eee;
+}
+
+tr.odd {
+    background-color: #E2E4FF;
+}
+
+tr.even {
+    background-color: white;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.dataTables_scroll {
+    clear: both;
+}
+
+.top, .bottom {
+    padding: 15px;
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+}
+
+    .top .dataTables_info {
+        float: none;
+    }
+
+.clear {
+    clear: both;
+}
+
+.dataTables_empty {
+    text-align: center;
+}
+
+tfoot input {
+    margin: 0.5em 0;
+    width: 100%;
+    color: #444;
+}
+
+    tfoot input.search_init {
+        color: #999;
+    }
+
+td.group {
+    background-color: #d1cfd0;
+    border-bottom: 2px solid #A19B9E;
+    border-top: 2px solid #A19B9E;
+}
+
+td.details {
+    background-color: #d1cfd0;
+    border: 2px solid #A19B9E;
+}
+
+
+.example_alt_pagination div.dataTables_info {
+    width: 40%;
+}
+
+.paging_full_numbers {
+    width: 400px;
+    height: 22px;
+    line-height: 22px;
+}
+
+    .paging_full_numbers span.paginate_button,
+    .paging_full_numbers span.paginate_active {
+        border: 1px solid #aaa;
+        padding: 2px 5px;
+        margin: 0 3px;
+        cursor: pointer;
+    }
+
+    .paging_full_numbers span.paginate_button {
+        background-color: #ddd;
+    }
+
+        .paging_full_numbers span.paginate_button:hover {
+            background-color: #ccc;
+        }
+
+    .paging_full_numbers span.paginate_active {
+        background-color: #99B3FF;
+    }
+
+table.display tr.even.row_selected td {
+    background-color: #B0BED9;
+}
+
+table.display tr.odd.row_selected td {
+    background-color: #9FAFD1;
+}
+
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+tr.odd td.sorting_1 {
+    background-color: #D3D6FF;
+}
+
+tr.odd td.sorting_2 {
+    background-color: #DADCFF;
+}
+
+tr.odd td.sorting_3 {
+    background-color: #E0E2FF;
+}
+
+tr.even td.sorting_1 {
+    background-color: #EAEBFF;
+}
+
+tr.even td.sorting_2 {
+    background-color: #F2F3FF;
+}
+
+tr.even td.sorting_3 {
+    background-color: #F9F9FF;
+}
+
+
+/* For the Conditional-CSS grading rows */
+/*
+ 	Colour calculations (based off the main row colours)
+  Level 1:
+		dd > c4
+		ee > d5
+	Level 2:
+	  dd > d1
+	  ee > e2
+ */
+tr.odd.gradeA td.sorting_1 {
+    background-color: #c4ffc4;
+}
+
+tr.odd.gradeA td.sorting_2 {
+    background-color: #d1ffd1;
+}
+
+tr.odd.gradeA td.sorting_3 {
+    background-color: #d1ffd1;
+}
+
+tr.even.gradeA td.sorting_1 {
+    background-color: #d5ffd5;
+}
+
+tr.even.gradeA td.sorting_2 {
+    background-color: #e2ffe2;
+}
+
+tr.even.gradeA td.sorting_3 {
+    background-color: #e2ffe2;
+}
+
+tr.odd.gradeC td.sorting_1 {
+    background-color: #c4c4ff;
+}
+
+tr.odd.gradeC td.sorting_2 {
+    background-color: #d1d1ff;
+}
+
+tr.odd.gradeC td.sorting_3 {
+    background-color: #d1d1ff;
+}
+
+tr.even.gradeC td.sorting_1 {
+    background-color: #d5d5ff;
+}
+
+tr.even.gradeC td.sorting_2 {
+    background-color: #e2e2ff;
+}
+
+tr.even.gradeC td.sorting_3 {
+    background-color: #e2e2ff;
+}
+
+tr.odd.gradeX td.sorting_1 {
+    background-color: #ffc4c4;
+}
+
+tr.odd.gradeX td.sorting_2 {
+    background-color: #ffd1d1;
+}
+
+tr.odd.gradeX td.sorting_3 {
+    background-color: #ffd1d1;
+}
+
+tr.even.gradeX td.sorting_1 {
+    background-color: #ffd5d5;
+}
+
+tr.even.gradeX td.sorting_2 {
+    background-color: #ffe2e2;
+}
+
+tr.even.gradeX td.sorting_3 {
+    background-color: #ffe2e2;
+}
+
+tr.odd.gradeU td.sorting_1 {
+    background-color: #c4c4c4;
+}
+
+tr.odd.gradeU td.sorting_2 {
+    background-color: #d1d1d1;
+}
+
+tr.odd.gradeU td.sorting_3 {
+    background-color: #d1d1d1;
+}
+
+tr.even.gradeU td.sorting_1 {
+    background-color: #d5d5d5;
+}
+
+tr.even.gradeU td.sorting_2 {
+    background-color: #e2e2e2;
+}
+
+tr.even.gradeU td.sorting_3 {
+    background-color: #e2e2e2;
+}
+
+
+/*
+ * Row highlighting example
+ */
+.ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted {
+    background-color: #ECFFB3;
+}
+
+.ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
+    background-color: #E6FF99;
+}
+
+.ex_highlight_row #example tr.even:hover {
+    background-color: #ECFFB3;
+}
+
+    .ex_highlight_row #example tr.even:hover td.sorting_1 {
+        background-color: #DDFF75;
+    }
+
+    .ex_highlight_row #example tr.even:hover td.sorting_2 {
+        background-color: #E7FF9E;
+    }
+
+    .ex_highlight_row #example tr.even:hover td.sorting_3 {
+        background-color: #E2FF89;
+    }
+
+.ex_highlight_row #example tr.odd:hover {
+    background-color: #E6FF99;
+}
+
+    .ex_highlight_row #example tr.odd:hover td.sorting_1 {
+        background-color: #D6FF5C;
+    }
+
+    .ex_highlight_row #example tr.odd:hover td.sorting_2 {
+        background-color: #E0FF84;
+    }
+
+    .ex_highlight_row #example tr.odd:hover td.sorting_3 {
+        background-color: #DBFF70;
+    }
+
+
+/*
+ * KeyTable
+ */
+table.KeyTable td {
+    border: 3px solid transparent;
+}
+
+    table.KeyTable td.focus {
+        border: 3px solid #3366FF;
+    }
+
+table.display tr.gradeA {
+    background-color: #eeffee;
+}
+
+table.display tr.gradeC {
+    background-color: #ddddff;
+}
+
+table.display tr.gradeX {
+    background-color: #ffdddd;
+}
+
+table.display tr.gradeU {
+    background-color: #ddd;
+}
+
+div.box {
+    height: 100px;
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid #8080FF;
+    background-color: #E5E5FF;
+}
+
+
+/****** tabs planes *********/
+ul.tabs {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+
+    ul.tabs li {
+        top: 0;
+        float: left;
+        margin: 0 5px 0 0;
+        padding: 5px;
+        border: 0;
+        overflow: hidden;
+        position: relative;
+        border-left: 1px solid #CCC;
+        border-right: 1px solid #CCC;
+        border-bottom: 0;
+        border-top: 1px solid #CCC;
+        background: #F1F1F1;
+    }
+
+        ul.tabs li a {
+            text-decoration: none;
+            color: #000;
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 0;
+            border: 0;
+            outline: none;
+        }
+
+        ul.tabs li.active {
+            border-left: 1px solid #004590;
+            border-right: 1px solid #004590;
+            border-bottom: 0;
+            border-top: 1px solid #004590;
+            background: #FFF;
+        }
+
+            ul.tabs li.active a {
+                color: #036;
+            }
+
+.tab_container {
+    /* @alternate */
+    border: 0;
+    overflow: hidden;
+    clear: both;
+    float: left;
+    width: 100%;
+    background: #fff;
+    /* @alternate */
+    border: 1px solid #004590;
+}
+
+.tab_content {
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Secciones Informativas */
+.fotoInformativa {
+    float: left;
+    position: relative;
+    width: 950px;
+    margin: 0 0 10px 0;
+}
+
+    .fotoInformativa img {
+        width: 950px;
+        height: 235px;
+    }
+
+.menuDetalle {
+    float: left;
+    position: relative;
+    width: 200px;
+    margin: 0 10px 0 0;
+}
+
+.items {
+    float: left;
+    position: relative;
+    width: 200px;
+    margin: 0 0 3px 0;
+}
+
+    .items .boton {
+        font-size: 14px;
+        font-weight: bold;
+        color: #106DA2;
+        text-decoration: none;
+        width: 200px;
+        height: 40px;
+        border: 0;
+        cursor: pointer;
+        text-align: left;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/items.gif) no-repeat;
+    }
+
+        .items .boton:hover {
+            font-size: 14px;
+            font-weight: bold;
+            color: #FFF;
+            text-decoration: none;
+            width: 200px;
+            height: 40px;
+            border: 0;
+            cursor: pointer;
+            text-align: left;
+            background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/itemsOn.gif) no-repeat;
+        }
+
+    .items .botonActivo {
+        font-size: 14px;
+        font-weight: bold;
+        color: #FFF;
+        text-decoration: none;
+        width: 200px;
+        height: 40px;
+        border: 0;
+        cursor: pointer;
+        text-align: left;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/itemsOn.gif) no-repeat;
+    }
+
+.contenidoMenuDetalle {
+    float: left;
+    position: relative;
+    width: 720px;
+}
+
+    .contenidoMenuDetalle ul {
+        list-style: disc;
+        padding: 0 0 0 15px;
+    }
+
+    .contenidoMenuDetalle ol {
+        list-style: decimal;
+        padding: 0 0 0 15px;
+    }
+
+.tituloSecciones {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+}
+
+.imagenQuienes {
+    float: left;
+    position: relative;
+    width: 270px;
+}
+
+    .imagenQuienes img {
+        width: 260px;
+        height: 175px;
+    }
+
+.imagenSubdetalle {
+    float: left;
+    position: relative;
+    width: 270px;
+}
+
+    .imagenSubdetalle img {
+        width: 260px;
+        height: 175px;
+    }
+
+/* Ofertas Destinos */
+.panelOfertas {
+    width: 460px;
+    float: left;
+    position: relative;
+    margin: 0 5px 10px 5px;
+}
+
+    .panelOfertas .tituloResultados {
+        position: relative;
+        float: left;
+        width: 320px;
+        height: 22px;
+        padding: 5px;
+        background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 320px 0;
+        color: #FFF;
+        margin: 0 0 7px 7px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+        .panelOfertas .tituloResultados a {
+            color: #FFF;
+            text-decoration: none;
+        }
+
+    .panelOfertas .contenidoResultado {
+        position: relative;
+        float: left;
+        width: 450px;
+        padding: 5px;
+    }
+
+        .panelOfertas .contenidoResultado .imagenOferta {
+            float: left;
+            position: relative;
+            width: 165px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .panelOfertas .contenidoResultado .descripcionOferta {
+            float: left;
+            position: relative;
+            font-size: 12px;
+            width: 280px;
+            height: 46px;
+            overflow: hidden;
+        }
+
+        .panelOfertas .contenidoResultado .imagenOfertaPlan {
+            float: left;
+            position: relative;
+            width: 280px;
+            text-align: center;
+            display: none;
+        }
+
+        .panelOfertas .contenidoResultado .precioOferta1 {
+            float: left;
+            position: relative;
+            width: 172px;
+            padding: 5px;
+            color: #F90;
+            margin-right: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            border: solid 1px #CCC;
+        }
+
+        .panelOfertas .contenidoResultado .precioOferta2 {
+            float: left;
+            position: relative;
+            width: 90px;
+            padding: 25px 0 0 0;
+            height: 70px;
+            color: #FFF;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/fondoValor.png) no-repeat;
+        }
+
+        .panelOfertas .contenidoResultado .precioOferta {
+            float: left;
+            position: relative;
+            /* @alternate */
+            font-weight: bold;
+            width: 280px;
+            color: #390;
+            font-size: 15px;
+            /* @alternate */
+            font-weight: bold;
+            text-align: center;
+        }
+
+    .panelOfertas .contenidoResultados .verDetalleOferta {
+        float: right;
+        position: relative;
+        margin: 10px 5px 0 0;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boton2.png) no-repeat;
+        width: 100px;
+        height: 24px;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px 0 0 5px;
+    }
+
+        .panelOfertas .contenidoResultados .verDetalleOferta a {
+            color: #000;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 3px;
+            font-weight: bold;
+        }
+
+    .panelOfertas .pieResultados {
+        position: relative;
+        float: left;
+        width: 460px;
+        height: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/piePlanes2.gif) no-repeat;
+    }
+
+/* Boletin */
+.boletin {
+    float: left;
+    position: relative;
+    width: 360px;
+    padding: 5px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/boletin.jpg) no-repeat;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+    .boletin .texto {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+/* Comentarios */
+.comentarios {
+    float: left;
+    position: relative;
+    width: 305px;
+    padding: 0;
+    margin: 0 5px 5px 5px;
+}
+
+    .comentarios .tituloComentarios {
+        position: relative;
+        float: left;
+        width: 200px;
+        height: 22px;
+        padding: 5px;
+        background: #390 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde2.gif) no-repeat 200px 0;
+        color: #FFF;
+        margin: 0 0 0 7px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .comentarios .contenidoComentarios {
+        position: relative;
+        float: left;
+        width: 295px;
+        padding: 5px;
+    }
+
+        .comentarios .contenidoComentarios .textoComentarios {
+            position: relative;
+            float: left;
+            width: 295px;
+            height: 47px;
+            overflow: hidden;
+        }
+
+        .comentarios .contenidoComentarios a.verMas {
+            color: #004590;
+        }
+
+    .comentarios .pieComentarios {
+        position: relative;
+        float: left;
+        width: 305px;
+        height: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieComentario.gif) no-repeat;
+    }
+
+
+/* Trenes */
+.panelBuscadorTrenes {
+    width: 310px;
+    padding: 5px;
+    background: #004590;
+    overflow: hidden;
+}
+
+.styleCama {
+    height: 16px;
+    width: 16px;
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/cama.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.styleGuest {
+    height: 16px;
+    width: 16px;
+    background-image: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/adulto.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#trenes {
+    width: 310px;
+    padding: 0;
+    float: left;
+    position: relative;
+    background: #004590;
+}
+
+    #trenes #wrapper {
+        width: 310px;
+        padding: 0;
+        float: left;
+        position: relative;
+    }
+
+    #trenes .railengine {
+        float: left;
+        position: relative;
+        padding: 0;
+    }
+
+    #trenes .railenginecontent {
+        float: left;
+        position: relative;
+        padding: 0;
+    }
+
+    #trenes #ptpsearch {
+        width: 310px;
+        padding: 0;
+        color: #FFF;
+        height: 280px;
+        font-family: Verdana;
+    }
+
+        #trenes #ptpsearch h2 {
+            display: none;
+        }
+
+        #trenes #ptpsearch .ptpsearchform-from2 {
+            float: left;
+            position: relative;
+            width: 310px;
+            margin-bottom: 5px;
+        }
+
+            #trenes #ptpsearch .ptpsearchform-from2 input {
+                width: 95%;
+            }
+
+        #trenes #ptpsearch .ptpsearchform-to2 {
+            float: left;
+            position: relative;
+            width: 310px;
+            margin-bottom: 5px;
+        }
+
+            #trenes #ptpsearch .ptpsearchform-to2 input {
+                width: 95%;
+            }
+
+        #trenes #ptpsearch .ptptsearchform-from {
+            float: left;
+            position: relative;
+            width: 310px;
+            margin-bottom: 5px;
+        }
+
+        #trenes #ptpsearch .ptpsearchform-to {
+            float: left;
+            position: relative;
+            width: 310px;
+            margin-bottom: 5px;
+        }
+
+            #trenes #ptpsearch .ptpsearchform-to input.hasDatepicker {
+                width: 37%;
+            }
+
+        #trenes #ptpsearch .ptpsearchform-passengers {
+            float: left;
+            position: relative;
+            width: 310px;
+            margin-bottom: 5px;
+        }
+
+            #trenes #ptpsearch .ptpsearchform-passengers label {
+                float: left;
+                width: auto;
+                padding-right: 20px;
+            }
+
+        #trenes #ptpsearch .ptpsearchform-extraOptions {
+            float: right;
+            width: 310px;
+            margin-bottom: 5px;
+        }
+
+            #trenes #ptpsearch .ptpsearchform-extraOptions ul {
+                float: left;
+                width: 155px;
+                margin: 0;
+            }
+
+                #trenes #ptpsearch .ptpsearchform-extraOptions ul a {
+                    color: #FFF;
+                }
+
+            #trenes #ptpsearch .ptpsearchform-extraOptions .check {
+                float: right;
+                margin-right: 5px;
+            }
+
+        #trenes #ptpsearch .ptpsearchform-list {
+            float: left;
+            width: 100px;
+        }
+
+            #trenes #ptpsearch .ptpsearchform-list div {
+                float: left;
+                width: 50px;
+            }
+
+            #trenes #ptpsearch .ptpsearchform-list input {
+                float: left;
+                width: 25px;
+                margin-right: 10px;
+            }
+
+    #trenes #ptpsearchform-search {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #trenes #ptpsearch .ure-button {
+        background: #390;
+        border: solid 1px #FFF;
+        font-size: 12px;
+        font-weight: bold;
+        width: 100px;
+        color: #FFF;
+        padding: 3px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #trenes a {
+        color: #FFF;
+    }
+
+    #trenes #passsearch {
+        display: none;
+    }
+
+    #trenes #ptpsearchform {
+        position: relative;
+        padding: 0;
+    }
+
+        #trenes #ptpsearchform label {
+            font-weight: bold;
+        }
+
+    #trenes input#ptpsearchform-origincityname,
+    #trenes input#ptpsearchform-destinationcityname {
+        width: 310px;
+    }
+
+    #trenes .ptptsearchform-from a,
+    #trenes .ptpsearchform-to a {
+        vertical-align: middle;
+    }
+
+    #trenes .ptpsearchform-disabled {
+    }
+
+    #trenes #nationalSoon {
+        display: none;
+        padding: 15px;
+        font-style: italic;
+    }
+
+#ptpresult {
+    float: left;
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+    #ptpresult h2 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #004590;
+    }
+
+    #ptpresult .ptpresult-searchcriteria {
+        width: 100%;
+    }
+
+    #ptpresult h3.ptpresult-summary-title {
+        font-size: 12px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    #ptpresult #ptpresult-earliertrains-solutionsset-nexttrains {
+        float: left;
+        position: relative;
+        padding: 0;
+        width: 930px;
+    }
+
+        #ptpresult #ptpresult-earliertrains-solutionsset-nexttrains .ptpresult-solutionsset {
+            width: 100%;
+        }
+
+    #ptpresult .ptpresult-solutions {
+        float: left;
+        position: relative;
+        padding: 0;
+        width: 930px;
+    }
+
+        #ptpresult .ptpresult-solutions .ptpresult-solution {
+            float: left;
+            position: relative;
+            padding: 5px 0;
+            width: 930px;
+            margin-bottom: 10px;
+            border-bottom: dotted 1px #CCC;
+        }
+
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-details {
+                width: 930px;
+            }
+
+                #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-details th.ptpresult-solution-title {
+                    width: 920px;
+                    padding: 5px;
+                    background: #004590;
+                    color: #FFF;
+                }
+
+            /* Fila 1 Resultados "Flexi 2" */
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages {
+                width: 930px;
+            }
+
+                #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-package-keyword {
+                    font-weight: bold;
+                    width: 100px;
+                }
+
+                #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-package-flexible-second {
+                    width: 250px;
+                }
+
+                #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-faredetails {
+                    width: 350px;
+                }
+
+                #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-flexible-second-button {
+                    width: 220px;
+                    text-align: right;
+                }
+
+                #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-other-second-button {
+                    width: 220px;
+                    text-align: right;
+                }
+
+                #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .thickbox {
+                    background: #390;
+                    border: 0;
+                    color: #FFF;
+                    padding: 4px;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+
+            /* Fila 2 Resultados "Condiciones" */
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-farerules {
+                width: 930px;
+                background: #F1F1F1;
+            }
+
+            /* Fila 3 Resultados "Best 1" */
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-package-best-first {
+                width: 250px;
+            }
+
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-best-first-button {
+                width: 220px;
+                text-align: right;
+            }
+
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-other-first-button {
+                width: 220px;
+                text-align: right;
+            }
+
+            /* Fila 3 Resultados "Best 2" */
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-package-best-first {
+                width: 250px;
+            }
+
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-best-second-button {
+                width: 220px;
+                text-align: right;
+            }
+
+            /* Fila 4 Resultados "Flexi 1" */
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-package-flexible-first {
+                width: 250px;
+            }
+
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-flexible-first-button {
+                width: 220px;
+                text-align: right;
+            }
+
+            /* Fila 4 Resultados "Business" */
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-package-best-business {
+                width: 250px;
+            }
+
+            #ptpresult .ptpresult-solutions .ptpresult-solution .ptpresult-packages .ptpresult-best-business-button {
+                width: 220px;
+                text-align: right;
+            }
+
+
+
+/*DetalleOfertasAereas*/
+
+.panelOfertasAereas {
+    float: left;
+    width: 540px;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.bordeDerechotituloResultados {
+    float: left;
+    width: 10px;
+    height: 32px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/bordeIzq.gif);
+}
+
+.bordeIzquierdotituloResultados {
+    float: left;
+    width: 10px;
+    height: 32px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/bordeDere.gif);
+}
+
+.tituloResultados {
+    /* @alternate */
+    float: left;
+    width: 400px;
+    height: 32px;
+    background: #004590;
+    color: #FFFFFF;
+    /* @alternate */
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.imagenOfertaAerea {
+    float: left;
+    height: 180px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.tituloOfertaAerea {
+    float: left;
+    font-size: 14px;
+    margin: 10px 0;
+    overflow: hidden;
+    width: 290px;
+}
+
+.precioPromociones {
+    margin: 0 0 10px 0;
+    float: left;
+    width: 300px;
+    font-size: 18px;
+    color: #1064be;
+}
+
+.indicacionOfertaAerea {
+    font-weight: normal;
+    font-size: 10px;
+    padding-right: 20px;
+}
+
+.panelIzquierdoOfertasAereas {
+    float: left;
+    width: 370px;
+    margin-right: 10px;
+}
+
+.ofertasAereas {
+    float: left;
+}
+
+.ofertasAereasIndex {
+    float: left;
+    width: 320px;
+    margin-left: 30px;
+}
+
+.subTitulosOfertasAereas {
+    float: left;
+    width: 350px;
+    height: 20px;
+    margin-left: 30px;
+}
+
+.subtitulo1 {
+    float: left;
+    width: 200px;
+    height: 20px;
+    font-weight: bolder;
+    color: green;
+}
+
+.subtitulo2 {
+    float: left;
+    width: 100px;
+    height: 20px;
+    margin-left: 30px;
+    font-weight: bolder;
+    color: green;
+}
+
+.descripcionOfertaAerea {
+    float: left;
+    width: 95%;
+    padding: 0 10px 0 10px;
+}
+
+.imagenPlanesLeftBottom {
+    width: 280px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+}
+
+    .imagenPlanesLeftBottom img {
+        width: 280px;
+        height: 197px;
+    }
+
+.fomularioReservaGeneral {
+    float: left;
+    padding: 5px 10px;
+}
+
+#globos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+}
+
+/* Estilos pop up Boletin */
+
+/* Boletin */
+.boletin {
+    float: left;
+    position: relative;
+    width: 470px;
+    height: 236px;
+}
+
+    .boletin .texto {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+.botonPopUp {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/btnEnviarCotizarAmarillo.png) no-repeat;
+    border: 0;
+    color: #000;
+    width: 162px;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-right: 30px;
+}
+/*--Panel B�squeda--*/
+.panelBuscar {
+    float: right;
+    height: 30px;
+    width: 300px;
+    margin-right: 18px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.cse .gsc-control-cse, .gsc-control-cse {
+    padding: 5px !important;
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border: 0px solid #0A6694 !important;
+}
+
+.cse input.gsc-search-button, input.gsc-search-button {
+    background-color: #09628D !important;
+    color: #fff !important;
+    margin-left: 5px !important;
+}
+
+.botonEnviarCotizarAmarillo2 {
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/btnEnviarCotizarAmarillo2.png) no-repeat;
+    border: 0;
+    color: #000;
+    width: 190px;
+    height: 29px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contenidoBuscadorPeque�o {
+    padding: 5px;
+    overflow: hidden;
+    color: #FFF;
+    background: #137FC0;
+}
+
+.panelBuscadorPequeno {
+    position: relative;
+    float: left;
+    width: 310px;
+    margin: 0 10px 0 0;
+}
+
+/* panel ofertas aereas seccion vuelos  */
+.ofertasPlanesVuelos {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 640px;
+    margin-left: 10px;
+    background: #FFF;
+    margin-top: -48px;
+}
+
+    .ofertasPlanesVuelos .contenidoResultados {
+        padding: 0;
+        overflow: hidden;
+        font-size: 14px;
+    }
+
+    .ofertasPlanesVuelos .tituloResultados {
+        position: relative;
+        float: left;
+        width: 300px;
+        height: 22px;
+        padding: 5px;
+        background: #F60 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde3.gif) no-repeat 300px 0;
+        color: #FFF;
+        margin: 0 0 5px 7px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .ofertasPlanesVuelos .contenidosPlanes {
+        float: left;
+        position: relative;
+        width: 640px;
+        padding: 0 0 10px 0;
+        font-size: 12px;
+    }
+
+    .ofertasPlanesVuelos .pieResultados {
+        position: relative;
+        float: left;
+        width: 640px;
+        height: 10px;
+        margin-bottom: 10px;
+        background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieOfertasPlanesVuelos.gif) no-repeat;
+    }
+
+.repetidorOfertasAereas tr {
+    float: left;
+    border-spacing: 0px;
+}
+
+.repetidorOfertasAereas td {
+    float: left;
+    width: 318px;
+    border-spacing: 0px;
+}
+
+.contenedorBuscadorPequenoVuelos {
+    float: left;
+    width: 320px;
+}
+
+.contenedorBuscadorMedianoVuelos {
+    float: left;
+    width: 410px;
+}
+
+
+.panelBuscadorMediano {
+    position: relative;
+    float: left;
+    width: 410px;
+}
+
+
+/***************** Estilos BFM *******************/
+.resultadoVuelosBFM .panelIzquierdo {
+    float: left;
+    width: 240px;
+    margin-right: 6px;
+}
+
+.resultadoVuelosBFM .resultados {
+    position: relative;
+    padding: 0;
+    float: left;
+    width: 690px;
+    text-align: left;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+}
+
+.resultadoVuelosBFM .tituloResultados {
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 22px;
+    padding: 5px;
+    background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 340px 0;
+    color: #FFF;
+    margin: 0 0 0 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.resultadoVuelosBFM .resultados .trayecto {
+    position: relative;
+    float: right;
+    width: 630px;
+    padding: 10px 30px;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.resultadoVuelosBFM .resumenVuelos {
+    float: left;
+    position: relative;
+    width: 630px;
+    font-size: 11px;
+    color: #5a5a5a;
+    padding: 10px 30px;
+    border: 0;
+}
+
+.resultadoVuelosBFM #content-slider {
+    width: 490px;
+    height: 6px;
+    margin: 5px;
+    background: #BBBBBB;
+    position: relative;
+    display: none;
+}
+
+.resultadoVuelosBFM .resultados .tituloFiltros {
+    float: left;
+    position: relative;
+    width: 87px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+
+.resultadoVuelosBFM .resultados div.aerolinea {
+    height: 46px;
+    padding: 2px;
+    width: 81px;
+    border: solid 1px #313131;
+    float: left;
+}
+
+.resultadoVuelosBFM .resultados div.directo {
+    height: 22px;
+    width: 81px;
+    padding: 2px;
+    border: solid 1px #313131;
+    float: left;
+}
+
+.resultadoVuelosBFM .resultados div.parada1 {
+    background: #fff;
+    height: 22px;
+    width: 81px;
+    padding: 2px;
+    border: solid 1px #313131;
+    float: left;
+}
+
+.resultadoVuelosBFM .resultados div.parada2 {
+    height: 22px;
+    width: 81px;
+    padding: 2px;
+    border: solid 1px #313131;
+    float: left;
+}
+
+.resultadoVuelosBFM #content-scroll {
+    width: 500px;
+    height: 140px;
+    overflow: auto;
+}
+
+.resultadoVuelosBFM .resultados .contenidoFiltros {
+    float: left;
+    position: relative;
+    height: 136px;
+    overflow: auto;
+}
+
+    .resultadoVuelosBFM .resultados .contenidoFiltros .columnaAerolinea {
+        float: left;
+        position: relative;
+        width: 87px;
+        min-height: 134px;
+        text-align: center;
+    }
+
+.resultadoVuelosBFM .resultados table {
+    border-color: #c5c5c5;
+    border-width: 1px;
+    color: #5A5A5A;
+}
+
+.resultadoVuelosBFM .vuelos {
+    float: left;
+    position: relative;
+    width: 675px;
+    padding: 10px 7px;
+}
+
+.resultadoVuelosBFM .detalleVuelo {
+    float: left;
+    position: relative;
+    width: 500px;
+    padding: 5px 0px;
+}
+
+.resultadoVuelosBFM .bold {
+    font-weight: bold;
+}
+
+.resultadoVuelosBFM .tarifasVuelo {
+    float: right;
+    position: relative;
+    width: 165px;
+    padding: 5px 0 10px 8px;
+    text-align: center;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/fondoTarifas.png) repeat-x;
+    border-left: 1px solid #CCC;
+}
+
+.resultadoVuelosBFM .valorTotalVuelo {
+    float: right;
+    position: relative;
+    width: 165px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.resultadoVuelosBFM .tituloValor {
+    font-size: 16px;
+    text-align: center;
+    color: #115a7b;
+    line-height: 22px;
+}
+
+.resultadoVuelosBFM .detalleTarifa {
+    float: left;
+    position: relative;
+    width: 155px;
+    padding: 5px;
+}
+
+    .resultadoVuelosBFM .detalleTarifa tr.tituloTarifa {
+        font-size: 11px;
+        font-weight: bold;
+        text-align: center;
+        color: #000;
+        padding-top: 10px;
+        float: left;
+        width: 100%;
+    }
+
+        .resultadoVuelosBFM .detalleTarifa tr.tituloTarifa td {
+            float: left;
+            width: 100%;
+        }
+
+    .resultadoVuelosBFM .detalleTarifa .toggle_container,
+    .reservaVuelosBFM .detalleTarifa .toggle_container {
+        padding: 5px 0;
+        border-bottom: 1px dashed #999;
+        overflow: hidden;
+        font-size: 11px;
+        font-family: "Trebuchet MS";
+        width: 155px;
+        color: #666;
+        background: none;
+        margin: 0;
+        text-align: center;
+        display: none;
+    }
+
+.resultadoVuelosBFM a.impuestosVuelos,
+.reservaVuelosBFM a.impuestosVuelos {
+    position: relative;
+    color: #186e9b;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 11px;
+    display: inline;
+    width: 150px;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.resultadoVuelosBFM .detalleTarifa span.valorTarifa,
+.reservaVuelosBFM .detalleTarifa span.valorTarifa {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #0000EE;
+}
+
+.resultadoVuelosBFM .GloboImp,
+.reservaVuelosBFM .GloboImp {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    /* @alternate */
+    padding: 5px 0 0 5px;
+    z-index: 10;
+    background: #137fc0;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border: 2px solid #fff;
+    /* @alternate */
+    padding: 5px;
+    font-size: 7pt;
+}
+
+.resultadoVuelosBFM a.impuestosVuelos div,
+.reservaVuelosBFM a.impuestosVuelos div {
+    display: none;
+}
+
+.resultadoVuelosBFM a.impuestosVuelos:hover div,
+.reservaVuelosBFM a.impuestosVuelos:hover div {
+    display: block;
+    position: absolute;
+    top: -174px;
+    left: -55px;
+    color: white;
+    text-decoration: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.resultadoVuelosBFM .labelDetalleImpuestos,
+.reservaVuelosBFM .labelDetalleImpuestos {
+    float: left;
+    width: 140px;
+    text-align: left;
+    color: #fff;
+    font-size: 9px;
+}
+
+.resultadoVuelosBFM .valorlDetalleImpuestos,
+.reservaVuelosBFM .valorlDetalleImpuestos {
+    float: left;
+    width: 100px;
+    text-align: left;
+    color: #fff;
+    font-size: 9px;
+}
+
+.resultadoVuelosBFM .plb,
+.resultadoVuelosBFM .prb,
+.resultadoVuelosBFM .ptb,
+.resultadoVuelosBFM .ptlc2,
+.resultadoVuelosBFM .ptrc,
+.resultadoVuelosBFM .ptlc,
+.reservaVuelosBFM .plb,
+.reservaVuelosBFM .prb,
+.reservaVuelosBFM .ptb,
+.reservaVuelosBFM .ptlc2,
+.reservaVuelosBFM .ptrc,
+.reservaVuelosBFM .ptlc {
+    float: left;
+}
+
+.pieResumenBFM {
+    position: relative;
+    float: left;
+    width: 690px;
+    height: 10px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieResumenBFM.gif) no-repeat;
+}
+
+.pieResultadosBFM {
+    position: relative;
+    float: left;
+    width: 690px;
+    height: 10px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieResultadosBFM.gif) no-repeat;
+    margin-bottom: 20px;
+}
+
+.resultadoVuelosBFM .panelDerechoBFM {
+    float: left;
+    width: 690px;
+}
+
+.resultadoVuelosBFM .titulosResumen {
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 22px;
+    padding: 5px;
+    background: #390 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde2.gif) no-repeat 340px 0;
+    color: #FFF;
+    margin: 0 0 5px 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.resultadoVuelosBFM .tituloResultados {
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 22px;
+    padding: 5px;
+    background: #004590 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde.gif) no-repeat 340px 0;
+    color: #FFF;
+    margin: 0 0 0 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.resultadoVuelosBFM input[type="text"] {
+    max-width: 90%;
+    margin: 0;
+}
+
+.resultadoVuelosBFM .alineacionDerecha span {
+    width: 100%;
+    text-align: center;
+    font-size: 8px;
+}
+
+.resultadoVuelosBFM #tablaDePasajeros span {
+    font-size: 8px;
+}
+
+.EncabezadoResultadosBFM {
+    position: relative;
+    float: left;
+    width: 690px;
+    height: 10px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/EncabezadoResultadosBFM.gif) no-repeat;
+    margin-bottom: -1px;
+}
+
+.pieFiltrosBFM {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 10px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/pieFiltrosBFM.gif) no-repeat;
+}
+
+.resultadoVuelosBFM .contenidoBuscador img {
+    width: 230px;
+}
+
+.filtroResultados {
+    float: left;
+    width: 240px;
+}
+
+.titulosResumenFiltos {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 22px;
+    padding: 5px;
+    background: #390 url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/borde2.gif) no-repeat 150px 0;
+    color: #FFF;
+    margin: 0 0 5px 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filtroResultadosLista {
+    float: left;
+    width: 220px;
+    padding: 10px;
+}
+
+.reservaResumen {
+    float: left;
+    width: 920px;
+    padding: 20px;
+}
+
+.reservaTarifas {
+    float: left;
+    width: 920px;
+    padding: 20px;
+    text-align: left;
+}
+
+.popup-content {
+    float: left;
+    width: 500px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+.agradecimientos {
+    float: left;
+    width: 860px;
+    height: 253px;
+    font-size: 14px;
+    margin: 10px 18px;
+    padding: 20px 40px;
+    background: url(http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/bgAgradecimientos.png);
+}
+
+.tituloAgradecimientos {
+    float: left;
+    color: #004080;
+    font-weight: bold;
+}
+
+    .tituloAgradecimientos p {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+    }
+
+.detalleAgradecimientos {
+    float: left;
+    color: #7f7f7f;
+}

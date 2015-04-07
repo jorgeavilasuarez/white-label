@@ -1,0 +1,1113 @@
+{namespace flights.template.results}
+
+/** 
+* dibuja los resultados de los vuelos
+*/
+{template .results}
+    <div class="{css ux-flights-results}">
+        <div class="{css ux-common-grid-row}">
+            <div class="{css ux-common-grid-col3} {css results-left-grid-row} {css filters}">
+            </div>
+            <div class="{css ux-common-grid-col9} {css results-content-container}">
+                <div class="{css results-content-wrapper} {css flights-results-content-wrapper}">
+
+                    <div class="{css clusters}">
+                        <div>
+                            <a class="{css guidesteps1} {css background-color} {css border-color} {css text-color}" href="javascript:void(0);">1 Resultados </a>
+                        </div>
+                        <div>
+                            <a class="{css guidesteps2}" href="javascript:void(0);">2 Solicitar </a>
+                        </div>
+                        <div>
+                            <a class="{css guidesteps3}" href="javascript:void(0);">3 Comprar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{/template}
+
+/**
+* @param filters The filters.
+* dibuja los filtros
+*/
+{template .filters}
+<div>
+    <div>
+        <a class="{css btnreturnsearch} {css background-color} {css border-color} {css text-color}" href="javascript:void(0);">Volver a buscar</a>
+    </div>
+    <div class="{css search}">
+    </div>
+    <div class="{css filters}">
+        <div class="{css ux-common-filters} {css ux-flights-filters} {css border-color}" style="">
+            <div style="display: none;" class="{css ux-common-filter-section} {css ux-flights-filter-airlines} {css ux-flights-order}">
+                <div class="{css order}" style="">
+                    <form class="{css order-form}">
+                        <ul>
+                            <li class="{css orderby}">
+                                <label for="orderby">
+                                    <span>Ordenar por</span>
+                                    <select name="orderby" id="orderby" class="{css flights-select}">
+                                        <option value="FARE_ASCENDING">Precio </option>
+                                        <option value="STOPSCOUNT_ASCENDING">Escalas </option>
+                                        <option value="TOTALFARE_ASCENDING" selected="">Precio final </option>
+                                        <option value="DURATION_ASCENDING">Duración </option>
+                                        <option value="PERSONAL_ASCENDING">Más Elegidos </option>
+                                    </select>
+                                </label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Aerolíneas</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css airlines-all}" style="">
+                            <label for="airlines-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="airlines-all" type="checkbox" disabled name="airlines" value="*" checked="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las aerolíneas</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.airLines)}</span>
+                            </label>
+                        </li>
+
+                        {foreach $airLine in $filters.airLines}
+                           
+                        <li class="{css item} {css airlines-LA}" style="">
+                            <label for="airlines-{$airLine.value}" class=" ">
+                                <input id="airlines-{$airLine.value}" type="checkbox" name="airlines" value="{$airLine.value}" enabled="" class="{$airLine}">
+                                <img src="http://search.technocloud.com.co/static/images/airline/{$airLine.value}.gif" title="Lan" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="{$airLine.value}">
+                                <span class="{css label}"></span>
+                                <span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$airLine.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+
+                   
+                    </ul>
+                    <div style="display: none;" class="{css unique-airline}">
+                        <div class="{css ux-common-filter-section} {css ux-flights-filter-sameairlines}">
+                            <div class="{css ux-common-filter-body}">
+                                <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                                    <li class="{css item}">
+                                        <label for="unique-airline" class="{css enabled}">
+                                            <input id="unique-airline" type="checkbox" name="unique-airline" value="TRUE"><span>Ida y vuelta por la misma aerolínea</span></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Precios</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css alliances-all}" style="">
+                            <label for="alliances-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="alliances-all" type="checkbox" name="amountCurrencys" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todos los precios</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.amountCurrencys)}</span></label>
+                        </li>
+                        {foreach $amountCurrency in $filters.amountCurrencys}
+                           
+                        <li class="{css item} {css alliances-ST}" style="">
+                            <label for="alliances-{$amountCurrency.value}" class="">
+                                <input id="alliances-{$amountCurrency.value}" type="checkbox" name="amountCurrencys" value="{$amountCurrency.value}" enabled="" class="{css ST}">
+                                <span class="{css label}">{$amountCurrency.value}</span><span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$amountCurrency.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-stops}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Escalas</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css stops-all}" style="">
+                            <label for="stops-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled selected} {css ux-common-filter-selected}">
+                                <input id="stops-all" type="checkbox" name="stops" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las escalas</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.stops)}</span></label>
+                        </li>
+                        {foreach $stop in $filters.stops}
+                           
+                        <li class="{css item} {css stops}-{$stop.value}" style="">
+                            <label for="stops-{$stop.value}" class="{css  ux-common-filter-disabled}">
+                                <input id="stops-{$stop.value}" type="checkbox" name="stops" value="{$stop.value}" class="{css NONE} {css ux-common-filter-disabled}">
+                                <span class="{css label}">{$stop.value}</span><span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$stop.count}</span></label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-originairports}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Aeropuertos de origen</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css airport-outbound-all}" style="">
+                            <label for="airport-outbound-all" class="{css ux-common-filter-all} {css ux-common-filter-disable} {css selected} {css ux-common-filter-selected}">
+                                <input id="airport-outbound-all" type="checkbox" name="departureAirports" value="*" checked="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todos los aeropuertos</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.departureAirports)}</span>
+                            </label>
+                        </li>
+
+                        {foreach $departureAirport in $filters.departureAirports}
+                           
+                        <li class="{css item} {css airport-outbound}" style="">
+                            <label for="airport-outbound-{$departureAirport.id}" class="">
+                                <input id="airport-outbound-{$departureAirport.id}" type="checkbox" name="departureAirports" value="{$departureAirport.id}" enabled="" class="{css BOG}">
+                                <span class="{css label}">{$departureAirport.label}</span>
+                                <span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$departureAirport.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                    <div style="display: none;" class="{css unique-airport}">
+                        <div class="{css ux-common-filter-section} {css ux-flights-filter-sameairports}">
+                            <div class="{css ux-common-filter-body}">
+                                <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                                    <li class="{css item}">
+                                        <label for="unique-airport" class="{css enabled}">
+                                            <input id="unique-airport" type="checkbox" name="departureAirports" value="TRUE">
+                                            <span>Partida y regreso por el mismo aeropuerto</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-destinyairports}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Aeropuertos de destino</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css airport-inbound-all}" style="">
+                            <label for="airport-inbound-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="airport-inbound-all" type="checkbox" name="arrivalAirPorts" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todos los aeropuertos</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.arrivalAirPorts)}</span></label>
+                        </li>
+                        {foreach $arrivalAirPort in $filters.arrivalAirPorts}
+                           
+                        <li class="{css item} {css airport-inbound-BSB}" style="">
+                            <label for="airport-inbound-{$arrivalAirPort.id}" class="">
+                                <input id="airport-inbound-{$arrivalAirPort.id}" type="checkbox" name="arrivalAirPorts" value="{$arrivalAirPort.id}" enabled="" class="{css BSB}">
+                                <span class="{css label}">{$arrivalAirPort.label}</span>
+                                <span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$arrivalAirPort.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Hora llegada</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css alliances-all}" style="">
+                            <label for="arrivalTime-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="arrivalTime-all" type="checkbox" name="arrivalTimes" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las horas</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.arrivalTimes)}</span>
+                            </label>
+                        </li>
+                        {foreach $arrivalTime in $filters.arrivalTimes}
+                           
+                        <li class="{css item} {css alliances-ST}" style="">
+                            <label for="arrivalTime-{$arrivalTime.value}" class="">
+                                <input id="arrivalTime-{$arrivalTime.value}" type="checkbox" name="arrivalTimes" value="{$arrivalTime.value}" enabled="" class="{css ST}">
+                                <span class="{css label}">{$arrivalTime.value}</span><span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$arrivalTime.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Hora salida</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css alliances-all}" style="">
+                            <label for="departureTimes-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="departureTimes-all" type="checkbox" name="departureTimes" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las horas</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.departureTimes)}</span>
+                            </label>
+                        </li>
+                        {foreach $departureTime in $filters.departureTimes}
+                           
+                        <li class="{css item} {css alliances-ST}" style="">
+                            <label for="alliances-{$departureTime.value}" class="">
+                                <input id="alliances-{$departureTime.value}" type="checkbox" name="departureTimes" value="{$departureTime.value}" enabled="" class="{css ST}">
+                                <span class="{css label}">{$departureTime.value}</span><span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$departureTime.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Duración</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css alliances-all}" style="">
+                            <label for="estimatedTime-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="estimatedTime-all" type="checkbox" name="estimatedTimes" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las duraciones</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color}">{length($filters.estimatedTimes)}</span></label>
+                        </li>
+                        {foreach $estimatedTime in $filters.estimatedTimes}
+                           
+                        <li class="{css item} {css alliances-ST}" style="">
+                            <label for="estimatedTime-{$estimatedTime.value}" class="">
+                                <input id="estimatedTime-{$estimatedTime.value}" type="checkbox" name="estimatedTimes" value="{$estimatedTime.value}" enabled="" class="{css ST}">
+                                <span class="{css label}">{$estimatedTime.value}</span>
+                                <span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total} {css text-color}">{$estimatedTime.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+/**
+* @param PricedItinerary The results.
+* dibuja un cluster
+*/
+{template .cluster}
+<div class="{css cluster} {css newCluster}">    
+    <div class="{css cluster-content} {css flights-cluster}">
+        <div class="{css fare-container}">
+            <div class="{css fare-detail}">
+                <div class="{css fare-detail-base}">
+                    <span class="{css fare-description}">{msg desc="Precio por adulto"}  
+                        Precio por adulto    
+                        {/msg}                        
+                    </span>
+                    <span class="{css fare}">
+                        <span class="{css price-currency} {css COP}" style="">
+                            <em><span class="{css currency} {css price-mask}">$</span>
+                                <span class="{css amount} {css price-amount}">{$PricedItinerary['AirItineraryPricingInfo'][0]['ItinTotalFare']['BaseFare']['Amount']}</span></em>
+                        </span>
+                    </span>
+                </div>
+                <ul class="{css fare-detail-items}">
+                    <li>
+                        <span class="{css item-detail}">1 Adulto</span>
+                        <span class="{css item-price}">
+                            <span class="{css price-currency} {css COP}" style="">
+                                <em>
+                                    <span class="{css currency} {css price-mask}">$</span>
+                                    <span class="{css amount} {css price-amount}">{$PricedItinerary['AirItineraryPricingInfo'][0]['ItinTotalFare']['BaseFare']['Amount']}</span>
+                                </em>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="{css taxes-price}">
+                        <span class="{css item-detail}">Imp. y tasas</span>
+                        <span class="{css item-price}">
+                            <span class="{css price-currency} {css COP}" style="">
+                                <em>
+                                    <span class="{css currency} {css price-mask}">$</span>
+                                    <span class="{css amount} {css price-amount}">{$PricedItinerary['AirItineraryPricingInfo'][0]['ItinTotalFare']['EquivFare']['Amount']}</span>
+                                </em>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="{css charges-price}">
+                        <span class="{css item-detail}">Cargos</span>
+                        <span class="{css item-price}">
+                            <span class="{css price-currency} {css COP}" style="">
+                                <em>
+                                    <span class="{css currency} {css price-mask}">$</span>
+                                    <span class="{css amount} {css price-amount}">{$PricedItinerary['AirItineraryPricingInfo'][0]['ItinTotalFare']['Taxes']['Tax'][0]['Amount']}</span>
+                                </em>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="{css fare-price}">
+                        <span class="{css item-detail}">Total</span>
+                        <span class="{css item-price}">
+                            <span class="{css price-currency} {css COP}" style="">
+                                <em>
+                                    <span class="{css currency} {css price-mask}">$</span>
+                                    <span class="{css amount} {css price-amount}">{$PricedItinerary['AirItineraryPricingInfo'][0]['ItinTotalFare']['TotalFare']['Amount']}</span>
+                                </em>
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <a href="javascript:void(0);" class="{css buy} {css btn-buy} {css flights-button} {css text-color}">
+                <span>Seleccionar</span>
+            </a>
+        </div>
+        <div class="{css itineraries}">
+            <div class="{css itineraries-container}">
+                <div class="{css sub-cluster} {css outbound}">
+
+                    <div class="{css item} {css data}">
+                        <span class="{css route-type}">
+                            <span class="{css route-info-item} {css type-icon}">
+                                <span class="{css main-sprite} {css icon-plane-outbound}"></span>
+                            </span>
+                            <span class="{css route-info-item} {css type}">
+                                <span>Ida</span>
+                            </span></span>
+                        <span class="{css route-info}">
+                            <span class="{css route-info-wrapper}">
+                                <span class="{css route}">
+                                    <span class="{css route-info-item} {css city-departure}">{$PricedItinerary['AirItinerary']['OriginDestinationOptions']['OriginDestinationOption'][0]['flightsegment'][0]['DepartureAirport']['LocationCode']},</span>
+                                    <span class="{css route-info-item} {css airport}">
+                                        <a>{$PricedItinerary['AirItinerary']['OriginDestinationOptions']['OriginDestinationOption'][0]['flightsegment'][0]['DepartureAirport']['LocationCode']}</a>
+                                    </span>
+                                    <span class="{css route-info-item} {css arrow}">
+                                        <span class="{css main-sprite} {css icon-arrow}"></span>
+                                    </span>
+                                    <span class="{css route-info-item} {css city-arrival}">{$PricedItinerary['AirItinerary']['OriginDestinationOptions']['OriginDestinationOption'][0]['flightsegment'][0]['ArrivalAirport']['LocationCode']},</span>
+                                    <span class="{css route-info-item} {css airport}">
+                                        <a>{$PricedItinerary['AirItinerary']['OriginDestinationOptions']['OriginDestinationOption'][0]['flightsegment'][0]['ArrivalAirport']['LocationCode']}</a>
+                                    </span>
+                                </span>
+                                <span class="{css route-info-item} {css date}">
+                                    <span>{$PricedItinerary['AirItinerary']['OriginDestinationOptions']['OriginDestinationOption'][0]['flightsegment'][0]['DepartureDateTime']}</span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+
+                    <ul class="{css itineraries-group} {css cluster-items-list}">
+                        {foreach $flightsegment in $PricedItinerary['AirItinerary']['OriginDestinationOptions']['OriginDestinationOption'][0]['flightsegment']}
+
+                           
+
+                        <li class="{css item}  {css itinerary} {css cluster-item}">
+                            <label for="1-outbound-{$PricedItinerary['SequenceNumber']}">
+                                <ul>
+                                    <li class="{css radio}">
+                                        <input type="radio" name="1-outbound" id="1-outbound-{$PricedItinerary['SequenceNumber']}"></li>
+                                    <li class="{css leave}">
+                                        <span class="{css hour-text}">Sale:</span>
+                                        <span class="{css hour}">{$flightsegment['DepartureDateTime']}</span></li>
+                                    <li class="{css route-arrow}">›</li>
+                                    <li class="{css arrive}">
+                                        <span class="{css hour-text}">Llega:</span>
+                                        <span class="{css hour}">{$flightsegment['ArrivalDateTime']}</span>
+                                    </li>
+                                    <li class="{css time}">
+                                        <span class="{css hour-text}">Duración:</span>
+                                        <span>{$flightsegment['ElapsedTime']}</span>
+                                    </li>
+                                    <li class="{css stops}">
+                                        <span class="{css hour-text}">Escalas:</span>
+                                        <span class="{css text}">{$flightsegment['StopQuantity']}</span>
+                                    </li>
+                                    <li class="{css airlines}">
+                                        <span class="{css airlines-container}">
+                                            <span class="{css airline-container}">
+                                                <span class="{css image} {css flights-title-tooltip}" data-title="{$flightsegment['OperatingAirline']['CompanyShortName']}">
+                                                    <img src="http://search.technocloud.com.co/static/images/airline/{$flightsegment['OperatingAirline']['Code']}.png" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="Avianca"></span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+/**
+* tabs
+*/
+{template .tabs}
+<div class="{css flights-tabs}" style="">
+    <div class="{css flights-tabs-contents}">
+        <div class="{css flights-tab-content}" style="display: block;">
+            <div id="matrix" class="{css matrix}">
+                <div class="{css matrix-filter}" style="display: none;"></div>
+                <div class="{css matrix-container}">
+                    <ul class="{css matrix-scales}">
+                        <li class="{css first} {css scales-container}">
+                            <div class="{css matrix-scales-summary}">
+                                <p>Resumen</p>
+                                <p>(precios finales)</p>
+                            </div>
+                            <div class="{css matrix-scales-review}">
+                            </div>
+                        </li>
+                        <li class="{css scale}">1 Escala</li>
+                        <li class="{css scale} {css last}">2 Escalas o más</li>
+                    </ul>
+                    <div class="{css matrix-airlines} {css  matrix-2}">
+                        <div class="{css matrix-airlines-responsive-container} {css matrix-airlines-responsive-container-2}">
+                            <div class="{css matrix-airlines-container} {css matrix-airlines-container-2}" style="left: 0px;">
+                                <ul class="{css matrix-airline} {css  matrix-airline-2} {css column-visible} {css  column-visible-first}">
+                                    <li class="{css first} {css head}">
+                                        <div class="{css airline-description}">
+                                            <div class="{css airline-description-container}">
+                                                <div class="{css airline-logo}">
+                                                    <img src="http://co.staticontent.com/img-versioned/1.23.39/common/airlines/25x25/CM.png" title="Copa" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.39/common/airlines/25x25/default.png'" alt="Copa"></div>
+                                                <div class="{css airline-name}"><span>Copa</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="{css review-summary}"><a href="#" class="{css review-description}">Excelente, 8.4 pts</a></div>
+                                    </li>
+                                    <li class="{css priceItem} {css  price} {css flights-title-tooltip}">
+                                        <span class="{css price-currency} {css  COP}" style="">
+                                            <em><span class="{css currency} {css  price-mask}">$</span>
+                                                <span class="{css amount} {css  price-amount}">2.575.688</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                    <li class="{css priceItem} {css price} {css price-best} {css last} {css flights-title-tooltip}">
+                                        <span class="{css price-currency} {css COP}" style="">
+                                            <em>
+                                                <span class="{css currency} {css price-mask}">$</span>
+                                                <span class="{css amount} {css price-amount}">1.365.832</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="{css matrix-airline} {css matrix-airline-2} {css column-visible} {css column-visible-last}">
+                                    <li class="{css first} {css head}">
+                                        <div class="{css airline-description}">
+                                            <div class="{css airline-description-container}">
+                                                <div class="{css airline-logo}">
+                                                    <img src="http://co.staticontent.com/img-versioned/1.23.39/common/airlines/25x25/LA.png" title="Lan" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.39/common/airlines/25x25/default.png'" alt="Lan">
+                                                </div>
+                                                <div class="{css airline-name}">
+                                                    <span>Lan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="{css review-summary}">
+                                            <a href="#" class="{css review-description}">Muy Bueno, 8.3 pts</a>
+                                        </div>
+                                    </li>
+                                    <li class="{css priceItem} {css price} {css price-best} {css flights-title-tooltip}">
+                                        <span class="{css price-currency} {css COP}" style="">
+                                            <em>
+                                                <span class="{css currency} {css price-mask}">$</span>
+                                                <span class="{css amount} {css price-amount}">2.033.968</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                    <li id="C_-1357939144" class="{css priceItem} {css price} {css last} {css flights-title-tooltip}">
+                                        <span class="{css price-} {css currency} {css COP}">
+                                            <em>
+                                                <span class="{css currency} {css price-mask}">$</span>
+                                                <span class="{css amount} {css price-amount}">2.008.654</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="{css matrix-prev}" style="display: none;">&lt;</span>
+                            <span class="{css matrix-next}" style="display: none;">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+
+/**
+* @param tcAirSearchRSField The results.
+* dibuja un cluster
+*/
+{template .flights}
+<div id="{$tcAirSearchRSField['id']}" class="{css cluster} {css newCluster}">
+    <div class="{css cluster-content} {css border-color}">
+        <div class="{css fare-container}">
+            <div class="{css fare-detail}">
+                <div class="{css fare-detail-base}">
+                    <span class="{css fare-description}">{msg desc="Precio por adulto"}  
+                        Total   
+                        {/msg}                        
+                    </span>
+                    <span class="{css fare}">
+                        <span class="{css price-currency} {css COP}" style="">
+                            <em><span class="{css currency} {css price-mask}">$</span>
+                                <span class="{css amount} {css price-amount}">{$tcAirSearchRSField['amountCurrencyShowField']}</span></em>
+                        </span>
+                    </span>
+                </div>
+                <ul class="{css fare-detail-items}">
+                    <li>
+                        <span class="{css item-detail}">1 Adulto</span>
+                        <span class="{css item-price}">
+                            <span class="{css price-currency} {css COP}" style="">
+                                <em>
+                                    <span class="{css currency} {css price-mask}">$</span>
+                                    <span class="{css amount} {css price-amount}">{$tcAirSearchRSField['tcPassengerTypeField'][0]['passengerPriceShowField']}</span>
+                                </em>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="{css taxes-price}">
+                        <span class="{css item-detail}">Imp. y tasas</span>
+                        <span class="{css item-price}">
+                            <span class="{css price-currency} {css COP}" style="">
+                                <em>
+                                    <span class="{css currency} {css price-mask}">$</span>
+                                    <span class="{css amount} {css price-amount}">{$tcAirSearchRSField['tcPassengerTypeField'][0]['passengerTaxTotalShowField']}</span>
+                                </em>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="{css charges-price}">
+                        <span class="{css item-detail}">Cargos</span>
+                        <span class="{css item-price}">
+                            <span class="{css price-currency} {css COP}" style="">
+                                <em>
+                                    <span class="{css currency} {css price-mask}">$</span>
+                                    <span class="{css amount} {css price-amount}">{$tcAirSearchRSField['tcPassengerTypeField'][0]['passengerFareShowField']}</span>
+                                </em>
+                            </span>
+                        </span>
+                    </li>
+                    <li class="{css fare-price}">
+                        <a data="{$tcAirSearchRSField['id']}" href="javascript:void(0);" class="{css buy} {css btn-buy} {css flights-button} {css background-color} {css border-color}">
+                            <span class="{css background-color} {css border-color} {css text-color}">Seleccionar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="{css itineraries}">
+            <div class="{css itineraries-container}">
+                {foreach $tcAirRouteField in $tcAirSearchRSField['tcAirRouteField']}
+                    {foreach $tcAirItineraryField in $tcAirRouteField['tcAirItineraryField']}                        
+                       
+                <div class="{css sub-cluster} {css outbound}">
+                    <div class="{css item} {css data}">
+                        <span class="{css route-type}">
+                            <span class="{css route-info-item} {css type-icon}">
+                                <span class="{css main-sprite} {css icon-plane-outbound}"></span>
+                            </span>
+                            <span class="{css route-info-item} {css type}">{if not isFirst($tcAirRouteField)}
+                                           
+                                <span class="{css itemiconoVuelta}">Vuelta</span>
+                                {else}
+                                           
+                                <span class="{css itemiconoIda}">Ida</span>
+                                {/if}
+                                    </span>
+                        </span>
+                        <span class="{css route-info}">
+                            <span class="{css route-info-wrapper}">
+                                <span class="{css route}">
+                                    <span class="{css route-info-item} {css city-departure}">{$tcAirRouteField['cityField']},</span>
+                                    <span class="{css route-info-item} {css airport}">
+                                        <span>{$tcAirRouteField['airportNameField']}</span>
+                                    </span>
+                                    <span class="{css route-info-item} {css arrow}">
+                                        <span class="{css main-sprite} {css icon-arrow}">a</span>
+                                    </span>
+                                    <span class="{css route-info-item} {css city-arrival}">{$tcAirRouteField['cityDestField']},</span>
+                                    <span class="{css route-info-item} {css airport}">
+                                        <span>{$tcAirRouteField['airportNameDestField']}</span>
+                                    </span>
+                                </span>
+                                <span class="{css route-info-item} {css date}">
+                                    <span>{$tcAirRouteField['dateField']}</span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    {foreach $tcFlightSegmentField in $tcAirItineraryField['tcFlightSegmentField']}
+                                {if isFirst($tcFlightSegmentField) == true}                                                                                          
+                                   
+                    <ul class="{css itineraries-group} {css cluster-items-list}">
+                        <li class="{css item}  {css itinerary} {css cluster-item}">
+                            <label for="1-outbound-{$tcFlightSegmentField['rPHField']}">
+                                <ul>
+                                    <li class="{css radio}">
+                                        <input type="radio" name="radio_item_{$tcAirSearchRSField['id']}_{index($tcAirRouteField)}" checked="checked" value="{$tcAirItineraryField['rPHField']}">
+                                    </li>
+                                    <li class="{css leave}">
+                                        <span class="{css hour-text}">Sale:</span>
+                                        <span class="{css hour}">{$tcFlightSegmentField['departureTimeField']}</span></li>
+                                    <li class="{css route-arrow}">›</li>
+                                    <li class="{css arrive}">
+                                        <span class="{css hour-text}">Llega:</span>
+                                        <span class="{css hour}">{$tcFlightSegmentField['arrivalTimeField']}</span>
+                                    </li>
+                                    <li class="{css time}">
+                                        <span class="{css hour-text}">Duración:</span>
+                                        <span>{$tcFlightSegmentField['estimatedTimeField']}</span>
+                                    </li>
+                                    <li class="{css stops}">
+                                        <span class="{css text}"><a rph="{$tcAirSearchRSField['id']}" tcairroutefieldindex="{index($tcAirRouteField)}" tcflightsegmentfieldindex="{index($tcFlightSegmentField)}" class="{css stops-link}" href="javascript:void(0);">{$tcAirItineraryField['stopNameField']}</a></span>
+                                    </li>
+                                    <li class="{css airlines}">
+                                        <span class="{css airlines-container}">
+                                            <span class="{css airline-container}">
+                                                <span class="{css image} {css flights-title-tooltip}">
+                                                    <img src="http://search.technocloud.com.co/static/images/airline/{$tcFlightSegmentField['airLineOperatedField']}.gif" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="Avianca"></span>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </label>
+                        </li>
+                    </ul>
+                    {else}                                    
+                                {/if}      
+                            {/foreach}                                
+                       
+                </div>
+                {/foreach}
+                {/foreach}
+           
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+/**
+* @param tcAirSearchRSField The results.
+* dibuja un cluster
+*/
+{template .popupUNO}
+<div data="{$tcAirSearchRSField['id']}" class="{css flights-popup} {css popup-detail}  {css flights-popup-bottom}">
+    <div class="{css popup-border}"></div>
+    <div class="{css popup-container}">
+        <div class="{css popup-wrapper}">
+            <div class="{css popup-content}">
+                <div class="{css detailPopup}">
+                    <div class="{css clusterPopup2} {css newClusterPopup2}">
+                        <div class="{css cluster-contentPopup} {css flights-clusterPopup}">
+                            <div class="{css itinerariesPopup}">
+                                <div class="{css itineraries-containerPopup}">
+                                    {foreach $tcAirRouteField in $tcAirSearchRSField['tcAirRouteField']}
+                                        {foreach $tcAirItineraryField in $tcAirRouteField['tcAirItineraryField']}                        
+                                           
+                                    <div class="{css sub-clusterPopup} {css outboundPopup}">
+                                        <div class="{css itemPopup} {css dataPopup}">
+                                            <span class="{css route-typePopup}">
+                                                <span class="{css route-info-itemPopup} {css type-iconPopup}">
+                                                    <span class="{css main-spritePopup} {css icon-plane-outboundPopup}"></span>
+                                                </span>
+                                                <span class="{css route-info-itemPopup} {css typePopup}">{if not isFirst($tcAirRouteField)}
+                                                               
+                                                    <span>VUELTA</span>
+                                                    {else}
+                                                               
+                                                    <span>IDA </span>
+                                                    {/if}
+                                                        </span>
+                                            </span>
+                                            <span class="{css route-infoPopup}">
+                                                <span class="{css route-info-wrapperPopup}">
+                                                    <span class="{css routePopup}">
+                                                        <span class="{css route-info-itemPopup} {css city-departurePopup}">{$tcAirItineraryField['departureAirportField']},</span>
+                                                        <span class="{css route-info-itemPopup} {css airportPopup}">
+                                                            <span>{$tcAirItineraryField['departureAirportField']}</span>
+                                                        </span>
+                                                        <span class="{css route-info-itemPopup} {css arrowPopup}">
+                                                            <span class="{css main-spritePopup} {css icon-arrowPopup}"></span>
+                                                        </span>
+                                                        <span class="{css route-info-itemPopup} {css city-arrivalPopup}">{$tcAirItineraryField['arrivalAirPortField']},</span>
+                                                        <span class="{css route-info-itemPopup} {css airportPopup}">
+                                                            <span>{$tcAirItineraryField['arrivalAirPortField']}</span>
+                                                        </span>
+                                                    </span>
+                                                    <span class="{css route-info-itemPopup} {css datePopup}">
+                                                        <span>{$tcAirRouteField['dateField']}</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </div>
+                                        {foreach $tcFlightSegmentField in $tcAirItineraryField['tcFlightSegmentField']}                                                
+                                                   
+                                        <ul class="{css itineraries-groupPopup} {css cluster-items-listPopup}">
+                                            <li class="{css itemPopup}  {css itineraryPopup} {css cluster-itemPopup}">
+                                                <label for="1-outbound-{$tcFlightSegmentField['rPHField']}">
+                                                    <ul class="{css leavePopupMAJOR}">
+                                                        <li class="{css leavePopup}">
+                                                            <span class="{css hour-textPopup}">Sale:</span>
+                                                            <span class="{css hourPopup}">{$tcFlightSegmentField['departureTimeField']}</span>
+                                                            <span class="{css hourPopup}"></span>
+
+                                                        </li>
+                                                        <li class="{css route-arrowPopup}"></hr>›</li>
+                                                        <li class="{css arrivePopup}">
+                                                            <span class="{css hour-textPopup}">Llega:</span>
+                                                            <span class="{css hourPopup}">{$tcFlightSegmentField['arrivalTimeField']}</span>
+                                                            <span class="{css hourPopup}"></span>
+
+                                                        </li>
+                                                        <li class="{css timePopup}">
+                                                            <span class="{css hour-textPopup}">Duración:</span>
+                                                            <span>{$tcFlightSegmentField['estimatedTimeField']}Minutos</span>
+                                                        </li>
+                                                        <li class="{css stopsPopup}">{if length($tcAirItineraryField['tcFlightSegmentField']) > 1}
+                                                                           
+                                                            <span class="{css textPopup}"><a rph="{$tcAirSearchRSField['id']}" class="{css stops-link}" href="javascript:void(0);">{length($tcAirItineraryField['tcFlightSegmentField'])-1}</a></span>
+                                                            {else}
+                                                                           
+                                                            <span class="{css textPopup}"><a rph="{$tcAirSearchRSField['id']}" class="{css stops-link}" href="javascript:void(0);"></a></span>
+                                                            {/if}
+                                                                    </li>
+                                                        <li class="{css airlinesPopup}">
+                                                            <span class="{css airlines-containerPopup}">
+                                                                <span class="{css airline-containerPopup}">
+                                                                    <span class="{css imagePopup} {css flights-title-tooltip}">
+                                                                        <img src="http://search.technocloud.com.co/static/images/airline/{$tcFlightSegmentField['airLineOperatedField']}.gif" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="Avianca"></span>
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        {/foreach}                                
+                                           
+                                    </div>
+                                    {/foreach}
+                                    {/foreach}
+                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="{css popup-close-button} {css popup-close}">×</span>
+
+</div>
+{/template}
+
+/**
+* dibuja los filtros
+*/
+{template .matrix2}
+<div style="display: none;" class="{css matrix}">
+    <div class="matrix-filter" style="display: none;"></div>
+    <div class="matrix-container">
+        <ul class="matrix-scales">
+            <li class="first scales-container">
+                <div class="matrix-scales-summary">
+                    <p>Resumen</p>
+                    <p>(precios finales)</p>
+                </div>
+                <div class="matrix-scales-review"></div>
+            </li>
+            <li class="scale" data-scale-index="0">Directo</li>
+            <li class="scale" data-scale-index="1">1 Escala</li>
+            <li class="scale last" data-scale-index="2">2 Escalas o más</li>
+        </ul>
+        <div class="matrix-airlines matrix-3">
+            <div class="matrix-airlines-responsive-container matrix-airlines-responsive-container-5">
+                <div class="matrix-airlines-container matrix-airlines-container-5" style="left: 0px;">
+                    <ul class="matrix-airline matrix-airline-5 column-visible column-visible-first" data-airline-code="CM" data-airline-index="0">
+                        <li class="first head">
+                            <div class="airline-description">
+                                <div class="airline-description-container">
+                                    <div class="airline-logo">
+                                        <img src="http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/CM.png" title="Copa" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/default.png'" alt="Copa">
+                                    </div>
+                                    <div class="airline-name">
+                                        <span>Copa</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-summary">
+                                <a href="#" class="review-description">Excelente, 8.3 pts</a>
+                            </div>
+                        </li>
+                        <li class="priceItem  flights-title-tooltip" data-scale-index="0"></li>
+                        <li id="C_1930516768_-660472537_-126120343_867205979_-2069975163" class="priceItem price price-best  flights-title-tooltip" data-scale-index="1">
+                            <span class="price-currency COP " style=""><em>
+                                <span class="currency price-mask">$</span>
+                                <span class="amount price-amount">1.260.828</span></em>
+
+                            </span>
+                        </li>
+                        <li class="priceItem last flights-title-tooltip" data-scale-index="2"></li>
+                    </ul>
+                    <ul class="matrix-airline matrix-airline-5 column-visible" data-airline-code="LA" data-airline-index="1">
+                        <li class="first head">
+                            <div class="airline-description">
+                                <div class="airline-description-container">
+                                    <div class="airline-logo">
+                                        <img src="http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/LA.png" title="Lan" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/default.png'" alt="Lan">
+                                    </div>
+                                    <div class="airline-name">
+                                        <span>Lan</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-summary">
+                                <a href="#" class="review-description">Muy Bueno, 8.2 pts</a>
+                            </div>
+                        </li>
+                        <li id="C_-1824168409_-162745886" class="priceItem price price-best  flights-title-tooltip" data-scale-index="0">
+                            <span class="price-currency COP " style="">
+                                <em>
+                                    <span class="currency price-mask">$</span>
+                                    <span class="amount price-amount">1.432.404</span>
+                                </em>
+
+                            </span>
+                        </li>
+                        <li id="C_-1572068441" class="priceItem price  flights-title-tooltip" data-scale-index="1">
+                            <span class="price-currency COP " style="">
+                                <em><span class="currency price-mask">$</span>
+                                    <span class="amount price-amount">1.439.114</span>
+                                </em></span></li>
+                        <li class="priceItem last flights-title-tooltip" data-scale-index="2"></li>
+                    </ul>
+                    <ul class="matrix-airline matrix-airline-5 column-visible" data-airline-code="AM" data-airline-index="2">
+                        <li class="first head">
+                            <div class="airline-description">
+                                <div class="airline-description-container">
+                                    <div class="airline-logo">
+                                        <img src="http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/AM.png" title="Aeromexico" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/default.png'" alt="Aeromexico">
+                                    </div>
+                                    <div class="airline-name">
+                                        <span>Aeromexico</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-summary">
+                                <a href="#" class="review-description">Bueno, 8.1 pts</a>
+                            </div>
+                        </li>
+                        <li class="priceItem  flights-title-tooltip" data-scale-index="0"></li>
+                        <li class="priceItem  flights-title-tooltip" data-scale-index="1"></li>
+                        <li id="C_149496875" class="priceItem price price-best last flights-title-tooltip" data-scale-index="2">
+                            <span class="price-currency COP " style=""><em><span class="currency price-mask">$</span><span class="amount price-amount">1.554.845</span></em></span></li>
+                    </ul>
+                    <ul class="matrix-airline matrix-airline-5 column-visible" data-airline-code="AV" data-airline-index="3">
+                        <li class="first head">
+                            <div class="airline-description">
+                                <div class="airline-description-container">
+                                    <div class="airline-logo">
+                                        <img src="http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/AV.png" title="Avianca" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/default.png'" alt="Avianca"></div>
+                                    <div class="airline-name">
+                                        <span>Avianca</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-summary">
+                                <a href="#" class="review-description">Excelente, 8.5 pts</a>
+                            </div>
+                        </li>
+                        <li id="C_-754965920" class="priceItem price  flights-title-tooltip" data-scale-index="0">
+                            <span class="price-currency COP " style="">
+                                <em>
+                                    <span class="currency price-mask">$</span>
+                                    <span class="amount price-amount">1.527.870</span>
+                                </em></span></li>
+                        <li id="C_290624081" class="priceItem price  flights-title-tooltip" data-scale-index="1">
+                            <span class="price-currency COP " style=""><em>
+                                <span class="currency price-mask">$</span>
+                                <span class="amount price-amount">1.605.618</span></em>
+
+                            </span></li>
+                        <li class="priceItem last flights-title-tooltip" data-scale-index="2"></li>
+                    </ul>
+                    <ul class="matrix-airline matrix-airline-5 column-visible column-visible-last" data-airline-code="DL" data-airline-index="4">
+                        <li class="first head">
+                            <div class="airline-description">
+                                <div class="airline-description-container">
+                                    <div class="airline-logo">
+                                        <img src="http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/DL.png" title="Delta" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.43/common/airlines/25x25/default.png'" alt="Delta">
+                                    </div>
+                                    <div class="airline-name">
+                                        <span>Delta</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="review-summary">
+                                <a href="#" class="review-description">Bueno, 7.9 pts</a>
+                            </div>
+                        </li>
+                        <li class="priceItem  flights-title-tooltip" data-scale-index="0"></li>
+                        <li id="C_-181576273" class="priceItem price  flights-title-tooltip" data-scale-index="1">
+                            <span class="price-currency COP " style="">
+                                <em>
+                                    <span class="currency price-mask">$</span>
+                                    <span class="amount price-amount">3.732.799</span>
+                                </em>
+
+                            </span>
+                        </li>
+                        <li class="priceItem last flights-title-tooltip" data-scale-index="2"></li>
+                    </ul>
+                </div>
+                <span class="matrix-arrow matrix-prev" style="display: none; top: 61.5px;">&lt;</span><span class="matrix-arrow matrix-next" style="top: 61.5px; display: none;">&gt;</span>
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+
+
+/**
+* dibuja un cluster
+*/
+{template .popup}
+<div class="{css ui-widget-overlay-popup}" style="display: none;">
+    <div class="{css flights-popup} {css popup-detail}  {css flights-popup-bottom} {css background-color}">
+        <div class="{css popup-border}"></div>
+        <div class="{css popup-container}">
+            <div class="{css popup-wrapper}">
+                <div class="{css popup-content}">
+                    <div class="{css detailPopup}">
+                        <div class="{css clusterPopup2} {css newClusterPopup2}">
+                            <div class="{css cluster-contentPopup} {css flights-clusterPopup}">
+                                <div class="{css itinerariesPopup}">
+                                    <div class="{css itineraries-containerPopup}">
+                                        <div class="{css sub-clusterPopup} {css outboundPopup}">
+                                            <div class="{css itemPopup} {css dataPopup}">
+                                                <div class="{css popup-header}">
+                                                    <span class="{css cityPopupTitle}">Detalle del Vuelo</span>
+                                                </div>
+                                            </div>
+                                            <div class="{css popup-inner-content}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="{css popup-close-button} {css popup-close}">×</span>
+    </div>
+</div>
+{/template}
+
+/**
+* @param tcAirItineraryField The results.
+* dibuja un cluster
+*/
+{template .popupContent}
+{foreach $tcFlightSegmentField in $tcAirItineraryField['tcFlightSegmentField']}                                                
+   
+<div class="{css popup-content}">
+    <div class="{css detail}">
+        <div class="{css segment}">
+            <ul class="{css detail-info}">
+                <li class="{css itinerary}">
+                    <span class="{css location}">Aerolinea:
+                           
+                        <span class="{css bold}">{$tcFlightSegmentField['airLineOperatedField']}</span>
+                        &nbsp;|&nbsp; Vuelo: <span class="{css number}">
+                            <span class="{css bold}">{$tcFlightSegmentField['numberFlightField']}</span>
+                        </span></span></li>
+                <li class="{css data}">
+                    <span class="{css name}">
+                        <span class="{css bold}">Paradas</span>
+                        <span class="{css bold}">SinParada</span><br>
+                    </span>
+                </li>
+                <li class="{css data}">
+                    <span class="{css name}">
+                        <span class="{css bold}">Tiempo de vuelo</span>
+                        <span>{$tcFlightSegmentField['estimatedTimeField']}</span>
+                    </span><span class="{css airline}"><span class="{css logoPequeño}"></span>
+                        <img src="http://search.technocloud.com.co/static/images/airline/{$tcFlightSegmentField['airLineOperatedField']}.gif" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="Avianca">
+                    </span>
+                </li>
+                <li class="{css itinerary}">
+                    <span class="{css location}">Sale de
+                           
+                        <span class="{css bold}">{$tcFlightSegmentField['departureCityField']}</span>
+                        -
+                           
+                        <span class="{css bold}">{$tcFlightSegmentField['departureAirportNameField']}</span>
+                    </span><span class="{css date}">
+                        <span>{$tcFlightSegmentField['departureDateField']}</span>
+                    </span>
+                </li>
+                <li class="{css itinerary}">
+                    <span class="{css location}">Llega a
+                           
+                        <span class="{css bold}">{$tcFlightSegmentField['arrivalCityNameField']}</span>
+                        -
+                           
+                        <span class="{css bold}">{$tcFlightSegmentField['arrivalAirPortNameField']}</span></span>
+                    <span class="{css date}">
+                        <span>{$tcFlightSegmentField['arrivalDateField']}</span></span>
+                </li>
+            </ul>
+        </div>
+        <span class="{css time}">Hora de salida:
+               
+            <span class="{css bold}">{$tcFlightSegmentField['departureTimeField']}</span>
+            &nbsp;|&nbsp; Hora de llegada:
+               
+            <span class="{css bold}">{$tcFlightSegmentField['arrivalTimeField']}</span>
+        </span>
+        <div class="{css detail-footer}">
+            <div class="{css bottom-box}">
+                <span class="{css detail-local-hour}">Horarios en hora local de cada ciudad</span>
+                <div class="{css baggage}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/foreach}       
+{/template}

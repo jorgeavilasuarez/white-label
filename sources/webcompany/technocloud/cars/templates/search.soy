@@ -1,0 +1,153 @@
+{namespace cars.template.search}
+
+/**
+* @param ids The ids.
+* Dibuja el formulario de busqueda
+*/
+{template .searchForm}
+<div class="{css tab-container}">
+    <ul class="{css tab-header-search}">
+        <li class='{css colorBackground-tab1-li} {css background-color}' id='{$ids.autos}'></li>        
+    </ul>
+    <div class="{css panel-container}">
+        <div id="autos" class="{css colorBackground-tab2}">
+            <div class="{css boxMargin-10} {css frame-1-1}">
+                <div class="{css frame-1-1}">
+                    <div class="{css frame-1-1} {css boxMargin-10-t}">
+                        Ciudad donde recoge
+                    </div>
+                    <div class="{css frame-1-1} {css boxMargin-5-t}">
+                        <input name="{$ids.txtCarCiudRecoge}" autocomplete="off" type="text" id="{$ids.txtCarCiudRecoge}" class="{css controlRound}" placeholder="Ciudad" />
+                    </div>
+                    <div class="{css frame-1-1} {css boxMargin-10-t}">
+                        <div class="{css frame-1-2}">
+                            <div class="{css boxMargin-10-r}">
+                                Fecha Recoge
+                            </div>
+                        </div>
+                        <div class="{css frame-1-2}">
+                            <div class="{css boxMargin-10-l}">
+                                Hora Recoge
+                            </div>
+                        </div>
+                    </div>
+                    <div class="{css frame-1-1} {css boxMargin-5-t}">
+                        <div class="{css frame-1-2}">
+                            <div class="{css boxMargin-10-r}">
+                                <input name="{$ids.txtCarFechaRecoge}" autocomplete="off" type="text" id="{$ids.txtCarFechaRecoge}" class="{css controlRound}" placeholder="Fecha Recoge" />
+                            </div>
+                        </div>
+                        <div class="{css frame-1-2}">
+                            <div class="{css boxMargin-10-l}">
+                                <select name="{$ids.ddlCarHoraRecoge}" id="{$ids.ddlCarHoraRecoge}" class="{css controlRound}">
+                                    <option selected="selected" value="07:00:00">07:00 am</option>
+                                    <option value="08:00:00">08:00 am</option>
+                                    <option value="09:00:00">09:00 am</option>
+                                    <option value="10:00:00">10:00 am</option>
+                                    <option value="11:00:00">11:00 am</option>
+                                    <option value="12:00:00">12:00 m</option>
+                                    <option value="13:00:00">01:00 pm</option>
+                                    <option value="14:00:00">02:00 pm</option>
+                                    <option value="15:00:00">03:00 pm</option>
+                                    <option value="16:00:00">04:00 pm</option>
+                                    <option value="17:00:00">05:00 pm</option>
+                                    <option value="18:00:00">06:00 pm</option>
+                                    <option value="19:00:00">07:00 pm</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="{css frame-1-1}">
+                    <hr />
+                    <div class="{css frame-1-1} {css boxMargin-10-t}">
+                        Ciudad donde entrega
+                    </div>
+                    <div class="{css frame-1-1} {css boxMargin-5-t}">
+                        <input name="{$ids.txtCarCiudEntrega}" autocomplete="off" type="text" id="{$ids.txtCarCiudEntrega}" class="{css controlRound}" placeholder="Ciudad" />
+                    </div>
+                    <div class="{css frame-1-1} {css boxMargin-10-t}">
+                        <div class="{css frame-1-2}">
+                            <div class="{css boxMargin-10-r}">
+                                Fecha Entrega
+                            </div>
+                        </div>
+                        <div class="{css frame-1-2}">
+                            <div class="{css boxMargin-10-l}">
+                                Hora Entrega
+                            </div>
+                        </div>
+                    </div>
+                    <div class="{css frame-1-1} {css boxMargin-5-t}">
+                        <div class="{css frame-1-2}">
+                            <div class="{css boxMargin-10-r}">
+                                <input name="{$ids.txt2CFechaEntrega}" autocomplete="off" type="text" id="{$ids.txt2CFechaEntrega}" class="{css controlRound}" placeholder="Fecha Entrega" />
+                            </div>
+                        </div>
+                        <div class="{css frame-1-2}">
+                            <div class="{css boxMargin-10-l}">
+                                <select name="{$ids.ddlCarHoraEntrega}" id="{$ids.ddlCarHoraEntrega}" class="{css controlRound}">
+                                    <option selected="selected" value="07:00:00">07:00 am</option>
+                                    <option value="08:00:00">08:00 am</option>
+                                    <option value="09:00:00">09:00 am</option>
+                                    <option value="10:00:00">10:00 am</option>
+                                    <option value="11:00:00">11:00 am</option>
+                                    <option value="12:00:00">12:00 m</option>
+                                    <option value="13:00:00">01:00 pm</option>
+                                    <option value="14:00:00">02:00 pm</option>
+                                    <option value="15:00:00">03:00 pm</option>
+                                    <option value="16:00:00">04:00 pm</option>
+                                    <option value="17:00:00">05:00 pm</option>
+                                    <option value="18:00:00">06:00 pm</option>
+                                    <option value="19:00:00">07:00 pm</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="{css frame-1-1}">
+                    <hr />
+                    <div class="{css frame-1-1} {css boxMargin-10-t}">
+                        Rentadora
+                    </div>
+                    <div class="{css frame-1-1} {css boxMargin-5-t}">
+                        <table id="modal_rentadora" style="width: 100%;">
+                            <tr>
+                                <td>
+                                    <input id="modal_rentadora_0" type="radio" name="modal_rentadora" value="0" checked="checked" /><label for="modal_rentadora_0"> Todos</label></td>
+                                <td>
+                                    <input id="modal_rentadora_1" type="radio" name="modal_rentadora" value="1" /><label for="modal_rentadora_1"> Hertz</label></td>
+                                <td>
+                                    <input id="modal_rentadora_2" type="radio" name="modal_rentadora" value="2" /><label for="modal_rentadora_2"> Budget</label></td>
+                                <td>
+                                    <input id="modal_rentadora_3" type="radio" name="modal_rentadora" value="3" /><label for="modal_rentadora_3"> Avis</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="{css frame-1-1}" style="display: none;">
+                    <hr />
+                    <div class="{css frame-1-1} {css boxMargin-10-t}">
+                        Tipo Automovil
+                    </div>
+                    <div class="{css frame-1-1} {css boxMargin-5-t}">
+                        <select name="{$ids.ddlTipoAuto}" id="{$ids.ddlTipoAuto}" class="{css controlRound}">
+                            <option selected="selected" value="0">Econ&#243;mico</option>
+                            <option value="1">Convertible</option>
+                            <option value="2">Camioneta</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="{css textAlingcenter} {css boxMargin-10-t} {css frame-1-1}">
+                    <hr class="{css boxMargin-10-b}" />
+                    <input type="submit" name="{$ids.lbCar}" value="Iniciar busqueda" id="{$ids.lbCar}" class="{css buttonRound}" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{/template}

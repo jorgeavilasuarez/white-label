@@ -1,0 +1,982 @@
+{namespace hotels.template.details}
+
+/** 
+* dibuja los detalles de hoteles
+*/
+{template .details}
+<div class="{css content}">
+    <div class="{css panelCompleto}">
+
+        <!--- detalle -->
+        <div class="{css panelResultados}">
+            <!--- box border -->
+            <div class="{css plb}">
+                <div class="{css prb}">
+                    <div class="{css ptb}">
+                        <div class="{css ptlc}">
+                            <div class="{css ptrc}">
+                                <div class="{css contenidoResultados}">
+                                    <div style="float: right; position: relative; padding: 5px;">
+                                        <input id="btnRegresar" class="{css botonCotizar2}" type="button" value="Regresar">
+                                    </div>
+                                    <div class="{css tituloResultados}">
+                                        <span id="ucDetalleHotel_lblTDetalleHotel">Detalle Hotel</span>
+                                    </div>
+                                    <div class="{css contenidoResultado}">
+                                        <table cellspacing="0" cellpadding="0" width="100%" style="font-size: 12px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding-right: 5px;">
+                                                        <div style="float: right; position: relative">
+                                                            <table id="ucDetalleHotel_dlEstrellas" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="3">
+                                                                            <table cellspacing="0" cellpadding="0">
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td></td>
+                                                                                        <td class="{css stars}"></td>
+                                                                                        <td></td>
+                                                                                        <td class="{css stars}"></td>
+                                                                                        <td></td>
+                                                                                        <td class="{css stars}"></td>
+
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="3"></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div style="float: left; position: relative; margin-right: 5px;">
+                                                            <img id="ucDetalleHotel_iImagen" src="http://image1.urlforimages.com/Images/5256/100x100/733781807.jpg" style="height: 100px; width: 100px; border-width: 0px;">
+                                                        </div>
+                                                        <span id="ucDetalleHotel_lblNombre" class="{css bold}">Freehand Miami</span><br>
+                                                        <span id="ucDetalleHotel_lblDireccion">Miami&nbsp;&nbsp;&nbsp;Miami Beach - South Beach&nbsp;&nbsp;&nbsp;2727 Indian Creek Drive</span><br>
+                                                        <span id="ucDetalleHotel_lblTelefono"></span>
+                                                        <br>
+                                                        <span id="ucDetalleHotel_lblDescripcion">Location
+This hotel is conveniently located within walking distance of the beach. Indian Creek is just 4 blocks away. The building is surrounded by a variety of restaurants, banks, grocers and pharmacies. It is approximately 5 km from South Beach, 5 minutes from Bal Harbour and 22.5 km from Miami International Airport.
+Facilities
+The establishment comprises a total of 14 accommodation units. Services such as a safe and currency exchange facilities make for a comfortable stay. Internet access and wireless internet access are available in the public areas. Gastronomic options include a restaurant, a café and a bar. A garden is among the features contributing to a pleasant stay. Guests travelling in their own vehicles can make use of the available parking spaces. Other services include a laundry. A bicycle hire service (no extra charge) gives guests the opportunity to explore the surrounding area independently.
+Rooms
+All accommodation units feature air conditioning, central heating, a living room, a kitchen and a bathroom. Each accommodation unit features a double bed, a king-size bed or a sofa-bed. A safe is also available. All rooms have a kitchenette with a fridge, a mini-fridge and a microwave. A cooker is included as standard. An ironing set is also available to guests. Internet access, a telephone, a TV, a radio and an alarm clock are provided for guests' convenience. In each of the bathrooms, guests will find a shower, a bathtub and a hairdryer.
+Sports/Entertainment
+The establishment offers a selection of sport and leisure opportunities. Sun loungers on the sun terrace offer an inviting place to relax. Leisure options at the establishment also include cycling/mountain biking and a spa. A wellness area with a solarium is available.
+Meals
+The establishment offers the following bookable meals and board options: breakfast and dinner.
+Payment
+The following credit cards are accepted at the establishment: American Express, VISA and MasterCard.</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <!-- rptOcupacion -->
+
+                                                        <table cellpadding="4" cellspacing="0" width="100%">
+                                                            <tbody>
+                                                                <tr class="{css tituloTabla}">
+                                                                    <td style="width: 45%;">
+                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl00_lblTTipoHabitacion">Tipo Habitación</span></td>
+                                                                    <td style="width: 15%;">
+                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl00_Label8"></span></td>
+                                                                    <td style="width: 10%;">
+                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl00_lblTMoneda">Moneda</span></td>
+                                                                    <td style="width: 10%;">
+                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl00_lblTTarifaTotal">Tarifa Total</span></td>
+                                                                    <td style="width: 10%;"></td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td colspan="5" class="{css bold}">
+                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_Label10" class="{css bold}">Habitación</span>
+                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_lblidHabitacion" class="{css bold}">1</span>
+                                                                        - Adultos
+                                    1
+                                    / Niños
+                                    0
+                                    
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="5" style="width: 100%;">
+
+                                                                        <table width="100%" cellpadding="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width: 45%;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_Label11">1 Bed in Dormitory - 8 Beds  Continental Breakfast</span>
+                                                                                    </td>
+                                                                                    <td style="width: 15%;">
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleGuest}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_Image1" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleCama}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_rptDesayuno_ctl00_iDesayuno" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/desayuno.jpg" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_Label12">USD</span>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 15%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_Label13">42.20</span>
+                                                                                    </td>
+                                                                                    <td style="width: 10%; text-align: center;">
+                                                                                        <input id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_rbtSeleccion" type="radio" name="ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl00$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl00$rbtSeleccion\',\'\')', 0)">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table width="100%" cellpadding="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width: 45%;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_Label11">1 Bed in Dormitory - 4 Beds  Continental Breakfast</span>
+                                                                                    </td>
+                                                                                    <td style="width: 15%;">
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleGuest}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_Image1" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleCama}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_rptDesayuno_ctl00_iDesayuno" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/desayuno.jpg" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_Label12">USD</span>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 15%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_Label13">48.02</span>
+                                                                                    </td>
+                                                                                    <td style="width: 10%; text-align: center;">
+                                                                                        <input id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_rbtSeleccion" type="radio" name="ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl01$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl01$rbtSeleccion\',\'\')', 0)">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table width="100%" cellpadding="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width: 45%;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_Label11">Leisure 1 Bed in Dormitory - 8 Beds  SH</span>
+                                                                                    </td>
+                                                                                    <td style="width: 15%;">
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleGuest}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_Image1" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleCama}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_Label12">USD</span>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 15%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_Label13">72.77</span>
+                                                                                    </td>
+                                                                                    <td style="width: 10%; text-align: center;">
+                                                                                        <input id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_rbtSeleccion" type="radio" name="ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl02$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl02$rbtSeleccion\',\'\')', 0)">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table width="100%" cellpadding="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width: 45%;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_Label11">Leisure 1 Bed in Dormitory - 4 Beds  SH</span>
+                                                                                    </td>
+                                                                                    <td style="width: 15%;">
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleGuest}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_Image1" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleCama}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_Label12">USD</span>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 15%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_Label13">80.05</span>
+                                                                                    </td>
+                                                                                    <td style="width: 10%; text-align: center;">
+                                                                                        <input id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_rbtSeleccion" type="radio" name="ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl03$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl03$rbtSeleccion\',\'\')', 0)">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table width="100%" cellpadding="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width: 45%;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl04_Label11">Private Quad  Continental Breakfast</span>
+                                                                                    </td>
+                                                                                    <td style="width: 15%;">
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl04_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleGuest}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl04_Image1" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl04_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleCama}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl04_rptDesayuno_ctl00_iDesayuno" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/desayuno.jpg" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl04_Label12">USD</span>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 15%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl04_Label13">192.12</span>
+                                                                                    </td>
+                                                                                    <td style="width: 10%; text-align: center;">
+                                                                                        <input id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl04_rbtSeleccion" type="radio" name="ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl04$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl04$rbtSeleccion\',\'\')', 0)">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table width="100%" cellpadding="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width: 45%;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl05_Label11">Private King  Continental Breakfast</span>
+                                                                                    </td>
+                                                                                    <td style="width: 15%;">
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl05_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleGuest}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl05_Image1" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl05_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleCama}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl05_rptDesayuno_ctl00_iDesayuno" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/desayuno.jpg" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl05_Label12">USD</span>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 15%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl05_Label13">203.77</span>
+                                                                                    </td>
+                                                                                    <td style="width: 10%; text-align: center;">
+                                                                                        <input id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl05_rbtSeleccion" type="radio" name="ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl05$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl05$rbtSeleccion\',\'\')', 0)">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table width="100%" cellpadding="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width: 45%;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl06_Label11">Leisure Standard King  SH</span>
+                                                                                    </td>
+                                                                                    <td style="width: 15%;">
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl06_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleGuest}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl06_Image1" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl06_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleCama}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl06_Label12">USD</span>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 15%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl06_Label13">212.94</span>
+                                                                                    </td>
+                                                                                    <td style="width: 10%; text-align: center;">
+                                                                                        <input id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl06_rbtSeleccion" type="radio" name="ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl06$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl06$rbtSeleccion\',\'\')', 0)">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                        <table width="100%" cellpadding="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td style="width: 45%;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl07_Label11">Leisure Quad  SH</span>
+                                                                                    </td>
+                                                                                    <td style="width: 15%;">
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl07_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleGuest}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <img id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl07_Image1" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/x.gif" style="border-width: 0px;">
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                            <table id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl07_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                                <tbody>
+                                                                                                    <tr>
+                                                                                                        <td>
+                                                                                                            <div class="{css styleCama}"></div>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                        <div style="float: left;">
+                                                                                        </div>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl07_Label12">USD</span>
+                                                                                    </td>
+                                                                                    <td style="text-align: center; width: 15%; vertical-align: middle;">
+                                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl07_Label13">320.21</span>
+                                                                                    </td>
+                                                                                    <td style="width: 10%; text-align: center;">
+                                                                                        <input id="ucDetalleHotel_rptOcupacion_ctl01_rptTiposHabitacion_ctl07_rbtSeleccion" type="radio" name="ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl07$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucDetalleHotel$rptOcupacion$ctl01$rptTiposHabitacion$ctl07$rbtSeleccion\',\'\')', 0)">
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="5" class="{css divisionSpacer-10}"></td>
+                                                                </tr>
+                                                                <tr style="display: none">
+                                                                    <td colspan="4">
+                                                                        <img id="ucDetalleHotel_rptOcupacion_ctl01_Image4" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/noche.jpg" style="border-width: 0px;">
+                                                                        Noche</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr style="display: none">
+                                                                    <td colspan="4">
+                                                                        <img id="ucDetalleHotel_rptOcupacion_ctl01_Image2" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/descuento.gif" style="border-width: 0px;">
+                                                                        <span id="ucDetalleHotel_rptOcupacion_ctl01_lblDescuento"></span></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: right">
+                                                        <input type="submit" name="ucDetalleHotel$lbReservar" value="Reservar" id="ucDetalleHotel_lbReservar" class="{css botonImprimirCotizar} {css btnBuy}"><br>
+                                                        <br>
+                                                        <span id="ucDetalleHotel_lblError"></span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{css pieResultados}"></div>
+        </div>
+
+        <!--- galeria -->
+        <div class="{css panelResultados}">
+            <!--- box border -->
+            <div class="{css plb}">
+                <div class="{css prb}">
+                    <div class="{css ptb}">
+                        <div class="{css ptlc}">
+                            <div class="{css ptrc}">
+                                <div class="{css contenidoResultados}">
+                                    <div class="{css tituloResultados}">
+                                        <span id="ucDetalleHotel_lblTGaleria">Galería</span>
+                                    </div>
+                                    <div class="{css contenidoResultado}">
+                                        <table id="ucDetalleHotel_dlGaleria" cellspacing="0" align="Left" rules="all" border="0" style="border-width: 0px; border-collapse: collapse;">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="6">
+                                                        <table width="100%">
+                                                            <tbody>
+                                                                <tr>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="text-align: center">
+                                                                        <img id="ucDetalleHotel_dlGaleria_ctl01_iGaleria" src="http://image1.urlforimages.com/Images/5256/_x200/510393995.jpg" style="height: 150px; width: 150px; border-width: 0px;">
+                                                                        <br>
+                                                                        <span id="ucDetalleHotel_dlGaleria_ctl01_lblGaleria">Galeria 1</span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="text-align: center">
+                                                                        <img id="ucDetalleHotel_dlGaleria_ctl03_iGaleria" src="http://image1.urlforimages.com/Images/5256/_x200/1016989133.jpg" style="height: 150px; width: 150px; border-width: 0px;">
+                                                                        <br>
+                                                                        <span id="ucDetalleHotel_dlGaleria_ctl03_lblGaleria">Galeria 3</span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="text-align: center">
+                                                                        <img id="ucDetalleHotel_dlGaleria_ctl05_iGaleria" src="http://image1.urlforimages.com/Images/5256/_x200/1745777766.jpg" style="height: 150px; width: 150px; border-width: 0px;">
+                                                                        <br>
+                                                                        <span id="ucDetalleHotel_dlGaleria_ctl05_lblGaleria">Galeria 5</span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="text-align: center">
+                                                                        <img id="ucDetalleHotel_dlGaleria_ctl06_iGaleria" src="http://image1.urlforimages.com/Images/5256/_x200/1433027658.jpg" style="height: 150px; width: 150px; border-width: 0px;">
+                                                                        <br>
+                                                                        <span id="ucDetalleHotel_dlGaleria_ctl06_lblGaleria">Galeria 6</span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="text-align: center">
+                                                                        <img id="ucDetalleHotel_dlGaleria_ctl07_iGaleria" src="http://image1.urlforimages.com/Images/5256/_x200/327775428.jpg" style="height: 150px; width: 150px; border-width: 0px;">
+                                                                        <br>
+                                                                        <span id="ucDetalleHotel_dlGaleria_ctl07_lblGaleria">Galeria 7</span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="text-align: center">
+                                                                        <img id="ucDetalleHotel_dlGaleria_ctl08_iGaleria" src="http://image1.urlforimages.com/Images/5256/_x200/454676683.jpg" style="height: 150px; width: 150px; border-width: 0px;">
+                                                                        <br>
+                                                                        <span id="ucDetalleHotel_dlGaleria_ctl08_lblGaleria">Galeria 8</span>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="text-align: center">
+                                                                        <img id="ucDetalleHotel_dlGaleria_ctl02_iGaleria" src="http://image1.urlforimages.com/Images/5256/_x200/777577585.jpg" style="height: 150px; width: 150px; border-width: 0px;">
+                                                                        <br>
+                                                                        <span id="ucDetalleHotel_dlGaleria_ctl02_lblGaleria">Galeria 2</span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="text-align: center">
+                                                                        <img id="ucDetalleHotel_dlGaleria_ctl04_iGaleria" src="http://image1.urlforimages.com/Images/5256/_x200/1775681223.jpg" style="height: 150px; width: 150px; border-width: 0px;">
+                                                                        <br>
+                                                                        <span id="ucDetalleHotel_dlGaleria_ctl04_lblGaleria">Galeria 4</span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="6"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{css pieResultados}"></div>
+        </div>
+
+        <!--- instalaciones -->
+        <div class="{css panelResultados}">
+            <!--- box border -->
+            <div class="{css plb}">
+                <div class="{css prb}">
+                    <div class="{css ptb}">
+                        <div class="{css ptlc}">
+                            <div class="{css ptrc}">
+                                <div class="{css contenidoResultados}">
+                                    <div class="{css tituloResultados}">
+                                        <span id="ucDetalleHotel_lblComodidadesH">Instalaciones</span>
+                                    </div>
+                                    <div class="{css contenidoResultado}">
+                                        <table id="ucDetalleHotel_dlComodidadesH" cellspacing="0" align="Left" rules="all" border="0" style="border-width: 0px; border-collapse: collapse;">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl01_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl01_lblComodidades">Concierge</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl01_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl01_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl07_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl07_lblComodidades">24-Hour Front Desk</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl07_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl07_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl12_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl12_lblComodidades">Widescreen TV</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl12_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl12_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl17_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl17_lblComodidades">Wireless High Speed Internet</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl17_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl17_lblValue" style="color: Red;"></span>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl02_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl02_lblComodidades">Non Smoking Rooms</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl02_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl02_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl08_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl08_lblComodidades">Tour Desk</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl08_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl08_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl13_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl13_lblComodidades">Multilingual Staff</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl13_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl13_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl18_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl18_lblComodidades">Outdoor Activities</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl18_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl18_lblValue" style="color: Red;"></span>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl03_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl03_lblComodidades">Restaurant(s)</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl03_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl03_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl09_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl09_lblComodidades">Pool</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl09_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl09_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl14_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl14_lblComodidades">Cash machine/ATM</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl14_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl14_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl19_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl19_lblComodidades">Internet Access</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl19_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl19_lblValue" style="color: Red;"></span>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl04_iFlecha" class="{css alignlef}t" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl04_lblComodidades">Safe Deposit Box</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl04_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl04_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl10_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl10_lblComodidades">Free Local Calls</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl10_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl10_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl15_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl15_lblComodidades">Casual Dining</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl15_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl15_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl20_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl20_lblComodidades">Excursions</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl20_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl20_lblValue" style="color: Red;"></span>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl05_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl05_lblComodidades">Self Laundry</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl05_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl05_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl11_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl11_lblComodidades">Activities Desk</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl11_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl11_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl16_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl16_lblComodidades">Elevator(s)</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl16_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl16_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl21_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl21_lblComodidades">Garden View</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl21_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl21_lblValue" style="color: Red;"></span>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesH_ctl06_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesH_ctl06_lblComodidades">Bar/Lounge</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesH_ctl06_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesH_ctl06_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="4"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{css pieResultados}"></div>
+        </div>
+
+        <!--- comodidades -->
+        <div class="{css panelResultados}">
+            <!--- box border -->
+            <div class="{css plb}">
+                <div class="{css prb}">
+                    <div class="{css ptb}">
+                        <div class="{css ptlc}">
+                            <div class="{css ptrc}">
+                                <div class="{css contenidoResultados}">
+                                    <div class="{css tituloResultados}">
+                                        <span id="ucDetalleHotel_lblComodidadesR">Comodidades</span>
+                                    </div>
+                                    <div class="{css contenidoResultado}">
+                                        <table id="ucDetalleHotel_dlComodidadesR" cellspacing="0" align="Left" rules="all" border="0" style="border-width: 0px; border-collapse: collapse;">
+                                            <tbody>
+                                                <tr>
+                                                    <td colspan="4">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesR_ctl01_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesR_ctl01_lblComodidades">Air Condition</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesR_ctl01_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesR_ctl01_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesR_ctl03_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesR_ctl03_lblComodidades">Hairdryer</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesR_ctl03_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesR_ctl03_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesR_ctl05_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesR_ctl05_lblComodidades">Clock-Radio</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesR_ctl05_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesR_ctl05_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesR_ctl07_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesR_ctl07_lblComodidades">High Speed Internet Access</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesR_ctl07_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesR_ctl07_lblValue" style="color: Red;"></span>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesR_ctl02_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesR_ctl02_lblComodidades">Cable/Satellite TV</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesR_ctl02_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesR_ctl02_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesR_ctl04_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesR_ctl04_lblComodidades">Telephone + Voice Mail</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesR_ctl04_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesR_ctl04_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesR_ctl06_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesR_ctl06_lblComodidades">Private Bath</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesR_ctl06_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesR_ctl06_lblValue" style="color: Red;"></span>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td style="width: 220px;">
+                                                                        <img id="ucDetalleHotel_dlComodidadesR_ctl08_iFlecha" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/flechita.gif" style="border-width: 0px;">&nbsp;
+                            <span id="ucDetalleHotel_dlComodidadesR_ctl08_lblComodidades">Work Desk</span>
+                                                                        <!--<span id="ucDetalleHotel_dlComodidadesR_ctl08_Label1">$</span>-->
+                                                                        <span id="ucDetalleHotel_dlComodidadesR_ctl08_lblValue" style="color: Red;"></span>
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="4"></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{css pieResultados}"></div>
+        </div>
+
+        <!--- ubicación -->
+        <div class="{css panelResultados}">
+            <!--- box border -->
+            <div class="{css contenidoResultados}">
+                <div class="{css tituloResultados}">
+                    <span id="ucDetalleHotel_Label3">Ubicación</span>
+                </div>
+                <div class="{css contenidoResultado}">
+                    <div id="ucDetalleHotel_pMapa">
+                        <table border="0" style="width: 100%;">
+                            <tbody>
+                                <tr>
+                                    <td><span>
+                                        <iframe id="iframe" src="https://google-developers.appspot.com/maps/documentation/javascript/examples/full/map-simple" frameborder="0" width="830" scrolling="no" height="350" marginheight="0" marginwidth="0"></iframe>
+                                    </span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="ucDetalleHotel_pError">
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+{/template}

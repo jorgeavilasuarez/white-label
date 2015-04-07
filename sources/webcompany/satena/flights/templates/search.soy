@@ -1,0 +1,642 @@
+{namespace flights.template.search}
+
+/**
+* @param ids The ids.
+* Dibuja el formulario de busqueda
+*/
+{template .searchForm}
+<div class="{css tab-container}">
+    <ul class="{css tab-header-search}">                                    
+        <li class='{css colorBackground-tab1-li} {css background-color}' id='{$ids.livuelos}'></li>        
+    </ul>
+    <div  class="{css panel-container}">
+        <div id="{$ids.vuelos}" class="{css background-color-flights}">
+            <div class="{css boxMargin-10} {css frame-1-1}">
+                <form id="{$ids.frmAir}" action="/" method="post">
+                    <table id="{$ids.modal_vuelos}" style="width:100%;">
+                        <tr>
+                            <td>
+                                <input id="{$ids.modal_vuelos_0}" type="radio" name="{$ids.modal_vuelos}" value="0" checked="checked" />
+                                <label for="{$ids.modal_vuelos_0}" class="{css text-color}"> Ida y Vuelta</label>
+                            </td>
+                            <td>
+                                <input id="{$ids.modal_vuelos_1}" type="radio" name="{$ids.modal_vuelos}" value="1" />
+                                <label for="{$ids.modal_vuelos_1}" class="{css text-color}"> Solo Ida</label>
+                            </td>
+                            <td>
+                                <input id="{$ids.modal_vuelos_2}" type="radio" name="{$ids.modal_vuelos}" value="2" />
+                                <label for="{$ids.modal_vuelos_2}" class="{css text-color}"> Múltiples Destinos</label>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="{$ids.vuelos_solo_ida}" class="{css frame-1-1}">
+
+                        <div class="{css frame-1-1} {css boxMargin-10-t} {css text-color}">
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-10-r} {css text-color}">
+                                    Origen
+                                </div>
+                            </div>                        
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-10-r} {css text-color}">
+                                    Destino
+                                </div>
+                            </div>
+                        </div>
+                        <div class="{css frame-1-1} {css boxMargin-5-t}">
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-10-r}">
+                                    <input name="{$ids.txtMultiO1}"  autocomplete="off" autocomplete="off" type="text" id="{$ids.txtMultiO1}" class="{css controlRound} {css text-color}" placeholder="Ciudad de Origen" />
+                                </div>
+                            </div>                        
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-10-l}">
+                                    <input name="{$ids.txtMultiD1}" autocomplete="off"  type="text" id="{$ids.txtMultiD1}" class="{css controlRound} {css text-color}" placeholder="Ciudad de Destino" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="{css frame-1-1} {css boxMargin-10-t}">
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-10-r} {css text-color}">
+                                    Fecha de Salida
+                                </div>
+                            </div>
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-10-l} {css text-color}" id="{$ids.vuelos_ida_vuelta}">
+                                    Fecha de Regreso
+                                </div>
+                            </div>
+                        </div>
+                        <div class="{css frame-1-1} {css boxMargin-5-t}">
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-10-r}">
+                                    <input name="{$ids.txtDateMultiO1}" autocomplete="off" autocomplete="off" type="text" id="{$ids.txtDateMultiO1}" class="{css controlRound} {css text-color} {css txt-date}" placeholder="Fecha de Salida" />
+                                </div>
+                            </div>
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-10-l}" id="{$ids.vuelos_ida_vuelta_t}">
+                                    <input name="{$ids.txtVDateMultiD1}" autocomplete="off" autocomplete="off" type="text" id="{$ids.txtVDateMultiD1}" class="{css controlRound} {css text-color} {css txt-date}" placeholder="Fecha" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="{$ids.vuelos_ida_vuelta1}" class="{css frame-1-1}">
+                    </div>
+                    <div id="{$ids.vuelos_multi_destinos}" class="{css frame-1-1}" style="display:none;">
+                        <div id="{$ids.vuelos_multi_destino2}">
+
+                            <div class="{css frame-1-1} {css boxMargin-10-t} {css text-color}">
+                                Información de origen 
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <input name="{$ids.txtMultiO2}" autocomplete="off" autocomplete="off" type="text" id="{$ids.txtMultiO2}" class="{css controlRound} {css text-color}" placeholder="Ciudad de Origen" />
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-10-t} {css text-color}">
+                                Informacion de destino
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <input name="{$ids.txtMultiD2}" autocomplete="off" autocomplete="off" type="text" id="{$ids.txtMultiD2}" class="{css controlRound} {css text-color}" placeholder="Ciudad de Destino" />
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-10-t}">
+                                <div class="{css frame-1-2}">
+                                    <div class="{css boxMargin-10-r} {css text-color}">
+                                        Fecha de Salida
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <div class="{css frame-1-2}">
+                                    <div class="{css boxMargin-10-r}">
+                                        <input name="{$ids.txtDateMultiO2}" autocomplete="off" autocomplete="off" type="text" id="{$ids.txtDateMultiO2}" class="{css controlRound} {css text-color}" placeholder="Fecha de Salida" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="{$ids.vuelos_multi_destino3}"  style="display:none;">
+
+                            <div class="{css frame-1-1} {css boxMargin-10-t} {css text-color}">
+                                Información de origen 
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <input name="{$ids.txtMultiO3}" autocomplete="off" autocomplete="off" type="text" id="{$ids.txtMultiO3}" class="{css controlRound} {css text-color}" placeholder="Ciudad de Origen" />
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-10-t} {css text-color}">
+                                Informacion de destino
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <input name="{$ids.txtMultiD3}" autocomplete="off" autocomplete="off" type="text" id="{$ids.txtMultiD3}" class="{css controlRound} {css text-color}" placeholder="Ciudad de Destino" />
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-10-t}">
+                                <div class="{css frame-1-2}">
+                                    <div class="{css boxMargin-10-r} {css text-color}">
+                                        Fecha de Salida
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <div class="{css frame-1-2}">
+                                    <div class="{css boxMargin-10-r}">
+                                        <input name="{$ids.txtDateMultiO3}" autocomplete="off" autocomplete="off" type="text" id="{$ids.txtDateMultiO3}" class="{css controlRound} {css text-color}" placeholder="Fecha de Salida" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="{$ids.vuelos_multi_destino4}"  style="display:none;">
+
+                            <div class="{css frame-1-1} {css boxMargin-10-t} {css text-color}">
+                                Información de origen 
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <input name="{$ids.txtMultiO4}"  autocomplete="off" autocomplete="off" type="text" id="{$ids.txtMultiO4}" class="{css controlRound} {css text-color}" placeholder="Ciudad de Origen" />
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-10-t} {css text-color}">
+                                Informacion de destino
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <input name="{$ids.txtMultiD4}" autocomplete="off" type="text" id="{$ids.txtMultiD4}" class="{css controlRound} {css text-color}" placeholder="Ciudad de Destino" />
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-10-t}">
+                                <div class="{css frame-1-2}">
+                                    <div class="{css boxMargin-10-r} {css text-color}">
+                                        Fecha de Salida
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="{css frame-1-1} {css boxMargin-5-t}">
+                                <div class="{css frame-1-2}">
+                                    <div class="{css boxMargin-10-r}">
+                                        <input name="{$ids.txtDateMultiO4}" autocomplete="off" type="text" id="{$ids.txtDateMultiO4}" class="{css controlRound} {css text-color}" placeholder="Fecha de Salida" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="{$ids.ocultar}" class="{css frame-1-1}" >
+
+                            <div class="{css boxMargin-10-h}">
+                                <div class="{css frame-float-l}">
+                                    <a  class="{css buttonText} {css buttonRound} {css text-color}" id="{$ids.agregarOcultar1}">
+                                        Agregar más Vuelos
+                                    </a>
+                                </div>
+
+                                <div class="{css frame-float-l}">
+                                    <a class="{css buttonText} {css buttonRound}  {css text-color}" id="{$ids.agregarOcultar2}" style="display: none;">
+                                        Agregar más Vuelos
+                                    </a>
+                                </div>
+                                <div class="{css frame-float-r}">
+                                    <a class="{css buttonText} {css buttonRound} {css text-color}" id="{$ids.agregarOcultar3}" style="display: none;">
+                                        Ocultar Vuelos
+                                    </a>
+                                </div>
+
+                                <div class="{css frame-float-r}">
+                                    <a class="{css buttonText} {css buttonRound} {css text-color}" id="{$ids.agregarOcultar4}" style="display: none;">
+                                        Ocultar Vuelos
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="{$ids.tblPax}" class="{css frame-1-1}">                    
+                        <div class="{css frame-1-1} {css boxMargin-10-t}">
+                            <div class="{css frame-1-3}">
+                                <div class="{css boxMargin-10-r} {css text-color}">
+                                    Adultos
+                                </div>
+                            </div>
+                            <div class="{css frame-1-3}">
+                                <div class="{css boxMargin-5-v} {css text-color}">
+                                    Niños
+                                </div>
+                            </div>
+                            <div class="{css frame-1-3}">
+                                <div class="{css boxMargin-10-l} {css text-color}">
+                                    Infantes
+                                </div>
+                            </div>
+                        </div>
+                        <div class="{css frame-1-1} {css boxMargin-5-t}">
+                            <div class="{css frame-1-3}">
+                                <div class="{css boxMargin-10-r}">
+                                    <select name="{$ids.ddlMultiAdults}" id="{$ids.ddlMultiAdults}" class="{css controlRound} {css text-color}">
+                                        <option selected="selected" value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="{css frame-1-3}">
+                                <div class="{css boxMargin-5-v}">
+                                    <select name="{$ids.ddlMultiChildren}" id="{$ids.ddlMultiChildren}" class="{css controlRound} {css text-color}">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="{css frame-1-3}">
+                                <div class="{css boxMargin-10-l}">
+                                    <select name="{$ids.ddlMultiInfants}" id="{$ids.ddlMultiInfants}" class="{css controlRound} {css text-color}">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="{css frame-1-1}">
+                        <table width="100%" id="{$ids.tblEdades}" border="0"  class="{css boxMargin-5-t} {css text-color}">
+                            <tr>
+                                <td width="34%"></td>
+                                <td width="33%">
+                                    <div class="{css boxMargin-5-v} {css text-color}">
+                                        2-11 años
+                                    </div>
+                                </td>
+                                <td width="33%">
+                                    <div class="{css boxMargin-10-l} {css text-color}">
+                                        0-23 meses
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr  id="{$ids.ddlMultiAge1}-tr">
+                                <td></td>
+                                <td id="{$ids.ddlMultiAge1}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiAge1}" id="{$ids.ddlMultiAge1}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                                <td id="{$ids.ddlMultiMonths1}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-l} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiMonths1}" id="{$ids.ddlMultiMonths1}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr  id="{$ids.ddlMultiAge2}-tr">
+                                <td></td>
+                                <td id="{$ids.ddlMultiAge2}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiAge2}" id="{$ids.ddlMultiAge2}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                                <td id="{$ids.ddlMultiMonths2}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-l} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiMonths2}" id="{$ids.ddlMultiMonths2}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="{$ids.ddlMultiAge3}-tr">
+                                <td></td>
+                                <td id="{$ids.ddlMultiAge3}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiAge3}" id="{$ids.ddlMultiAge3}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                                <td id="{$ids.ddlMultiMonths3}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-l} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiMonths3}" id="{$ids.ddlMultiMonths3}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="{$ids.ddlMultiAge4}-tr">
+                                <td></td>
+                                <td id="{$ids.ddlMultiAge4}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiAge4}" id="{$ids.ddlMultiAge4}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                                <td id="tdMultiMeses4">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-l} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiMonths4}" id="{$ids.ddlMultiMonths4}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="{$ids.ddlMultiAge5}-tr">
+                                <td></td>
+                                <td id="{$ids.ddlMultiAge5}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiAge5}" id="{$ids.ddlMultiAge5}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                                <td id="{$ids.ddlMultiMonths5}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-l} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiMonths5}" id="{$ids.ddlMultiMonths5}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr id="{$ids.ddlMultiAge6}-tr">
+                                <td></td>
+                                <td id="{$ids.ddlMultiAge6}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiAge6}" id="{$ids.ddlMultiAge6}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                                <td id="{$ids.ddlMultiMonths6}-td">
+                                    <div class="{css boxMargin-10-r} {css boxMargin-5-l} {css boxMargin-5-t}">
+                                        <select name="{$ids.ddlMultiMonths6}" id="{$ids.ddlMultiMonths6}" class="{css controlRound} {css text-color}" style="display:none;">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="{$ids.generales}"  class="{css frame-1-1}" style="display:none;">                    
+                        <div class="{css frame-1-1} {css boxMargin-10-t}">
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-5-r} {css text-color}">
+                                    Clase
+                                </div>
+                            </div>
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-5-l} {css text-color}">
+                                    Aerolínea
+                                </div>
+                            </div>
+                        </div>
+                        <div class="{css frame-1-1} {css boxMargin-5-t}">
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-5-r}">
+                                    <select name="{$ids.ddlClassMulti}" id="{$ids.ddlClassMulti}" class="{css controlRound} {css text-color}">
+                                        <option selected="selected" value="Y">Tarifa m&#225;s econ&#243;mica</option>
+                                        <option value="Y">Econ&#243;mica</option>
+                                        <option value="C">Ejecutiva</option>
+                                        <option value="F">Primera</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="{css frame-1-2}">
+                                <div class="{css boxMargin-5-l}">
+                                    <select name="{$ids.ddlAerolinea}" id="{$ids.ddlAerolinea}" class="{css controlRound} {css text-color}">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="{css frame-1-1} {css boxMargin-10-t}">
+                            <table id="{$ids.rblMultiStop}-table" class="{css controlRound}" style="width:100%;">
+                                <tr>
+                                    <td><input id="{$ids.rblMultiStop}0" type="radio" name="{$ids.rblMultiStop}" value="1" checked="checked" />
+                                        <label for="{$ids.rblMultiStop}0" class="{css text-color}">
+                                            Con Escala
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <input id="{$ids.rblMultiStop}1" type="radio" name="{$ids.rblMultiStop}" value="0" />
+                                        <label for="{$ids.rblMultiStop}1" class="{css text-color}">
+                                            Directos
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="{css textAlingcenter} {css boxMargin-10-t} {css frame-1-1} {css content-button}">                    
+                        <input type="button" name="{$ids.lbMultidestino}" value="Iniciar búsqueda" id="{$ids.lbMultidestino}" class="{css buttonRound}" />
+                    </div>
+                </form>
+            </div>
+        </div>        
+    </div>        
+</div>                   
+{/template}

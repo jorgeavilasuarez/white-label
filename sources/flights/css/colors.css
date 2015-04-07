@@ -1,0 +1,36 @@
+/* COLORES */
+.background-color {
+    background-color: #0ca7c6;
+}
+
+.border-color {
+    border: 1px solid #0ca7c6;
+}
+
+.label-color {
+    color: white;
+}
+
+.goog-date-picker {
+    background-color: #0ca7c6;
+    border: 1px solid white;
+}
+
+.goog-date-picker {
+    background: #0ca7c6;
+}
+
+    .goog-date-picker th {
+        font-size: .9em;
+        color: white;
+    }
+
+    .goog-date-picker button {
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+.text-color {
+    color: white;
+}

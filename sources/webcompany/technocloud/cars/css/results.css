@@ -1,0 +1,3291 @@
+
+
+
+.container_general {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 320px;
+    z-index: 99999;
+    width: 1149px;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+
+.container_general * {
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+}
+
+
+.container_general  ol, .container_general  ul {
+    list-style: none;
+}
+
+.clusters {
+    width: 750px;
+    float: left;
+    background: white;
+    padding: 0;
+    margin: 0 0 0 0;
+    position: relative;
+}
+
+.result_wrapper {
+    width: 750px;
+    float: left;
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.result_wrap {
+    width: 738px;
+    float: left;
+    display: inline;
+    padding: 6px;
+    margin: 0;
+    /* @alternate */
+    background: white;
+    border: 1px solid #DDD;
+    border-radius: 12px 12px 12px 0;
+    -moz-border-radius: 12px 12px 12px 0;
+    -khtml-border-radius: 12px 12px 12px 0;
+    -webkit-border-radius: 12px 12px 12px 0;
+    background: #DDD;
+    /* @alternate */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F3F3F3), to(#DDD));
+    /* @alternate */
+    background-image: -moz-linear-gradient( center top, #F3F3F3 0%, #DDD 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f3f3f3', endColorstr='#dddddd');
+    z-index: 90;
+}
+
+.result_inner {
+    width: 736px;
+    float: left;
+    /* @alternate */
+    background: #C9D9F0;
+    /* @alternate */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#EBF3FA), to(#D0E4F7));
+    /* @alternate */
+    background-image: -moz-linear-gradient( center top, #EBF3FA 0%, #D0E4F7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf3fa', endColorstr='#d0e4f7');
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -khtml-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border: 1px solid #EEE;
+    position: relative;
+}
+
+.result_inner_left {
+    width: 544px;
+    float: left;
+    display: inline;
+    background: white;
+    padding: 7px 0 7px 6px;
+    border-radius: 8px 0 0 8px;
+    -moz-border-radius: 8px 0 0 8px;
+    -khtml-border-radius: 8px 0 0 8px;
+    -webkit-border-radius: 8px 0 0 8px;
+    border-right: 1px solid #EEE;
+    min-height: 125px;
+    /* @alternate */
+    height: auto !important;
+    /* @alternate */
+    height: 125px;
+}
+/* Car Messages */
+.car_message {
+    position: absolute;
+    top: 13px;
+    left: -2px;
+    padding: 5px 12px 5px 8px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: bold;
+    border-radius: 2px 16px 16px 2px;
+    -moz-border-radius: 2px 16px 16px 2px;
+    -khtml-border-radius: 2px 16px 16px 2px;
+    -webkit-border-radius: 2px 16px 16px 2px;
+    box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+    -webkit-box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+    -moz-box-shadow: rgba(0,0,0,0.5) 0 1px 2px;
+    z-index: 1;
+}
+
+    .car_message span {
+        float: left;
+        display: block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin: 0 8px 0 0;
+        background-image: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png);
+    }
+
+.top-seller span {
+    background-position: -358px -141px;
+}
+
+.value span {
+    background-position: -342px -141px;
+}
+
+.limited span {
+    background-position: -326px -141px;
+}
+
+.treat span {
+    background-position: -311px -141px;
+}
+
+.car_message.sale span {
+    background: none;
+    width: auto;
+}
+
+.car_message.sale {
+    /* @alternate */
+    background: #cc0000;
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed4949), to(#cc0000));
+    /* @alternate */
+    background: -moz-linear-gradient( center top, #ed4949 0%, #cc0000 100%);
+    color: #fff;
+    text-shadow: -1px -1px 0 #a70303;
+}
+
+.car_message.price-crash, .car_message.limited, .car_message.unavailable-car {
+    /* @alternate */
+    background: #970000;
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, from(#ed4949), to(#970000));
+    /* @alternate */
+    background: -moz-linear-gradient( center top, #ed4949 0%, #970000 100%);
+    color: #fff;
+    text-shadow: -1px -1px 0 #a70303;
+}
+
+.car_message.top-seller {
+    /* @alternate */
+    background-color: #003580;
+    /* @alternate */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3a71bf), to(#003580));
+    /* @alternate */
+    background-image: -moz-linear-gradient( center top, #3a71bf 0%, #003580 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a71bf', endColorstr='#003580');
+    color: #fff;
+    text-shadow: -1px -1px 0 #022557;
+}
+
+.car_message.treat {
+    /* @alternate */
+    background-color: #edc046;
+    /* @alternate */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fde195), to(#edc046));
+    /* @alternate */
+    background-image: -moz-linear-gradient( center top, #fde195 0%, #edc046 100%);
+    color: #a06c22;
+    text-shadow: 1px 1px 0 #FBE5A7;
+}
+
+.car_message.value {
+    background-color: #9BB54A;
+    /* @alternate */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bcd278), to(#8ca440));
+    /* @alternate */
+    background-image: -moz-linear-gradient( center top, #bcd278 0%, #8ca440 100%);
+    color: #fff;
+    text-shadow: -1px -1px 0 #799031;
+    z-index: 1;
+}
+
+.result_img {
+    padding: 25px 0 0;
+    width: 150px;
+    float: left;
+}
+
+.result_info {
+    width: 384px;
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+    .result_info ul li {
+        background-image: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png);
+        background-repeat: no-repeat;
+    }
+
+h3.result_name {
+    font-weight: normal;
+    margin-bottom: 0;
+    width: 384px;
+    float: left;
+    font-size: 14px;
+}
+
+.result_class {
+    float: left;
+    font-size: 12px;
+    position: relative;
+    margin-top: 7px;
+}
+
+.selling-out {
+    float: left;
+    clear: both;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 7px 0 0;
+    color: #970000;
+    width: 278px;
+    padding-right: 90px;
+}
+
+.result_info .result_spec {
+    width: 100%;
+    float: left;
+    font-size: 11px;
+    clear: both;
+    margin-top: 7px;
+}
+
+.result_spec ul {
+    float: left;
+}
+
+.result_spec li {
+    display: block;
+    float: left;
+    padding-left: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+}
+
+.result_seats {
+    background-position: -10px -141px;
+}
+
+.result_doors {
+    background-position: -10px -168px;
+}
+
+.result_ac {
+    background-position: -10px -195px;
+}
+
+.result_trans {
+    background-position: -10px -223px;
+}
+
+.result_included {
+    width: 100%;
+    float: left;
+    display: inline;
+    font-size: 10px;
+    clear: both;
+    margin-top: 7px;
+    margin: 0;
+    padding: 0;
+}
+
+.result_info ul li.result_included_title {
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #678A32;
+    font-weight: bold;
+    background-image: none;
+}
+
+.result_pack {
+    padding: 0;
+    padding-left: 22px;
+    margin: 0 0 4px 0;
+    float: left;
+    position: relative;
+    background-position: -10px -285px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #E3A31E;
+    line-height: 16px;
+    width: 362px;
+}
+
+.result_includes {
+    float: left;
+    background-position: -10px -342px;
+    padding-left: 22px;
+    line-height: 16px;
+    margin: 0 10px 4px 0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+#deposit {
+    background-image: url("http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png");
+    background-position: -10px -775px;
+    background-repeat: no-repeat;
+    clear: both;
+    color: #333333;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    height: 26px;
+    margin: 3px 0 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    width: 280px;
+}
+
+#deposit_main_tip {
+    width: 286px;
+    height: 26px;
+    float: left;
+    position: relative;
+}
+
+.deposit_book {
+    float: left;
+    padding-left: 30px;
+    padding-top: 8px;
+    font-size: 11px;
+}
+
+.result_button {
+    width: 164px;
+    float: right;
+    display: inline;
+    padding: 10px;
+}
+
+.result_title {
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.result_was {
+    font-size: 12px;
+    font-weight: bold;
+    color: #C00;
+    line-height: 11px;
+    margin-bottom: 5px;
+}
+
+    .result_was span {
+        text-decoration: line-through;
+    }
+
+.result_now {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    line-height: 22px;
+    text-align: center;
+}
+
+a.result_mail:link {
+    width: 142px;
+    line-height: 22px;
+    padding-left: 20px;
+    background: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png) no-repeat -4px -406px #DDD;
+    border: 1px solid #C4C4C4;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+    clear: both;
+    margin-top: 8px;
+    float: left;
+    text-align: center;
+    text-shadow: 0 1px 1px white;
+}
+
+.btn-wrap {
+    position: absolute;
+    width: 164px;
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+}
+
+.car_details {
+    width: 745px;
+    float: left;
+}
+
+.result_car {
+    float: left;
+    width: 150px;
+}
+
+.car_details a {
+    /* @alternate */
+    background-color: #DDD;
+    /* @alternate */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#DDD), to(#CCC));
+    /* @alternate */
+    background-image: -moz-linear-gradient( center top, #DDD 0%, #CCC 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#cccccc');
+    border: 1px solid #DDD;
+    border-top: none;
+    padding: 0 8px 4px 8px;
+    border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    -khtml-border-radius: 0 0 12px 12px;
+    -webkit-border-radius: 0 0 12px 12px;
+    font-size: 12px;
+    color: #444;
+    text-shadow: 1px 1px 0 #F4F4F4;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+}
+/* nav bottom */
+#navbottom {
+    color: #666;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    height: 30px;
+    margin: 0;
+    padding: 20px 10px 0 5px;
+    width: 556px;
+}
+
+.more {
+    float: right;
+}
+
+.back {
+    line-height: 20px;
+    display: inline;
+    float: right;
+    padding-right: 15px;
+}
+
+    .back a {
+        font-weight: bold;
+        color: #606060;
+        padding-left: 15px;
+    }
+/* pagination */
+.pag {
+    width: 750px;
+    float: right;
+    margin: 5px 0 15px;
+    font-size: 12px;
+    line-height: 32px;
+    background-color: #ebebeb;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    color: #444;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+    text-shadow: 1px 1px 0 #f7f7f7;
+}
+
+.pag_pages {
+    float: right;
+}
+
+.pag_pages_no {
+    float: left;
+}
+
+.pag_pages_select {
+    float: left;
+    margin-left: 10px;
+}
+
+.pag_pages a {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+    .pag_pages a.page-next, .pag_pages a.page-prev {
+        width: 22px;
+        height: 22px;
+        margin: 5px;
+        text-decoration: none;
+        background: url(..http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png) no-repeat scroll -656px -206px #999;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -khtml-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        text-indent: -9000px;
+        outline: none;
+    }
+
+    .pag_pages a.page-prev {
+        background: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png) no-repeat scroll -642px -206px #999;
+        margin: 5px 10px 5px 5px;
+    }
+
+        .pag_pages a.page-next:hover, .pag_pages a.page-prev:hover {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
+        }
+
+
+/* Search Results Many - many / many to one / one to many */
+.small-pin {
+    background: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/sprite-small-pins.png) no-repeat;
+}
+
+.sprite-pin-1-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -315px;
+}
+
+.sprite-pin-2-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -315px;
+}
+
+.sprite-pin-3-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px -280px;
+}
+
+.sprite-pin-4-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px -245px;
+}
+
+.sprite-pin-5-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px -210px;
+}
+
+.sprite-pin-6-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px -175px;
+}
+
+.sprite-pin-7-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px -140px;
+}
+
+.sprite-pin-8-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px -105px;
+}
+
+.sprite-pin-9-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px -70px;
+}
+
+.sprite-pin-10-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px -35px;
+}
+
+.sprite-pin-11-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px -280px;
+}
+
+.sprite-pin-12-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px -280px;
+}
+
+.sprite-pin-13-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px -280px;
+}
+
+.sprite-pin-14-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px -280px;
+}
+
+.sprite-pin-15-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px -280px;
+}
+
+.sprite-pin-16-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px -280px;
+}
+
+.sprite-pin-17-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px -280px;
+}
+
+.sprite-pin-18-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -280px;
+}
+
+.sprite-pin-19-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -280px;
+}
+
+.sprite-pin-20-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -280px;
+}
+
+.sprite-pin-21-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px -245px;
+}
+
+.sprite-pin-22-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px -245px;
+}
+
+.sprite-pin-23-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px -245px;
+}
+
+.sprite-pin-24-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px -245px;
+}
+
+.sprite-pin-25-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px -245px;
+}
+
+.sprite-pin-26-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px -245px;
+}
+
+.sprite-pin-27-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px -245px;
+}
+
+.sprite-pin-28-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -245px;
+}
+
+.sprite-pin-29-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -245px;
+}
+
+.sprite-pin-30-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -245px;
+}
+
+.sprite-pin-31-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px -210px;
+}
+
+.sprite-pin-32-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px -210px;
+}
+
+.sprite-pin-33-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px -210px;
+}
+
+.sprite-pin-34-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px -210px;
+}
+
+.sprite-pin-35-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px -210px;
+}
+
+.sprite-pin-36-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px -210px;
+}
+
+.sprite-pin-37-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px -210px;
+}
+
+.sprite-pin-38-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -210px;
+}
+
+.sprite-pin-39-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -210px;
+}
+
+.sprite-pin-40-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -210px;
+}
+
+.sprite-pin-41-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px -175px;
+}
+
+.sprite-pin-42-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px -175px;
+}
+
+.sprite-pin-43-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px -175px;
+}
+
+.sprite-pin-44-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px -175px;
+}
+
+.sprite-pin-45-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px -175px;
+}
+
+.sprite-pin-46-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px -175px;
+}
+
+.sprite-pin-47-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px -175px;
+}
+
+.sprite-pin-48-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -175px;
+}
+
+.sprite-pin-49-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -175px;
+}
+
+.sprite-pin-50-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -175px;
+}
+
+.sprite-pin-51-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px -140px;
+}
+
+.sprite-pin-52-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px -140px;
+}
+
+.sprite-pin-53-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px -140px;
+}
+
+.sprite-pin-54-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px -140px;
+}
+
+.sprite-pin-55-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px -140px;
+}
+
+.sprite-pin-56-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px -140px;
+}
+
+.sprite-pin-57-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px -140px;
+}
+
+.sprite-pin-58-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -140px;
+}
+
+.sprite-pin-59-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -140px;
+}
+
+.sprite-pin-60-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -140px;
+}
+
+.sprite-pin-61-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px -105px;
+}
+
+.sprite-pin-62-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px -105px;
+}
+
+.sprite-pin-63-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px -105px;
+}
+
+.sprite-pin-64-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px -105px;
+}
+
+.sprite-pin-65-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px -105px;
+}
+
+.sprite-pin-66-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px -105px;
+}
+
+.sprite-pin-67-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px -105px;
+}
+
+.sprite-pin-68-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -105px;
+}
+
+.sprite-pin-69-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -105px;
+}
+
+.sprite-pin-70-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -105px;
+}
+
+.sprite-pin-71-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px -70px;
+}
+
+.sprite-pin-72-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px -70px;
+}
+
+.sprite-pin-73-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px -70px;
+}
+
+.sprite-pin-74-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px -70px;
+}
+
+.sprite-pin-75-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px -70px;
+}
+
+.sprite-pin-76-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px -70px;
+}
+
+.sprite-pin-77-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px -70px;
+}
+
+.sprite-pin-78-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -70px;
+}
+
+.sprite-pin-79-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -70px;
+}
+
+.sprite-pin-80-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -70px;
+}
+
+.sprite-pin-81-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px -35px;
+}
+
+.sprite-pin-82-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px -35px;
+}
+
+.sprite-pin-83-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px -35px;
+}
+
+.sprite-pin-84-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px -35px;
+}
+
+.sprite-pin-85-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px -35px;
+}
+
+.sprite-pin-87-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px -35px;
+}
+
+.sprite-pin-88-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px -35px;
+}
+
+.sprite-pin-89-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -35px;
+}
+
+.sprite-pin-90-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px -35px;
+}
+
+.sprite-pin-91-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 -35px;
+}
+
+.sprite-pin-92-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -279px 0;
+}
+
+.sprite-pin-93-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -248px 0;
+}
+
+.sprite-pin-94-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -217px 0;
+}
+
+.sprite-pin-95-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -186px 0;
+}
+
+.sprite-pin-96-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -155px 0;
+}
+
+.sprite-pin-97-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -124px 0;
+}
+
+.sprite-pin-98-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -93px 0;
+}
+
+.sprite-pin-99-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px 0;
+}
+
+.sprite-pin-100-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -310px 0;
+}
+
+.sprite-pin-car-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -31px 0;
+}
+
+.sprite-pin-city-sml {
+    width: 20px;
+    height: 24px;
+    background-position: 0 0;
+}
+
+.sprite-pin-airport-sml {
+    width: 20px;
+    height: 24px;
+    background-position: -62px -315px;
+}
+
+.filters-map-btn {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png);
+    background-origin: padding-box;
+    background-position: -374px -141px;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    bottom: auto;
+    float: right;
+    height: 71px;
+    left: auto;
+    margin-top: -71px;
+    pointer-events: none;
+    position: relative;
+    right: -1px;
+    top: 52px;
+    width: 88px;
+    z-index: 1001;
+}
+
+    .filters-map-btn a {
+        width: auto;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: auto;
+        text-decoration: none !important;
+        pointer-events: all;
+    }
+
+.location-filters {
+    z-index: 1001;
+    background-color: #fff6de;
+    border: 1px solid #f5e2ae;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.location-filters-inner {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    float: left;
+    width: 710px;
+}
+
+.filter-pickup {
+    float: left;
+    width: 52%;
+    background: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png) no-repeat 344px -636px;
+}
+
+.filter-dropoff {
+    float: left;
+    width: 48%;
+}
+
+.location-filter-title {
+    color: #484848;
+    font-weight: 700;
+    font-size: 12px;
+    padding-left: 20px;
+    background: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/bookingProcessSprite.png) no-repeat -311px -223px;
+    height: 16px;
+    width: auto;
+    line-height: 16px;
+}
+
+
+.item-marker {
+    height: 24px;
+    width: 20px;
+    background-image: url(http://www.autos.metropolitan-touring.com/images/site_graphics/newsite/sprite-small-pins.png);
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}
+
+.filter-map {
+    margin-top: 8px;
+    float: left;
+    background-color: #ffd771;
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.btn-launchmap a {
+    float: left;
+    background-color: #ffb700;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    height: 25px;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+    .btn-launchmap a:hover {
+        background-color: #af8e3a;
+        color: #FFF;
+    }
+
+.filter-map-message {
+    float: left;
+    height: 25px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #0d0d0d;
+    padding: 0 10px;
+}
+
+.pickup-location {
+    margin-top: 5px;
+    display: inline-block;
+    float: left;
+    width: 320px;
+    height: 25px;
+    line-height: 25px;
+    position: relative;
+    font-size: 13px;
+    background-color: #ffd771;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+.filters-title {
+    color: #003b7e;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+    margin: 10px 0 0 20px;
+}
+
+.location-single {
+    width: 700px;
+}
+
+.location-map-overlay {
+    background-color: #000;
+    opacity: 0.7;
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 4000;
+}
+
+
+/**=========================================================================================**/
+
+/*------------------------------------------------------------------
+[White label stylesheet]
+
+Affiliate:	metropolitan_rc
+Created:	15/10/2013
+Designer:	Michael
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+	1. Font colors
+		1.1 Green
+		1.2 Dark blue
+		1.3 Dark red
+		1.4 Yellow
+		1.5 Black
+		1.6 Black on bg
+	2. Spritesheet & positioning
+	3. Universal rules
+		3.1 Border radius (excl. buttons)
+	4. Progress steps
+	5. Buttons
+		5.1 Standard
+			5.1.1 Border radius
+			5.1.2 Text
+			5.1.3 Background
+			5.1.4 Border & box shadow
+		5.2 Hover
+			5.2.1 Text
+			5.2.2 Background
+			5.2.3 Border & box shadow
+		5.3 Terms & conditions
+			5.2.1 Text
+			5.2.2 Background
+			5.2.3 Border & radius & box shadow
+		5.4 Email
+	6. Frames
+		6.1 Universal
+		6.2 Suppliers
+		6.3 Result
+	7. Side bars
+		7.1 Left
+		7.2 Right
+	8. Home.do / Landing pages
+	9. Site fixes
+	10. Hidden
+	11. Affiliate site fixes
+
+-------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------
+[1. Font colors]
+*/
+
+/*
+	1.1 Green- #678a32
+	*/
+#callus, li.result_included_title, .rental-included h3, .loc-extra h2 span, .peaceofmind span, #damageexcesstext ul li span, .extra-choice-extras span, .result_included_title, .manage-phone p strong, .manage-phone p.callfree {
+    color: #678a32 !important;
+}
+
+/*
+	1.2 Dark blue- #174974
+	*/
+.ss_pickup_location, .filter_content, .ss_phone_no, p.number, #help {
+    color: #174974 !important;
+}
+
+/*
+	1.3 Dark red- #970000
+	*/
+.selling-out, .result_was, #damageexcesstext label {
+    color: #970000 !important;
+}
+
+/*
+	1.4 Yellow- #e3a353
+	*/
+.result_pack, .daily, #sav, .page_title, #countdown .firstline, .hire_charge {
+    color: #e3a353 !important;
+}
+
+/*
+	1.5 Black- #000000
+	*/
+.ss_title, .ss_pickup_location, .result_name, .car-name, .about, p.peaceofmind, #step_point, .sub_title, .and-save, .rental-included ul, .r_summary_extras_head, .r_summary_extras, .result_title, .result_now {
+    color: #000000 !important;
+}
+
+
+
+    /*------------------------------------------------------------------
+[2. Spritesheet & positioning]
+*/
+
+    .step1_selected, .step1_done, .step2, .step2_selected, .step2_done, .step3, .step3_selected, .step3_done, .step4, .step4_selected, .step4_done, .step5, .step5_selected, .car_message span, .result_info ul li, #deposit, .filters-map-btn, #top_summary .result_seats, #top_summary .result_doors, #top_summary .result_ac, #top_summary .result_trans, .r_summary_result_seats, .r_summary_result_doors, .r_summary_result_ac, .r_summary_result_trans, .rental-included ul li, .carclass-spec ul li {
+        background-image: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") !important;
+        background-repeat: no-repeat !important;
+    }
+
+    .result_includes, #top_summary .result_includes, #damageexcesstext ul li, .remember p, .tick-msg, #includedList li, .rental-included ul li {
+        background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -42px -342px !important;
+    }
+
+.tooltipfreecancellation .ui-tooltip-content, .tooltipunlimited .ui-tooltip-content, .tooltiptheftprojection .ui-tooltip-content, .tooltipamendmentfees .ui-tooltip-content, .tooltipwasnow .ui-tooltip-content {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -37px -335px !important;
+}
+
+.copy .veri_trans {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -616px -96px;
+}
+
+#oneway {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -19px -812px #F7E9BA;
+}
+
+a.result_mail:link {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -4px -406px #DDD;
+}
+
+.pag_pages a.page-next, .pag_pages a.page-prev {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat scroll -656px -206px #999;
+}
+
+.pag_pages a.page-prev {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat scroll -642px -206px #999;
+}
+
+.filter-pickup {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat 344px -636px;
+}
+
+.location-filter-title {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -311px -223px;
+}
+
+.location-dropdown > a {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat right -270px;
+}
+
+div.pin-airport-b {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -643px -141px;
+}
+
+div.pin-car-b {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -672px -141px;
+}
+
+.small_map_address {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -697px -91px #fff;
+}
+
+.driver_age_tip {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -326px -168px;
+}
+
+.telephone-left .phone-us span {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -643px -176px;
+}
+
+#veri > a {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -463px -142px;
+}
+
+.important {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat 0px -575px #FADDDD;
+}
+
+.important_us {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat 0px -585px #FADDDD;
+}
+
+.filter_toggle {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -768px -280px transparent;
+}
+
+.filter_toggle_closed {
+    background: url("http://www.autos.metropolitan-touring.com/images/metropolitan_rc/bookingSprite-ltr.png") no-repeat -777px -280px transparent;
+}
+
+.tick-msg {
+    background-position: -42px -333px;
+}
+
+.result_seats, #top_summary .result_seats {
+    background-position: -10px -141px;
+}
+
+.result_doors, #top_summary .result_doors {
+    background-position: -10px -168px;
+}
+
+.result_ac, #top_summary .result_ac {
+    background-position: -10px -195px;
+}
+
+.result_trans, #top_summary .result_trans {
+    background-position: -10px -223px;
+}
+
+#top_summary .result_seats, .r_summary_result_seats {
+    background-position: -10px -141px;
+}
+
+#top_summary .result_doors, .r_summary_result_doors {
+    background-position: -10px -168px;
+}
+
+#top_summary .result_ac, .r_summary_result_ac {
+    background-position: -10px -195px;
+}
+
+#top_summary .result_trans, .r_summary_result_trans {
+    background-position: -10px -223px;
+}
+
+.result_info ul li.result_included_title {
+    background-image: none !important;
+}
+
+
+
+/*------------------------------------------------------------------
+[3. Universal rules]
+*/
+
+/*
+	3. Border radius (excl. buttons)
+	*/
+#suppliers, .suppliers_info, .about, .result_wrap, .result_inner, .result_inner_left, .alert, #newsearch, .freeClx-msg, .important, #topfreecancel {
+    border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    -webkit-border-radius: 8px !important;
+}
+
+
+
+/*------------------------------------------------------------------
+[4. Progress steps]
+*/
+.step1_selected, .step2_selected, .step3_selected, .step4_selected, .step5_selected {
+    color: #ffffff !important;
+}
+
+.step1_selected {
+    background-position: 0 0 !important;
+}
+
+.step2_selected {
+    background-position: -196px -45px !important;
+}
+
+.step3_selected {
+    background-position: -392px -45px !important;
+}
+
+.step4_selected {
+    background-position: -588px -45px !important;
+}
+
+.step5_selected {
+    background-position: -784px -45px !important;
+}
+
+.step2, .step3, .step4, .step5 {
+    color: #333333 !important;
+}
+
+.step2 {
+    background-position: -196px 0 !important;
+}
+
+.step3 {
+    background-position: -392px 0 !important;
+}
+
+.step4 {
+    background-position: -588px 0 !important;
+}
+
+.step5 {
+    background-position: -784px 0 !important;
+}
+
+.step1_done, .step2_done, .step3_done, .step4_done, #steps a {
+    color: #333333 !important;
+}
+
+.step1_done {
+    background-position: 0 -45px !important;
+}
+
+.step2_done {
+    background-position: -196px -90px !important;
+}
+
+.step3_done {
+    background-position: -392px -90px !important;
+}
+
+.step4_done {
+    background-position: -588px -90px !important;
+}
+
+#steps > div {
+    font-weight: bold !important;
+    font-size: 12px !important;
+    background-color: transparent !important;
+    padding: 0 0 0 25px !important;
+    width: 171px !important;
+    border-radius: 0 !important;
+    height: 40px !important;
+    margin: 0 !important;
+    line-height: 38px !important;
+}
+
+
+
+/*------------------------------------------------------------------
+[5. Buttons]
+*/
+
+/*
+	[5.1 Standard]
+	*/
+.button, .proceed-btn, .continue a, #FYF, #FYFDetails, #SCF, a.book-button, .left_pannel .sub_con, #formsubmit, .button-row input, .useful_links a, .book-now #submitImage, .my-booking-nav a, #accesscheck a, .quick > a, .change-button > a {
+    /* @alternate */
+    outline: none !important;
+    /*
+		[5.1.1 Border radius]
+		*/
+    /* @alternate */
+    -webkit-border-radius: 26px !important;
+    /* @alternate */
+    -moz-border-radius: 26px !important;
+    /* @alternate */
+    border-radius: 26px !important;
+    /*
+		[5.1.2 Text]
+		*/
+    color: #333333 !important;
+    /* @alternate */
+    text-shadow: none !important;
+    /*
+		[5.1.3  Background]
+		*/
+    /* @alternate */
+    background: #FEE803 !important;
+    /* @alternate */
+    background: -moz-linear-gradient(top, #FEE803 0%, #F69A1B 100%) !important;
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEE803), color-stop(100%,#F69A1B)) !important;
+    /* @alternate */
+    background: -webkit-linear-gradient(top, #FEE803 0%,#F69A1B 100%) !important;
+    /* @alternate */
+    background: -o-linear-gradient(top, #FEE803 0%,#F69A1B 100%) !important;
+    /* @alternate */
+    background: -ms-linear-gradient(top, #FEE803 0%,#F69A1B 100%) !important;
+    /* @alternate */
+    background: linear-gradient(to bottom, #FEE803 0%,#F69A1B 100%) !important;
+    /*
+		[5.1.4  Border & box shadow]
+		*/
+    border: 3px solid #CCCCCC !important;
+    /* @alternate */
+    -webkit-box-shadow: 0 0 0 0 #888888 !important;
+    /* @alternate */
+    -moz-box-shadow: 0 0 0 0 #888888 !important;
+    /* @alternate */
+    box-shadow: 0 0 0 0 #888888 !important;
+    display: block;
+    zoom: 1;
+    vertical-align: baseline;
+    margin: 0 2px;
+    /* @alternate */
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 16px/100% Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 8px 10px;
+    /* @alternate */
+    text-shadow: 0 -1px -1px rgba(0,0,0,.2);
+    /* @alternate */
+    -webkit-border-radius: 6px;
+    /* @alternate */
+    -moz-border-radius: 6px;
+    /* @alternate */
+    border-radius: 6px;
+    /* @alternate */
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    /* @alternate */
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    /* @alternate */
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+    /*
+	[5.2 Hover ]
+	*/
+    .button:hover, .proceed-btn:hover, .continue a:hover, #FYF:hover, #FYFDetails:hover, #SCF:hover, a.book-button:hover, .left_pannel .sub_con:hover, #formsubmit:hover, .button-row input:hover, .useful_links a:hover, .book-now #submitImage:hover, .my-booking-nav a:hover, #accesscheck a:hover, .quick > a:hover, .change-button > a:hover {
+        /*
+		[5.2.1 Text]
+		*/
+        color: #333333 !important;
+        text-shadow: none !important;
+        /*
+		[5.2.2  Background]
+		*/
+        /* @alternate */
+        background: #FEE803 !important;
+        /* @alternate */
+        background: -moz-linear-gradient(top, #FEE803 0%, #F69A1B 60%) !important;
+        /* @alternate */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEE803), color-stop(60%,#F69A1B)) !important;
+        /* @alternate */
+        background: -webkit-linear-gradient(top, #FEE803 0%,#F69A1B 60%) !important;
+        /* @alternate */
+        background: -o-linear-gradient(top, #FEE803 0%,#F69A1B 60%) !important;
+        /* @alternate */
+        background: -ms-linear-gradient(top, #FEE803 0%,#F69A1B 60%) !important;
+        /* @alternate */
+        background: linear-gradient(to bottom, #FEE803 0%,#F69A1B 60%) !important;
+        /*
+		[5.2.3  Border & box shadow]
+		*/
+        border: 3px solid #CCCCCC !important;
+        -webkit-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.4) !important;
+        -moz-box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.4) !important;
+        box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    .button:active, .proceed-btn:active, .continue a:active, #FYF:active, #FYFDetails:active, #SCF:active, a.book-button:active, .left_pannel .sub_con:active, #formsubmit:active, .button-row input:active, .useful_links a:active, .book-now #submitImage:active, .my-booking-nav a:active, #accesscheck a:active, .quick > a:active, .change-button > a:active {
+        top: 0 !important;
+        background: #F69A1B !important;
+        -webkit-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.6) !important;
+        -moz-box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.6) !important;
+        box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.6) !important;
+    }
+
+/*
+	[5.3 Terms & conditions ]
+	*/
+.car_details {
+    position: relative;
+    top: -1px;
+}
+
+    .car_details a, .car_details a:hover {
+        /*
+			[5.3.1 Text]
+			*/
+        color: #333333;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+        padding-top: 4px;
+        /*
+			[5.3.2  Background]
+			*/
+        background: #A6A7A6 !important;
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+        /*
+			[5.3.3  Border & radius & box shadow]
+			*/
+        border: 1px solid #A6A7A6;
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+        -moz-border-radius: 0 0 6px 6px;
+        -webkit-border-radius: 0 0 6px 6px;
+    }
+/*
+	[5.4 Email ]
+	*/
+a.result_mail:link, a.result_mail:hover {
+    color: #444444;
+    text-shadow: none !important;
+    background-color: #dddddd !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 1px solid #C4C4C4 !important;
+}
+
+/*
+	[5.4 Left search ]
+	*/
+.proceed-btn {
+    padding: 6px 10px !important;
+}
+
+/*------------------------------------------------------------------
+[6. Frames]
+*/
+
+/*
+	[6.1 Universal ]
+	*/
+
+/*
+	[6.2 Suppliers ]
+	*/
+#suppliers {
+    background: #fbfbfb !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 1px solid #D6D6D5;
+}
+
+.suppliers_info {
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #DDD;
+}
+
+.about {
+    color: #333;
+    background-color: #FFFFFF !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 1px solid #FFFFFF;
+}
+
+/*
+	[6.3 Result ]
+	*/
+/*
+		[6.3 Wrap ]
+		*/
+.result_wrap {
+    border: 1px solid #A6A7A6;
+    border-bottom-left-radius: 0 !important;
+    /* @alternate */
+    background: #A6A7A6;
+    /* @alternate */
+    background: -moz-linear-gradient(top, #CBCBCB 0%, #A6A7A6 100%);
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#CBCBCB), color-stop(100%,#A6A7A6));
+    /* @alternate */
+    background: -webkit-linear-gradient(top, #CBCBCB 0%,#A6A7A6 100%);
+    /* @alternate */
+    background: -o-linear-gradient(top, #CBCBCB 0%,#A6A7A6 100%);
+    /* @alternate */
+    background: -ms-linear-gradient(top, #CBCBCB 0%,#A6A7A6 100%);
+    /* @alternate */
+    background: linear-gradient(to bottom, #CBCBCB 0%,#A6A7A6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    margin-bottom: 5px;
+}
+
+/*
+		[6.3 Left ]
+		*/
+.result_inner_left {
+    background: #ffffff !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    -moz-border-radius-topright: 0 !important;
+    -moz-border-radius-bottomright: 0 !important;
+    border-right: 2px solid #dddddd;
+    min-height: 150px;
+}
+
+/*
+		[6.3 Right ]
+		*/
+.result_inner {
+    background: #ffffff !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 0;
+}
+
+
+
+/*------------------------------------------------------------------
+[7. Side bars]
+*/
+
+/*
+	[7.1 Left ]
+	*/
+
+
+
+.left_column_shadow {
+    top: 0 !important;
+    z-index: 0 !important;
+}
+
+.ss_search_pu_panel, .ss_search_do_dropboxes, .ss_search_do_panel {
+    margin-top: 10px !important;
+}
+
+.ss_pickup_details, .ss_pickup_location {
+    margin-top: 5px !important;
+}
+
+.ss_phone_no {
+    margin-bottom: 5px !important;
+}
+
+.filter_container {
+    border: none !important;    
+    border-left: 1px solid #e2e2e2;
+    border-right: none;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #e9e9e9;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+}
+
+.filter_title_container {    
+    /* @alternate */
+    background: -moz-linear-gradient(top, #127dbd 0%, #014d67 100%);
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#127dbd), color-stop(100%,#014d67));
+    /* @alternate */
+    background: -webkit-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: -o-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: -ms-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: linear-gradient(to bottom, #127dbd 0%,#014d67 100%);    
+    /* @alternate */
+    background: -moz-linear-gradient(top, rgba(251,251,251,1) 0%, rgba(229,229,229,1) 100%);
+    /* @alternate */
+    background: -o-linear-gradient(top, rgba(251,251,251,1) 0%,rgba(229,229,229,1) 100%);
+    /* @alternate */
+    background: -ms-linear-gradient(top, rgba(251,251,251,1) 0%,rgba(229,229,229,1) 100%);    
+    /* @alternate */
+    background: #127dbd;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 1px solid #0F6799 !important;
+    padding: 8px;
+    position: relative;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    float: left;
+    width: 193px;
+    cursor: pointer;
+}
+
+.filter_title {
+    /* @alternate */
+    color: #ffffff !important;
+    /* @alternate */
+    text-shadow: none !important;
+    font-size: 12px;
+    font-weight: bold;
+    /* @alternate */
+    color: #333333;
+    /* @alternate */
+    text-shadow: 0px 1px 1px #ffffff;
+    float: left;
+}
+
+.filter_content {
+    border: 1px solid #0F6799 !important;
+    border-top: none !important;
+    border-radius: 0 0 0 5px !important;
+}
+
+
+
+/*------------------------------------------------------------------
+[8. Home.do / Landing pages]
+*/
+
+#form .left, .change-times {
+    /* @alternate */
+    background: #127dbd;
+    /* @alternate */
+    background: -moz-linear-gradient(top, #127dbd 0%, #014d67 100%);
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#127dbd), color-stop(100%,#014d67));
+    /* @alternate */
+    background: -webkit-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: -o-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: -ms-linear-gradient(top, #127dbd 0%,#014d67 100%);
+    /* @alternate */
+    background: linear-gradient(to bottom, #127dbd 0%,#014d67 100%);
+}
+
+    #form .left h2 {
+        color: #ffffff;
+        text-shadow: none;
+    }
+
+    #form .left label, #form .left p {
+        color: #ffffff;
+        text-shadow: none !important;
+    }
+
+#sub, #sub-my {
+    /* @alternate */
+    background: #01459a;
+    /* @alternate */
+    background: -moz-linear-gradient(top, #01459a 0%, #ffffff 100%);
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#01459a), color-stop(100%,#ffffff));
+    /* @alternate */
+    background: -webkit-linear-gradient(top, #01459a 0%,#ffffff 100%);
+    /* @alternate */
+    background: -o-linear-gradient(top, #01459a 0%,#ffffff 100%);
+    /* @alternate */
+    background: -ms-linear-gradient(top, #01459a 0%,#ffffff 100%);
+    /* @alternate */
+    background: linear-gradient(to bottom, #01459a 0%,#ffffff 100%);
+    box-shadow: none;
+}
+
+    #sub *, #sub-my *, #sub p#reviewcentre {
+        color: #ffffff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    #sub p, #sub-my p {
+        color: #ffe89c;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+
+#topdeals {
+    background: none !important;
+}
+
+
+
+/*------------------------------------------------------------------
+[9. Site fixes]
+*/
+
+#sub, #sub-my {
+    clear: both;
+}
+
+.ui-tooltip {
+    width: auto !important;
+}
+
+.telephone-right {
+    margin-bottom: 20px;
+}
+
+.manage-login-panel {
+    border-left: 10px solid #f1f1f1;
+}
+
+.clearfix:after, .wrap:after, #wrap:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+body > img {
+    display: none;
+}
+
+.wrap #container {
+    min-height: 600px !important;
+}
+
+#immediate {
+    position: relative;
+    left: auto;
+    margin: 0 auto;
+}
+
+#immediate_inner {
+    display: block;
+    margin: 0 auto;
+}
+
+.filter_container.filter_refresh {
+    float: left;
+}
+
+
+
+/*------------------------------------------------------------------
+[10. Hidden]
+*/
+
+.trustpilot, #secondary {
+    display: none;
+}
+
+#kampyleButton {
+    display: none;
+}
+
+.social, .mobile-options {
+    display: none;
+}
+
+/*------------------------------------------------------------------
+[11. Affiliate site fixes]
+*/
+
+/*----------------------------------------------------------
+	[11.0 Fixes for centralised containment]
+	*/
+
+/*	.home #sub, .home #form, .home #callus, .home #callHours, .home #topdeals, .home #singFooter {
+		width: 1010px !important;
+		margin: 0 auto;
+		display: block;
+	}*/
+
+/*----------------------------------------------------------
+	[ 11.1 Search Results]
+	*/
+
+.wrap.clearfix {
+    background: #ffffff !important;
+    border: 15px solid #ffffff !important;
+    border-width: 0 15px !important;
+    min-height: 600px;
+}
+
+/*----------------------------------------------------------
+	[ 11.2 Driver Extras]
+	*/
+
+#container > .wrap {
+    background: #ffffff !important;
+    border: 15px solid #ffffff !important;
+    border-width: 0 15px !important;
+}
+
+/*----------------------------------------------------------
+	[ 11.3 Driver Details & Payment]
+	*/
+
+#container > #wrap {
+    background: #ffffff !important;
+    border: 15px solid #ffffff !important;
+    border-width: 0 15px !important;
+    width: 980px;
+    float: none;
+}
+
+/*----------------------------------------------------------
+	[ 11.4 Awkward footers]
+	*/
+
+/*	#wrap #content_wrap #content #singFooter {
+		width: 100%;
+		box-shadow: none;
+	}*/
+
+/*----------------------------------------------------------
+	[ 11.5 Incorrect login]
+	*/
+
+/*	#content .incorrect{
+		background: #ffffff;
+		border-radius: 8px 8px 0 0;
+		width: 1010px;
+		line-height: 22px;
+		padding: 30px 0 10px;
+	}*/
+
+/*	#content .back{
+		background: #ffffff;
+		width: 1010px;
+		margin: 0 auto;
+		padding: 20px 0 40px 0;
+	}*/
+
+.r_car_summary_wrap {
+    background: none !important;
+}
+
+#vert_sum, .price_breakdown {
+    background: #fff !important;
+}
+
+    .price_breakdown .r_summary_total {
+        background: #666666 !important;
+    }
+
+
+/* supplier reviews */
+.pop-up_outline {
+    width: 615px;
+    box-shadow: rgba(0, 0, 0, .6) 0 2px 12px;
+    -webkit-box-shadow: rgba(0, 0, 0, .6) 0 2px 12px;
+    -moz-box-shadow: rgba(0, 0, 0, .6) 0 2px 12px;
+    border-radius: 10px;
+    margin: 30px auto 0px;
+}
+
+#feedback-pop-up_inner {
+    padding: 25px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 10px;
+}
+
+    #feedback-pop-up_inner .feedback_wrapper {
+        position: relative;
+        float: left;
+        width: 584px;
+    }
+
+        #feedback-pop-up_inner .feedback_wrapper .feedback_table {
+            width: 564px;
+            font-size: 13px;
+            border-top: 4px solid #ebf2fa;
+            margin-top: 10px;
+        }
+
+            #feedback-pop-up_inner .feedback_wrapper .feedback_table td.feedback_rating_value {
+                width: 62px;
+                font-size: 15px;
+                text-align: right;
+                color: #4899e3;
+                border-right: 3px solid #b6d6f4;
+            }
+
+            #feedback-pop-up_inner .feedback_wrapper .feedback_table td.high_rating {
+                font-weight: bold;
+                border-right: 3px solid #4899e3;
+            }
+
+            #feedback-pop-up_inner .feedback_wrapper .feedback_table td {
+                padding: 8px 17px;
+                color: #787878;
+                margin-bottom: 1px;
+                vertical-align: middle;
+            }
+
+            #feedback-pop-up_inner .feedback_wrapper .feedback_table tr:nth-child(2n) {
+                background-color: #f0f2f3;
+            }
+
+.supplier_logo {
+    float: left;
+    margin-right: 23px;
+}
+
+.pop-up_title {
+    float: left;
+    width: 270px;
+    font-size: 16px;
+    color: #787878;
+    padding-top: 6px;
+}
+
+    .pop-up_title span {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+
+.pop-up_rating_block {
+    float: right;
+    width: 160px;
+    text-align: right;
+}
+
+    .pop-up_rating_block .rating_textversion {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4899e3;
+        line-height: 14px;
+    }
+
+    .pop-up_rating_block .rating_value {
+        font-size: 36px;
+        font-weight: bold;
+        color: #4899e3;
+    }
+
+    .pop-up_rating_block .rating_outof {
+        font-size: 15px;
+        color: #898989;
+    }
+
+    .pop-up_rating_block .rating_reviews_num {
+        color: #a4a4a4;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+.rating_block {
+    width: 150px;
+    position: absolute;
+    overflow: hidden;
+    bottom: 8px;
+    left: 7px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+    .rating_block:hover .rating_score .rating_value {
+        color: #E3A31E;
+    }
+
+    .rating_block:hover .rating_score_text {
+        color: #E3A31E;
+    }
+
+    .rating_block .rating_score_text {
+        color: #2d9edf;
+        font-size: 13px;
+        margin-bottom: 1px;
+        margin-right: 3px;
+        -webkit-transition-property: color, text;
+        -webkit-transition-duration: 0.3s, 0.3s;
+        -webkit-transition-timing-function: linear, ease-in;
+        -moz-transition-property: color, text;
+        -moz-transition-duration: 0.3s;
+        -moz-transition-timing-function: linear, ease-in;
+        -o-transition-property: color, text;
+        -o-transition-duration: 0.3s;
+        -o-transition-timing-function: linear, ease-in;
+        font-weight: bold;
+    }
+
+    .rating_block .rating_score {
+        width: 84px;
+        margin-left: 5px;
+        float: left;
+        margin-top: 3px;
+    }
+
+        .rating_block .rating_score .rating_value {
+            color: #2d9edf;
+            font-size: 17px;
+            font-weight: bold;
+            -webkit-transition-property: color, text;
+            -webkit-transition-duration: 0.3s, 0.3s;
+            -webkit-transition-timing-function: linear, ease-in;
+            -moz-transition-property: color, text;
+            -moz-transition-duration: 0.3s;
+            -moz-transition-timing-function: linear, ease-in;
+            -o-transition-property: color, text;
+            -o-transition-duration: 0.3s;
+            -o-transition-timing-function: linear, ease-in;
+        }
+
+        .rating_block .rating_score .rating_outoften {
+            color: #898989;
+            font-size: 12px;
+            letter-spacing: 0.06em;
+        }
+
+        .rating_block .rating_score .rating_metric {
+            color: #898989;
+            font-size: 11px;
+        }
+
+.rating_supplied_by {
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: #eaeaea 1px solid;
+    margin-bottom: -2px;
+}
+
+.rating_block .rating_supplier {
+    width: 60px;
+    float: left;
+    margin-top: 3px;
+}
+
+.result_img {
+    padding-top: 16px !important;
+    padding-bottom: 69px !important;
+}
+
+#feedback-pop-up_inner .feedback_wrapper .feedback_table {
+    width: 564px;
+    font-size: 13px;
+    border-top: 4px solid #ebf2fa;
+    margin-top: 10px;
+    border-collapse: separate;
+}
+
+/* car categories */
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .jcarousel ul {
+        width: 20000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+#car_cat_scroll .car_cat_tab, #car_cat_scroll .car_cat_tab * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.jcarousel-skin {
+    float: left;
+    width: 878px;
+}
+
+    .jcarousel-skin .hover {
+        text-decoration: underline;
+    }
+
+    .jcarousel-skin .jcarousel-item-placeholder {
+        color: #000;
+    }
+
+    .jcarousel-skin .jcarousel-next {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 45px;
+        cursor: pointer;
+        background: url(/images/site_graphics/newsite/new-carousel-arrows.png) no-repeat -28px 50% #FFF;
+        bottom: 0;
+        opacity: 0.8;
+    }
+
+    .jcarousel-skin .jcarousel-direction-rtl .jcarousel-next {
+        left: 0;
+        right: auto;
+        background: transparent url(/images/site_graphics/newsite/carousel-arrows.png) no-repeat center -66px;
+    }
+
+    .jcarousel-skin .jcarousel-prev {
+        position: absolute;
+        top: 0;
+        left: 96px;
+        width: 45px;
+        cursor: pointer;
+        background: url(/images/site_graphics/newsite/new-carousel-arrows.png) no-repeat 4px 50% #FFF;
+        bottom: 0;
+        opacity: 0.8;
+        z-index: 1;
+    }
+
+    .jcarousel-skin .jcarousel-direction-rtl .jcarousel-prev {
+        left: auto;
+        right: 0;
+        background: transparent url(/images/site_graphics/newsite/carousel-arrows.png) no-repeat center -132px;
+    }
+
+    .jcarousel-skin .jcarousel-prev-disabled, .jcarousel-skin .jcarousel-next-disabled {
+        display: none !important;
+    }
+
+    .jcarousel-skin .jcarousel-next:hover {
+        background-position: -99px 50%;
+    }
+
+    .jcarousel-skin .jcarousel-prev:hover {
+        background-position: -65px 50%;
+    }
+
+    .jcarousel-skin .jcarousel-prev.disabled, .jcarousel-skin .jcarousel-next.disabled {
+        display: none;
+    }
+
+    .jcarousel-skin .jcarousel-prev.invisible, .jcarousel-skin .jcarousel-next.invisible {
+        background: none;
+    }
+
+#car_cat_scroll {
+    width: 980px;
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+}
+
+#car_cat_scroll_carousel {
+    width: 880px;
+    position: relative;
+    overflow: hidden;
+}
+
+#car_cat_scroll .car_cat_tab {
+    width: 85px;
+    border: 1px solid #e6e6e6;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 2px;
+    float: left;
+    cursor: pointer;
+    padding: 4px 4px 24px;
+    position: relative;
+}
+
+body.desktopDevice #car_cat_scroll .car_cat_tab:hover {
+    background-color: #ebf3fa;
+    border: 1px solid #9cb3c6;
+}
+
+#car_cat_scroll .car_cat_tab .car_cat_tab_img {
+    background-color: #FFF;
+    text-align: center;
+    padding: 8px 0 5px;
+}
+
+    #car_cat_scroll .car_cat_tab .car_cat_tab_img img {
+        width: 80px;
+        height: 53px;
+        -ms-interpolation-mode: bicubic;
+    }
+
+#car_cat_scroll .car_cat_tab .car_spec_icons {
+    bottom: 3px;
+    width: 95px;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    color: #8fa2ae;
+    font-size: 11px;
+    text-align: center;
+}
+
+    #car_cat_scroll .car_cat_tab .car_spec_icons .car_spec_car-seats {
+        padding-left: 15px;
+        height: 14px;
+        padding-top: 4px;
+        background: url(/images/site_graphics/newsite/car_cat_mini_seats_icon.png) left top no-repeat;
+    }
+
+    #car_cat_scroll .car_cat_tab .car_spec_icons .car_spec_luggage {
+        padding-left: 15px;
+        height: 14px;
+        padding-top: 4px;
+        background: url(/images/site_graphics/newsite/car_cat_mini_baggage_icon.png) 0 3px no-repeat;
+    }
+
+    #car_cat_scroll .car_cat_tab .car_spec_icons .car_spec_smluggage {
+        padding-left: 11px;
+        height: 14px;
+        padding-top: 4px;
+        background: url(/images/site_graphics/newsite/car_cat_mini_smbaggage_icon.png) 0 6px no-repeat;
+    }
+
+#car_cat_scroll .car_cat_tab .car_cat_tab_txt {
+    margin-top: 8px;
+    color: #444;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+}
+
+    #car_cat_scroll .car_cat_tab .car_cat_tab_txt span {
+        color: #174974;
+        font-weight: 700;
+    }
+
+#car_cat_scroll .car_cat_tab .car_cat_tab_allcarstxt {
+    color: #174974;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+#car_cat_loading, #all_areas_location_loading {
+    background: url(/images/site_graphics/newsite/loader_spinner.gif) #FFF center center no-repeat;
+    opacity: 0.7;
+    cursor: progress;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.hiddenData {
+    display: none;
+}
+
+#car_cat_scroll .car_cat_tab.car_cat_tab_chosen, body.desktopDevice #car_cat_scroll .car_cat_tab.car_cat_tab_chosen:hover {
+    background-color: #e1e1e1;
+    border: 1px solid #cbcbcb;
+}
+
+#car_cat_scroll .car_cat_tab .car_spec_icons .car_spec_smluggage, #car_cat_scroll .car_cat_tab .car_spec_icons .car_spec_car-seats, #car_cat_scroll .car_cat_tab .car_spec_icons .car_spec_luggage {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    margin: 0 2px;
+}
+
+/*Fix for feedback button on tablets being over the carousels*/
+body.tabletDevice #kampyleButton {
+    top: 60%;
+}
+
+.alert_full {
+    margin: 12px 0 0 !important;
+}
+
+
+
+#left_column {
+    width: 210px;
+    float: left;
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    padding: 0;
+    border-right: 1px solid #ebebeb;
+    padding-right: 8px;
+}
+
+
+/*
+.type_sprite {
+    background: url(/images/site_graphics/newsite/filter-sprite.png) no-repeat;
+    width: 90px;
+    height: 36px;
+    background-position: 0px -36px;
+}
+
+.s_ECO.type_sprite_inactive {
+    background-position: 0px -36px;
+}
+
+.s_ECO {
+    background-position: 0px 0px;
+}
+
+.s_FAM.type_sprite_inactive {
+    background-position: -180px -36px;
+}
+
+.s_FAM {
+    background-position: -180px 0;
+}
+
+.s_LUX.type_sprite_inactive {
+    background-position: -360px -36px;
+}
+
+.s_LUX {
+    background-position: -360px 0px;
+}
+
+.s_CON.type_sprite_inactive {
+    background-position: -540px -36px;
+}
+
+.s_CON {
+    background-position: -540px 0px;
+}
+
+.s_PEO.type_sprite_inactive {
+    background-position: -450px -36px;
+}
+
+.s_PEO {
+    background-position: -450px 0px;
+}
+
+#left_column {
+    width: 210px;
+    float: left;
+    position: relative;
+    min-height: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0px 7px 0px 0px;
+    border-right: 1px solid #ebebeb;
+}
+
+.filter_container {
+    border-left: 1px solid #e2e2e2;
+    border-right: none;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #e9e9e9;    
+    background-color: #FFFFFF;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    float: left;
+}
+
+#searchAgainTop {
+    margin-top: 0;
+}
+
+.filter_title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+    text-shadow: 0px 1px 1px #ffffff;
+    float: left;
+}
+
+.filter_title_container {
+    padding: 8px;
+    position: relative;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    float: left;
+    width: 193px;
+    cursor: pointer;
+}*/
+
+.filter_content {
+    padding: 8px;
+    font-size: 11px;
+    color: #174974;
+    padding-bottom: 8px;
+    float: left;
+    width: 192px;
+}
+
+.filter_container:last-child .filter_container_shadow {
+    background: url(/images/site_graphics/newsite/filter-sprite.png) 0 -72px no-repeat;
+    padding-bottom: 28px;
+    margin-bottom: -28px;
+}
+
+.filter_container_shadow {
+    background: url(/images/site_graphics/newsite/filter-sprite.png) 0 88px no-repeat;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+    float: left;
+    width: 100%;
+}
+
+.filter_label {
+    color: #174974;
+}
+
+.filter_dropdown {
+    width: 100%;
+}
+
+.filter_search_location .filter_label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.filter_search_location .filter_item_pickup {
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    padding-top: 8px;
+}
+
+.search_filters input[type="radio"], .search_filters input[type="checkbox"] {
+    margin-right: 7px;
+}
+
+.filter_value {
+    margin-left: 4px;
+}
+
+.left_column_shadow {
+    width: 32px;
+    height: auto;
+    position: absolute;
+    top: -40px;
+    bottom: -160px;
+    right: 0;
+    left: auto;
+    pointer-events: none;
+    z-index: 300;
+}
+
+    .left_column_shadow .filter_shadow_top, .left_column_shadow .filter_shadow_bottom {
+        height: 50%;
+        width: 32px;
+        pointer-events: none;
+    }
+
+    .left_column_shadow .filter_shadow_top {
+        background: url(/images/site_graphics/newsite/filter-sprite.png) -590px -137px no-repeat;
+    }
+
+    .left_column_shadow .filter_shadow_bottom {
+        background: url(/images/site_graphics/newsite/filter-sprite.png) -550px -571px no-repeat;
+    }
+
+.filter_map iframe {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.filter_toggle {
+    background: url(/images/site_graphics/newsite/filter-sprite.png) -210px -72px no-repeat;
+    height: 6px;
+    width: 9px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.filter_toggle_closed {
+    background: url(/images/site_graphics/newsite/filter-sprite.png) -219px -72px no-repeat;
+}
+
+.filter_type_item {
+    width: 90px;
+    text-align: center;
+    float: left;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.filter_type_icon {
+    width: 90px;
+    height: 36px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    /* @alternate */
+    background: rgb(78,125,164); /* Old browsers */
+    /* @alternate */
+    background: -moz-linear-gradient(top, rgba(78,125,164,1) 0%, rgba(41,88,127,1) 100%); /* FF3.6+ */
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(78,125,164,1)), color-stop(100%,rgba(41,88,127,1))); /* Chrome,Safari4+ */
+    /* @alternate */
+    background: -webkit-linear-gradient(top, rgba(78,125,164,1) 0%,rgba(41,88,127,1) 100%); /* Chrome10+,Safari5.1+ */
+    /* @alternate */
+    background: -o-linear-gradient(top, rgba(78,125,164,1) 0%,rgba(41,88,127,1) 100%); /* Opera 11.10+ */
+    /* @alternate */
+    background: -ms-linear-gradient(top, rgba(78,125,164,1) 0%,rgba(41,88,127,1) 100%); /* IE10+ */
+    /* @alternate */
+    background: linear-gradient(to bottom, rgba(78,125,164,1) 0%,rgba(41,88,127,1) 100%); /* W3C */
+}
+
+    .filter_type_icon.filter_type_icon_inactive {
+        background: #e6e6e6;
+    }
+
+.filter_type_name {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.filter_type_count {
+    text-align: center;
+}
+
+#step_point {
+    font-size: 16px;
+    color: #333333;
+    font-weight: normal;
+    max-width: 210px;
+    padding: 20px 0px;
+}
+
+.car_wrap h2 {
+    display: none;
+}
+/*.car_wrap {
+ margin: -40px 0 0 0;
+ }*/
+.important {
+    margin-top: 0 !important;
+}
+
+.tooltipfuel .ui-tooltip-content {
+    background: url("/images/site_graphics/newsite/icon_fuel.png") no-repeat 5px 10px;
+}
+
+.fuel_info {
+    display: inline-block;
+    width: 150px;
+}
+
+.inactive {
+    padding: 3px 0px 3px 25px;
+    margin: 0;
+    color: #CCC;
+    background: url("/images/site_graphics/newsite/inactive.gif") no-repeat 4px 5px;
+}
+
+    .inactive.error {
+        display: none;
+        color: #C00 !important;
+        background: url("/images/site_graphics/newsite/cross-sml.png") no-repeat 4px 5px !important;
+    }
+
+    .inactive input[type="radio"], .inactive input[type="checkbox"], .inactive input {
+        display: none !important;
+        visibility: hidden !important;
+    }
+/*.inactive .filter_value */
+.filter_location_static {
+    color: #000000;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.filter_content.removed {
+    padding: 0;
+    width: 208px;
+}
+
+ul.ss_removed, ul.ss_removed li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+    ul.ss_removed li {
+        padding: 0 8px 1px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+
+        ul.ss_removed li:hover {
+            background: url(/images/site_graphics/newsite/filter-sprite.png) no-repeat -9px -114px #f6fafe;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        ul.ss_removed li span {
+            font-weight: normal;
+        }
+
+.filter_content.removed a {
+    padding: 0 8px 1px;
+    line-height: 24px;
+}
+
+.ss_search_pu_panel select, .ss_search_do_panel select {
+    margin: 0 0 5px;
+    width: 100%;
+}
+
+#search_summary {
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.search_summary_container {
+    float: left;
+    width: 100%;
+    /*background: url(images/site_graphics/newsite/search_bar-bg.jpg) top repeat-x;*/
+    padding-bottom: 10px;
+    /*             border-bottom: 1px solid #f2f2f2; */
+}
+
+.navigation-bar {
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    border-bottom: none;
+}
+
+.ss_inner {
+    width: 192px;
+    position: relative;
+    float: left;
+}
+
+.ss_pickup, .ss_dropoff {
+    width: auto;
+    float: left;
+}
+
+.ss_dropoff {
+}
+
+.ss_title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 5px;
+}
+
+.ss_pickup_location {
+    font-size: 16px;
+    font-weight: bold;
+    color: #174974;
+    margin-top: 2px;
+}
+
+.ss_pickup_details {
+    margin-top: 2px;
+}
+
+    .ss_pickup_details .input-gp {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+
+#search_summary #dp_pu_img {
+    margin-bottom: -4px;
+}
+
+#search_summary .side_search_month {
+    width: 85px;
+}
+
+#proceed {
+    float: right;
+    margin-top: 5px;
+}
+
+.proceed-btn {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #678A32;
+    /* @alternate */
+    background: -moz-linear-gradient(top, rgba(206,226,180,1) 0%, rgba(170,203,126,1) 14%, rgba(104,145,45,1) 100%); /* FF3.6+ */
+    /* @alternate */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(206,226,180,1)), color-stop(14%,rgba(170,203,126,1)), color-stop(100%,rgba(104,145,45,1))); /* Chrome,Safari4+ */
+    /* @alternate */
+    background: -webkit-linear-gradient(top, rgba(206,226,180,1) 0%,rgba(170,203,126,1) 14%,rgba(104,145,45,1) 100%); /* Chrome10+,Safari5.1+ */
+    /* @alternate */
+    background: -o-linear-gradient(top, rgba(206,226,180,1) 0%,rgba(170,203,126,1) 14%,rgba(104,145,45,1) 100%); /* Opera 11.10+ */
+    /* @alternate */
+    background: -ms-linear-gradient(top, rgba(206,226,180,1) 0%,rgba(170,203,126,1) 14%,rgba(104,145,45,1) 100%); /* IE10+ */
+    /* @alternate */
+    background: linear-gradient(to bottom, rgba(206,226,180,1) 0%,rgba(170,203,126,1) 14%,rgba(104,145,45,1) 100%); /* W3C */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #4c770f;
+    border-top: 1px solid #aec08f;
+    text-shadow: 0px 0px 2px #42611b;
+    padding: 4px 6px;
+    position: relative;
+    z-index: 160;
+    cursor: pointer;
+}
+
+.ss_title .ss_change a {
+    padding: 1px 3px;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+    .ss_title .ss_change a:hover {
+    }
+
+.ss_phone {
+    float: left;
+    width: 100%;
+}
+
+.ss_phone_no {
+    color: #174974;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.ss_phone_text {
+    color: #666666;
+    font-weight: normal;
+    font-size: 11px;
+    display: block;
+}
+
+#content_wrap, #content_wrap_options {
+    min-height: auto !important;
+}
+
+.ui-datepicker {
+    z-index: 2000000;
+}
+
+.filter_container.filter_refresh {
+    float: right;
+    margin-bottom: 0;
+}
+
+a.refresh {
+    display: block;
+    float: right;
+    width: 177px;
+    height: 16px;
+    background: url(/images/site_graphics/newsite/filter-sprite.png) no-repeat -333px -78px;
+    opacity: 0.4;
+    cursor: pointer;
+    padding: 5px 0 5px 32px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+    a.refresh:hover {
+        opacity: 0.8;
+    }
+
+.filter_search_location .location-single {
+    width: 190px;
+}
+
+.filter-tip {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(/images/site_graphics/newsite/filter-sprite.png) no-repeat -228px -72px;
+}
+
+#dp_pu_img.cal, #dp_do_img.cal {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/images/site_graphics/newsite/filter-sprite.png) no-repeat -240px -72px;
+    float: none;
+    margin: -2px 0 0 0;
+}
+
+.filter_toggle.reload {
+    background: url(/images/site_graphics/newsite/reload.gif) center no-repeat;
+    height: 15px;
+    width: 16px;
+    margin-top: -8px;
+}
+
+.filter_content.reload {
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+
+#allLocPuMap {
+    clear: both;
+    width: 700px;
+    height: 500px;
+}
+
+.map_header {
+    color: #444;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#allLocPopup {
+    z-index: 4000 !important;
+    padding: 20px;
+    background: white;
+    display: none;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}
+
+#close_x {
+    background: url("/images/site_graphics/newsite/close-button.png") no-repeat 50% 50% #f0f0f0;
+    display: block;
+    height: 24px;
+    position: absolute;
+    right: -10px;
+    text-indent: -9999px;
+    top: -10px;
+    width: 24px;
+    border-radius: 16px !important;
+    -moz-border-radius: 16px !important;
+    -khtml-border-radius: 16px !important;
+    -webkit-border-radius: 16px !important;
+    border: 3px solid #fff;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .25), 0 1px 5px 3px rgba(0, 0, 0, .05), 0 5px 4px -3px rgba(0, 0, 0, .06);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, .25), 0 1px 5px 3px rgba(0, 0, 0, .05), 0 5px 4px -3px rgba(0, 0, 0, .06);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, .25), 0 1px 5px 3px rgba(0, 0, 0, .05), 0 5px 4px -3px rgba(0, 0, 0, .06);
+}
+
+.map_district_name {
+    padding: 0 6px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    font-size: 14px;
+    line-height: 32px;
+    border-radius: 0 0 0 10px;
+    -moz-border-radius: 0 0 0 10px;
+    -webkit-border-radius: 0 0 0 10px;
+    /* @alternate */
+    background: #e5e5e5;
+    /* @alternate */
+    background: -webkit-gradient(linear,center top,center bottom,from(#f6f6f6),to(#e5e5e5));
+    /* @alternate */
+    background: -moz-linear-gradient(top,#f6f6f6,#e5e5e5);
+    font-weight: bold;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    text-shadow: 1px 1px 0 #fff;
+    z-index: 500;
+}
+
+    .map_district_name strong {
+        font-size: 18px;
+        color: #678A32;
+        padding: 0 0 0 10px;
+    }
+
+    .map_district_name span {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+#allLocotherPuMap {
+    clear: both;
+    width: 340px;
+    height: 500px;
+    margin-right: 10px;
+    float: left;
+}
+
+#allLocDoMap {
+    width: 340px;
+    height: 500px;
+    float: left;
+}
+
+.map_header {
+    color: #444;
+    font-size: 12px;
+    font-weight: bold;
+    width: 650px;
+    display: block;
+}
+
+#allotherLocPopup {
+    width: 690px;
+    z-index: 4000 !important;
+    padding: 20px;
+    background: white;
+    display: none;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+}

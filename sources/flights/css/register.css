@@ -1,0 +1,8131 @@
+.bold{font-weight:bold}
+.botonBuscar{
+    background:url(../../Imagenes/botonSeleccion.png); 
+    border:0;
+    font-size:12px;
+    color:#4e4e4e;
+    width:131px;
+    height:36px;
+    text-align:left;
+    font-weight:bold;
+    text-decoration:none;
+    cursor:pointer;
+    background-repeat: no-repeat;
+}
+.botonVerMas{
+    background:url(../../Imagenes/botonVerMas.png); 
+    border:0;
+    font-size:12px;
+    color:#FFF;
+    padding:5px;
+    text-align:left;
+    font-weight:bold;
+    text-decoration:none;
+    cursor:pointer;
+}
+.botonConfirmar{
+    background:url(../../Imagenes/botonConfirmar.png); 
+    border:0;
+    font-size:12px;
+    color:#4e4e4e;
+    width:141px;
+    height:36px;
+    text-align:right;
+    font-weight:bold;
+    text-decoration:none;
+    cursor:pointer;
+}
+.botonCancelarSolicitud{
+    background:url(../../Imagenes/botonCancelar.png); 
+    border:0;
+    font-size:12px;
+    color:#4e4e4e;
+    width:141px;
+    height:36px;
+    text-align:left;
+    font-weight:bold;
+    text-decoration:none;
+    cursor:pointer;
+}
+.botonOferta{
+    padding:4px;
+    text-decoration:underline;
+    cursor:pointer;
+    font-size:12px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.botonCarro{
+    background:#B9B520;
+    font-size:12px;
+    font-weight:bold;
+    color:#FFF;
+    border:0;
+    padding:3px;
+    text-decoration:none;
+    cursor:pointer;
+    width:150px;
+}
+
+/* Alineaciones */
+.alineacionIzquierda{text-align:left;}
+.alineacionDerecha{text-align:right;}
+.alineacionCentro{text-align:center;}
+
+/* Banner Superior */
+.botonesDerecha{
+    position:fixed; 
+    right:0; 
+    width:96px;
+    top:45%;
+    z-index:999;
+
+}
+.botonesDerecha .contacto{
+    float:left; 
+}
+.botonesDerecha .chat{
+    float:left; 
+}
+.botonesDerecha .unete{
+    float:left; 
+}
+.botonesIzquierda{
+    position: fixed;
+    left: 0;
+    width: 96px;
+    top: 40%;
+    z-index: 999;
+}
+.logo{
+    position:relative;
+    float:left;
+    padding:5px 0;
+    height:80px;
+    z-index:1;
+}
+.opcionesBanner{
+    position:relative;
+    float:right;
+    width:230px;
+    height:81px;
+    padding:5px;
+    text-align:right;
+    margin:0 0 0 0;
+}
+.opcionesBanner a{
+    text-decoration:none;
+}
+.linkSesion{
+    color:#FFF;
+    text-decoration:none;
+    font-weight:bold;
+}
+.loginPanel{
+    position: relative;
+    float:left;
+    width:930px;
+    padding:3px;
+    border-bottom:solid 1px #327CA7;
+    font-size:12px;
+}
+.loginPanel ul.superior{
+    margin:0;
+    margin-left:100px;
+}
+.loginPanel ul.superior li {
+    float: left;
+    font-size:12px;
+    text-align:left;
+    color:#FFF;
+    list-style:disc;
+    margin-left:20px;
+    padding-top:5px;
+}
+.loginPanel ul.superior li.idioma {
+    float: left;
+    font-size:12px;
+    text-align:left;
+    color:#FFF;
+    list-style:disc;
+    margin-left:20px;
+    padding-top:4px;
+}
+li.idioma .google{
+    border:0;
+    background:url(../../Imagenes/google.png) no-repeat;
+    width:161px;
+    height:18px;
+    padding:2px 5px;
+    font-size:11px;
+}
+.loginPanel .errorLogin{
+    font-size:11px;
+    color:#186e9b; 
+}
+.formasDePago{
+    background: url(../../Imagenes/logostarjetas.png) no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 75px;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 299px;
+}
+/* Menu Principal */
+.menuPrincipal{
+    position:relative;
+    float:left;
+    width:940px;
+    padding:0;
+    margin-top:3px;
+    margin-bottom:16px;
+    font-family: "Trebuchet MS";
+    background:url(../../Imagenes/menu.png) no-repeat;
+}
+.menuPrincipal ul{
+    margin:0;
+}
+ul.dropdown {
+
+}
+ul.dropdown li {
+    float: left;
+    line-height: 1.3em;
+    vertical-align: middle;
+    font-size:15px;
+    font-weight:lighter;
+    text-align:center;
+    height:21px; 
+    margin:0;
+    padding:8px 0;
+}
+ul.dropdown li a:link,
+ul.dropdown li a:visited{ color: #FFF; padding:2px 40px; text-decoration: none;border-left:solid 1px #7AC5E5; border-right:solid 1px #012B5D; }
+ul.dropdown li a:hover{ color: #C7EEFF; }
+ul.dropdown li a:active{ color: #C7EEFF; }
+
+/* Menu Inferior */
+.menuInferior{
+    position:relative;
+    float:left;
+    width:940px;
+    padding:16px 0 0 0;
+    font-family: "Trebuchet MS";
+    background:url(../../Imagenes/menuInferior.png) no-repeat;
+}
+ul.dropMenu{
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+ul.dropMenu li {
+    display:inline-block;
+    float: none;
+    line-height: 1.3em;
+    vertical-align: middle;
+    font-size:15px;
+    font-weight:lighter;
+    text-align:center;
+    height:22px;
+    padding:8px 12px;
+    border-right:solid 1px #012B5D;
+}
+ul.dropMenu li a:link,
+ul.dropMenu li a:visited	{ color: #FFF; text-decoration: none; }
+ul.dropMenu li a:hover		{ color: #C7EEFF; }
+ul.dropMenu li a:active	    { color: #C7EEFF; }
+ul.dropMenu li input		{ padding:0; border:0; font-size:15px; color: #FFF; background:Transparent; cursor:pointer; }
+
+/* Autocompletar */
+.ac_results {
+    padding: 0px;
+    border: 1px solid black;
+    background-color: white;
+    overflow: hidden;
+    z-index: 9999999;
+}
+.ac_results ul {
+    float:left;
+    width: 100%;
+    list-style-position: outside;
+    list-style-image: url(../../Imagenes/airplane-icon.png);
+    padding: 0;
+    margin: 0;
+}
+.ac_results li {
+    margin: 0px;
+    /*padding: 2px 5px;*/
+    cursor: pointer;
+    display: block;
+    /* 
+    if width will be 100% horizontal scrollbar will apear 
+    when scroll mode will be used
+    */
+    /*width: 100%;*/
+    font: menu;
+    font-size: 14px;
+    /* 
+    it is very important, if line-height not setted or setted 
+    in relative units scroll will be broken in firefox
+    */
+    line-height: 16px;
+    overflow: hidden;
+}
+.ac_results li:first-child {
+    margin: 0px;
+    cursor: pointer;
+    display: block;
+    font: menu;
+    font-size: 14px;
+    line-height: 16px;
+    overflow: hidden;
+    color:#333;
+    font-weight:bold;
+    background:url(../../Imagenes/home_icon.png) #999 no-repeat 8px;
+
+    /*background-color: rgba(168, 211, 247, 0.6);
+    background: url(../JQuery/images/airplane-icon.png.png) left no-repeat;*/
+}
+.ac_loading {
+    background: url(../../Imagenes/ui-anim_basic_16x16.gif) right center no-repeat;
+}
+.ac_odd:first-Child {
+    background:url(../../Imagenes/home_icon.png) #999 no-repeat 8px;
+    padding: 5px 0 5px 30px;
+}
+.ac_odd {
+    background:url(../../Imagenes/airplane-icon.png) #EEE no-repeat 8px;
+    padding: 5px 0 5px 30px;
+}
+.ac_even {
+    background:url(../../Imagenes/airplane-icon.png) #DDD no-repeat 8px;
+    padding: 5px 0 5px 30px;
+}
+.ac_over {
+    background-color: #186e9b;
+    color: #FFF;
+}
+
+/* Paneles */
+.panelCompleto
+{
+    position: relative;
+    float:left;
+    width: 938px;
+    background:#FFF;
+    border:solid 1px #d4d4d4;
+}
+.panelCompletoPlanes
+{
+    position: relative;
+    float:left;
+    width: 938px;
+    background:#EAEAEA;
+    border:solid 1px #d4d4d4;
+}
+.panelCompletoVuelos
+{
+    position: relative;
+    float:left;
+    width: 938px;
+    background:#EAEAEA;
+    border:solid 1px #d4d4d4;
+    margin-bottom:10px;
+}
+.panelCompletoCorporativo 
+{
+    float: left;
+    width: 940px;
+    position: relative;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-top:25px;
+    background:url(../images/bgPanelCompleto.png);
+    background-color: #d3d3d3;
+    background-repeat:no-repeat;
+
+}
+.panelCompletoNoticias
+{
+    position: relative;
+    float:left;
+    width: 940px;
+}
+.panelContactenos
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 940px;
+    background:Transparent;
+}
+.panelSecciones
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 940px;
+    background:Transparent;
+}
+.panelBanners
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 940px;
+    background:Transparent;
+}
+.panelDetallePlan
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 940px;
+}
+/* Buscador */
+.buscador
+{
+    position: relative;
+    float:left;
+    font-size:12px;
+    width: 100%; /*370*/  
+}
+
+.tablaBuscadorVuelos{ position:relative; width:100%; float:left; margin:0 0 10px 0; }
+.tablaBuscadorVuelos .titulo{ width:340px; float:left; position:relative; font-size:14px; }
+.tablaBuscadorVuelos .forma{ width:75%; float:left; position:relative }
+.tablaBuscadorVuelos .forma .formaBuscar { -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; width:340px; background:url(../../Imagenes/fondoBuscar.png) repeat-x; border:solid 1px #FFF; padding:2px 0; }
+.tablaBuscadorVuelos .forma .formaBuscarCombo { width:100%;  background:url(../../Imagenes/fondoBuscar.png) repeat-x; border:solid 1px #FFF; }
+
+.tablaBuscadorVuelos .tituloPlanes{ font-size:17px; color:#FFF; font-weight:lighter; }
+.tablaBuscadorVuelos .texto{ font-size:14px; color:#FFF; }
+.buscadorInterno #pasajeros .pasajeros span { padding:0 20px 0 0; }
+
+.tablaBuscadorHoteles{ position:relative; width:100%; float:left; margin:0 0 10px 0; }
+.tablaBuscadorHoteles .titulo{ width:25%; float:left; position:relative; font-size:14px; }
+.tablaBuscadorHoteles .forma{ width:75%; float:left; position:relative }
+.tablaBuscadorHoteles .forma .formaBuscar { width:98%; background:url(../../Imagenes/fondoBuscar.png) repeat-x; border:solid 1px #FFF; }
+.tablaBuscadorHoteles .forma .formaBuscarCombo { width:255px; background:url(../../Imagenes/fondoBuscar.png) repeat-x; border:solid 1px #FFF;}
+.tablaBuscadorHoteles .datepicker { width:110px; background:#E7E5E1 url(../../Imagenes/calendario.png) no-repeat center right; border:solid 1px #FFF; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; }
+.habitacionColumna select { width:40px; }
+
+.tablaBuscadorAutos{ position:relative; width:170px; float:left; margin:0 0 10px 0;}
+.tablaBuscadorAutos .titulo{ width:170px; float:left; position:relative }
+.tablaBuscadorAutos .forma{ width:130px; float:left; position:relative;}
+.tablaBuscadorAutos .forma .formaBuscar{ /* @alternate */width:90%;  background:#E7E5E1 url(../../Imagenes/calendario.png) no-repeat center right;  border:solid 1px #FFF; -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; width:98%;}
+.tablaBuscadorAutos .forma .formaBuscarCombo { width:130px;  background:url(../../Imagenes/fondoBuscar.png) repeat-x; border:solid 1px #FFF;}
+
+.tablaBuscadorPlanes{ position:relative; width:100%; float:left; margin:0 0 8px 0; }
+.tablaBuscadorPlanes .formaBuscar { width:340px; }
+.tablaBuscadorPlanes .tituloPlanes{ font-size:18px; font-weight:bold; color:#FFF; }
+.tablaBuscadorPlanes .texto{ font-size:14px; color:#FFF; }
+.tablaBuscadorPlanes .datepicker { width:30%; background:#E7E5E1 url(../../Imagenes/calendario.png) no-repeat center right; border:solid 1px #FFF;}
+.tablaBuscadorBoton{ position:relative; width:100%; float:left; margin:0 0 5px 0; text-align:right; }
+
+
+
+/* Detalles de vuelo */
+.tablaVuelos h4.trigger {
+    padding:0 0 10px 0;
+    /*width:435px;*/
+    margin: 0;
+    font-size:13px;
+    color:#1D5B9E;
+}
+.tablaVuelos h4.trigger a {
+    color:#186e9b; 
+    padding-right:15px; 
+    font-weight:bold;
+    text-decoration:underline;
+    font-size:12px;
+    display:inline; 
+    background:url(../../Imagenes/flechaAbajo.png) no-repeat center right;
+}
+.tablaVuelos h4.trigger a:hover { color: #000; }
+
+.tablaVuelos .toggle_container {
+    padding:0 0 10px 0;
+    overflow: hidden;
+    font-size:11px;
+    font-family:"Trebuchet MS";
+    width:435px;
+    color:#666;
+    background:none;
+    border-bottom:0;
+    margin:0;
+    display:none;
+}
+.tablaVuelos .toggle_container a{
+    color: #1D5B9E;
+    cursor:pointer;
+    text-decoration: underline;
+}
+.tablaVuelos .toggle_container ul {
+    list-style:disc;
+    padding:0 0 0 20px;
+}
+.tablaVuelos .toggle_container strong {
+    font-weight:bold;
+}
+
+/* Detalles de la tarifa del vuelo */
+.detalleTarifa h4.trigger {
+    padding:0 0 5px 0;
+    width:155px;
+    margin: 0;
+    text-align:center;
+    font-size:13px;
+    color:#1D5B9E;
+}
+.detalleTarifa h4.trigger a {
+    color:#186e9b; 
+    padding-right:15px; 
+    font-weight:bold;
+    text-decoration:underline;
+    font-size:11px;
+    display:inline; 
+    background:url(../../Imagenes/flechaAbajo.png) no-repeat center right;
+}
+.detalleTarifa h4.trigger a:hover { color: #000; }
+
+.detalleTarifa .toggle_container {
+    padding:5px 0;
+    border-bottom:1px dashed #999;
+    overflow: hidden;
+    font-size:11px;
+    font-family:"Trebuchet MS";
+    width:155px;
+    color:#666;
+    background:none;
+    margin:0;
+    text-align:center;
+    display:none;
+}
+.detalleTarifa .toggle_container a{
+    color: #1D5B9E;
+    cursor:pointer;
+    text-decoration: underline;
+}
+.detalleTarifa .toggle_container ul {
+    list-style:disc;
+    padding:0 0 0 20px;
+}
+.detalleTarifa .toggle_container strong {
+    font-weight:bold;
+}
+
+.warningBuscador
+{
+    float:left;
+    position:relative;
+    color:#F90;
+    width:395px;
+    font-weight:bold;
+}
+
+.contenidoBuscador
+{	
+    padding:3px 5px;
+    overflow:hidden;
+    color:#FFF;
+}
+.contenidoBuscador a
+{	
+    color:#006F9F;
+    font-weight:bold;
+    font-size:11px;
+}
+.botonBuscador{
+    background:url(../../Imagenes/botonBuscador.png); 
+    border:0;
+    width:85px;
+    height:30px;
+    font-size:15px;
+    font-weight:bold;
+    color:#FFF;
+    text-decoration:none;
+    cursor:pointer;
+}
+.formaBuscar
+{
+    width:93%;
+    background:url(../../Imagenes/fondoBuscar.png) repeat-x;
+    border:solid 1px #FFF;
+}
+.datepicker
+{
+    width:30%;
+    background:url(../../Imagenes/fondoBuscar.png) repeat-x;
+    border:solid 1px #FFF;
+}
+/* Buscador Interno */
+.buscadorInterno
+{
+    position: relative;
+    float:left;
+    font-size:12px;
+    width: 240px;
+    border-top:solid 10px #F90;
+    border-bottom:solid 10px #F90;
+    margin-right:6px;
+    background:url(../../Imagenes/fondoBuscador.png);
+}
+.buscadorInterno .tablaBuscadorVuelos{ position:relative; width:100%; float:left; margin:0 0 10px 0; }
+.buscadorInterno .tablaBuscadorVuelos .titulo{ width:230px; float:left; position:relative; font-size:14px; }
+.buscadorInterno .tablaBuscadorVuelos .forma{ width:230px; float:left; position:relative }
+.buscadorInterno .tablaBuscadorVuelos .forma .formaBuscar { -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; width:225px; background:url(../../Imagenes/fondoBuscar.png) repeat-x; border:solid 1px #FFF; padding:2px 0; }
+.buscadorInterno .tablaBuscadorVuelos .forma .formaBuscarCombo { width:100%;  background:url(../../Imagenes/fondoBuscar.png) repeat-x; border:solid 1px #FFF; }
+.buscadorInterno .tablaBuscadorVuelos .tituloPlanes{ font-size:17px; color:#FFF; font-weight:lighter; }
+.buscadorInterno .tablaBuscadorVuelos .texto{ font-size:14px; color:#FFF; }
+.buscadorInterno .tablaBuscadorHoteles .forma .formaBuscarCombo { width:165px; background:url(../../Imagenes/fondoBuscar.png) repeat-x; border:solid 1px #FFF;}
+
+.textoPiePagina{
+    float:left; 
+    position:relative; 
+    width:920px;
+    padding:5px;
+    font-size:11px;
+    color:#5a5a5a;
+    text-align:center;
+}
+.boletin{
+    float:left; 
+    position:relative; 
+    width:340px;
+    padding:5px;
+}
+.boletin .texto{
+    font-size:11px;
+    font-family:"Trebuchet MS";
+    color:#5a5a5a;
+    width:140px;
+}
+.boletin .botonBoletin{
+    font-size:11px;
+    font-family:"Trebuchet MS";
+    color:#5a5a5a;
+    border:0;
+    padding:10px;
+    background:url(../../Imagenes/fondoBuscar.png) repeat-x;
+    cursor:pointer;
+}
+.contenidoCompleto
+{	
+    padding:5px;
+    overflow:auto;
+}
+.contenidoCompleto ul
+{	
+    list-style:disc;
+    padding:0 0 0 30px;
+}
+
+.panelIzquierdo
+{
+    float:left;
+    width:240px;
+    margin-right:6px;
+}
+.filtroResultados, 
+.filtroResultadosTitulo, 
+.filtroResultadosLista, 
+.filtro, 
+.filtroDetalle
+{
+    float:left;
+}
+.filtroResultadosTitulo
+{
+    margin-right:10px;
+    font-weight:bold;
+    font-size:15px;
+    width:100%;
+
+}
+.filtroResultados
+{
+    margin-top:5px;
+}
+.filtrosVuelosCont
+{
+    float:left;
+    position:relative;
+    width:230px;
+    border:solid 1px #ccc;
+    border-top:solid 10px #f90;
+    margin-top: 5px;
+    font-size: 12px;
+    padding-left: 8px;
+    padding-top: 6px;
+    padding-bottom: 10px;
+    background:#fefefe;
+}
+.botonBuscadorFiltro{
+    background:url(../../Imagenes/botonBuscador.png); 
+    border:0;
+    width:85px;
+    height:30px;
+    margin:7px 0 ;
+    font-size:15px;
+    font-weight:bold;
+    color:#FFF;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* ---=== resultados vuelos ===--- */
+.tituloValor{font-size:16px; font-weight: bold; color:#5a5a5a;}
+.tituloPrecioTotalVuelo{font-size:16px; font-weight: bold; color:#5a5a5a;}
+.tituloPrecioTotalVueloUSD{font-size:14px; font-weight: bold; color:#5a5a5a;}
+.divisionVuelos{ height:1px; color:#000; }
+
+.vuelos
+{
+    float:left;
+    position:relative;
+    width:675px;
+    border:solid 1px #ccc;
+    border-top:solid 10px #f90;
+    margin:0 5px 5px;
+    background:#fefefe;
+}
+.detalleVuelo
+{
+    float:left;
+    position:relative;
+    width:500px;
+    padding:5px;
+}
+.tarifasVuelo
+{
+    float:right;
+    position:relative;
+    width:165px;
+    padding:5px 0;
+    text-align:center;
+    background:url(../../Imagenes/fondoTarifas.png) repeat-x;
+}
+.detalleTarifa
+{
+    float:left;
+    position:relative;
+    width:155px;
+    padding:5px;
+    min-height: 120px;
+
+}
+.detalleTarifa table#ucResultadoVuelos_rptItinerario_ctl00_dtlTiposPasajeros_ctl01_dtlTarifas tr:first-child
+{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:#5a5a5a;
+}
+.detalleTarifa table#ucResultadoVuelos_rptItinerario_ctl00_dtlTiposPasajeros_ctl02_dtlTarifas tr:first-child
+{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:#5a5a5a;
+}
+
+.detalleTarifa table#ucReservaVuelos_rptItinerario_ctl00_dtlTiposPasajeros_ctl01_dtlTarifas tr:first-child
+{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:#5a5a5a;
+}
+.detalleTarifa table#ucReservaVuelos_rptItinerario_ctl00_dtlTiposPasajeros_ctl01_dtlTarifas tr:first-child span.valorTarifa
+{
+    font-size:12px;
+}
+.detalleTarifa table#ucReservaVuelos_rptItinerario_ctl00_dtlTiposPasajeros_ctl02_dtlTarifas tr:first-child
+{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:#5a5a5a;
+}
+.valorTotalVuelo
+{
+    float:right;
+    position:relative;
+    width:165px;
+    padding:5px 0;
+    text-align:center;
+}
+.detalleTarifa tr.tituloTarifa
+{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:#5a5a5a;
+}
+.detalleTarifa span.valorTarifa
+{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:#0000EE;
+}
+.detalleTarifa tr.totalReserva
+{
+    font-size:12px;
+    text-align:center;
+    color:#000;
+}
+.tablaVuelos
+{
+    border-width: 0px;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+.tablaVuelos tr.datosAerolinea
+{
+    color:#666;
+}
+.tablaVuelos td.logoAerolinea
+{
+    width:100px;
+    text-align:center;
+}
+.tablaVuelos td.division
+{
+    border-bottom:dashed 1px #999;
+}
+.detalleVuelo table tr:last-child td table.tablaVuelos:last-child td.division:last-child
+{
+    border-bottom:dashed 0px #999;
+}
+.valorTotalVuelo .botonBuscador{
+    background:url(../../Imagenes/botonConfirmacion.png); 
+    border:0;
+    width:125px;
+    height:30px;
+    font-size:15px;
+    font-weight:bold;
+    color:#FFF;
+    text-decoration:none;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+/* ---=== confirmacion vuelo ===--- */
+.tituloValor{font-size:16px; font-weight: bold; color:#186E9B;}
+.tituloPrecioTotalVuelo{font-size:16px; font-weight: bold; color:#5a5a5a;}
+.tituloPrecioTotalVueloUSD{font-size:14px; font-weight: bold; color:#5a5a5a;}
+.divisionVuelos{ height:1px; color:#000; }
+
+.panelConfirmacionVuelo
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 632px;
+    text-align: left;
+    font-size:12px;
+    margin:0 0 10px 0;
+}
+.panelConfirmacionVuelo .detalleVuelo
+{
+    float:left;
+    position:relative;
+    width:750px;
+    padding:5px;
+}
+.panelConfirmacionVuelo .vuelos
+{
+    float:left;
+    position:relative;
+    width:760px;
+    border:solid 1px #ccc;
+    border-top:solid 10px #f90;
+    margin:0;
+    background:#fefefe;
+}
+.confirmacionVuelo
+{
+    float:left;
+    position:relative;
+    width:760px;
+    border:solid 1px #ccc;
+    border-top:solid 1px #ccc;
+    margin:0 0 5px;
+    background:#fefefe;
+}
+.confirmacionVuelo .tituloConfirmacion
+{
+    position: relative;
+    float:left;
+    width: 720px;
+    height:41px; 
+    padding:12px 20px; 
+    margin:0;
+    color:#186e9b;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/confirmacion.gif) no-repeat;
+}
+.confirmacionVuelo .tablaPasajeros
+{
+    color:#FFF;
+    font-size:14px;
+}
+.tablaPasajeros
+{
+    float:left;
+    color:#FFF;
+    font-size:14px;
+}
+.confirmacionVuelo .tablaPasajeros input
+{
+    -moz-border-radius:4px; 
+    -webkit-border-radius:4px; 
+    border-radius:4px;
+    width:110px;
+    border:solid 1px #ccc;
+    font-weight:bold;
+    background:url(../../Imagenes/fondoBuscar.png) repeat-x;
+}
+.confirmacionVuelo .tablaPasajeros select
+{
+    width:60px;
+}
+.confirmacionVuelo .tablaPasajeros tr:last-child
+{
+    border-bottom:dashed 1px 999;
+}
+.confirmacionVuelo .detalleVuelo
+{
+    float:left;
+    position:relative;
+    width:750px;
+    padding:5px;
+    background:#5a5a5a;
+    border-top:solid 5px #f90;
+    border-bottom:solid 5px #f90;
+}
+.confirmacionVuelo .detalleTarifa
+{
+    float:left;
+    position:relative;
+    width:155px;
+    padding:5px;
+    min-height: 170px;
+    background:url(../../Imagenes/fondoTarifas.png) repeat-x;
+}
+.confirmacionVuelo .valorTotalVuelo
+{
+    float:right;
+    position:relative;
+    width:165px;
+    padding:5px 0;
+    text-align:center;
+}
+.confirmacionVuelo .detalleTarifa tr.tituloTarifa
+{
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    color:#186e9b;
+}
+.confirmacionVuelo .detalleTarifa tr.valorTarifa
+{
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    color:#000;
+}
+.confirmacionVuelo .detalleTarifa tr.totalReserva
+{
+    font-size:12px;
+    text-align:center;
+    color:#000;
+}
+.confirmacionTarifas
+{
+    float:right;
+    position:relative;
+    width:170px;
+    border:solid 1px #ccc;
+    border-top:solid 10px #f90;
+    margin:-130px 0 5px;
+    background:#fefefe;
+}
+.confirmacionTarifas .detalleTarifa
+{
+    float:left;
+    position:relative;
+    width:160px;
+    padding:5px;
+    min-height: 168px;
+    background:url(../../Imagenes/fondoTarifas.png) repeat-x;
+}
+.confirmacionTarifas .detalleTarifa tr.tituloTarifa
+{
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    color:#5a5a5a;
+}
+.confirmacionTarifas .detalleTarifa tr.valorTarifa
+{
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    color:#000;
+}
+.confirmacionTarifas .detalleTarifa tr.totalReserva
+{
+    font-size:12px;
+    text-align:center;
+    color:#000;
+}
+
+.confirmacionCondiciones
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 300px;
+    border:solid 1px #ccc;
+    text-align: left;
+    background:#f0f0f0;
+    font-size:12px;
+    margin:0 0 10px 6px;
+}
+.confirmacionCondiciones .tituloConfirmacion
+{
+    position: relative;
+    float:left;
+    width: 260px;
+    height:27px; 
+    padding:12px 20px; 
+    margin:0;
+    color:#186e9b;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/condiciones.gif) no-repeat;
+}
+.botonesConfirmacion {
+    position: absolute;
+    width: 180px;
+    border: 0;
+    text-align: center;
+    top: 18px;
+    right: 20px;
+    border-top:solid 6px #ff9600;
+    background:#FFFFFF;
+    padding-left:8px;
+    padding-right:8px;
+}
+.botonesConfirmacion .botonBuscador{
+    background:url(../../Imagenes/botonConfirmacion.png); 
+    border:0;
+    width:155px;
+    height:30px;
+    font-size:15px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+.botonesConfirmacion .botonBuscador2{
+    background:Transparent; 
+    border:0;
+    width:170px;
+    font-size:12px;
+    font-weight:bold;
+    color:#186e9b;
+    text-decoration:none;
+    cursor:pointer;
+}
+.botonCondiciones{
+    border:0;
+    width:170px;
+    font-size:12px;
+    font-weight:bold;
+    color:#186e9b;
+    text-decoration:underline;
+    cursor:pointer;
+    margin:5px 0;
+    background:Transparent;
+}
+/* Resumen resultados */
+.panelResumen
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 690px;
+    background:#ebeceb;
+    border-bottom:solid 1px #d5d5d5;
+    margin:0 0 10px 0;
+}
+.resumenVuelos
+{
+    float: left;
+    position: relative;
+    width: 630px;
+    font-size: 14px;
+    color: #5a5a5a;
+    padding: 10px 30px;
+}
+.resumenHoteles
+{
+    float:left; 
+    position:relative; 
+    width:140px;
+    font-size:14px;
+    color:#5a5a5a;
+    padding:5px 10px; 
+}
+.resumenHoteles .tituloResumen
+{
+    font-size:14px;
+    color:#186e9b;
+    font-weight:bold;
+}
+.resumenPlanes
+{
+    float:left; 
+    position:relative; 
+    width:200px;
+    font-size:14px;
+    color:#5a5a5a;
+    padding:5px 10px; 
+}
+.resumenPlanes .tituloResumen
+{
+    font-size:14px;
+    color:#186e9b;
+    font-weight:bold;
+}
+.resumenAutos
+{
+    float:left; 
+    position:relative; 
+    width:300px;
+    font-size:14px;
+    color:#5a5a5a;
+    padding:5px 10px; 
+}
+.resumenAutos .tituloResumen
+{
+    font-size:14px;
+    color:#186e9b;
+    font-weight:bold;
+}
+.nuevaBusquedaVuelos
+{
+    float:right; 
+    position:relative; 
+    width:135px; 
+    padding:5px; 
+    text-align:center;
+}
+.botonBusqueda{
+    background:url(../../Imagenes/botonBusqueda.png); 
+    border:0;
+    font-size:14px;
+    color:#FFF;
+    padding:3px;
+    text-decoration:none;
+    cursor:pointer;
+}
+.botonSeccion{
+    background:url(../../Imagenes/fondoBoton2.png) repeat-x; 
+    border:0;
+    font-size:14px;
+    color:#FFF;
+    padding:3px;
+    text-decoration:none;
+    cursor:pointer;
+}
+.botonAnterior{
+    background:Transparent url(../../Imagenes/botonAnterior.png) no-repeat center left; 
+    border:0;
+    font-size:12px;
+    font-weight:bold;
+    color:#5a5a5a;
+    padding:3px 0 3px 20px;
+    text-decoration:none;
+    cursor:pointer;
+}
+.botonSiguiente{
+    background:Transparent url(../../Imagenes/botonSiguiente.png) no-repeat center right; 
+    border:0;
+    font-size:12px;
+    font-weight:bold;
+    color:#5a5a5a;
+    padding:3px 20px 3px 0;
+    text-decoration:none;
+    cursor:pointer;
+}
+.seccionesVuelos
+{
+    width:100%; 
+    margin:10px 0 0 0;
+    float:left; 
+    position:relative;
+}
+.tituloSelecionVuelo
+{
+    font-size:15px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    color:#069;
+    width:100%;
+    float:left;
+    position:relative;
+    margin:0 0 5px 0;
+    border-bottom:solid 1px #069;
+}
+.ConParada
+{
+    font-size:12px;
+    color:#5A5A5A;
+    text-decoration:underline;
+    cursor:pointer;
+}
+.SinParada
+{
+    font-size:12px;
+    color:#5A5A5A;
+    text-decoration:none;
+    cursor:text;
+}	
+.tituloCondiciones
+{
+    float:left;
+    width:740px;
+    padding:5px 10px;
+    color:#186E9B;
+    font-family:"Trebuchet MS";
+    font-size:18px;
+    font-weight:bold;
+}
+.condiciones
+{
+    width:96%;
+    padding:2%;
+    height:200px; 
+    overflow:auto;
+}
+.condiciones ul
+{
+    list-style:disc;
+    padding:0 0 0 15px;
+}
+.condiciones strong
+{
+    font-weight:bold;
+}
+.recordReserva
+{
+    font-weight:bold;
+    color:#186e9b;
+}
+.recordReservaCarro
+{
+    font-weight:bold;
+    color:#186e9b;
+    float:left;
+    position:relative;
+    width:200px;
+    padding:5px;
+    border:solid 1px #186e9b;
+    text-align:center;
+    font-size:14px;
+}
+
+.quitarServicio
+{
+    width:100px;
+    height:25px;
+    border:0;
+    text-align:center;
+    font-size:14px;
+    background:url(../../Imagenes/quitarServicio.png); 
+}
+
+/* Hoteles */
+.tablaHoteles
+{
+    border-width: 0px;
+    border-spacing: 0px;
+    border-collapse: separate;
+}
+.tablaHoteles tr.tituloTabla
+{
+    color:#186e9b;
+    text-align:left;
+    font-size:14px;
+    font-weight:bold;
+    background-color: #F8F8F8;
+}
+.tablaHoteles tr.tituloTabla td.item
+{
+    border-bottom:dotted 1px #5a5a5a;
+    border-right:dotted 1px #5a5a5a;
+    padding: 4px;
+    color:#186e9b;
+    background-color: #F8F8F8;
+}
+.tablaHoteles tr.tituloTabla td.item2
+{
+    border-bottom:dotted 1px #5a5a5a;
+    padding: 4px;
+    color:#186e9b;
+    background-color: #F8F8F8;
+}
+.tablaHoteles td.item
+{
+    border-right:dotted 1px #5a5a5a;
+    padding: 4px;
+    color:#5a5a5a;
+    background-color: #E8E8E8;
+}
+.tablaHoteles td.item2
+{
+    padding: 4px;
+    color:#5a5a5a;
+    background-color: #E8E8E8;
+    text-align:center;
+}
+/* ---=== promociones index ===--- */
+.promocionesIndex{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 267px;
+}
+.promocionesIndex .destinoTitulo
+{
+    float:left;
+    position:relative;
+    width:146px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    font-weight:bold;
+
+
+}
+.promocionesIndex .precioPromoTitulo
+{
+    float:left;
+    position:relative;
+    width:100px;
+    padding:5px;
+    text-align:center;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    font-weight:bold;
+
+}
+.promocionesIndex .destino
+{
+    float:left;
+    position:relative;
+    width:146px;
+    padding:2px 5px;
+    color:#186e9b;
+    border-right:dotted 1px #999;
+}
+.promocionesIndex .destino a
+{
+    color:#186e9b;
+    font-size:12px;
+    text-decoration:none;
+}
+.promocionesIndex .precioPromo
+{
+    float:left;
+    position:relative;
+    width:100px;
+    padding:2px 5px;
+    color:#575757; 
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+}
+.promocionesIndex .verMasPromo
+{
+    float:left;
+    position:relative;
+    width:96%;
+    padding:2%;
+    text-align:right;
+    margin-top:5px;
+    border-top:solid 1px #CCC;
+}
+.promocionesIndex .verMasPromo a
+{
+    color:#000;
+    background:#74D5FF;
+    padding:5px;
+    text-decoration:none; 
+    font-weight:bold;
+}
+/* ---=== promociones index hoteles ===--- */
+.promocionesIndexHoteles{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 535px;
+}
+.promocionesIndexHoteles .destinoTitulo
+{
+    float:left;
+    position:relative;
+    width:146px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    font-weight:bold;
+}
+.promocionesIndexHoteles .nochesTitulo
+{
+    float:left;
+    position:relative;
+    width:80px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    text-align:center;
+    font-weight:bold;
+}
+.promocionesIndexHoteles .rankingTitulo
+{
+    float:left;
+    position:relative;
+    width:125px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    text-align:center;
+    font-weight:bold;
+}
+.promocionesIndexHoteles .precioPromoTitulo
+{
+    float:left;
+    position:relative;
+    width:138px;
+    padding:5px;
+    text-align:center;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    font-weight:bold;
+
+}
+.promocionesIndexHoteles .destino
+{
+    float:left;
+    position:relative;
+    width:146px;
+    height:35px;
+    padding:5px;
+    overflow:hidden;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexHoteles .destino a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexHoteles .noches
+{
+    float:left;
+    position:relative;
+    width:80px;
+    height:35px;
+    padding:5px;
+    color:#186e9b;
+    font-size:12px;
+    text-align:center;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexHoteles .noches a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexHoteles .ranking
+{
+    float:left;
+    position:relative;
+    width:125px;
+    height:35px;
+    padding:5px;
+    color:#186e9b;
+    font-size:12px;
+    text-align:center;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexHoteles .ranking a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexHoteles .precioPromo
+{
+    float:left;
+    position:relative;
+    width:130px;
+    height:35px;
+    padding:5px;
+    color:#575757; 
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexHoteles .verMasPromo
+{
+    float:left;
+    position:relative;
+    width:96%;
+    padding:2%;
+    text-align:right;
+    margin-top:5px;
+    border-top:solid 1px #CCC;
+}
+.promocionesIndexHoteles .verMasPromo a
+{
+    color:#000;
+    background:#74D5FF;
+    padding:5px;
+    text-decoration:none; 
+    font-weight:bold;
+}
+/* ---=== promociones index planes ===--- */
+.promocionesIndexPlanes{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 535px;
+}
+.promocionesIndexPlanes .destinoTitulo
+{
+    float:left;
+    position:relative;
+    width:135px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    font-weight:bold;
+
+}
+.promocionesIndexPlanes .nochesTitulo
+{
+    float:left;
+    position:relative;
+    width:90px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    text-align:center;
+    font-weight:bold;
+}
+.promocionesIndexPlanes .rankingTitulo
+{
+    float:left;
+    position:relative;
+    width:135px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    text-align:center;
+    font-weight:bold;
+}
+.promocionesIndexPlanes .precioPromoTitulo
+{
+    float:left;
+    position:relative;
+    width:130px;
+    height:37px;
+    padding:5px;
+    text-align:center;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    font-weight:bold;
+}
+.promocionesIndexPlanes .destino
+{
+    float:left;
+    position:relative;
+    width:135px;
+    height:35px;
+    padding:5px;
+    overflow:hidden;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexPlanes .destino a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexPlanes .noches
+{
+    float:left;
+    position:relative;
+    width:90px;
+    height:35px;
+    padding:5px;
+    color:#186e9b;
+    font-size:12px;
+    text-align:center;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexPlanes .noches a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexPlanes .ranking
+{
+    float:left;
+    position:relative;
+    width:135px;
+    height:35px;
+    padding:5px;
+    color:#186e9b;
+    font-size:12px;
+    text-align:center;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexPlanes .ranking a
+{
+    color:#186e9b;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexPlanes .precioPromo
+{
+    float:left;
+    position:relative;
+    width:130px;
+    height:35px;
+    padding:5px;
+    color:#575757; 
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexPlanes .verMasPromo
+{
+    float:left;
+    position:relative;
+    width:96%;
+    padding:2%;
+    text-align:right;
+    margin-top:5px;
+    border-top:solid 1px #CCC;
+}
+.promocionesIndexPlanes .verMasPromo a
+{
+    color:#000;
+    background:#74D5FF;
+    padding:5px;
+    text-decoration:none; 
+    font-weight:bold;
+}
+/* ---=== promociones index vuelos ===--- */
+.promocionesIndexVuelos
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 535px;
+}
+.promocionesIndexVuelos .destinoTitulo
+{
+    float:left;
+    position:relative;
+    width:96px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    font-weight:bold;
+}
+.promocionesIndexVuelos .nochesTitulo
+{
+    float:left;
+    position:relative;
+    width:160px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    text-align:center;
+    font-weight:bold;
+}
+.promocionesIndexVuelos .rankingTitulo
+{
+    float:left;
+    position:relative;
+    width:135px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    text-align:center;
+    font-weight:bold;
+
+}
+.promocionesIndexVuelos .precioPromoTitulo
+{
+    float:left;
+    position:relative;
+    width:100px;
+    height:37px;
+    padding:5px;
+    text-align:center;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    font-weight:bold;
+}
+.promocionesIndexVuelos .destino
+{
+    float:left;
+    position:relative;
+    width:96px;
+    height:35px;
+    padding:5px;
+    overflow:hidden;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexVuelos .destino a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexVuelos .noches
+{
+    float:left;
+    position:relative;
+    width:160px;
+    height:35px;
+    padding:5px;
+    color:#186e9b;
+    font-size:12px;
+    text-align:left;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexVuelos .noches a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexVuelos .ranking
+{
+    float:left;
+    position:relative;
+    width:135px;
+    height:35px;
+    padding:5px;
+    color:#186e9b;
+    font-size:12px;
+    text-align:center;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexVuelos .ranking a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.promocionesIndexVuelos .precioPromo
+{
+    float:left;
+    position:relative;
+    width:100px;
+    height:35px;
+    padding:5px;
+    color:#575757; 
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    border-bottom:dotted 1px #999;
+}
+.promocionesIndexVuelos .verMasPromo
+{
+    float:left;
+    position:relative;
+    width:96%;
+    padding:2%;
+    text-align:right;
+    margin-top:5px;
+    border-top:solid 1px #CCC;
+}
+.promocionesIndexVuelos .verMasPromo a
+{
+    color:#000;
+    background:#74D5FF;
+    padding:5px;
+    text-decoration:none; 
+    font-weight:bold;
+}
+/* ---=== ofertas de autos ===--- */
+.ofertasAutos{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 535px;
+
+}
+.ofertasAutos .destinoTitulo
+{
+    float:left;
+    position:relative;
+    width:86px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    font-weight:bold;
+
+}
+.ofertasAutos .nochesTitulo
+{
+    float:left;
+    position:relative;
+    width:100px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    text-align:center;
+    font-weight:bold;
+}
+.ofertasAutos .rankingTitulo
+{
+    float:left;
+    position:relative;
+    width:105px;
+    height:37px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    text-align:center;
+    font-weight:bold;
+}
+.ofertasAutos .precioPromoTitulo
+{
+    float:left;
+    position:relative;
+    width:80px;
+    height:37px;
+    padding:5px;
+    text-align:center;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    font-weight:bold;
+}
+.ofertasAutos .destino
+{
+    float:left;
+    position:relative;
+    width:86px;
+    height:35px;
+    padding:5px;
+    overflow:hidden;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+
+}
+.ofertasAutos .destino a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+.ofertasAutos .noches
+{
+    float:left;
+    position:relative;
+    width:100px;
+    height:35px;
+    padding:5px;
+    color:#186e9b;
+    font-size:12px;
+    text-align:center;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+
+}
+.ofertasAutos .noches a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.ofertasAutos .ranking
+{
+    float:left;
+    position:relative;
+    width:105px;
+    height:35px;
+    padding:5px;
+    color:#575757;
+    font-size:12px;
+    text-align:center;
+    border-right:dotted 1px #999;
+    border-bottom:dotted 1px #999;
+}
+.ofertasAutos .ranking a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.ofertasAutos .precioPromo
+{
+    float:left;
+    position:relative;
+    width:80px;
+    height:35px;
+    padding:5px;
+    color:#575757; 
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+    border-bottom:dotted 1px #999;
+}
+.ofertasAutos .verMasPromo
+{
+    float:left;
+    position:relative;
+    width:96%;
+    padding:2%;
+    text-align:right;
+    margin-top:5px;
+    border-top:solid 1px #CCC;
+}
+.ofertasAutos .verMasPromo a
+{
+    color:#000;
+    background:#74D5FF;
+    padding:5px;
+    text-decoration:none; 
+    font-weight:bold;
+}
+/* ---=== ofertas aereas ===--- */
+.ofertasAereas{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 268px;
+}
+.ofertasAereas .destinoTitulo
+{
+    float:left;
+    position:relative;
+    width:146px;
+    padding:5px;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    border-right:dotted 1px #999;
+    border-left:dotted 1px #999;
+    font-weight:bold;
+}
+.ofertasAereas .precioPromoTitulo
+{
+    float:left;
+    position:relative;
+    width:100px;
+    padding:5px;
+    text-align:center;
+    color:#186e9b;
+    border-bottom:dotted 1px #999;
+    font-weight:bold;
+}
+.ofertasAereas .destino
+{
+    float:left;
+    position:relative;
+    width:146px;
+    padding:2px 5px;
+    border-right:dotted 1px #999;
+    border-left:dotted 1px #999;
+    font-weight:bold;
+}
+.ofertasAereas .destino a
+{
+    color:#575757;
+    font-size:12px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.ofertasAereas .precioPromo
+{
+    float:left;
+    position:relative;
+    width:100px;
+    padding:2px 5px;
+    color:#575757; 
+    font-size:12px;
+    font-weight:bold;
+    text-align:center;
+}
+.ofertasAereas .verMasPromo
+{
+    float:left;
+    position:relative;
+    width:96%;
+    padding:2%;
+    text-align:right;
+    margin-top:5px;
+    border-top:solid 1px #CCC;
+}
+.ofertasAereas .verMasPromo a
+{
+    color:#000;
+    background:#74D5FF;
+    padding:5px;
+    text-decoration:none; 
+    font-weight:bold;
+}
+/* ---=== promociones destacadas ===--- */
+.panelPromociones{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 940px;
+    margin:0 0 15px 0;
+}
+.contenidoPromo
+{
+    width:560px;
+    float:right;
+    margin-left:10px;
+    position:relative;
+}
+.contenidoPromo .imagenBanner5{
+    position: relative;
+    float:left;
+}
+.contenidoPromo .imagenBanner5 img{
+    width:560px;
+    height:375px;
+}
+.contenidoOferta
+{
+    padding: 5px;
+    font-size:12px;
+    overflow:auto;
+}
+.menuPromo
+{
+    bottom: 10px;
+    position: absolute;
+    right: -0px;
+    text-align: left;
+    width: 540px;
+    z-index: 1;
+}
+a.promo:link{ border:0px;  color:#FFF; padding:3px 9px; text-decoration:none; font-size:14px; width:20px; font-weight:bold; text-align:center; background:url(../../Imagenes/promoOn.png) no-repeat center center;}
+a.promo:visited, a.promo:hover, a.promo:active, a.promo:focus { color: #F90; width:20px; background:url(../../Imagenes/promoOn.png) no-repeat center center; padding:3px 9px; text-decoration:none; }
+
+.textoOferta
+{
+    display:none;
+    width: 465px; 
+    padding:5px; 
+    position:absolute; 
+    background:url(../../Imagenes/fondoBuscador.png); 
+    right:0; 
+    top:291px; 
+    border-bottom:solid 10px #F90;
+    z-index:1;
+}
+.tituloOferta
+{
+    font-size:24px; 
+    color:#F90;
+    width:100%;
+    height:30px;
+    overflow:hidden;
+    margin-bottom:5px;
+}
+.textoPromociones
+{
+    float:left; 
+    position: relative; 
+    height:120px; 
+    width:100%; 
+    overflow:hidden;
+}
+.precioPromociones
+{
+    font-size:16px; 
+    color:#858F99; 
+    float:left; 
+    position:relative; 
+    width:100%;
+}
+.botonPromociones
+{
+    font-size:16px; 
+    text-decoration:none;
+    color:#F90;
+    padding:5px;
+    *padding:2px 5px;
+    *text-align:center;
+}
+/* ---=== redes sociales ===--- */
+.redesSociales{
+    position: relative;
+    padding: 5px;
+    float:left;
+    width: 590px;
+    background:url(../../Imagenes/fondoRedes.jpg) no-repeat;
+    margin:0;
+}
+.redesSociales .tituloViaje{
+    position: relative;
+    padding: 3px 5px;
+    float:left;
+    width: 320px;
+    font-size:14px;
+    font-weight:bold;
+}
+.redesSociales .contenidoViaje{
+    position: relative;
+    float:left;
+    width: 330px;
+}
+.redesSociales .contenidoViaje input{
+    height:32px;
+}
+.redesSociales .tituloRedes{
+    position: relative;
+    padding: 3px 5px;
+    float:left;
+    width: 240px;
+    margin:0 0 0 10px;
+    font-size:14px;
+    font-weight:bold;
+}
+.redesSociales .contenidoRedes{
+    position: relative;
+    float:left;
+    width: 250px;
+    margin:0 0 0 10px;
+}
+.redesSociales a{
+    text-decoration:none;
+}
+.redesSociales input{
+    float:left;
+    position:relative;
+    border:0;
+}
+.redesSociales img{
+    float:left;
+    position:relative;
+    border:0;
+}
+/* ---=== panel resultados ===--- */
+.panelResultados em
+{
+    font-style:italic;
+}
+.panelResultados strong
+{
+    font-weight:bold;
+}
+.panelResultados
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 100%;
+    text-align: left;
+    font-size:12px;
+    margin:0 0 10px 0;
+}
+.panelResultados .contenidoHoteles
+{
+    position: relative;
+    padding: 1%;
+    float:left;
+    width: 98%;
+    font-size:12px;
+    background:#fcfcfc;
+    border-top:solid 1px #d9d9d9;
+    border-bottom:solid 1px #d9d9d9;
+}
+.panelResultados .contenidoHoteles .imagenHotel
+{
+    position: relative;
+    float:left;
+    font-size:12px;
+    background:#fcfcfc;
+    border-top:solid 1px #D8D8D8;
+    border-bottom:solid 1px #D8D8D8;
+    border-right:solid 1px #D8D8D8;
+    border-left:solid 10px #F90;
+}
+.panelResultados .contenidoResultados
+{	
+    padding:5px;
+    overflow:hidden;
+}
+.panelResultados .tituloResultados
+{
+    position: relative;
+    float:left;
+    width: 898px;
+    height:27px; 
+    padding:12px 20px; 
+    margin:0;
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+.panelResultados .tituloContactenos
+{
+    position: relative;
+    float:left;
+    width: 440px;
+    height:30px;
+    padding:10px 20px;
+    margin:0 10px 0 0;
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    text-transform:capitalize;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+.panelResultados .tituloUbicacion
+{
+    position: relative;
+    float:left;
+    width:400px;
+    height:30px;
+    padding:10px 20px;
+    margin:0;
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+.panelResultados .contenidoContactenos
+{
+    position: relative;
+    float:left;
+    width: 440px;
+    padding:10px 20px;
+    margin:0 10px 0 0;
+}
+.panelResultados .contenidoUbicacion
+{
+    position: relative;
+    float:left;
+    width:400px;
+    padding:30px 20px;
+}
+.panelResultados .contenidoUbicacion .mapa
+{
+    position: relative;
+    float:left;
+    width:380px;
+    padding:10px;
+    background:#FFF;
+    border:solid 1px #CCC;
+}
+.panelResultados .tituloResultados a
+{
+    color:#FFF;
+    font-size:15px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    text-decoration:none;
+}
+.panelResultados .contenidoResultado
+{	
+    position: relative;
+    float:left;
+    width:100%;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+.panelResultados .contenidoResultadoCarro
+{	
+    position: relative;
+    float:left;
+    width:100%;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+
+}
+.panelResultados .contenidoResultado2
+{	
+    position: relative;
+    float:left;
+    padding:1%;
+    width:98%;
+
+}
+.panelResultados .tituloResultadosCircuito
+{
+    position: relative;
+    float:left;
+    width: 898px;
+    height:16px; 
+    padding:10px 20px; 
+    margin:0;
+    color:#5B99D1;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background-color: #F4F4F4;
+
+}
+
+.panelResultados .tituloResultadosFormasPago
+{
+    position: relative;
+    float:left;
+    width: 898px;
+    height:16px; 
+    padding:10px 20px ; 
+    margin:0;
+    color:#5B99D1;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background-color: #F4F4F4;
+
+}
+
+.panelResultados .tituloResultadosAdicionar
+{
+    position: relative;
+    float:left;
+    width: 898px;
+    height:16px; 
+    padding:10px 20px ; 
+    margin:0;
+    color:#5B99D1;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background-color: #F4F4F4;
+
+} 
+
+.panelResultados .tituloResultadosHotel
+{
+    position: relative;
+    float:left;
+    width: 898px;
+    height:16px; 
+    padding:10px 20px ; 
+    margin:0;
+    color:#5B99D1;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background-color: #F4F4F4;
+
+} 
+/* ---=== resultados ===--- */
+.resultados em
+{
+    font-style:italic;
+}
+.resultados strong
+{
+    font-weight:bold;
+}
+.resultados
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 688px;
+    border:solid 1px #ccc;
+    text-align: left;
+    background:#f0f0f0;
+    font-size:12px;
+    margin:0 0 10px 0;
+}
+.resultados .tituloFiltros
+{
+    float: left;
+    position: relative;
+    width: 87px;
+    font-weight: bold;
+    top: 5px;
+}
+.resultados table
+{
+    border-color:#c5c5c5;
+    border-width:1px;
+    color:#5A5A5A;
+}
+.resultados div.aerolinea
+{
+    background:#f2f2f2;
+    height:46px;
+    padding:2px;
+    width:81px;
+    border:solid 1px #CCC;
+    float:left;
+}
+.resultados div.directo
+{
+    background:#e9e9e9;
+    height:22px;
+    width:81px;
+    padding:2px;
+    border:solid 1px #CCC;
+    float:left;
+}
+.resultados div.directo:hover
+{
+    background:#DFDFFF;
+    height:22px;
+    width:81px;
+    padding:2px;
+    border:solid 1px #0000FF;
+    float:left;
+}
+
+.resultados div.parada1
+{
+    background:#fff;
+    height:22px;
+    width:81px;
+    padding:2px;
+    border:solid 1px #CCC;
+    float:left;
+}
+.resultados div.parada1:hover
+{
+    background:#DFDFFF;
+    height:22px;
+    width:81px;
+    padding:2px;
+    border :solid 1px #0000FF;
+    float:left;
+}
+.resultados div.parada2
+{
+    background:#e9e9e9;
+    height:22px;
+    width:81px;
+    padding:2px;
+    border:solid 1px #CCC;
+    float:left;
+}
+
+.resultados div.parada2:hover
+{
+    background:#DFDFFF;
+    height:22px;
+    width:81px;
+    padding:2px;
+    border :solid 1px #0000FF;
+    float:left;
+}
+.resultados .contenidoFiltros
+{
+    float:left; 
+    position:relative; 
+    width:540px; 
+    height:136px; 
+    overflow:auto;
+}
+.resultados .contenidoFiltros .columnaAerolinea
+{
+    float:left; 
+    position:relative; 
+    width:87px;
+    min-height:134px;
+    text-align:center;
+}
+.resultados .contenidoResultados
+{	
+    padding:5px;
+    overflow:hidden;
+}
+.resultados .tituloResultados
+{
+    position: relative;
+    float:left;
+    width: 648px;
+    height:27px; 
+    padding:12px 20px; 
+    margin:0;
+    color:#186e9b;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/resultados.gif) no-repeat;
+}
+.resultados .trayecto
+{
+    position: relative;
+    float:right;
+    width: 400px;
+    padding:0 5px;
+    color:#186e9b;
+    font-size:12px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.resultados .fechaTrayecto
+{
+    color:#666;
+    font-size:12px;
+    font-family:"Trebuchet MS";
+}
+.resultados .tituloResultados a
+{
+    color:#FFF;
+    font-size:15px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    text-decoration:none;
+}
+.resultados .contenidoResultado
+{	
+    position: relative;
+    float:left;
+    width:100%;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+.resultados .contenidoResultadoCarro
+{	
+    position: relative;
+    float:left;
+    width:100%;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+.resultados .contenidoResultado2
+{	
+    position: relative;
+    float:left;
+    padding:1%;
+    width:98%;
+}
+
+/* ---=== panel ofertas aereas ===--- */
+.panelOfertasAereas
+{
+    position: relative;
+    padding: 0;
+    float:right;
+    width: 560px;
+    text-align: left;
+    font-size:12px;
+    margin:0 0 10px 0;
+}
+.panelOfertasAereas .tituloResultados
+{
+    position: relative;
+    float:left;
+    width: 520px;
+    height:30px;
+    padding:10px 20px;
+    margin:0;
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background-size:560px;
+    background:#EFEFEF url(../../Imagenes/tituloOfertas.gif) no-repeat;
+}
+.panelOfertasAereas .contenidoResultado
+{	
+    position: relative;
+    float:left;
+    width:540px;
+    padding:10px;
+    height:305px;
+    overflow:auto;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+.panelOfertasAereas .imagenOfertaAerea
+{
+    float:right; 
+    position:relative; 
+    width:210px;
+    text-align:right;
+}
+.panelOfertasAereas .tituloCondicionesOfertaAerea
+{
+    float:left; 
+    position:relative; 
+    width:100%;
+    margin-top:5px;
+}
+.panelOfertasAereas .tituloOfertaAerea
+{
+    font-size:14px;
+    color:#186e9b;
+    font-weight:bold;
+}
+.panelOfertasAereas .descripcionOfertaAerea
+{
+    float:left; 
+    position:relative; 
+    width:100%;
+    margin-top:5px;
+    font-size:12px;
+    color:#000;
+}
+.panelOfertasAereas .indicacionOfertaAerea
+{
+    float:left; 
+    position:relative; 
+    width:100%;
+    margin-top:5px;
+    font-weight:bold;
+    font-size:14px;
+    font-style:italic;
+    color:#186e9b;
+}
+.panelOfertasAereas .precioPromociones
+{
+    font-size:16px; 
+    font-weight:bold;
+    color:#F90;
+    width:200px;
+}
+/* ---=== panel ofertas index ===--- */
+.panelOfertasIndex
+{
+    position: relative;
+    float:left;
+    width: 535px;
+    padding:2px;
+    background:#e7e7e7;
+    border:solid 1px #d4d4d4;
+    margin:0 20px 30px 0;
+}
+.panelOfertasIndex .tituloOfertasIndex
+{
+    float:left; 
+    position:relative; 
+    width:525px; 
+    height:27px; 
+    padding:12px 5px; 
+    text-align:right; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloPromociones.gif) no-repeat;
+    margin-bottom:5px
+}
+.panelOfertasIndex .tituloCorporativoIndex
+{
+    float:left; 
+    position:relative; 
+    width:505px; 
+    height:27px; 
+    padding:12px 15px; 
+    text-align:left; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloPromociones.gif) no-repeat;
+    margin-bottom:5px
+}
+.panelOfertasIndex .contenidoOfertasIndex
+{
+    float:left; 
+    position:relative; 
+    width:535px; 
+    padding:0;
+    background:#E8E8E8 url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+.panelOfertasIndex .contenidoOfertasIndex2
+{
+    float:left; 
+    position:relative; 
+    width:265px; 
+    padding:0;
+    margin-right:5px;
+    background:#E8E8E8 url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+.corporativo
+{
+    float:left; 
+    position:relative; 
+    width:495px; 
+    height:100px;
+    padding:20px;
+    background:#E8E8E8 url(../../Imagenes/fondoCorporativo.png) no-repeat;
+}
+.corporativo .imagenCorp
+{
+    float:left; 
+    position:relative; 
+    width:75px; 
+}
+.corporativo .textoCorp
+{
+    float:left; 
+    position:relative; 
+    width:390px;
+    font-size:12px;
+    color:#5a5a5a;
+    margin-left:25px;
+}
+/* ---=== panel servicios complementarios ===--- */
+.panelServiciosComplementarios
+{
+    position: relative;
+    float:right;
+    width: 360px;
+    padding:2px;
+    background:#e7e7e7;
+    border:solid 1px #d4d4d4;
+    margin:0 0 10px 0;
+}
+.panelServiciosComplementarios .tituloOfertasServicios
+{
+    float:left; 
+    position:relative; 
+    width:350px; 
+    height:27px; 
+    padding:12px 5px; 
+    text-align:right; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloServicios.gif) no-repeat;
+    margin-bottom:5px;
+}
+.panelServiciosComplementarios .contenidoOfertasServicios
+{
+    float:left; 
+    position:relative; 
+    width:360px; 
+    padding:0;
+    background:#E8E8E8 url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+.panelServiciosComplementarios .servicio
+{
+    float: left; 
+    position: relative; 
+    width:350px; 
+    padding:5px;
+    margin-bottom:5px;
+    text-align:right;
+}
+.panelServiciosComplementarios .servicio .imagenServicio
+{
+    float: left; 
+    position: relative; 
+    border-left: solid 10px #F90; 
+    margin: 0 5px 5px 0;
+}
+.panelServiciosComplementarios .servicio .descripcion
+{
+    float: left; 
+    position: relative; 
+    width:245px;
+    height:52px;
+    overflow:hidden;
+    text-align:left;
+    font-size:12px;
+    margin-bottom:3px;
+}
+.panelServiciosComplementarios .servicio a
+{
+    color:#FFF;
+    font-size:12px;
+    text-decoration:none;
+    padding:3px;
+    background:url(../../Imagenes/fondoBoton.png) repeat-x;
+}
+/* ---=== panel contacto preguntas ===--- */
+.panelContactoPreguntas
+{
+    position: relative;
+    float:left;
+    width: 445px;
+    padding:2px;
+    background:#e7e7e7;
+    border:solid 1px #d4d4d4;
+    margin:0 20px 30px 0;
+}
+.panelContactoPreguntas .tituloOfertasIndex
+{
+    float:left; 
+    position:relative; 
+    margin-bottom:5px;
+    width:415px; 
+    height:27px; 
+    padding:12px 15px; 
+    text-align:left; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloOfertas.gif) no-repeat;
+}
+.panelContactoPreguntas .contenidoContactenos
+{
+    float: left; 
+    position: relative; 
+    width:400px; 
+    padding:5px;
+    font-size:12px;
+}
+/* ---=== panel beneficios de viaje ===--- */
+.panelBeneficiosViaje
+{
+    position: relative;
+    float:left;
+    width: 550px;
+    padding:2px;
+    background:#e7e7e7;
+    border:solid 1px #d4d4d4;
+    margin:10px 10px 10px 0;
+}
+.panelBeneficiosViaje .tituloOfertasServicios
+{
+    float:left; 
+    position:relative; 
+    width:530px; 
+    height:26px; 
+    padding:12px 5px; 
+    text-align:left; 
+    border-left:solid 10px #F90; 
+    font-size:18px; 
+    color:#575757; 
+    background:#DEDDDE; 
+    margin-bottom:5px
+}
+.panelBeneficiosViaje .servicio
+{
+    float: left; 
+    position: relative; 
+    width:540px; 
+    padding:5px;
+    margin-bottom:5px;
+}
+.panelBeneficiosViaje .servicio .imagenServicio
+{
+    float: left; 
+    position: relative; 
+    border-left: solid 10px #F90; 
+    margin: 0 5px 5px 0;
+}
+.panelBeneficiosViaje .servicio .descripcion
+{
+    float: left; 
+    position: relative; 
+    width:435px;
+    font-size:12px;
+}
+.panelBeneficiosViaje .servicio .descripcion a
+{
+    color:#333;
+    font-size:12px;
+    text-decoration:none;
+}
+/* ---=== panel contactenos beneficios ===--- */
+.panelContactenosViaje
+{
+    position: relative;
+    float:left;
+    width: 368px;
+    height: 620px;
+    padding:2px;
+    background:#e7e7e7;
+    border:solid 1px #d4d4d4;
+    margin:0 0 30px 0;
+}
+.panelContactenosViaje .tituloOfertasServicios
+{
+    float:left; 
+    position:relative; 
+    width:348px; 
+    height:26px; 
+    padding:12px 5px; 
+    text-align:left; 
+    border-left:solid 10px #F90; 
+    font-size:18px; 
+    color:#575757; 
+    background:#DEDDDE; 
+    margin-bottom:5px
+}
+.panelContactenosViaje .contenidoContactenos
+{
+    float: left; 
+    position: relative; 
+    width:355px; 
+    padding:5px;
+    font-size:12px;
+}
+/* ---=== panel preguntas ===--- */
+.panelPreguntas
+{
+    position: relative;
+    /* @alternate */
+    padding: 0;
+    float:right;
+    width: 460px;
+    padding:2px;
+    background:#e7e7e7;
+    border:solid 1px #d4d4d4;
+    margin:0 0 10px 0;
+}
+.panelPreguntas .tituloOfertasServicios
+{
+    float:left; 
+    position:relative; 
+    margin-bottom:5px;
+    width:430px; 
+    height:27px; 
+    padding:12px 15px; 
+    text-align:left; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloOfertas.gif) no-repeat;
+}
+/* ---=== panel hoteles ===--- */
+.panelHoteles
+{
+    position: relative;
+    padding: 20px 30px 10px 30px;
+    float:left;
+    width: 630px;
+    text-align: left;
+    font-size:12px;
+    border-bottom:solid 1px #D7D7D7;
+    background:#FCFCFC;
+}
+.panelHoteles .tituloResultados
+{
+    position: relative;
+    float:left;
+    width: 898px;
+    height:27px; 
+    padding: 10px 30px 10px 20px;
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+
+.panelHoteles .imagen
+{
+    float: left; 
+    position: relative; 
+    width:220px;
+    border-left:solid 10px #F90;
+}
+.panelHoteles .imagen img
+{
+    width:175px;
+    height:145px;
+    border:solid 1px #CCC;
+}
+.panelHoteles .descripcion
+{
+    float: left; 
+    position: relative; 
+    width:400px;
+}
+.panelHoteles .descripcion .tituloPlanes
+{
+    position: relative;
+    float:left;
+    width: 380px;
+    height:20px;
+    padding:5px 0;
+    overflow:hidden;
+    margin:0;
+    color:#186e9b;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.panelHoteles .descripcion .tituloPlanes a
+{
+    color:#186e9b;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    text-decoration:none;
+}
+.panelHoteles .descripcion .textoPlanes
+{
+    position: relative;
+    float:left;
+    width: 380px;
+    height:70px;
+    padding:5px 0;
+    overflow:hidden;
+    margin:0;
+    color:#5a5a5a;
+    border-bottom:dotted 1px #9c9c9c;
+}
+.panelHoteles .descripcion .imagenCategoria
+{
+    float:left;
+    position:relative;
+    width:380px;
+    padding:10px 0;
+    text-align:right;
+}
+.panelHoteles .precioPlan
+{
+    float: left; 
+    position: relative; 
+    width:198px; 
+    text-align:center; 
+    font-size:24px;
+    color:#186e9b;
+}
+.panelHoteles .botonPlanes
+{
+    float: left; 
+    position: relative; 
+    width:100%;
+    text-align:center;
+    padding:5px 0 0 0; 
+}
+.panelHoteles .botonPlanes a
+{
+    font-size:15px;
+    font-weight: bold; 
+    color:#000;
+}
+.panelHoteles .detalles
+{
+    font-size:12px;
+    font-weight: bold; 
+    text-decoration:none;
+    color:#FFF;
+    padding:5px;
+    width:50px;
+    height:23px;
+    background:url(../../Imagenes/botonVerMas.png) no-repeat;
+}
+/* ---=== panel hoteles ===--- */
+.panelHoteles2
+{
+    position: relative;
+    padding: 20px 30px 10px 30px;
+    float:left;
+    width: 878px;
+    text-align: left;
+    font-size:12px;
+    border-bottom:solid 1px #D7D7D7;
+    background:#FCFCFC;
+}
+.panelHoteles2 .tituloResultados
+{
+    position: relative;
+    float:left;
+    width: 898px;
+    height:27px; 
+    padding: 10px 30px 10px 20px;
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+
+.panelHoteles2 .imagen
+{
+    float: left; 
+    position: relative; 
+    width:220px;
+    border-left:solid 10px #F90;
+}
+.panelHoteles2 .imagen img
+{
+    width:175px;
+    height:145px;
+    border:solid 1px #CCC;
+}
+.panelHoteles2 .descripcion
+{
+    float: left; 
+    position: relative; 
+    width:450px;
+    background: url(../../Imagenes/bordePlan.png) no-repeat center right;
+}
+.panelHoteles2 .descripcion .tituloPlanes
+{
+    position: relative;
+    float:left;
+    width: 400px;
+    height:20px;
+    padding:5px 0;
+    overflow:hidden;
+    margin:0;
+    color:#186e9b;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.panelHoteles2 .descripcion .tituloPlanes a
+{
+    color:#186e9b;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    text-decoration:none;
+}
+.panelHoteles2 .descripcion .textoPlanes
+{
+    position: relative;
+    float:left;
+    width: 430px;
+    height:70px;
+    padding:5px 0;
+    overflow:hidden;
+    margin:0;
+    color:#5a5a5a;
+    border-bottom:dotted 1px #9c9c9c;
+}
+.panelHoteles2 .descripcion .imagenCategoria
+{
+    float:left;
+    position:relative;
+    width:430px;
+    padding:10px 0;
+    text-align:right;
+}
+.panelHoteles2 .precioPlan
+{
+    float: left; 
+    position: relative; 
+    width:198px; 
+    text-align:center; 
+    font-size:24px;
+    color:#186e9b;
+}
+.panelHoteles2 .botonPlanes
+{
+    float: left; 
+    position: relative; 
+    width:100%;
+    text-align:center;
+    padding:5px 0 0 0; 
+}
+.panelHoteles2 .botonPlanes a
+{
+    font-size:15px;
+    font-weight: bold; 
+    color:#000;
+}
+.panelHoteles2 .detalles
+{
+    font-size:12px;
+    font-weight: bold; 
+    text-decoration:none;
+    color:#FFF;
+    padding:5px;
+    width:50px;
+    height:23px;
+    background:url(../../Imagenes/botonVerMas.png) no-repeat;
+}
+.tarifasHoteles
+{
+    float:left;
+    position:relative;
+    width:628px;
+    padding:0 30px;
+    font-size:12px;
+    background:#E8E8E8;
+    border-bottom:solid 1px #D7D7D7;
+}
+.tarifasHoteles .tituloTablaHotel
+{
+    font-size:14px;
+    font-weight:bold;
+    color:#186e9b;
+    text-align:center;
+}
+.tarifasHoteles2
+{
+    float:left;
+    position:relative;
+    width:878px;
+    padding:0 30px;
+    font-size:12px;
+    background:#E8E8E8;
+    border-bottom:solid 1px #D7D7D7;
+}
+.tarifasHoteles2 .tituloTablaHotel
+{
+    font-size:14px;
+    font-weight:bold;
+    color:#186e9b;
+    text-align:center;
+}
+.tituloTablaHotel
+{
+    font-size:14px;
+    font-weight:bold;
+    color:#186e9b;
+    text-align:center;
+}
+/* ---=== panel ofertas ===--- */
+.panelOfertas
+{
+    position: relative;
+    padding: 10px 0;
+    float:left;
+    width: 878px;
+    text-align: left;
+    font-size:12px;
+    margin:0 30px 10px 30px;
+    border-bottom:dotted 1px #9c9c9c;
+}
+.tituloResultadosOfertas
+{
+    float:left;
+    position:relative;
+    width:130px;
+    font-size:15px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    height:55px;
+    overflow:hidden;
+}
+.contenidoOfertas
+{
+    padding:0;
+    overflow:hidden;
+}
+.panelOfertas .imagen
+{
+    float: left; 
+    position: relative; 
+    width:220px;
+    border-left:solid 10px #F90;
+}
+.panelOfertas .imagen img.plan
+{
+    width:175px;
+    height:145px;
+    border:solid 1px #CCC;
+}
+.panelOfertas .descripcion
+{
+    float: left; 
+    position: relative; 
+    width:450px;
+    background: url(../../Imagenes/bordePlan.png) no-repeat center right;
+}
+.panelOfertas .descripcion .tituloPlanes
+{
+    position: relative;
+    float:left;
+    width: 400px;
+    height:20px;
+    padding:5px 0;
+    overflow:hidden;
+    margin:0;
+    color:#186e9b;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.panelOfertas .descripcion .tituloPlanes a
+{
+    color:#186e9b;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    text-decoration:none;
+}
+.panelOfertas .descripcion .textoPlanes
+{
+    position: relative;
+    float:left;
+    width: 430px;
+    height:70px;
+    padding:5px 0;
+    overflow:hidden;
+    margin:0;
+    color:#5a5a5a;
+    border-bottom:dotted 1px #9c9c9c;
+}
+.panelOfertas .descripcionHoteles
+{
+    float: left; 
+    position: relative; 
+    width:640px;
+}
+.panelOfertas .descripcionHoteles .tituloPlanes
+{
+    position: relative;
+    float:left;
+    width: 600px;
+    height:20px;
+    padding:5px 0;
+    overflow:hidden;
+    margin:0;
+    color:#186e9b;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.panelOfertas .descripcionHoteles .tituloPlanes a
+{
+    color:#186e9b;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    text-decoration:none;
+}
+.panelOfertas .descripcionHoteles .textoPlanesHoteles
+{
+    position: relative;
+    float:left;
+    width: 630px;
+    padding:5px 0;
+    margin:0;
+    color:#5a5a5a;
+
+}
+.panelOfertas .descripcionHoteles .imagenCategoria
+{
+    float:left;
+    position:relative;
+    width:630px;
+    padding:5px 0;
+    text-align:right;
+}
+.panelOfertas .descripcion .imagenCategoria
+{
+    float:left;
+    position:relative;
+    width:430px;
+    padding:5px 0;
+    text-align:right;
+}
+.panelOfertas .precioPlan
+{
+    float: left; 
+    position: relative; 
+    width:198px; 
+    text-align:center; 
+    font-size:24px;
+    color:#186e9b;
+}
+.panelOfertas .botonPlanes
+{
+    float: left; 
+    position: relative; 
+    width:100%;
+    text-align:center;
+    padding:5px 0 0 0; 
+}
+.panelOfertas .botonPlanes a
+{
+    font-size:15px;
+    font-weight: bold; 
+    color:#000;
+}
+/*************************/
+.contenidoResultados2
+{	
+    padding:9px;
+}
+.titulosPanel
+{
+    float:left;
+    position:relative;
+    width:100%;
+    margin:0 0 5px 0;
+    color:#5a5a5a;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.tituloDetalleTarifa
+{
+    color:#000;
+    font-size:16px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.contenidosPanel
+{
+    float:left;
+    position:relative;
+    width:642px;
+    padding:0 0 10px 0;
+
+}
+.contenidoResultado
+{
+    float:left;
+    position:relative;
+    width:100%;
+    padding:0;
+    font-size:12px;
+}
+.contenidoResultado ul
+{
+    list-style:disc;
+    padding:0 0 0 15px;
+}
+.contenidoResultado strong
+{
+    font-weight:bold;
+}
+/* ---=== resultados planes ===--- */
+.convenciones
+{
+    color:#000;
+    font-size:12px;
+    font-weight: bold;
+}
+.tituloResultadosPlanes
+{
+    float:left;
+    position:relative;
+    width:130px;
+    font-size:15px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    height:55px;
+    overflow:hidden;
+}
+.contenidoResultadoPlanes
+{
+    padding:5px;
+    overflow:hidden;
+}
+.contenidoResultadoPlanes .imagen
+{
+    float: left; 
+    position: relative; 
+    width:210px;
+    background:#FFF;
+    margin:0 5px 0 0;
+}
+.contenidoResultadoPlanes .descripcion
+{
+    float: left; 
+    position: relative; 
+    width:470px;
+}
+.contenidoResultadoPlanes .precioPlan
+{
+    float: left; 
+    position: relative; 
+    width:200px; 
+    text-align:right;
+    font-size:20px;
+    font-weight: bold; 
+    color:#000;
+}
+.contenidoResultadoPlanes .precioPlan .botonPlanes
+{
+    font-size:15px;
+    font-weight: bold; 
+    color:#000;
+}
+/* ---=== detalle planes ===--- */
+.detallePlan
+{
+    position: relative;
+    float:left;
+    width: 100%;
+    margin-bottom:10px;
+}
+.detallePlan .imagenPlan
+{
+    float:left;
+    position:relative;
+    border:0;
+    padding:0;
+    text-align:right;
+    width:940px;
+    height:350px;
+}
+.detallePlan .imagenPlan img
+{
+    width:470px;
+    height:350px;
+}
+.detallePlan .contenidoPlan
+{
+    position:absolute;
+    width:460px;
+    height:340px;
+    z-index:1;
+    background:#CCC url(../../Imagenes/fondoBuscador.png);
+    border-bottom:solid 10px #F90;
+    margin-right:10px;
+}
+.detallePlan .contenidoPlan .tituloPlan
+{
+    position:relative;
+    float:left;
+    width:440px;
+    height:58px;
+    padding:0 10px;
+    font-size:24px;
+    color:#F90;
+    overflow:hidden;
+    margin:5px 0;
+}
+.detallePlan .contenidoPlan .precioPlanes
+{
+    position:relative;
+    float:left;
+    width:440px;
+    height:50px;
+    padding:0 10px;
+    font-size:24px;
+    color:#FFF;
+    overflow:hidden;
+}
+.detallePlan .contenidoPlan .precioPlanes .referencia
+{
+    font-size:13px;
+    color:#FFF;
+}
+.detallePlan .contenidoPlan .condiciones
+{
+    position:relative;
+    float:left;
+    width:425px;
+    height:210px;
+    overflow:auto;
+    padding:0 10px;
+    font-size:12px;
+    color:#FFF;
+    margin:5px;
+}
+.detallePlan .contenidoPlan .condiciones .items
+{
+    position:relative;
+    float:left;
+    width:385px;
+    padding:5px 5px 5px 15px;
+    background:url(../../Imagenes/bullet3.png) no-repeat 0 0;
+}
+.detallePlan .contenidoPlan .condiciones .subtituloPlan
+{
+    font-size:14px;
+    color:#FFF;
+    font-style:italic;
+}
+.detallePlan .galeriaPlan
+{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:450px;
+    padding:10px;
+    height:30px;
+    border-bottom:solid 10px #F90;
+    background:Transparent url(../../Imagenes/fondoBuscador.png);
+    z-index:1;
+}
+.detallePlan .galeriaPlan .foto
+{
+    float:left;
+    position:relative;
+    margin-right:5px;
+    border-top:solid 1px #CCC;
+    border-bottom:solid 1px #CCC;
+    border-left:solid 10px #F90;
+    border-right:solid 1px #CCC;
+}
+.detallePlan .galeriaPlan .foto img
+{
+    width:38px;
+    height:30px;
+}
+.compartirPlan
+{
+    position: relative;
+    float:left;
+    width: 930px;
+    border-left:solid 10px #F90;
+    text-align:center;
+    background:#CCC url(../../Imagenes/fondoBuscador.png);
+    margin-bottom:10px;
+}
+.volver
+{
+    font-size:12px;
+    color:#186e9b;
+}
+.linkUtilidades
+{
+    color:#186e9b;
+    font-weight:bold;
+}
+/* opciones planes */
+.botonesImprimirRegresar
+{
+    float:left;
+    width:300px;
+    height:50px;
+}
+
+.botonImprimir
+{ 
+    width:150px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botones.png) 0 0;
+}
+.botonImprimirOff
+{
+    width:150px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botones.png) 150px 0;
+}
+.botonMeGusta
+{
+    width:150px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botones.png) 0 150px;
+}
+.botonMeGustaOff
+{
+    width:150px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botones.png) 150px 150px;
+}
+.botonEnviar
+{
+    width:150px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botones.png) 0 100px;
+
+}
+.botonEnviarOff
+{
+    width:150px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botones.png) 150px 100px;
+}
+.botonItinerario
+{
+    width:150px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botones.png) 0 50px;
+
+}
+.botonItinerarioOff
+{
+    width:150px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botones.png) 150px 50px;
+}
+.cotizadorPlan
+{
+    float:left;
+    position:relative;
+    width:100%;
+    margin:0 0 10px 0;
+    background:#EAEAEA;
+}
+.botonEnviarAmigo
+{
+    width:205px;
+    height:36px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botonEnviar.png);
+}
+.botonImprimirPlan
+{
+    width:102px;
+    height:36px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botonImprimir.png);
+}
+.botonReservarPlan
+{
+    width:102px;
+    height:36px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botonReservar.png);
+}
+.botonCotizarPlan
+{
+    width:102px;
+    height:36px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/botonCotizar.png);
+}
+.botonChat
+{
+    width:85px;
+    height:50px;
+    border:0;
+    cursor:pointer;
+    background:url(../../Imagenes/chat2.png) no-repeat 0 0;
+    margin-left: 40px;
+}
+
+.verMas{font-weight:bold; text-decoration:underline; cursor:pointer;}
+
+.imagenOfertaImpresion
+{
+    width:560px;
+    height:360px;
+    text-align:center;
+}
+
+/* ---=== panel ofertas planes ===--- */
+.ofertasPlanes
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 329px;
+}
+.contenidosPlanes
+{
+    float:left;
+    position:relative;
+    width:311px;
+    padding:0 0 10px 0;
+    font-size:12px;
+}
+.contenidosSugeridos
+{
+    float:left;
+    position:relative;
+    width:570px;
+}
+.contenidosSugeridos .destinos
+{
+    float:left; 
+    position:relative; 
+    width:185px;
+    margin:0 4px 4px 0; 
+}
+.contenidosSugeridos .destinos .imagenDestino
+{
+    float:left; 
+    position:relative; 
+    width:180px;
+    height:120px;
+    border:solid 1px #CCC;
+    padding:2px;
+    margin:5px 0 0 0;
+    background-color:#FFF;	
+}
+
+.oferta{float:left; position:relative; width:59px;}
+
+/* Tool Tips */
+a.tarifa {
+    position: relative; 
+    text-decoration: underline !important; /* forzar sin subrayado */
+    color:#1D5B9E !important; /* forzar color del texto */
+    font-weight:bold !important; /* forzar negritas */
+}
+
+a.tarifa:hover {
+    z-index:999; /* va a estar por encima de todo */
+    background-color:Transparent; /* DEBE haber un color de fondo */
+}
+
+a.tarifa div {
+    display: none; /* el elemento va a estar oculto */
+}
+
+a.tarifa:hover div {
+    display: block; /* se fuerza a mostrar el bloque */
+    position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+    top:-16em; left:-8.5em; /* donde va a estar */
+    width:250px; /* el ancho por defecto que va a tener */
+    height:170px;
+    padding:10px; 
+    background:Transparent url(../../Imagenes/tooltip.png) no-repeat center top; /* el color de fondo por defecto */
+    color: #FFF; /* el color de los textos por defecto */
+    text-decoration:none;
+    text-align:left;
+    font-weight:normal;
+    z-index:999;
+    font-size:11px;
+    overflow:auto;
+}
+a.moneda {
+    position: relative; 
+    text-decoration: none !important; /* forzar sin subrayado */
+    color:#000 !important; /* forzar color del texto */
+    font-weight:bold !important; /* forzar negritas */
+}
+
+a.moneda:hover {
+    z-index:999; /* va a estar por encima de todo */
+}
+
+a.moneda div {
+    display: none; /* el elemento va a estar oculto */
+}
+
+a.moneda:hover div {
+    display: block; /* se fuerza a mostrar el bloque */
+    position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+    top:20px; left:-60px; /* donde va a estar */
+    width:120px; /* el ancho por defecto que va a tener */
+    height:5px;
+    padding:20px 10px;
+    background:Transparent url(../../Imagenes/moneda.png) no-repeat center top; /* el color de fondo por defecto */
+    color: #FFF; /* el color de los textos por defecto */
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+    z-index:999;
+    font-size:13px;
+    overflow:auto;
+}
+a.moneda2 {
+    position: relative; 
+    text-decoration: none !important; /* forzar sin subrayado */
+    color:#000 !important; /* forzar color del texto */
+    font-weight:bold !important; /* forzar negritas */
+}
+
+a.moneda2:hover {
+    z-index:999; /* va a estar por encima de todo */
+}
+
+a.moneda2 div {
+    display: none; /* el elemento va a estar oculto */
+}
+
+a.moneda2:hover div {
+    display: block; /* se fuerza a mostrar el bloque */
+    position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+    top:-40px; left:10px; /* donde va a estar */
+    width:120px; /* el ancho por defecto que va a tener */
+    height:35px;
+    padding:5px 10px; 
+    background:Transparent url(../../Imagenes/moneda2.png) no-repeat center top; /* el color de fondo por defecto */
+    color: #FFF; /* el color de los textos por defecto */
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+    z-index:999;
+    font-size:13px;
+    overflow:auto;
+}
+a.utilitario {
+    position: relative; 
+    text-decoration: none !important; /* forzar sin subrayado */
+    color:#000 !important; /* forzar color del texto */
+    font-weight:bold !important; /* forzar negritas */
+}
+
+a.utilitario:hover {
+    z-index:999; /* va a estar por encima de todo */
+}
+
+a.utilitario div {
+    display: none; /* el elemento va a estar oculto */
+}
+
+a.utilitario:hover div {
+    display: block; /* se fuerza a mostrar el bloque */
+    position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+    top:-45px; left:-70px; /* donde va a estar */
+    width:120px; /* el ancho por defecto que va a tener */
+    height:35px;
+    padding:5px 10px; 
+    background:Transparent url(../../Imagenes/moneda2.png) no-repeat center top; /* el color de fondo por defecto */
+    color: #FFF; /* el color de los textos por defecto */
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+    z-index:999;
+    font-size:13px;
+    overflow:auto;
+}
+a.impuestos {
+    position: relative;
+    text-decoration: underline !important; /* forzar sin subrayado */
+    color:#1D5B9E !important; /* forzar color del texto */
+    font-weight:bold !important; /* forzar negritas */
+}
+
+a.impuestos:hover {
+    z-index:999; /* va a estar por encima de todo */
+    background-color:Transparent; /* DEBE haber un color de fondo */
+}
+
+a.impuestos div {
+    display: none; /* el elemento va a estar oculto */
+}
+
+a.impuestos:hover div {
+    display: block; /* se fuerza a mostrar el bloque */
+    position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+    top:-130px; left:-100px; /* donde va a estar */
+    width:240px; /* el ancho por defecto que va a tener */
+    height:110px;
+    padding:10px; 
+    background:Transparent url(../../Imagenes/impuesto.png) no-repeat center top; /* el color de fondo por defecto */
+    color: #FFF; /* el color de los textos por defecto */
+    text-decoration:none;
+    text-align:left;
+    font-weight:normal;
+    z-index:999;
+    overflow:auto;
+}
+a.valorTotal {
+    position: relative; 
+    text-decoration: underline !important; /* forzar sin subrayado */
+    color:#1D5B9E !important; /* forzar color del texto */
+    font-weight:bold !important; /* forzar negritas */
+}
+
+a.valorTotal:hover {
+    z-index:999; /* va a estar por encima de todo */
+    background-color:Transparent; /* DEBE haber un color de fondo */
+}
+
+a.valorTotal div {
+    display: none; /* el elemento va a estar oculto */
+}
+
+a.valorTotal:hover div {
+    display: block; /* se fuerza a mostrar el bloque */
+    position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+    top:-60px; left:-290px; /* donde va a estar */
+    width:270px; /* el ancho por defecto que va a tener */
+    height:100px;
+    padding:10px; 
+    background:Transparent url(../../Imagenes/valorTotal.png) no-repeat center top; /* el color de fondo por defecto */
+    color: #FFF; /* el color de los textos por defecto */
+    text-decoration:none;
+    text-align:left;
+    font-weight:normal;
+    z-index:999;
+    overflow:auto;
+}
+a.certificados {
+    position: relative; 
+    text-decoration: underline !important; /* forzar sin subrayado */
+}
+
+a.certificados:hover {
+    z-index:999; /* va a estar por encima de todo */
+}
+
+a.certificados div {
+    display: none; /* el elemento va a estar oculto */
+}
+
+a.certificados:hover div {
+    display: block; /* se fuerza a mostrar el bloque */
+    position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+    top:-250px; left:-90px; /* donde va a estar */
+    width:240px; /* el ancho por defecto que va a tener */
+    height:210px;
+    padding:10px; 
+    background:Transparent url(../../Imagenes/certificado.png) no-repeat center top; /* el color de fondo por defecto */
+    color: #000; /* el color de los textos por defecto */
+    text-decoration:none;
+    text-align:left;
+    font-weight:normal;
+    z-index:999;
+    overflow:auto;
+}
+
+a.ciudades {
+    position: relative; 
+    text-decoration: none !important; /* forzar sin subrayado */
+    color:#333 !important; /* forzar color del texto */
+    font-size:11px;
+}
+
+a.ciudades:hover {
+    z-index:999; /* va a estar por encima de todo */
+    background-color:Transparent; /* DEBE haber un color de fondo */
+}
+
+a.ciudades div {
+    display: none; /* el elemento va a estar oculto */
+}
+
+a.ciudades:hover div {
+    display: block; /* se fuerza a mostrar el bloque */
+    position: absolute; /* se fuerza a que se ubique en un lugar de la pantalla */
+    top:1.2em; left:0em; /* donde va a estar */
+    width:125px; /* el ancho por defecto que va a tener */
+    padding:3px; 
+    background-color: #0080C0; /* el color de fondo por defecto */
+    color: #FFFFFF; /* el color de los textos por defecto */
+    z-index:999;
+}
+
+
+/* Mensaje Error */
+.mensajeError
+{
+    position: relative;
+    float:left;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+    color:#000;
+    background-color:#FFF;
+}
+
+.contenidoError
+{	
+    padding:8px;
+    overflow:auto;
+}
+.contenidoError img
+{	
+    padding:8px;
+    float:left;
+    margin:0 10px 0 0;
+}
+
+.tituloError
+{
+    font-size:18px;
+    font-weight: bold;
+    color:#069;
+    margin:0 0 10px 0;
+}
+
+.tituloSugerencia
+{
+    font-size:18px;
+    font-weight: bold;
+    color:#069;
+    margin:0 0 10px 0;
+}
+
+.tituloTipo
+{
+    font-size:15px;
+    font-weight: bold;
+    color:#069;
+}
+
+/* Ventanas emergentes */
+.botonCerrar
+{
+    padding:0;
+    border:0;
+    width:60px;
+    height:26px;
+    cursor:pointer;
+    background:url(../../Imagenes/close.png) no-repeat;
+}
+.ventana{background-color:#FFF; border:solid 1px #74D5FF; padding:10px; height:400px; width:510px; overflow:auto;}
+.ventana3{background-color:#FFF; border:solid 1px #74D5FF; padding:10px; height:400px; width:635px; overflow:auto;}
+.ventana4{background-color:#FFF; border:solid 1px #74D5FF; padding:10px; width:500px; z-index:999}
+.ventanaBoletin{background-color:#FFF; border:solid 1px #74D5FF; padding:10px; width:940px; height:600px;}
+.ventanaGaleria{background-color:#FFF; border:solid 1px #74D5FF; padding:10px; height:685px;}
+.ventanaPlanes{background-color:#FFF; border:solid 1px #74D5FF; padding:10px; width:720px; height:530px;}
+
+.ventanaItinerario{background-color:#FFF; border:solid 1px #74D5FF; padding:10px; width:720px; height:400px; overflow:auto;}
+.ventanaItinerario tr.tituloResultados 
+{
+    width: 720px;
+    height:27px; 
+    padding:10px 5px; 
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+.ventanaItinerario ul {list-style: disc; padding-left: 15px; }
+.ventanaItinerario strong { font-weight:bold; } 
+
+.ventanaMensaje
+{
+    background-color:#FFF; 
+    border-bottom:solid 10px #F90; 
+    border-left:solid 1px #74D5FF; 
+    border-top:solid 1px #74D5FF; 
+    border-right:solid 1px #74D5FF; 
+    padding:10px; 
+    width:380px; 
+    z-index:999;
+}
+.ventanaMensaje .linkMensaje
+{
+    font:14px;
+    font-weight:bold;
+    color:#069;
+    cursor:pointer; 
+
+}
+.ventanaDocumentacion{background-color:#FFF; border:solid 1px #74D5FF; padding:10px; height:250px; width:640px; overflow:auto;}
+
+.ventanaBuscador{background:#CCC url(../../Imagenes/fondoBuscador.png); border:0; padding:0; width:490px;}
+.ventanaBuscador .tituloBuscador{font-size: 16px; font-weight: bold; color: #F90;}
+
+.ventanaBuscadorPopUp{background:#CCC url(../../Imagenes/fondoBuscador.png); border:0; padding:0; width:374px;}
+.ventanaBuscadorPopUp .tituloBuscadorPopUp{font-size: 16px; font-weight: bold; color: #F90;}
+
+
+.ventanaHotel{background-color:#ececec; border:solid 1px #74D5FF; padding:10px; height:200px; width:635px;}
+.ventanaHotel tr.tituloResultados
+{
+    width: 860px;
+    height:27px; 
+    padding:10px 5px; 
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+
+.ventanaBarco{background-color:#ececec; border:solid 1px #74D5FF; padding:0; height:400px; width:635px;}
+.ventanaBarco tr.tituloResultados
+{
+    width: 860px;
+    height:27px; 
+    padding:10px 5px; 
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+.ventanaSala{background-color:#ececec; padding:0; height:210px; width:635px;}
+.ventanaSala tr.tituloResultados
+{
+    width: 860px;
+    height:27px; 
+    padding:10px 5px; 
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+
+.ventana2{background-color:#ECECEC; border:0; padding:0;}
+.ventana2 tr.tituloResultados
+{
+    width: 860px;
+    height:30px; 
+    padding:12px 5px; 
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+
+.ventanaTerminos{background:#ECECEC; border:0; padding:0; width:900px; height:400px; overflow:auto;}
+.ventanaTerminos tr.tituloResultados
+{
+    width: 860px;
+    height:30px;
+    padding:10px 20px;
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloResultados.gif) no-repeat;
+}
+.ventanaTerminos tr.contenidoResultados
+{
+    font-size:12px;
+    font-family:"Trebuchet MS";
+}
+
+.ventanaOlvido{background-color:#FFF; border:solid 1px #74D5FF; padding:0; width:370px; font-size:12px;}
+.ventanaOlvido tr.tituloResultados 
+{
+    width: 370px;
+    height:27px; 
+    padding:10px 5px; 
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloServicios.gif) no-repeat;
+}
+.ventanaOlvido .btnOlvido
+{
+    color:#FFF;
+    font-size:12px;
+    border:0;
+    text-decoration:none;
+    padding:3px;
+    background:url(../../Imagenes/fondoBoton.png) repeat-x;
+}
+.boldTerminos
+{
+    color:#186e9b;
+    font-size:13px;
+    font-weight:bold;
+    font-family:"Trebuchet MS";
+}
+.textoTerminos
+{
+    font-size:13px;
+    font-family:"Trebuchet MS";
+}
+.stars
+{
+    height: 16px;
+    width: 16px;
+    background-image: url(../../Imagenes/starHotel.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Habitacion Hoteles */
+.habitacionColumna{float:left;position:relative;width:90px;}
+.huespedesColumna{float:left;position:relative;width:250px;}
+.huespedHotel{float:left;position:relative;width:60px;}
+.edadesColumna{float:left;position:relative;width:90px;}
+.edadHotel1{float:left;position:relative;width:50px;}
+.edadHotel2{float:left;position:relative;width:40px;}
+
+.resultadosHoteles
+{
+    float:left;
+    position:relative;
+    width:100%;
+    background:#fbfcfb;
+    font-size:12px;
+    border-bottom:solid 1px #CCC; 
+}
+.resultadosHoteles tr.tituloTabla
+{
+    color:#186e9b;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+}
+.tituloTabla
+{
+    color:#186e9b;
+    text-align:center;
+    font-size:14px;
+    font-weight:bold;
+}
+.bordeTablaPrecio
+{
+    border:solid 1px #CCC; 
+    background-color:#FFF;
+    float: right; 
+    position: relative; 
+    width: 130px;
+    padding: 10px; 
+    text-align: center;
+}
+.tituloPreciosHotel{font-size:16px; font-weight: bold; color:#98927A;}
+.tituloPreciosPie{font-size:13px; font-weight:bold; color:#5a5a5a}
+.bordeTablaHotel
+{
+    border:solid 1px #CCC; 
+    background-color:#FFF;
+    width: 100%;
+    padding: 0; 
+}
+.csPintar{
+    font-size:15px;
+    font-weight: bold;
+    color:#F90;
+    padding:2px;
+    text-decoration:none;
+    cursor:pointer;
+    border: 0px;
+    background-color:Transparent;
+}
+.csNoPintar{
+    font-size:15px;
+    font-weight: bold;
+    color:#186e9b;
+    padding:2px;
+    text-decoration:underline;
+    cursor:pointer;
+    border: 0px;
+    background-color:Transparent;
+}
+
+/* Mi Cuenta*/
+.botonCuentaOn
+{
+    margin: 0;
+    padding: 5px 20px;
+    border-top:solid 10px #F90;
+    margin-right:10px;
+    background: #4D4D4D;
+    text-decoration: none;
+    color: #F90;
+    font-size: 16px;
+}
+.botonCuentaOff
+{
+    margin: 0;
+    padding: 5px 20px;
+    border-top:solid 10px #4D4D4D;
+    margin-right:10px;
+    background: #4D4D4D;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 16px;
+}
+.cuenta
+{	
+    float:left; 
+    position:relative; 
+    width:100%;
+    margin:30px 0 5px 10px;
+}
+.completoCuentaDetalle
+{
+    position: relative;
+    float:left;
+    padding: 5px;
+    text-align: left;
+    width: 910px;
+    font-size:12px;
+    color:#000;
+    border-top:solid 1px #7AA2BC;
+    background-color:#E7E7E7;
+    margin:0 10px;
+}
+
+/* Login */
+.panelIngresar
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 460px;
+    margin-right:18px;
+}
+.panelIngresar strong
+{
+    font-weight:bold;
+}
+.panelIngresar .tituloIngresar
+{
+    float:left; 
+    position:relative; 
+    width:430px; 
+    height:27px; 
+    padding:12px 15px; 
+    text-align:left; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloOfertas.gif) no-repeat;
+}
+.panelIngresar .contenidoIngresar
+{	
+    position: relative;
+    float:left;
+    width: 450px;
+    padding: 5px;
+    font-size:12px;
+    background: #EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+/* Login texto */
+.panelIngresarTexto
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 460px;
+}
+.panelIngresarTexto .tituloIngresar
+{
+    float:left; 
+    position:relative; 
+    width:430px; 
+    height:27px; 
+    padding:12px 15px; 
+    text-align:left; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloOfertas.gif) no-repeat;
+}
+.panelIngresarTexto .contenidoIngresar
+{	
+    position: relative;
+    float:left;
+    width: 450px;
+    padding: 5px;
+    font-size:12px;
+    background: #EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}	
+/* Registro */
+.panelRegistro
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 460px;
+    margin-right:18px;
+}
+.panelRegistro strong
+{
+    font-weight:bold;
+}
+.panelRegistro .tituloIngresar
+{
+    float:left; 
+    position:relative; 
+    width:440px; 
+    height:27px; 
+    padding:12px 15px; 
+    text-align:left; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloOfertas.gif) no-repeat;
+}
+.panelRegistro .contenidoIngresar
+{	
+    position: relative;
+    float:left;
+    width: 460px;
+    padding: 5px;
+    font-size:12px;
+    background: #EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}	
+.condicionesRegistro
+{
+    overflow: auto; 
+    height: 180px; 
+    width: 420px; 
+    border-top: solid 1px #D5D5D5; 
+    border-bottom: solid 1px #D5D5D5; 
+    border-left: solid 10px #F90; 
+    border-right: solid 1px #D5D5D5; 
+    padding: 10px;
+    background: #E5E5E5;
+    color:#5A5A5A;
+    font-size:12px;
+}
+.textoLogin
+{
+    color:#fff;
+    font-size:12px;
+}
+.panelIngresar .textoLogin
+{
+    color:#5A5A5A;
+}
+.panelRegistro .textoLogin
+{
+    color:#5A5A5A;
+}
+/* Carro Compras */
+.textoCarro
+{
+    position: relative;
+    width: 500px;
+    font-size:13px;
+    color:#5A5A5A;
+    float:left;
+    padding:10px 20px;
+}
+.valoresCarro
+{
+    position: relative;
+    width: 350px;
+    color:#000;
+    float:left;
+    padding:20px;
+    border-left:solid 1px #CCC;
+}
+.valorTotalServicios
+{
+    width: 145px;
+    font-size:13px;
+    font-weight: bold;
+    color:#1D5B9E;
+}
+.valorTotalServiciosPrecio
+{
+    width: 135px;
+    font-size:13px;
+    font-weight: bold;
+    color:#000;
+}
+.valorTotalCarrito
+{
+    position: relative;
+    padding: 5px;
+    text-align: right;
+    width: 330px;
+    font-size:18px;
+    font-weight:bold;
+    color:#1D5B9E;
+    float:right;
+}
+.precioCarrito{
+    font-size:16px;
+    font-weight: bold;
+    color:#1D5B9E;
+
+}
+.botonVuelo{
+    background:url(../../Imagenes/vuelo.png) no-repeat;
+    border:0;
+    padding:0;
+    cursor:pointer;
+    width:150px;
+    height:84px;
+}
+.botonHotel{
+    background:url(../../Imagenes/hotel.png) no-repeat;
+    border:0;
+    padding:0;
+    cursor:pointer;
+    width:150px;
+    height:84px;
+}
+.botonAuto{
+    background:url(../../Imagenes/auto.png) no-repeat;
+    border:0;
+    padding:0;
+    cursor:pointer;
+    width:150px;
+    height:84px;
+}
+.botonPaquete{
+    background:url(../../Imagenes/plan.png) no-repeat;
+    border:0;
+    padding:0;
+    cursor:pointer;
+    width:150px;
+    height:84px;
+}
+.botonPagar {
+    background: url(../../Imagenes/btnPagar.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 29px;
+    margin-bottom: 10px;
+}
+
+.botonGuardar {
+    background: url(../../Imagenes/btnGuardar.png) no-repeat;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    width: 150px;
+    height: 29px;
+    margin-bottom: 10px;
+}
+
+.botonCancelar
+{
+    text-decoration: underline;
+    color: #D25F0F;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    background: none;
+    border: none;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.boldContacto{ font-weight:bold; }
+.ofertasCrucero
+{
+    width:435px;
+    float:left;
+    position:relative;
+    margin:0 10px 10px 0;
+}
+.ofertasResultado
+{
+    width:283px;
+    float:left;
+    position:relative;
+    margin:0 10px 10px 0;
+}
+.linkPromoPaquete{color:#5a5a5a; text-decoration:none; font-size:16px; font-family:"Trebuchet MS";}
+.linkPromoPaquete2{color:#5a5a5a; text-decoration:none; font-size:16px; font-family:"Trebuchet MS";}
+
+.tituloPlanResul
+{
+    color:#000;
+    text-decoration:none;
+    font-size:15px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+}
+.imagenCategoria
+{
+    float:right;
+    position:relative;
+    width:20px;
+    height:20px;
+}
+.precioOferta
+{
+    font-size:20px;
+    font-weight:bold;
+    color:#1D5B9E;
+}
+
+/* Preguntas frecuentes */
+.preguntas
+{
+    float:left;
+    position:relative;
+    margin:5px 0;
+    border:solid 1px #CCC;
+    width:455px;
+
+}
+.preguntas h4.trigger {
+    padding:10px;
+    width:435px;
+    margin: 0;
+    font-size:13px;
+    font-family:"Trebuchet MS";
+    color:#1D5B9E;
+    font-weight:bold;
+    float:left;
+    position:relative;
+    cursor:pointer;
+    border-bottom:dashed 1px #666;
+    background:#DEDEDE url(../../Imagenes/next-vertical.png) no-repeat center right;
+
+}
+.preguntas .toggle_container {
+    padding:10px;
+    overflow: hidden;
+    font-size:12px;
+    font-family:"Trebuchet MS";
+    width:435px;
+    color:#5a5a5a;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+    border-bottom:0;
+    margin:0;
+    display:none;
+}
+.preguntas .toggle_container a{
+    color: #1D5B9E;
+    cursor:pointer;
+    text-decoration: underline;
+}
+.preguntas .toggle_container ul {
+    list-style:disc;
+    padding:0 0 0 20px;
+}
+.preguntas .toggle_container strong {
+    font-weight:bold;
+}
+
+h4.trigger {
+    padding:0 1%;
+    margin: 0 0 10px 0;
+    font-size:12px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    float:left;
+    width:98%;
+    position:relative;
+}
+.contenidoResultado .linkUtilidades{
+    text-decoration:none;
+    font-weight:bold;
+    color:#000;
+    cursor:text;
+}
+h4.trigger a {
+    color: #1D5B9E;
+    font-size:14px;
+    font-family:"Trebuchet MS";
+    text-decoration: none;
+    display: block;
+    cursor:pointer;
+}
+h4.trigger a:hover { color: #000; }
+
+.toggle_container {
+    padding:1%;
+    overflow: hidden;
+    font:12px normal;
+    background:#FFF;
+    border-bottom:solid 1px #1D5B9E;
+    margin:0 0 5px 0;
+    width:98%;
+}
+.toggle_container a{
+    color: #1D5B9E;
+    cursor:pointer;
+    text-decoration: underline;
+}
+.toggle_container ul {
+    list-style:disc;
+    padding:0 0 0 20px;
+}
+.toggle_container strong {
+    font-weight:bold;
+}
+.toggle_container_Preguntas {
+    overflow: hidden;
+    font:12px normal;
+    border-bottom:solid 1px #74D5FF;
+    margin:0 0 10px 0;
+    padding:0 0 10px 0;
+    width:870px;
+}
+.toggle_container_Preguntas a{
+    color: #1D5B9E;
+    text-decoration: underline;
+}
+.imagenUtilitarios
+{
+    float:left;
+    position:relative;
+    padding:5px;
+}
+.toggle_container_Crucero {
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom:solid 1px #1D5B9E;
+    margin:0 0 10px 0;
+    padding:0 0 10px 0;
+    width:415px;
+}
+.toggle_container_Crucero a{
+    color: #1D5B9E;
+    text-decoration: underline;
+}
+/* ---=== utilitarios ===--- */
+.utilitarios
+{
+    float:left;
+    position:relative;
+    left:70px;
+}
+.utilitarios ul, .utilitarios li{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.utilitarios li{ 
+    /* 
+            define width and height of list item (slide)
+            entire slider area will adjust according to the parameters provided here
+    */ 
+    width:810px;
+    height:225px;
+    overflow:hidden;
+}
+.utilitarios li .imagenPlanes{ 
+    float:left; 
+    position:relative; 
+    margin:0 5px;
+    text-align:right;
+    width:185px; 
+}
+.utilitarios li .imagenPlanes .tituloPlan{ 
+    float:left; 
+    position:relative; 
+    width:185px; 
+    height:35px;
+    overflow:hidden;
+    color:#5a5a5a;
+    margin-top:5px;
+    text-align:left;
+}
+.utilitarios li .imagenPlanes .verMas{ 
+    font-size:12px;
+    font-weight: bold; 
+    text-decoration:none;
+    color:#FFF;
+    padding:5px;
+    width:60px;
+    height:23px;
+    border:0;
+    background:url(../../Imagenes/fondoBoton.png) repeat-x;
+}
+.utilitarios li .imagenPlanes img{ 
+    float:left; 
+    position:relative; 
+    width:175px; 
+    height:120px;
+    border-left:solid 10Px #F90;
+}
+
+#prevBtn, #nextBtn{ 
+    display:block;
+    width:60px;
+    height:60px;
+    position:absolute;
+    left:15px;
+    top:50px;
+}	
+#nextBtn{ 
+    left:865px;
+}														
+#prevBtn a, #nextBtn a{  
+    display:block;
+    width:60px;
+    height:60px;
+    background:url(../../Imagenes/btn_prev.gif) no-repeat 0 0;	
+}	
+#nextBtn a{ 
+    background:url(../../Imagenes/btn_next.gif) no-repeat 0 0;
+}
+#prevBtn, #nextBtn{
+    margin:0;
+    padding:0;
+    display:block;
+    overflow:hidden;
+    text-indent:-8000px;
+}
+/* detalle destino */
+.mapaDestino
+{
+    float:left; 
+    position:relative; 
+    width: 560px;
+    height:330px;
+    overflow:hidden; 
+}
+.galeriaDestino
+{
+    float:left; 
+    position:relative;
+    width: 330px; 
+}
+.galeriaDestino .galeriaPlan2
+{
+    float:left;
+    position:relative;
+    width:330px;
+}
+.galeriaDestino .galeriaPlan2 img
+{
+    float:left;
+    position:relative;
+    margin:0 3px 3px 0;
+}
+
+/* Galeria Destino Sugerido */
+div#feature_list {
+    width: 641px;
+    height: 264px;
+    overflow: hidden;
+    position: relative;
+}
+
+div#feature_list ul {
+    position: absolute;
+    top: 0;
+    list-style: none;	
+    padding: 0;
+    margin: 0;
+}
+
+ul#galeria {
+    left: 0;
+    z-index: 2;
+    width: 130px;
+}
+
+ul#galeria li {
+    height:88px;
+}
+
+ul#galeria li img {
+    padding: 0;
+    border: none;
+    float: left;
+    margin: 0;
+    width:130px;
+    height:88px;
+}
+
+ul#galeria li a {
+    display: block;
+    padding: 0;
+    height: 88px;
+    outline: none;
+}
+
+ul#galeria li a:hover {
+    text-decoration: underline;
+}
+
+ul#galeria li a.current {
+
+}
+
+ul#galeria li a.current:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+ul#output {
+    right: 0;
+    width: 511px;
+    height: 268px;
+    position: relative;
+}
+
+ul#output li {
+    position: absolute;
+    width: 511px;
+    height: 268px;
+}
+
+ul#output li a {
+    position: absolute;
+    padding:0;
+}
+ul#output li a img{
+    width: 511px;
+    height: 268px;
+}
+
+/* bordes paneles */
+/*
+        ptlc = panel top left corner
+        ptrc = panel top right corner
+        pblc = pane bottom left corner
+        pbrc = panel bottom right corner
+        plb = panel left border
+        prb = panel right border
+        ptb = panel top border
+        pbb = panel bottom border 
+*/
+
+.ptlc, .ptrc, .pblc, .pbrc
+{
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.ptlc
+{
+    background-image:url(../../Imagenes/ptlc.gif);
+    background-position: 0% 0%;
+}
+
+.ptrc
+{
+    background-image:url(../../Imagenes/ptrc.gif);
+    background-position: 100% 0%;
+}
+
+.pblc
+{
+    background-image:url(../../Imagenes/pblc.gif);
+    background-position: 0% 100%;
+}
+
+.pbrc
+{
+    background-image:url(../../Imagenes/pbrc.gif);
+    background-position: 100% 100%;
+}
+
+.ptb, .pbb
+{
+    background-color: transparent;
+    background-repeat: repeat-x;
+}
+
+.ptb
+{
+    background-image:url(../../Imagenes/ptb.gif);
+    background-position: 0% 0%;
+}
+
+.pbb
+{
+    background-image:url(../../Imagenes/pbb.gif);
+    background-position: 50% 100%;
+}
+
+.prb
+{
+    background-image:url(../../Imagenes/prb.gif);
+    background-position: 100% 0%;
+    background-repeat: repeat-y;
+}
+
+.plb
+{
+    background-image:url(../../Imagenes/plb.gif);
+    background-position: 0% 100%;
+    background-repeat: repeat-y;
+}	
+
+.login
+{
+    width:65%;
+}
+
+.botonRegresar
+{
+    width:106px;
+    height:60px;
+    border:0;
+    background:url(../../Imagenes/botonRegresar.jpg);
+    cursor:pointer;
+}
+
+
+/*
+ *  File:         demo_table.css
+ *  CVS:          $Id$
+ *  Description:  CSS descriptions for DataTables demo pages
+ *  Author:       Allan Jardine
+ *  Created:      Tue May 12 06:47:22 BST 2009
+ *  Modified:     $Date$ by $Author$
+ *  Language:     CSS
+ *  Project:      DataTables
+ *
+ *  Copyright 2009 Allan Jardine. All Rights Reserved.
+ *
+ * ***************************************************************************
+ * DESCRIPTION
+ *
+ * The styles given here are suitable for the demos that are used with the standard DataTables
+ * distribution (see www.datatables.net). You will most likely wish to modify these styles to
+ * meet the layout requirements of your site.
+ *
+ * Common issues:
+ *   'full_numbers' pagination - I use an extra selector on the body tag to ensure that there is
+ *     no conflict between the two pagination types. If you want to use full_numbers pagination
+ *     ensure that you either have "example_alt_pagination" as a body class name, or better yet,
+ *     modify that selector.
+ *   Note that the path used for Images is relative. All images are by default located in
+ *     ../images/ - relative to this CSS file.
+ */
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+
+.dataTables_wrapper {
+    position: relative;
+    min-height: 302px;
+    clear: both;
+}
+
+.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 30px;
+    margin:-15px 0 0 -125px;
+    padding: 14px 0 2px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    background-color: white;
+}
+
+.dataTables_length {
+    width: 40%;
+    float: left;
+}
+
+.dataTables_filter {
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.dataTables_info {
+    width: 60%;
+    float: left;
+}
+
+.dataTables_paginate {
+    width: 44px;
+    float: right;
+    text-align: right;
+}
+
+/* Pagination nested */
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+    height: 19px;
+    width: 19px;
+    margin:0 0 0 3px;
+    float: left;
+}
+
+.paginate_disabled_previous {
+    background-image: url('../images/back_disabled.jpg');
+}
+
+.paginate_enabled_previous {
+    background-image: url('../images/back_enabled.jpg');
+}
+
+.paginate_disabled_next {
+    background-image: url('../images/forward_disabled.jpg');
+}
+
+.paginate_enabled_next {
+    background-image: url('../images/forward_enabled.jpg');
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables display
+ */
+table.display {
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+
+    /* Note Firefox 3.5 and before have a bug with border-collapse
+     * ( https://bugzilla.mozilla.org/show%5Fbug.cgi?id=155955 ) 
+     * border-spacing: 0; is one possible option. Conditional-css.com is
+     * useful for this kind of thing
+     *
+     * Further note IE 6/7 has problems when calculating widths with border width.
+     * It subtracts one px relative to the other browsers from the first column, and
+     * adds one to the end...
+     *
+     * If you want that effect I'd suggest setting a border-top/left on th/td's and 
+     * then filling in the gaps with other borders.
+     */
+}
+
+table.display thead th {
+    padding: 3px 18px 3px 10px;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+table.display tfoot th {
+    padding: 3px 18px 3px 10px;
+    border-top: 1px solid black;
+    font-weight: bold;
+}
+
+table.display tr.heading2 td {
+    border-bottom: 1px solid #aaa;
+}
+
+table.display td {
+    padding: 3px 10px;
+}
+
+table.display td.center {
+    text-align: center;
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables sorting
+ */
+
+.sorting_asc {
+    background: url('../images/sort_asc.png') no-repeat center right;
+}
+
+.sorting_desc {
+    background: url('../images/sort_desc.png') no-repeat center right;
+}
+
+.sorting {
+    background: url('../images/sort_both.png') no-repeat center right;
+}
+
+.sorting_asc_disabled {
+    background: url('../images/sort_asc_disabled.png') no-repeat center right;
+}
+
+.sorting_desc_disabled {
+    background: url('../images/sort_desc_disabled.png') no-repeat center right;
+}
+
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables row classes
+ */
+table.display tr.odd.gradeA {
+    background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+    background-color: #eeffee;
+}
+
+table.display tr.odd.gradeA {
+    background-color: #ddffdd;
+}
+
+table.display tr.even.gradeA {
+    background-color: #eeffee;
+}
+
+table.display tr.odd.gradeC {
+    background-color: #ddddff;
+}
+
+table.display tr.even.gradeC {
+    background-color: #eeeeff;
+}
+
+table.display tr.odd.gradeX {
+    background-color: #ffdddd;
+}
+
+table.display tr.even.gradeX {
+    background-color: #ffeeee;
+}
+
+table.display tr.odd.gradeU {
+    background-color: #ddd;
+}
+
+table.display tr.even.gradeU {
+    background-color: #eee;
+}
+
+tr.odd {
+    background-color: #E2E4FF;
+}
+
+tr.even {
+    background-color: white;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * Misc
+ */
+.dataTables_scroll {
+    clear: both;
+}
+.top, .bottom {
+    padding: 15px;
+    background-color: #F5F5F5;
+    border: 1px solid #CCCCCC;
+}
+
+.top .dataTables_info {
+    float: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.dataTables_empty {
+    text-align: center;
+}
+
+tfoot input {
+    margin: 0.5em 0;
+    width: 100%;
+    color: #444;
+}
+
+tfoot input.search_init {
+    color: #999;
+}
+
+td.group {
+    background-color: #d1cfd0;
+    border-bottom: 2px solid #A19B9E;
+    border-top: 2px solid #A19B9E;
+}
+
+td.details {
+    background-color: #d1cfd0;
+    border: 2px solid #A19B9E;
+}
+
+
+.example_alt_pagination div.dataTables_info {
+    width: 40%;
+}
+
+.paging_full_numbers {
+    width: 400px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.paging_full_numbers span.paginate_button,
+.paging_full_numbers span.paginate_active {
+    border: 1px solid #aaa;
+    padding: 2px 5px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.paging_full_numbers span.paginate_button {
+    background-color: #ddd;
+}
+
+.paging_full_numbers span.paginate_button:hover {
+    background-color: #ccc;
+}
+
+.paging_full_numbers span.paginate_active {
+    background-color: #99B3FF;
+}
+
+table.display tr.even.row_selected td {
+    background-color: #B0BED9;
+}
+
+table.display tr.odd.row_selected td {
+    background-color: #9FAFD1;
+}
+
+
+/*
+ * Sorting classes for columns
+ */
+/* For the standard odd/even */
+tr.odd td.sorting_1 {
+    background-color: #D3D6FF;
+}
+
+tr.odd td.sorting_2 {
+    background-color: #DADCFF;
+}
+
+tr.odd td.sorting_3 {
+    background-color: #E0E2FF;
+}
+
+tr.even td.sorting_1 {
+    background-color: #EAEBFF;
+}
+
+tr.even td.sorting_2 {
+    background-color: #F2F3FF;
+}
+
+tr.even td.sorting_3 {
+    background-color: #F9F9FF;
+}
+
+
+/* For the Conditional-CSS grading rows */
+/*
+        Colour calculations (based off the main row colours)
+  Level 1:
+                dd > c4
+                ee > d5
+        Level 2:
+          dd > d1
+          ee > e2
+*/
+tr.odd.gradeA td.sorting_1 {
+    background-color: #c4ffc4;
+}
+
+tr.odd.gradeA td.sorting_2 {
+    background-color: #d1ffd1;
+}
+
+tr.odd.gradeA td.sorting_3 {
+    background-color: #d1ffd1;
+}
+
+tr.even.gradeA td.sorting_1 {
+    background-color: #d5ffd5;
+}
+
+tr.even.gradeA td.sorting_2 {
+    background-color: #e2ffe2;
+}
+
+tr.even.gradeA td.sorting_3 {
+    background-color: #e2ffe2;
+}
+
+tr.odd.gradeC td.sorting_1 {
+    background-color: #c4c4ff;
+}
+
+tr.odd.gradeC td.sorting_2 {
+    background-color: #d1d1ff;
+}
+
+tr.odd.gradeC td.sorting_3 {
+    background-color: #d1d1ff;
+}
+
+tr.even.gradeC td.sorting_1 {
+    background-color: #d5d5ff;
+}
+
+tr.even.gradeC td.sorting_2 {
+    background-color: #e2e2ff;
+}
+
+tr.even.gradeC td.sorting_3 {
+    background-color: #e2e2ff;
+}
+
+tr.odd.gradeX td.sorting_1 {
+    background-color: #ffc4c4;
+}
+
+tr.odd.gradeX td.sorting_2 {
+    background-color: #ffd1d1;
+}
+
+tr.odd.gradeX td.sorting_3 {
+    background-color: #ffd1d1;
+}
+
+tr.even.gradeX td.sorting_1 {
+    background-color: #ffd5d5;
+}
+
+tr.even.gradeX td.sorting_2 {
+    background-color: #ffe2e2;
+}
+
+tr.even.gradeX td.sorting_3 {
+    background-color: #ffe2e2;
+}
+
+tr.odd.gradeU td.sorting_1 {
+    background-color: #c4c4c4;
+}
+
+tr.odd.gradeU td.sorting_2 {
+    background-color: #d1d1d1;
+}
+
+tr.odd.gradeU td.sorting_3 {
+    background-color: #d1d1d1;
+}
+
+tr.even.gradeU td.sorting_1 {
+    background-color: #d5d5d5;
+}
+
+tr.even.gradeU td.sorting_2 {
+    background-color: #e2e2e2;
+}
+
+tr.even.gradeU td.sorting_3 {
+    background-color: #e2e2e2;
+}
+
+
+/*
+ * Row highlighting example
+ */
+.ex_highlight #example tbody tr.even:hover, #example tbody tr.even td.highlighted {
+    background-color: #ECFFB3;
+}
+
+.ex_highlight #example tbody tr.odd:hover, #example tbody tr.odd td.highlighted {
+    background-color: #E6FF99;
+}
+
+.ex_highlight_row #example tr.even:hover {
+    background-color: #ECFFB3;
+}
+
+.ex_highlight_row #example tr.even:hover td.sorting_1 {
+    background-color: #DDFF75;
+}
+
+.ex_highlight_row #example tr.even:hover td.sorting_2 {
+    background-color: #E7FF9E;
+}
+
+.ex_highlight_row #example tr.even:hover td.sorting_3 {
+    background-color: #E2FF89;
+}
+
+.ex_highlight_row #example tr.odd:hover {
+    background-color: #E6FF99;
+}
+
+.ex_highlight_row #example tr.odd:hover td.sorting_1 {
+    background-color: #D6FF5C;
+}
+
+.ex_highlight_row #example tr.odd:hover td.sorting_2 {
+    background-color: #E0FF84;
+}
+
+.ex_highlight_row #example tr.odd:hover td.sorting_3 {
+    background-color: #DBFF70;
+}
+
+
+/*
+ * KeyTable
+ */
+table.KeyTable td {
+    border: 3px solid transparent;
+}
+
+table.KeyTable td.focus {
+    border: 3px solid #3366FF;
+}
+
+table.display tr.gradeA {
+    background-color: #eeffee;
+}
+
+table.display tr.gradeC {
+    background-color: #ddddff;
+}
+
+table.display tr.gradeX {
+    background-color: #ffdddd;
+}
+
+table.display tr.gradeU {
+    background-color: #ddd;
+}
+
+div.box {
+    height: 100px;
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid #8080FF;
+    background-color: #E5E5FF;
+}
+
+/****** tabs destino *********/
+ul.tabs {
+    margin: 0;
+    padding: 2px 2px 0 2px;
+    float: left;
+    list-style: none;
+    background:#dddddd;
+    width: 934px;
+    font-family:"Trebuchet MS";
+}
+ul.tabs li {
+    float: left;
+    margin: 0;
+    padding: 4px 30px;
+    border:0;
+    margin-right:5px;
+    overflow: hidden;
+    position: relative;
+    background: #e7e8e7;
+    color:#16648c;
+    border-top:solid 5px #e7e8e7;
+    border-bottom:solid 1px #d4d4d4;
+    border-left:solid 1px #d4d4d4;
+    border-right:solid 1px #d4d4d4;
+}
+ul.tabs li a {
+    text-decoration: none;
+    color: #16648c;
+    display: block;
+    font-size: 16px;
+    padding: 0;
+    border:0;
+    outline: none;
+}
+ul.tabs li a:hover {
+    color:#000;
+}
+ul.tabs li.active
+{
+    border-top:solid 5px #F90;
+    border-bottom:solid 1px #d4d4d4;
+    border-left:solid 1px #d4d4d4;
+    border-right:solid 1px #d4d4d4;
+    background: #e7e8e7;
+    color:#16648c;
+}
+ul.tabs li.active a{
+    color:#16648c;
+}   
+.tab_container {
+    border:0;
+    overflow: hidden;
+    clear: both;
+    float: left; 
+    width: 100%;
+    font-size: 12px;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+.tab_content {
+    padding: 5px;
+    font-size: 12px;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+    width: 100%;
+    float:left;
+}
+
+/* Banners secciones internas */
+.panelSecciones .bannersSeccion
+{
+    float:left;
+    position:relative;
+    width:379px;
+}
+.panelSecciones .bannersSeccion .banners
+{
+    float:left;
+    position:relative;
+    width:379px;
+    height:140px;
+    overflow:hidden;
+    margin:0 0 5px 0;
+}
+.panelSecciones .bannersSeccion #ucBannersInf_bannerInterno4
+{
+
+}
+.panelSecciones .bannersSeccion .banners .imagenBanner5 img
+{
+    width:377px;
+    height:138px;
+    border:solid 1px #CCC;
+}
+/* Banners index */
+.panelBanners .banners
+{
+    float:left;
+    position:relative;
+    width:300px;
+    height:160px;
+    margin:0 5px;
+    overflow:hidden;
+}
+.panelBanners .banners #ucBannersInf_bannerInterno4
+{
+    display:block;
+}
+.panelBanners .banners .imagenBanner5
+{
+    float:left;
+    position:relative;
+}
+.panelBanners .banners .imagenBanner5 img
+{
+    width:300px;
+    height:160px;
+    border:solid 1px #CCC;
+}
+
+/* Panel Noticias */
+.panelNoticias
+{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 470px;
+    text-align: left;
+    font-size:12px;
+    margin:0 20px 0 0;
+}
+.panelNoticias .tituloNoticias
+{
+    position: relative;
+    float:left;
+    width: 440px;
+    height:30px;
+    padding:10px 15px;
+    margin:0 10px 0 0;
+    color:#5a5a5a;
+    font-size:18px;
+    font-family:"Trebuchet MS";
+    font-weight:bold;
+    background:url(../../Imagenes/tituloOfertas.gif) no-repeat;
+}
+.panelNoticias .contenidoNoticias
+{	
+    width:470px;
+    position: relative;
+    float:left;
+}
+.panelNoticias .contenidoNoticiasDetalle
+{	
+    width:920px;
+    padding:10px;
+    position: relative;
+    float:left;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+}
+
+.panelNoticias .contenidoNoticiasDetalle .fotoNoticias
+{
+    float:left;
+    width:460px;
+    height:220px;
+}
+
+.panelNoticias .contenidoNoticiasDetalle span	
+{
+    float:left;
+    width:430px;
+    margin-left:20px;
+}
+
+.panelNoticias .contenidoNoticiasDetalle .tituloNoticiaDetalle
+{
+    font-size:16px;
+    color:#186e9b;
+    font-weight:bold;
+}
+.panelNoticias .contenidoNoticias img
+{	
+    width:460px;
+    height:220px;
+    border:5px solid #FFF;
+    margin:10px 0;
+}
+.panelNoticias .contenidoNoticias .titulo
+{	
+    font-size:18px;
+    color:#186e9b;
+}
+.panelNoticiasResultado
+{
+    position: relative;
+    padding: 5px;
+    float:left;
+    width: 440px;
+}
+.panelNoticiasResultado .fotoNoticias
+{
+    position: relative;
+    float:left;
+    width: 100px;
+    padding:10px 0;
+    height:80px;
+    text-align:center;
+}
+.panelNoticiasResultado .fotoNoticias img
+{
+    width: 70px;
+    height:60px;
+    border-left:solid 5px #F90;
+}
+.panelNoticiasResultado .textoNoticias
+{
+    position: relative;
+    float:left;
+    width: 330px;
+    height:73px;
+    overflow:hidden;
+    font-size:12px;
+    color:#5a5a5a;
+}
+.panelNoticiasResultado .textoNoticias .fechaNoticia
+{
+    font-size:12px;
+    font-style:italic;
+    color:#186e9b;
+}
+.panelNoticiasResultado .textoNoticias .tituloNoticias
+{
+    font-size:14px;
+    font-weight:bold;
+    color:#186e9b;
+}
+.panelNoticiasResultado input.verMas
+{
+    font-size:12px;
+    color:#5a5a5a;
+    border:0;
+    background-color:Transparent;
+}
+.compartirNoticia
+{
+    position: relative;
+    float:left;
+    width: 460px;
+    border-left:solid 10px #F90;
+    text-align:center;
+    background:#CCC url(../../Imagenes/fondoBuscador.png);
+    margin-bottom:10px;
+}
+/* Carrusel vertical de noticias */
+.jcarousel-skin-tango .jcarousel-container {
+    background: transparent;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+    direction: rtl;
+}
+.jcarousel-skin-tango .jcarousel-container-vertical {
+    width: 440px;
+    height: 330px;
+    padding: 45px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+    width:  420px;
+    height: 320px;
+    padding:10px;
+    background-color:#E8E8E8;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 430px;
+    height: 100px;
+    border-bottom:dashed 1px #9C9C9C;
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+    margin-bottom: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-vertical {
+    position: absolute;
+    bottom: -5px;
+    left: 200px;
+    width: 49px;
+    height: 25px;
+    cursor: pointer;
+    background: url(../../Imagenes/next-vertical.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical {
+    position: absolute;
+    top: 5px;
+    left: 200px;
+    width: 49px;
+    height: 25px;
+    cursor: pointer;
+    background: url(../../Imagenes/prev-vertical.png) no-repeat 0 0;
+}
+/* Quienes */
+.imagenQuienes{ position:relative; float:left; width:940px; height:390px;}
+.imagenQuienes img{ width:940px; height:390px;}
+.textoQuienes
+{
+    position:absolute;
+    left:0;
+    top:0;
+    width:420px;
+    height:340px;
+    padding:20px;
+    color:#FFF;
+    z-index:1;
+    background:url(../../Imagenes/fondoBuscador.png);
+    border-bottom:solid 10px #F90;
+    margin-right:10px;
+}
+.lineaQuienes
+{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:470px;
+    z-index:1;
+    border-bottom:solid 10px #F90;
+}
+.textoQuienes .descripcionQuienes
+{
+    position:relative;
+    float:left;
+    height:310px;
+    overflow:auto;
+    margin-top:15px;
+    padding:0 10px 0 0;
+}
+.textoQuienes .descripcionQuienes a
+{
+    color:#FFF;
+}
+.tituloQuienes{color:#F90; font-size:18px;}
+.itemsQuienes
+{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:440px;
+    height:80px;
+    padding:10px;
+    color:#FFF;
+    z-index:999;
+    background:url(../../Imagenes/fondoBuscador.png);
+    border-bottom:solid 10px #F90;
+}
+.datosContacto
+{
+    float:left;
+    position:relative;
+    width:262px;
+    height:93px;
+    padding:20px;
+    font-size:14px;
+    color:#666;
+    text-align:left;
+    margin:0 5px;
+    background:url(../../Imagenes/fondodatos.jpg) no-repeat;
+}
+.datosContacto .imagenContacto
+{
+    float:left;
+    position:relative;
+    width:75px;
+}
+.datosContacto .textoContacto
+{
+    float:left;
+    position:relative;
+    width:150px;
+    height:80px;
+    margin-left:35px;
+}
+.datosContacto .tituloContacto
+{
+    float:left;
+    position:relative;
+    width:150px;
+    margin-left:35px;
+    text-align:right;
+
+}
+/* Lo mas visto */
+.tituloLoMas
+{
+    float:left;
+    position:relative;
+    border:solid 1px #D5D5D5;
+    background:#ECECEC;
+    padding:5px;
+    text-align:right;
+    width:367px;
+    font-size:18px;
+    color:#5a5a5a;
+    margin-bottom:10px;
+}
+.contenidoLoMas
+{
+    float:left;
+    position:relative;
+    width:369px;
+    font-size:12px;
+    color:#5a5a5a;
+    margin-bottom:10px;
+}
+/* ---=== promociones index ===--- */
+.promocionIndex{
+    position: relative;
+    padding: 0;
+    float:left;
+    width: 940px;
+}
+.promocionIndex .contenidoPromo
+{
+    width:560px;
+    float:left;
+    margin:0;
+    position:relative;
+}
+.promocionIndex .contenidoPromo .imagenBanner5{
+    position: relative;
+    float:left;
+}
+.promocionIndex .contenidoPromo .imagenBanner5 img{
+    width:560px;
+    height:390px;
+}
+.promocionIndex .contenidoOferta
+{
+    padding: 5px;
+    font-size:12px;
+    overflow:auto;
+}
+.promocionIndex .menuPromo{width:460px; right:10px; position:absolute; bottom:130px; z-index:1; text-align:right;}
+.promocionIndex .imagenesPromo{float:left; position:relative; width:470px;}
+.promocionIndex a.promo:link{ border:0px;  color:#FFF; padding:3px 9px; text-decoration:none; font-size:14px; width:20px; font-weight:bold; text-align:center; background:url(../../Imagenes/promoOn.png) no-repeat center center;}
+.promocionIndex a.promo:visited, a.promo:hover, a.promo:active, a.promo:focus { color: #F90; width:20px; background:url(../../Imagenes/promoOn.png) no-repeat center center; padding:3px 9px; text-decoration:none; }
+
+.linkServicios { color:#5a5a5a; font-weight:bold; font-size:12px; }
+.linkDetalleAuto { color:#186e9b; font-weight:bold; font-size:13px; }
+.titulosCarro
+{
+    color:#186e9b;
+    font-size:12px;
+    font-weight:bold;
+}
+.tituloTablaCircuito
+{
+    color:#186e9b;
+    text-align:left;
+    font-size:14px;
+    font-weight:bold;
+}
+/* Formas de pago */
+.textoFormasPago
+{
+    position:relative;
+    float:left;
+    width:850px;
+    padding:15px 5px 15px 60px;
+    color:#5a5a5a;
+    font-size:12px;
+    background:url(../../Imagenes/bullet2.png) no-repeat left 15px;
+}
+
+/* Detalle Ofertas Hotel*/
+.detalleOferta
+{
+    float:left;
+    position:relative;
+    margin:5px 0;
+    border:solid 1px #CCC;
+    width:520px;
+}
+.detalleOferta h4.trigger {
+    padding:10px;
+    width:500px;
+    margin: 0;
+    font-size:13px;
+    font-family:"Trebuchet MS";
+    color:#1D5B9E;
+    font-weight:bold;
+    float:left;
+    position:relative;
+    cursor:pointer;
+    border-bottom:dashed 1px #666;
+    background:#DEDEDE url(../../Imagenes/next-vertical.png) no-repeat center right;
+
+}
+.detalleOferta .toggle_container {
+    padding:10px;
+    overflow: hidden;
+    font-size:12px;
+    font-family:"Trebuchet MS";
+    width:500px;
+    color:#5a5a5a;
+    background:#EAEAEA url(../../Imagenes/fondoContenido.gif) repeat-x;
+    border-bottom:0;
+    margin:0;
+    display:none;
+}
+.detalleOferta .toggle_container a{
+    color: #1D5B9E;
+    cursor:pointer;
+    text-decoration: underline;
+}
+.detalleOferta .toggle_container ul {
+    list-style:disc;
+    padding:0 0 0 20px;
+}
+.detalleOferta .toggle_container strong {
+    font-weight:bold;
+}
+/* ---=== panel confirmacion vuelo ===--- */
+.panelConfirmacion
+{
+    position: relative;
+    /* @alternate */
+    padding: 0;
+    float:left;
+    width: 535px;
+    padding:2px;
+    background:#e7e7e7;
+    border:solid 1px #d4d4d4;
+    margin:0 20px 30px 0;
+}
+.panelConfirmacion .tituloCorporativoIndex
+{
+    float:left; 
+    position:relative; 
+    width:505px; 
+    height:27px; 
+    padding:12px 15px; 
+    text-align:left; 
+    font-size:18px; 
+    color:#575757; 
+    background:url(../../Imagenes/tituloPromociones.gif) no-repeat;
+    margin-bottom:5px
+}
+.panelConfirmacion .contenidoContactenos
+{
+    float:left; 
+    position:relative; 
+    width:535px; 
+    padding:30px 0;
+    text-align:center;
+    font-size:13px;
+}
+.panelConfirmacion .botonBuscador{
+    background:url(../../Imagenes/botonConfirmacion.png); 
+    border:0;
+    width:155px;
+    height:30px;
+    font-size:15px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+/* ---=== panel banners confirmacion ===--- */
+.panelBannersConfirmacion
+{
+    position: relative;
+    /* @alternate */
+    padding: 0;
+    float:left;
+    width: 368px;
+    padding:0;
+    background:#e7e7e7;
+    border-left:solid 10px #f90;
+    border-right:solid 1px #d4d4d4;
+    border-top:solid 1px #d4d4d4;
+    border-bottom:solid 1px #d4d4d4;
+    margin:0 0 30px 0;
+}
+.panelBannersConfirmacion img
+{
+    width:368px; 
+    height:180px;
+}
+/*---------Impresion Descuento------------*/
+.imprimirDescuento
+{
+    width:950px;
+    height:100px;
+    margin-top:10px;
+}
+
+
+
+
+
+/* Selects */
+div.skinned-select {
+    /* background: url('../img/bg/bg_select.png') no-repeat scroll 0pt 100%; */
+    -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;
+    /*background: #E7E5E1 url(../../Imagenes/icn_selects.gif) right top no-repeat;*/
+    background: White url(../../Imagenes/icn_selects.gif) right top no-repeat;
+    float:left;
+}
+div.skinned-select.last {
+    margin-right:0;
+}
+div.skinned-select select {
+    border:1px solid #fff;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    moz-opacity: 0;
+    position: relative;
+    z-index: 100;
+    font-family:"Trebuchet MS";
+}
+div.skinned-select .select-text {
+    position: absolute;
+    text-indent: 10px;
+    line-height: 23px;
+    z-index: 1;
+}
+div.skinned-select .select-text,
+div.skinned-select select,
+div.skinned-select select option {
+    color: #333;
+}
+
+/* non javascript version select */
+
+.my-skinnable-select select {
+    border: 1px solid #D5E6EE;
+    font-size: 11px;
+    width: 190px;
+}
+
+/*Gabo*/
+.panelTabs{
+    float:left;
+    /*height:36px;*/
+    width:940px;
+}
+.panelCompletoCorporativo1 {
+    float: left;
+    width: 940px;
+    position: relative;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-top:25px;
+    background:url(../../Imagenes/bgPanelCompleto.png);
+    background-repeat:no-repeat;
+    overflow:auto;
+}
+
+
+.confirmacionVuelo1 {
+    float: left;
+    width: 700px;
+    margin-left:30px;
+    margin-right:10px;
+}
+.panelCompletoCorporativo1 .confirmarVuelo {
+    float: left;
+    width: 910px;
+    margin-left:30px;
+    margin-right:10px;
+}
+.panelCompletoCorporativo1 .tituloConfirmacion1 {
+    color: #0d486a;
+    float: left;
+    height: 34px;
+    width: 674px;
+    font-size:14pt;
+    line-height:34px;
+    overflow:hidden;
+    margin-top:7px;
+    text-transform: uppercase;
+}
+.tituloConfirmacion1 {
+    color: #0d486a;
+    float: left;
+    height: 34px;
+    width: 674px;
+    font-size:14pt;
+    line-height:34px;
+    overflow:hidden;
+    margin-top:7px;
+    text-transform: uppercase;
+}
+.panelCompletoCorporativo1 .confirmacionVuelo1 .detalleVuelo1 {
+    color: #1f6b8f;
+    float: left;
+    width: 674px;
+    margin-bottom:10px;	
+}
+.detalleVuelo2
+{
+    float:left;
+    position:relative;
+    width:700px;
+    padding:5px;
+}
+.detalleVuelo3
+{
+    float:left;
+    position:relative;
+    padding:5px;
+}
+.panelCompletoCorporativo1 .confirmacionVuelo1 .detalleTablas{
+    color: #1f6b8f;
+    float: left;
+    width: 665px;
+    margin-bottom:10px;	
+    background: white;
+    padding: 15px 0 10px 0;
+}
+.botonesConfirmacion 
+{
+    border: 0;
+    text-align: center;
+    top: 335px;
+    border-top: solid 6px #FF9600;
+    background: white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.txt12azul {
+    font-size:10pt;
+    color:#1f6b8f;
+}
+.txtNaranja{
+    color:#d25f0f;
+}
+.txtAmarillo{
+    color:#fe9901;
+}
+.bordePunteado{
+    float:left;
+    width: 530px;
+    margin-left: 100px;
+    border-top:dashed 1px #999;
+}
+.tituloValor{
+    font-size:16px;
+    text-align:center;
+    color: #115a7b;
+    line-height:22px;
+}
+.tituloValor1{
+    font-size:12px;
+    text-align:center;
+    color: #115a7b;
+    line-height:22px;
+}
+.txtConfirmacion{
+    font-size:16px;
+    text-align:left;
+    color: #115a7b;
+    line-height:10px;
+    padding: 0 0 0 20px;
+}
+.panelTabs .tabExterior {
+    background-color: #5a5a5a;
+    float: left;
+    height: 36px;
+    padding:0 3px 0 3px;
+
+
+}
+.tabExterior .tabSegundo {
+    background-image: url(../../Imagenes/bgTabsInterno.png);
+    background-repeat: repeat-x;
+    float: left;
+    height: 36px;
+    font-size:10pt;
+    padding:0 9px 0 9px;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    line-height:43px;
+    font-weight: bold;
+}
+.panelTabs .panelCompletoCorporativoPie {
+    background-image: url(../images/bgPanelCompletoPie.png);
+    float: left;
+    height: 54px;
+    width: 940px;
+    position: relative;
+
+}
+
+
+.panelTabs .tabInterior {
+    color: #ffffff;
+    height: 36px;
+    width:100%;
+    background-image: url(../../Imagenes/bgTabsInternoActivo.png);
+    background-repeat: repeat-x;
+    float: left;
+    line-height:43px;
+    font-size:10pt;
+    padding:0 3px 0 3px;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+.confirmarVuelo a {
+    text-decoration: underline;
+    color:#d25f0f;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:10pt;
+}
+.panelCompletoCorporativo1 .confirmarVuelo .tituloFormaPago {
+    color: #0d486a;
+    float: left;
+    height: 34px;
+    width: 848px;
+    font-size:14pt;
+    line-height:34px;
+    overflow:hidden;
+    margin-top:7px;
+    text-transform: uppercase;
+}
+.panelCompletoCorporativo1 .confirmarVuelo .detalleFormaPago {
+    font-size:10pt;
+    color:#1f6b8f;
+    padding-left:20px;
+    width: 828px;
+    float: left;
+
+}
+.panelCompletoCorporativo1 .confirmarVuelo .subtituloDetalle {
+    color: #0d486a;
+    float: left;
+    height: 34px;
+    width: 828px;
+    font-size:10pt;
+    line-height:34px;
+    overflow:hidden;
+    margin-top:7px;
+    text-transform: uppercase;
+    padding-left:20px;
+
+}
+.confirmarVuelo .resumenReserva {
+    float:left;
+    width: 830px;
+    background-color: #FFF;
+    padding: 0 10px 0 10px;
+    margin: 5px 0 5px 0;
+}
+.resumenTabla{
+    text-align:center;
+    font-size:12px;
+}
+.tablaVuelos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    background: white;
+}
+.tablaVuelos .logoAerolinea{
+    width: 100px;
+    text-align:center;
+}
+
+.formaPagoTitulo{
+    float:left;
+    width: 830px;
+    font-size:16px;
+    color:#fe9901;
+    margin:20px 0 20px 0;
+}
+.tipoPago{
+    float:left;
+    height: 80px;
+    min-width:200px;
+    border-right: solid 1px #666;
+    font-size:12px;
+    margin: 0 0 20px 30px;
+}
+.tipoTarjeta{
+    float:left;
+    height: 280px;
+    min-width:200px;
+    font-size:12px;
+    margin: 0 0 20px 30px;
+}
+.formaPagoBtn{
+    float:right;
+    width:200px;
+    text-align:right;
+}
+.contTabs
+{
+    float:left;
+    padding-left: 12px;
+}
+.contenedorTotal
+{
+    float: left;
+    width: 940px;
+    position: relative;
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-top:25px;
+    background:url(../images/bgPanelCompleto.png);
+    background-color: #d3d3d3;
+    background-repeat:no-repeat;
+    overflow:auto;
+
+}
+
+
+.panelCompletoCorporativo .botonesConfirmacion, .panelCompletoCorporativo1 .botonesConfirmacion {
+    position: absolute;
+    width: 180px;
+    border: 0;
+    text-align: center;
+    top: 18px;
+    right: 20px;
+    border-top:solid 6px #ff9600;
+    background:#FFFFFF;
+    padding-left:8px;
+    padding-right:8px;
+}
+
+.panelCompletoCorporativo .botonesConfirmacion .detalleTarifa
+{
+    margin-left: 20px;
+}
+
+.panelCompletoCorporativo .confirmarVuelo .tituloFormaPago {
+    color: #0d486a;
+    float: left;
+    height: 34px;
+    width: 848px;
+    font-size:14pt;
+    line-height:34px;
+    overflow:hidden;
+    margin-top:7px;
+    text-transform: uppercase;
+}
+.panelCompletoCorporativo .confirmarVuelo .detalleFormaPago {
+    font-size:10pt;
+    color:#1f6b8f;
+    padding-left:20px;
+    width: 828px;
+    float: left;
+
+}
+.panelCompletoCorporativo .confirmarVuelo .subtituloDetalle {
+    color: #0d486a;
+    float: left;
+    height: 34px;
+    width: 828px;
+    font-size:10pt;
+    line-height:34px;
+    overflow:hidden;
+    margin-top:7px;
+    text-transform: uppercase;
+    padding-left:20px;
+
+}
+.confirmarVuelo .resumenReserva {
+    float:left;
+    width: 830px;
+    background-color: #FFF;
+    padding: 0 10px 0 10px;
+    margin: 5px 0 5px 0;
+}
+.resumenTabla{
+    text-align:center;
+    font-size:12px;
+}
+.tablaVuelos
+{
+    float:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #666;
+    background: white;
+}
+.tablaVuelos .logoAerolinea{
+    width: 100px;
+    text-align:center;
+}
+
+.formaPagoTitulo{
+    float:left;
+    width: 830px;
+    font-size:16px;
+    color:#fe9901;
+    margin:20px 0 20px 0;
+}
+.formaPagoBtn{
+    float:right;
+    width:200px;
+    text-align:right;
+}
+.tipoPago{
+    float:left;
+    height: 80px;
+    min-width:200px;
+    border-right: solid 1px #666;
+    font-size:12px;
+    margin: 0 0 20px 30px;
+}
+.tipoTarjeta{
+    float:left;
+    height: auto;
+    /* min-width:200px; */
+    background-color: rgba(12, 167, 198, 0.04);
+    font-size:12px;
+    /* margin: 0 0 20px 30px; */
+    width: 120%;
+}
+
+.panelCompletoCorporativo .confirmarVuelo {
+    float: left;
+    width: 910px;
+    margin-left:30px;
+    margin-right:10px;
+}
+
+.formaPagoBtn{
+}	
+
+
+.reservaDetalle
+{
+    float:left;
+    width: 674px;
+    margin: 0 10px 0 30px;
+}
+.reservaTitulo
+{
+    color: #0D486A;
+    float: left;
+    height: 34px;
+    width: 674px;
+    font-size: 14pt;
+    line-height: 34px;
+    overflow: hidden;
+    margin-top: 7px;
+    text-transform: uppercase;
+}
+.reservaDatosPasajero
+{
+    float:left;
+    width: 100%;
+    background-color: rgba(12, 167, 198, 0.04);
+}
+.reservaRegistro
+{
+    float:left;
+    width: 674px;
+}
+.reservaResumen
+{
+    float: left;
+    width: 644px;
+    padding: 10px;
+    background: white;
+    margin: 5px 5px 10px 5px;
+}
+
+.reservaResumen1
+{
+    float: left;
+    width: 644px;
+    padding: 10px;
+    background: white;
+    margin: 10px 5px 10px 30px;
+}
+.reservaTarifas
+{
+    position: absolute;
+    width: 180px;
+    border: 0;
+    text-align: center;
+    top: 18px;
+    right: 20px;
+    border-top: solid 6px #FF9600;
+    background: white;
+    padding: 8px;
+    color: #0D486A;
+}
+.reservaTarifasPrecio
+{
+    font-size:17px; 
+    font-weight: bold; 
+    color:#FF9600;
+}
+.reservaTarifasNaranja
+{
+    font-weight: bold; 
+    color:#FF9600;
+    font-size: 10px;
+}
+.txtDesplegable
+{
+    padding: 1%;
+    font-size: 12px;
+    background: white;
+    border-bottom: dotted 1px #1D5B9E;
+    margin: 0 0 5px 0;
+    width: 98%;
+}
+.btnSiguiente
+{
+    background:url(../../Imagenes/botonConfirmacion.png); 
+    border:0;
+    width:155px;
+    height:30px;
+    font-size:15px;
+    font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+
+.tablaDesplegable h4.trigger {
+    padding:0 0 10px 0;
+    margin: 0;
+    font-size:13px;
+    color:#1D5B9E;
+}
+.tablaDesplegable h4.trigger a {
+    color:#186e9b; 
+    padding-right:15px; 
+    font-weight:bold;
+    text-decoration:underline;
+    font-size:12px;
+    display:inline; 
+    background:url(../../Imagenes/flechaAbajo.png) no-repeat center right;
+}
+.tablaDesplegable h4.trigger a:hover { color: #000; }
+
+.tablaDesplegable .txtDesplegable {
+    padding:0 0 10px 0;
+    overflow: hidden;
+    font-size:11px;
+    font-family:"Trebuchet MS";
+    color:#666;
+    background:none;
+    margin:0;
+    display:none;
+}
+.tablaDesplegable .txtDesplegable a{
+    color: #1D5B9E;
+    cursor:pointer;
+    text-decoration: underline;
+}
+.tablaDesplegable .txtDesplegable ul {
+    list-style:disc;
+    padding:0 0 0 20px;
+}
+.tablaDesplegable .txtDesplegable strong {
+    font-weight:bold;
+}
+
+/*-----Hoteles Internacional-----*/
+.descripcionHotel
+{
+    float: left;
+    width: 400px;
+}
+
+.descripcionHotelTitulo
+{
+    float: left;
+    width: 290px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #186E9B;
+}
+descripcionHotelEstrellas
+{
+    float: right;
+    width: 110px;
+}
+.descripcionHotelDetalle
+{
+    float: left;
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+}
+.descripcionHotelBtn
+{
+    float:right;
+}
+.descripcionHotelTarifa
+{
+    float: left;
+}
+.descripcionHotelTarifaTit
+{
+    float: left;
+}
+.descripcionHotelTarifaTxt
+{
+    float: left;
+    color:  #F90;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/*******PopUp ResultadoVuelos*******/
+
+#caja {
+    width:70%;
+    /* float:left; */
+    /* display: none; */
+    padding:5px;
+}
+#mostrar{
+    display:block;
+    width:70%;
+    padding:5px;
+}
+
+
+
+.flights-tooltip {
+    display:block;
+    position:absolute;
+    padding:0.267em;
+    font-size:0.8em;
+    background-color:#3c3a12;
+    color:white;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    -ms-border-radius:2px;
+    -o-border-radius:2px;
+    border-radius:2px;
+    -webkit-box-shadow:#3c3a12 0 0 3px;
+    -moz-box-shadow:#3c3a12 0 0 3px;
+    box-shadow:#3c3a12 0 0 3px
+}
+.flights-tooltip.tooltip-left:after, .ie7 .flights-tooltip.tooltip-left span {
+    position:absolute;
+    top:0;
+    padding:0.267em 0;
+    left:-0.82em;
+    content:"\25C4"
+}
+
+.flights-tooltip.tooltip-left:after, .ie7 .flights-tooltip span {
+    font-family:arial, sans-serif;
+    font-size:1em;
+    color:#3c3a12
+}
+.ie8 .flights-tooltip.tooltip-left:after {
+    font-size:0.8em
+}
+.contenedorPopUp
+{
+    float:left;
+    position:relative;
+    left:-300px;
+
+}
+
+/********Contenedor First Popup***********/
+.btnCloseFirst
+{
+    position: absolute;
+    left: 509px;
+    top: -10px;
+    width: 20px;
+    color: white;
+    background: blue;
+    border: 3px solid #01265E;
+    height: 20px;
+    border-radius: 25px;
+}
+.btnCloseFirst_X{
+    background: none;
+    border: none;
+    padding: 0;
+    color: white;
+    font-weight: bolder;
+    margin: 0;
+    position: relative;
+    left: 4px;
+    top: -4px;
+    font-size: 20px;
+}
+
+
+#content-slider {
+    width: 490px;
+    height: 6px;
+    margin: 5px;
+    background: #BBBBBB;
+    position: relative;
+}
+.content-slider-handle {
+    width: 8px;
+    height: 14px;
+    position: absolute;
+    top: -4px;
+    background: #478AFF;
+    border: solid 1px black;
+}
+
+
+#content-scroll {
+    width: 500px;
+    height: 137px;
+    margin-top: 10px;
+    overflow: hidden
+}
+
+#content-holder {
+    width: 1500px;
+    height: 270px;
+
+}
+
+/*************************************/
+
+.a impuestosVuelos:hover
+{
+    background-color:yellow;
+}
+
+a.impuestosVuelos:hover div {
+    display: block;
+    position: absolute;
+    top: -90px;
+    left: 0;
+    color: white;
+    text-decoration: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+a.impuestosVuelos
+{
+    position: relative;
+    color: #186e9b;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 11px;
+    display: inline;
+    width:150px;
+    float:left;
+    text-align:center;
+}
+
+a.impuestosVuelos div {
+    display: none;
+}
+
+.GloboImp
+{
+    position: relative;
+    width: 250px;
+    height: 150px;
+    /* @alternate */ 
+    padding:5px 0 0 5px;
+    z-index: 10;
+    background:url(../../Imagenes/globo.png);    
+    padding: 5px;
+    font-size: 7pt;
+}
+
+
+.labelDetalleImpuestos
+{
+    float:left;
+    width:140px;
+    text-align:left;
+    color: #000;
+    font-size:9px;
+}
+
+.valorlDetalleImpuestos
+{
+    float:left;
+    width:100px;
+    text-align:left;
+    color:#000;
+    font-size:9px;
+}
+
+/* Estilos de Pagina Reserva de vuelos con carro de compras incluido Julio 12 de 2013 */
+
+.paginaVuelosTarjeta .menuPrincipal
+{
+    margin-bottom:0px;
+}
+
+.panelIzquierdoReservaVuelos
+{
+    float:left;
+    width: 67%;
+    background-color: rgba(12, 167, 198, 0.01);
+    margin-left: 4px;
+    margin-bottom: 15px;    
+}
+
+.panelDerechoReservaVuelos
+{
+    float:left;
+    width: 30%;
+    margin-left: 9px;    
+    background-color: rgba(12, 167, 198, 0.04);
+
+}
+
+.franjaAmarillaInicio
+{
+
+}
+
+.reservaResumen300
+{    
+}
+
+.detalleVuelo300
+{
+    float: left;
+    width: 100%;    
+}
+
+.reservaTituloVuelosTarjeta
+{
+    float: left;
+    color: #0e8a36;
+    width: 95%;
+    height: 30px;
+    padding:0 15px;
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 13pt;
+    text-transform: uppercase;
+    overflow: hidden;   
+    font-weight: bold;
+}
+
+.renglonDatosVuelosTarjeta
+{
+    float:left;
+    width: 100%;
+    /* background-color: rgba(12, 167, 198, 0.04); */
+    margin-bottom:10px;
+}
+
+.tipoPasajeroVuelosTarjeta
+{
+    float:left;
+    width:100px;
+    line-height:100px;
+    text-align:center;
+    color:#666666;
+    font-size:10pt;
+}
+
+.labelTipoPasajeroVuelosTarjeta
+{
+    float:left;
+    width:100px;
+    line-height:100px;
+    text-align:center;
+    color:#666666;
+    font-size:10pt;
+    border:none;
+}
+
+
+.datosPasajeroVuelosTarjeta
+{
+    /* float:left; */
+    width: 100%;
+}
+
+.lineaDatosVuelosTarjeta
+{
+    float:left;
+    width: 85%;
+    height:50px;
+    margin-bottom: 10px;
+}
+
+.celdaDatosVuelosTarjeta
+{
+    float:left;
+    width:24%;
+}
+
+.labelDatosVuelosTarjeta
+{
+    float:left;
+    width:100%;
+    font-size:10pt;
+    text-align:left;
+    line-height: 14pt;
+
+}
+
+.my-skinnable-select-2
+{
+    float:left;
+    width:90%;
+    height: 26px;
+    border:1px solid;
+    margin-top: 5px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px; 
+    border-radius:4px;
+    background: White url(../../Imagenes/icn_selects.gif) right top no-repeat;	
+}
+
+.reservaRegistroVuelosTarjeta
+{
+    float:left;
+    width: 98%;
+    background-color: rgba(12, 167, 198, 0.04);
+    margin-left:15px;
+}
+
+.divisorAzul580
+{
+    float: left;
+    width: 98%;
+    margin-left: 15px;
+    height: 1px;
+    background: #C6C7C7;
+}
+
+.reservaTituloVuelosTarjeta300
+{
+    float: left;
+    color: #0e8a36;
+    width: 270px;
+    height: 30px;
+    padding:0 15px;
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 13pt;
+    text-transform: uppercase;
+    overflow: hidden;   
+    font-weight: bold;
+}
+
+.trayectoVueloTarjeta
+{
+    float:left;
+    width: 300px;    
+    margin-left: 14px;
+}
+
+.logoAerolineaVueloTarjeta
+{
+    float:left;
+    width:60px;
+    margin:0 15px;
+    text-align:center;
+}
+
+.logoAerolineaVueloTarjeta img
+{
+    max-width:60px;
+    margin-top: 25px;
+}
+
+.renglonTrayectoVueloTarjeta
+{
+    float:left;
+    width:195px;
+}
+
+.ciudadSalidaVuelosTarjeta
+{  
+    float:left;
+    width:130px;
+    color: #0D486A;
+    font-size:12pt;
+    text-align:left;
+    margin-left:15px;
+    /* font-weight: bolder; */
+}
+
+.ciudadLlegadaVuelosTarjeta
+{  
+    float:left;
+    width:130px;
+    margin-left:10px;
+    color:#0D486A;
+    font-size:12pt;
+    text-align:left;
+}
+
+.fechaSalidaVuelosTarjeta
+{
+    float:left;
+    width:130px;
+    font-size:10pt;
+    color:#666666;
+    text-align:left;
+    margin-left:15px;
+}
+
+.fechaLlegadaVuelosTarjeta
+{
+    float:left;
+    width:130px;
+    margin-left:10px;
+    font-size:10pt;
+    color:#666666;
+    text-align:left;
+}
+
+.labelItemsVueloTarjeta
+{
+    float:left;
+    font-size:9pt;
+    font-weight:bold;
+    color:#666666;
+    line-height: 15pt;
+}
+
+.valorItemsVueloTarjeta
+{
+    float:left;
+    font-size:9pt;
+    font-weight:normal;
+    color:#666666;
+    line-height: 15pt;
+}   
+
+.divi195
+{
+    float:left;
+    width:195px;    
+} 
+
+.divisorAzul300
+{
+    float: left;
+    width: 100%;
+    margin: 10px 0 0 0;
+    /* margin-left: 15px; */
+    height: 1px;
+    background: #CFCFCF;
+}
+
+.reservaTarifasVuelosTarjeta
+{
+    /* float:left; */
+    /* background-color: rgba(12, 167, 198, 0.06); */
+    /* width: 29%; */
+    /* color: whitesmoke; */
+}
+
+.reservaTarifasVuelosTarjeta {}
+
+.reservaTituloVuelosTarjeta300Naranja
+{
+    float: left;    
+    color: white; 
+    width: 89%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding:0 15px;
+    line-height: 30px;
+    font-size: 8.1pt;
+    text-transform: uppercase;
+    font-weight:bold;
+    overflow: hidden;   
+}
+
+.labelCondicionesVuelosTarjeta
+{
+    float:left;
+    font-weight:bold;
+}
+
+.detalleTarifaVuelosTarjeta
+{
+    float:left;
+    width: 100%;
+}
+
+.renglonValorPorPasajero
+{
+    float: right;
+    width:245px;
+    margin-right:15px;
+    font-size:9pt;
+}
+
+.valorTarifaVuelosTarjeta
+{
+    color: #186e9b;
+    /* text-decoration: underline */}    
+
+.reservaDetalleVuelosTarjeta
+{
+    float:left;
+    width:580px;
+}
+
+.tipoPagoVuelosTarjeta
+{
+    float:left;
+    width:550px;
+    padding:15px;
+}
+
+#ucReservaVuelos_rblFormasPago tr
+{
+    float:left;
+    width:180px;
+}
+
+.contenedorCondicionesVuelosTarjeta
+{
+    float:left;
+    width: 95%;
+    padding:10px 20px 10px 20px;
+    margin-top: 20px;
+}
+
+.botonCerrarVuelosTarjeta
+{
+    float: right;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: -30px;
+    z-index: 10;
+    position: relative;
+    background:url(../../Imagenes/cerrarAzul.png);
+}
+
+.btnSiguienteVuelosTarjeta
+{    
+    border:0;
+    width:auto;
+    height:30px;
+    font-size:15px;
+    font-weight:bold;    
+    text-decoration:none;
+    cursor:pointer;
+    margin-bottom:5px;
+}
+
+.condicionesProteccion
+{
+    width: 96%;
+    padding: 2%;
+    height: 400px;
+    overflow: auto;
+}
+
+
+.reservaResumen2
+{
+    float: left;
+    width: 900px;
+    padding: 10px;
+    background: white;
+    margin: 5px 5px 10px 5px;
+}
+
+.subtituloProteccion
+{
+    float:left;
+    width:100%;
+    margin:10px 0;
+    font-weight:bold;
+}
+
+.contenidoProteccion
+{
+    float:left;
+    width:100%;
+}
+
+.tablaProteccion
+{
+    border-collapse:collapse;
+}
+
+.tablaProteccion td
+{
+    border:1px #000 solid;
+    padding: 5px;
+}
+
+.celdaBold
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.ventanaError1
+{
+    background: #FFF;
+    padding: 30px;
+    border: 5px solid;
+}
+
+/* Estilos Nuevos -  Nueva Version - Diego 12/11/2012 */ 
+
+.BannerTopFlight
+{
+    float:left;    
+    height:127px;
+    margin-top:10px;
+    width:240px;
+}
+
+.BannerTopFlight img
+{
+    float:left;
+    height:127px;
+    width:240px;
+}
+
+.no_home
+{
+    width: 675px;
+    height: 66px;
+    background: #4b4b4b;
+    font-size: 16px;
+}
+
+.t_center
+{
+    text-align: center;
+}
+
+.topSpace
+{
+    padding-top: 10px;
+}
+
+.white
+{
+    color: white;
+}
+
+.yellow
+{
+    color: #ffb400;
+}
+
+.block
+{
+    display: block;
+}
+
+.cursor
+{
+    cursor: pointer;
+}
+
+
+/* Estilos Top Flight */
+
+.pop_up
+{
+    background: url(../../Imagenes/bk_pop.png);
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up .login_box
+{
+    background: url(../../Imagenes/LIGHTBOX-2.jpg);
+    font-size: 11px;
+    height: 367px;
+    width: 633px;
+}
+.contenido_inscribete
+{
+    display: block;
+    width: 281px;
+    padding: 276px 176px;
+    font-size: 14px;    
+}
+
+.pop_up .login_box .logo_box
+{
+    padding: 25px 0 15px;
+}
+
+.full
+{
+    width: 100%;
+}
+
+.t_center
+{
+    text-align: center;
+}
+
+.pop_up .login_box > .left
+{
+    width: 40%;
+    margin-left: 50px;
+}
+
+.left
+{
+    float: left;
+    clear: left;
+}
+
+.pop_up .login_box .yellow
+{
+    color: #FFE39A;
+    margin-bottom: 10px;
+}
+
+.block
+{
+    display: block;
+}
+
+.pop_up .login_box .campo
+{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.white {
+    color: #FFF;
+}
+
+.pop_up .login_box > .right
+{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.right
+{
+    float: right;
+    clear: right;
+}
+
+.pop_up .login_box > .right ul
+{
+    margin:0;
+    padding:0;
+}
+
+.beneficios li
+{
+    background: url(../../Imagenes/TopFlight/l_left.jpg) no-repeat left 5px;
+    list-style: none;
+}
+
+.pop_up .login_box ul li
+{
+    margin-bottom: 10px;
+}
+
+.pad_left
+{
+    padding-left: 10px;
+}
+
+.cerrarTopFlight
+{
+    height: 30px;
+    margin-right: -15px;
+    margin-top: -15px;
+    width: 30px;
+    z-index: 102;
+    cursor: pointer;
+    float:right;
+    background:url(../../Imagenes/TopFlight/cerrar.png);
+    border:0;
+}
+
+.panelCompletoMiCuenta .panelResultados
+{
+    margin:0;
+}
+
+.panelCompletoMiCuenta .contenidoResultado
+{
+    padding-top:30px;
+}
+
+.panelCompletoMiCuenta .ui-tabs .ui-tabs-nav
+{
+    margin:0 10px;
+}
+
+.panelCompletoMiCuenta .ui-tabs .ui-tabs-panel
+{
+    position: relative;
+    float: left;
+    padding: 20px;
+    text-align: left;
+    width: 878px;
+    font-size: 12px;
+    color: #000;
+    border: 1px solid;
+    background-color: #E7E7E7;
+    background: none;
+    margin: 0 10px;
+}   
+
+.panelCompletoMiCuenta .ui-widget-content a
+{
+    color: blue;
+}
+
+.t_center
+{
+    text-align:center;
+}
+
+.paging_full_numbers span
+{
+    cursor: pointer;
+}
+
+.tablasMiCuenta
+{
+    margin-bottom: 15px;
+}
+
+.guardarMiCuenta
+{
+    float: left;
+    margin-left: 35px;
+}
+
+.BannersInfPlanes    
+{
+    float:left;
+    width:100%;
+    margin:20px 0;
+}
+
+.BannersInfPlanes .banners
+{
+    float:left;
+    width:300px;
+}
+
+.BannersInfPlanes .bannerCentral    
+{
+    margin:0 20px;
+}
+
+.panelServiciosComplementarios .linkServicios
+{
+    float:right;
+}
+
+.bannersDerechaPlanes
+{
+    position:relative;
+}
+
+.panelBannersVuelos
+{
+    position: relative;
+    float: right;
+    width: 360px;
+    padding: 2px;
+    margin: 0 0 10px 0;
+    text-align:center;
+}
+
+.panelBannersVuelos .banners
+{
+    display:inline-block;
+    margin:10px auto;
+}
+
+.botonRegresarMiCuenta
+{
+    float: left;
+    line-height: 36px;
+    padding-left: 15px;
+}
+
+.detalleMiCuenta .full
+{
+    margin-bottom: 10px;
+    float: left;
+}
+
+.detalleMiCuenta .full
+{
+    width: 100%;
+}
+
+.detalleMiCuenta .full .vino
+{
+    width: 30%;
+    float: left;
+}
+
+.detalleMiCuenta .vino
+{
+    color: #000;
+    font-weight:bold;
+}
+
+.detalleMiCuenta .full span
+{
+    float: left;
+    width: 65%; 
+}
+
+.detalleMiCuenta .panelResultados .contenidoResultado
+{
+    width:90%;
+    padding:5%;
+}
+
+.detalleMiCuenta .table_
+{
+    float: left;
+    width: 17%;
+}
+
+.detalleMiCuenta .table_ h5
+{
+    font-size: 10px;
+    height: 30px;
+}
+
+.detalleMiCuenta .table_ h5 span
+{
+    font-size: 12px;
+}
+
+.detalleMiCuenta  .table_ span
+{
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.detalleMiCuenta .block
+{
+    display: block;
+}
+
+.detalleMiCuenta .table_ span
+{
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.detalleMiCuenta .table_ .even
+{
+    border-bottom: 1px solid #333333;
+    height: 28px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.cotizadorPlan
+{
+    float: left;
+    position: relative;
+    width: 90%;
+    padding: 0 5%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ancho47
+{
+    display: inline-block;
+    width: 47%;
+    padding: 0 1%;
+    vertical-align: top;
+}
+
+.borderRight
+{
+    border-right: 2px solid #000;
+}
+
+.ancho100
+{
+    width: 100%;
+    float: left;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.labelCotizador
+{
+    float: left;
+    width: 60%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.datoCotizador
+{
+    float: left;
+    width: 40%;
+    text-align: left;
+}
+
+.borderCotizador
+{
+    width: 100%;
+    float: left;
+    border: dotted 1px #000;
+    padding-bottom: 10px;
+}
+
+.ancho50
+{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.contenedorCotizador
+{
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filaCotizador
+{
+    float: left;
+    width: 100%;
+}
+
+.celdaBaseCotizador
+{
+    float: left;
+    border: 1px solid #000;
+    border-top: 0;
+    border-right: 0;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+.tituloCotizador
+{
+    background: #F90;
+    color: #000;
+}
+
+.bordeTopCotizador
+{
+    border-top: 1px solid #000;
+}
+
+.bordeRightCotizador
+{
+    border-right: 1px solid #000;
+}
+
+.botonCotizarPlan
+{
+    width: 102px;
+    height: 36px;
+    border: 0;
+    cursor: pointer;
+    background: url(../../Imagenes/botonCotizar.png);
+    float: right;
+}
+
+.left_normal
+{
+    float: left;
+}
+
+.noneDisplay
+{
+    display: none;
+}
+
+.celda9
+{
+    width: 75px;
+}
+
+.celda10
+{
+    width: 83px;
+}
+
+.celda15
+{
+    width: 125px;
+}
+
+.precioPlanes p
+{
+    margin:0;
+}
+
+.progressBarBuscador
+{
+    margin: 0 0 10px 0;
+    float: left;
+    position: relative;
+    width: 90%;
+    padding: 0 5%;
+    margin-top: 30px;
+    text-align: center;
+    background: none;
+    color:rgb(255, 255, 255);
+}
+
+/* ESTILOS PLANTILLAS AGRADECIMINETOS */
+
+.agradecimientos {
+    float: left;
+    width: 860px;
+    height: 253px;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 20px 40px;
+    background: url(../../Imagenes/bgAgradecimientos.png);
+}
+.tituloAgradecimientos {
+    float: left;
+    color: #004080;
+    font-weight: bold;
+}
+.tituloAgradecimientos p {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+.detalleAgradecimientos {
+    float: left;
+    color: #7f7f7f;
+}
+.infoAgradecimientos {
+    float: left;
+    width: 800px;
+    margin-left: 80px;
+    margin-top: -10px;
+}
+.infoOficinas {
+    float: left;
+    width: 250px;
+}
+/*.infoCuentas {
+    float: left;
+    width: 500px;
+}*/
+
+.form input[type="text"] ,.form input[type="select"]  {
+    width: auto;
+    /* @alternate */
+    height: 30px!important;
+    height: 1.875rem!important;
+    line-height: 1em;
+    /* @alternate */
+    padding: 0.38em;
+    border: 1px solid #cccccc;
+    border-top: 1px solid #999999;
+    color: black;
+    /* @alternate */
+    font-size: 13px;
+    font-size: 0.8125rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    padding: 5px;
+    /* @alternate */
+    line-height: 16px!important;
+
+}
+
+.form select{
+    width: auto;
+    /* @alternate */
+    height: 30px!important;
+    height: 1.875rem!important;
+    line-height: 1em;
+    padding: 0.38em;
+    border: 1px solid #cccccc;
+    border-top: 1px solid #999999;
+    color: black;
+    /* @alternate */
+    font-size: 13px;
+    font-size: 0.8125rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+}
+
+
+
+
+.guidesteps22
+{
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.7em;    
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;    
+    margin-top: 10px;
+    width: 22%;
+    text-align: center;    
+    cursor: pointer;    
+    float: left;    
+}
+
+.guidesteps11
+{
+    /* float: left; */
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.7em;
+    border: 1px solid rgba(128, 128, 128, 0.76); 
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 22%;
+    text-align: center;    
+    cursor: pointer;
+    color: white !important;
+    /* padding: 0 13px; */
+    background-color: rgba(128, 128, 128, 0.76);  
+    float: left;
+    /* margin-top: 10px; */
+}
+
+.guidesteps33
+{
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.7em;
+    border: 1px solid rgba(128, 128, 128, 0.76); 
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    width: 22%;
+    text-align: center;    
+    cursor: pointer;
+    color: white !important;
+    /* padding: 0 13px; */
+    background-color: rgba(128, 128, 128, 0.76);  
+    /* float: left; */
+    /* margin-top: 10px; */
+}
+
+.contresultuno
+{
+    height:50px; width:1000px;
+
+}
+
+.contresultunoi
+{
+    position:relative; float:left; height:50px; width:1000px;
+
+}
+
+.Error
+{
+    color: Maroon;  
+}
+
+.btnreturnresults {
+    overflow: hidden;
+    width: 200px;
+    display: inline-block;
+    line-height: 2.2em;    
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 70px;
+    text-align: center;
+    cursor: pointer;       
+    padding: 0 13px;    
+    float:left;
+}
+
+
+.datosPasajeroVuelosTarjeta .selects{
+  width: 32%;
+}

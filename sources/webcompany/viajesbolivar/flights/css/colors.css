@@ -1,0 +1,47 @@
+/* COLORES */
+.background-color, .guidesteps,
+.goog-twothumbslider-value-thumb,
+.goog-twothumbslider-extent-thumb  {
+    background-color: #E51171;
+}
+
+.border-color {
+    border: 1px solid #E51171;
+}
+
+.label-color {
+    color: white;
+}
+
+.goog-date-picker {
+    background-color: #0ca7c6;
+    border: 1px solid white;
+}
+
+.goog-date-picker {
+    background: #E51171;
+}
+
+    .goog-date-picker th {
+        font-size: .9em;
+        color: white;
+    }
+
+    .goog-date-picker button {
+        color: white;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+.text-color {
+    color: white;
+}
+
+.buttonRound {
+    cursor: pointer;
+}
+
+
+.goog-date-picker-foot {
+    display: none;
+}

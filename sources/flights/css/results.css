@@ -1,0 +1,3777 @@
+.ux-common-main span {
+    height: auto !important;
+    margin: auto !important;
+}
+
+.ux-common-main-popup {
+    /*width: 1000px;*/
+    top: 253px;
+    min-height: 800px;
+    background-color: white;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px 28px 67px #888888;
+    padding-bottom: 20px;
+}
+
+.ux-common-main {
+    /*width: 1000px;*/
+    top: 287px;
+    min-height: 1000px;
+    background-color: white;
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: -1px 28px 67px #888888;
+    padding-bottom: 20px;
+}
+
+    .ux-common-main a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .ux-common-main:before,
+    .ux-common-main:after {
+        content: "";
+        display: table;
+    }
+
+    .ux-common-main:after {
+        clear: both;
+    }
+
+.ux-common-grid-row {
+    width: 100%;
+}
+
+    .ux-common-grid-row:before,
+    .ux-common-grid-row:after {
+        content: "";
+        display: table;
+    }
+
+    .ux-common-grid-row:after {
+        clear: both;
+    }
+
+.ie7 .ux-common-grid-row {
+    zoom: 1;
+}
+
+.ux-common-grid-row .ux-common-grid-col1 {
+    width: 6.34058%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col1 {
+    width: 6.24858%;
+}
+
+.ux-common-grid-row .ux-common-grid-col2 {
+    width: 14.85507%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col2 {
+    width: 14.76307%;
+}
+
+.ux-common-grid-row .ux-common-grid-col3 {
+    width: 22.36957%;
+    float: left;
+    margin-left: 1.17391%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col3 {
+    width: 23.27757%;
+}
+
+.ux-common-grid-row .ux-common-grid-col4 {
+    width: 31.88406%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col4 {
+    width: 31.79206%;
+}
+
+.ux-common-grid-row .ux-common-grid-col5 {
+    width: 40.39855%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col5 {
+    width: 40.30655%;
+}
+
+.ux-common-grid-row .ux-common-grid-col6 {
+    width: 48.91304%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col6 {
+    width: 48.82104%;
+}
+
+.ux-common-grid-row .ux-common-grid-col7 {
+    width: 57.42754%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col7 {
+    width: 57.33554%;
+}
+
+.ux-common-grid-row .ux-common-grid-col8 {
+    width: 65.94203%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col8 {
+    width: 65.85003%;
+}
+
+.ux-common-grid-row .ux-common-grid-col9 {
+    width: 74.45652%;
+    float: left;
+    margin-left: 1.17391%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col9 {
+    width: 74.36452%;
+}
+
+.ux-common-grid-row .ux-common-grid-col10 {
+    width: 82.97101%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col10 {
+    width: 82.87901%;
+}
+
+.ux-common-grid-row .ux-common-grid-col11 {
+    width: 91.48551%;
+}
+
+.ie7 .ux-common-grid-row .ux-common-grid-col11 {
+    width: 91.39351%;
+}
+
+.ux-common-grid-row .ux-common-grid-col12 {
+    width: 100%;
+}
+
+.flights-tabs {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+    .flights-tabs .flights-tabs-headers-container {
+        width: 100%;
+    }
+
+        .flights-tabs .flights-tabs-headers-container .flights-tabs-headers:before,
+        .flights-tabs .flights-tabs-headers-container .flights-tabs-headers:after {
+            content: "";
+            display: table;
+        }
+
+        .flights-tabs .flights-tabs-headers-container .flights-tabs-headers:after {
+            clear: both;
+        }
+
+.ie7 .flights-tabs .flights-tabs-headers-container .flights-tabs-headers {
+    zoom: 1;
+}
+
+.flights-tabs .flights-tabs-headers-container .flights-tabs-headers .flights-tab-header {
+    float: right;
+    background-color: #EEEEEE;
+    color: #319FDA;
+    -moz-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    font-size: 13px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.flights-tabs .flights-tabs-headers-container .flights-tabs-headers .flights-tab-header-active {
+    background-color: #f90 !important;
+    color: white !important;
+    cursor: default;
+}
+
+.flights-tabs .tab-title,
+.flights-tabs .tab-footer {
+    display: block;
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.flights-tabs .tab-footer {
+    margin: 0 0 5px 0;
+    /* @alternate */
+    font-size: 11px;
+    font-size: 0.6875rem;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 8px;
+}
+
+.flights-tabs .flights-tabs-headers-background {
+    width: 100%;
+    height: 5px;
+    background-color: #f90;
+}
+
+.flights-tab-tooltip {
+    text-align: center;
+    background-color: white;
+    z-index: 9 !important;
+}
+
+    .flights-tab-tooltip .ux-common-overlay-body {
+        margin: 2px;
+        border: 1px solid transparent;
+        padding: 10px;
+    }
+
+        .flights-tab-tooltip .ux-common-overlay-body:hover {
+            border: 1px solid #319fda;
+            background: #f4fafd;
+            cursor: pointer;
+        }
+
+.matrix .matrix-filter {
+    display: block;
+    margin-bottom: 5px;
+    padding: 8px 0 7px;
+    text-align: center;
+    background: #EEEEEE;
+    font-size: 13px;
+    color: #666666;
+}
+
+    .matrix .matrix-filter .matrix- reset {
+        text-decoration: underline;
+        padding-left: 10px;
+    }
+
+.matrix .matrix-container {
+    position: relative;
+    margin-top: 12px;
+    border-top: 1px solid #0ca7c6;
+}
+
+    .matrix .matrix-container .even {
+        background: #f7f7f7;
+    }
+
+    .matrix .matrix-container:before,
+    .matrix .matrix-container:after {
+        content: "";
+        display: table;
+    }
+
+    .matrix .matrix-container:after {
+        clear: both;
+    }
+
+.ie7 .matrix .matrix-container {
+    zoom: 1;
+}
+
+.matrix .matrix-container ul {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+}
+
+.matrix .matrix-container li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.matrix .matrix-container .matrix-airlines-responsive-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+    .matrix .matrix-container .matrix-airlines-responsive-container .matrix-airlines-container {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        width: 100%;
+    }
+
+.matrix .matrix-container .matrix-prev,
+.matrix .matrix-container .matrix-next {
+    position: absolute;
+    display: block;
+    top: 69px;
+    height: 39px;
+    width: 40px;
+    z-index: 5;
+    cursor: pointer;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+    opacity: 0.1;
+    color: white;
+}
+
+    .matrix .matrix-container .matrix-prev:hover,
+    .matrix .matrix-container .matrix-next:hover {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+        opacity: 0.5;
+    }
+
+.matrix .matrix-container .matrix-prev {
+    left: 0;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.matrix .matrix-container .matrix-next {
+    right: 0;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.matrix .matrix-container .matrix-scales li,
+.matrix .matrix-container .matrix-airlines li {
+    border-top: none;
+    border-bottom: 1px solid #0ca7c6;
+}
+
+.matrix .matrix-container .matrix-scales .first,
+.matrix .matrix-container .matrix-airlines .first {
+    border-right: none;
+}
+
+.matrix .matrix-container .matrix-scales .last,
+.matrix .matrix-container .matrix- airlines .last {
+}
+
+.matrix .matrix-container .matrix-scales .head,
+.matrix .matrix-container .matrix-airlines .head {
+    height: 60px;
+    line-height: 100%;
+}
+
+.matrix .matrix-container .matrix-scales {
+    width: 15%;
+}
+
+    .matrix .matrix-container .matrix-scales li {
+        padding: 0 0 0 7px;
+        border-left: 1px solid #0ca7c6;
+        border-right: 1px solid #0ca7c6;
+    }
+
+    .matrix .matrix-container .matrix-scales .first {
+        border-bottom: 1px solid #0ca7c6;
+    }
+
+    .matrix .matrix-container .matrix-scales .head {
+        cursor: default;
+        color: #888888;
+    }
+
+    .matrix .matrix-container .matrix-scales .scale {
+        cursor: pointer;
+        color: #319fda;
+    }
+
+    .matrix .matrix-container .matrix-scales .scales-container {
+        height: 60px;
+    }
+
+        .matrix .matrix-container .matrix-scales .scales-container .matrix-scales-summary {
+            height: 26px;
+            line-height: 100%;
+            padding: 10px 0 0 0;
+            color: #888888;
+            border-right: 1px solid #0ca7c6;
+        }
+
+        .matrix .matrix-container .matrix-scales .scales-container .matrix-scales-review {
+            height: 25px;
+            border-right: 1px solid #0ca7c6;
+        }
+
+        .matrix .matrix-container .matrix-scales .scales-container .matrix-scales-preservationLevel {
+            border-bottom: 1px solid #cccccc;
+        }
+
+            .matrix .matrix-container .matrix-scales .scales-container .matrix-scales-preservationLevel p {
+                line-height: 100%;
+                padding-top: 4px;
+                width: 75px;
+                float: left;
+            }
+
+            .matrix .matrix-container .matrix-scales .scales-container .matrix-scales-preservationLevel .questionIcon {
+                float: left;
+                margin-top: 9px;
+                cursor: pointer;
+            }
+
+        .matrix .matrix-container .matrix-scales .scales-container .last {
+            border-left: 1px solid #cccccc;
+        }
+
+        .matrix .matrix-container .matrix-scales .scales-container .row-hover {
+            border-left: 1px solid #319fda;
+        }
+
+        .matrix .matrix-container .matrix-scales .scales-container .row-click {
+            background: #319fda;
+            color: white;
+            border-right: 1px solid #319fda !important;
+        }
+
+.matrix .matrix-container .matrix-1 {
+    height: 94px;
+}
+
+.matrix .matrix-container .matrix-2 {
+    height: 128px;
+}
+
+.matrix .matrix-container .matrix-3 {
+    height: 162px;
+}
+
+.matrix .matrix-container .matrix-4 {
+    height: 196px;
+}
+
+.matrix .matrix-container .matrix-airlines {
+    position: relative;
+    overflow: hidden;
+    width: 85%;
+}
+
+    .matrix .matrix-container .matrix-airlines li {
+        border-left: none;
+    }
+
+    .matrix .matrix-container .matrix-airlines .first,
+    .matrix .matrix-container .matrix-airlines .last {
+        border-left: none;
+    }
+
+    .matrix .matrix-container .matrix-airlines .head {
+        cursor: pointer;
+    }
+
+        .matrix .matrix-container .matrix-airlines .head:before,
+        .matrix .matrix-container .matrix-airlines .head:after {
+            content: "";
+            display: table;
+        }
+
+        .matrix .matrix-container .matrix-airlines .head:after {
+            clear: both;
+        }
+
+.ie7 .matrix .matrix-container .matrix-airlines .head {
+    zoom: 1;
+}
+
+.ie7 .matrix .matrix-container .matrix-airlines .head {
+    margin: 0 0 -1px 0;
+}
+
+.matrix .matrix-container .matrix-airlines .airline-description {
+    height: 35px;
+    text-align: center;
+}
+
+    .matrix .matrix-container .matrix-airlines .airline-description .airline-description-container {
+        width: 100%;
+    }
+
+        .matrix .matrix-container .matrix-airlines .airline-description .airline-description-container:before,
+        .matrix .matrix-container .matrix-airlines .airline-description .airline-description-container:after {
+            content: "";
+            display: table;
+        }
+
+        .matrix .matrix-container .matrix-airlines .airline-description .airline-description-container:after {
+            clear: both;
+        }
+
+.ie7 .matrix .matrix-container .matrix-airlines .airline-description .airline-description-container {
+    zoom: 1;
+}
+
+.matrix .matrix-container .matrix-airlines .airline-description .airline-logo {
+    width: 40px;
+    height: 30px;
+    line-height: 33px;
+    display: inline-block;
+}
+
+    .matrix .matrix-container .matrix-airlines .airline-description .airline-logo img {
+        vertical-align: middle;
+    }
+
+.matrix .matrix-container .matrix-airlines .airline-description .airline-name {
+    display: inline-block;
+    max-width: 57%;
+    padding: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+    .matrix .matrix-container .matrix-airlines .airline-description .airline-name span {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+.ie7 .matrix .matrix-container .matrix-airlines .airline-description .airline-name span {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+.matrix .matrix-container .matrix-airlines .review-summary {
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+}
+
+    .matrix .matrix-container .matrix-airlines .review-summary a {
+        display: block;
+        color: #319fda;
+    }
+
+        .matrix .matrix-container .matrix-airlines .review-summary a:hover {
+            text-decoration: none;
+        }
+
+.matrix .matrix-container .matrix-airlines .airline-ecological div {
+    padding-top: 3px;
+    text-align: center;
+}
+
+    .matrix .matrix-container .matrix-airlines .airline-ecological div .icon-empty-leaf {
+        display: inline-block;
+    }
+
+.matrix .matrix-container .matrix-airlines .price {
+    text-align: center;
+    color: #319fda;
+    position: relative;
+}
+
+    .matrix .matrix-container .matrix-airlines .price .not-economy-segments {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+    }
+
+.matrix .matrix-container .matrix-airlines .price-mask {
+    font-size: 13px;
+}
+
+.matrix .matrix-container .matrix-airlines .price-amount {
+    font-size: 16px;
+}
+
+.matrix .matrix-container .matrix-airlines .selectable-price {
+    cursor: pointer;
+}
+
+.matrix .matrix-container .matrix-airlines .price-best em {
+    padding: 5px 5px 2px 5px;
+    background: #eeeeee;
+    color: #319fda !important;
+}
+
+.matrix .matrix-container .matrix-airlines .cell-click {
+    color: white;
+}
+
+.matrix .matrix-container .matrix-airlines .airline-name {
+    color: #319fda;
+}
+
+.matrix .matrix-container .matrix-airlines .airline-description {
+    border-right: 1px solid #0ca7c6;
+}
+
+.matrix .matrix-container .matrix-airlines .review-summary {
+    text-align: center;
+    border-right: 1px solid #0ca7c6;
+}
+
+.matrix .matrix-container .matrix-airlines .airline-ecological {
+    border-bottom: 1px solid #cccccc;
+}
+
+.matrix .matrix-container .matrix-airlines .column-visible-last li {
+    border-right: 1px solid #0ca7c6;
+}
+
+.matrix .matrix-container .matrix-airlines .column-visible-last .airline-description,
+.matrix .matrix-container .matrix-airlines .column-visible-last .review-summary {
+    border-right: none;
+}
+
+.matrix .matrix-container .column-hover li,
+.matrix .matrix-container .column-click li {
+    background: #f1f6fc;
+    border-top: none;
+    border-right: 1px solid #319fda !important;
+    border-bottom: 1px solid #f1f6fc;
+    border-left: none;
+}
+
+.matrix .matrix-container .column-hover .first,
+.matrix .matrix-container .column-hover .last,
+.matrix .matrix-container .column-click .first,
+.matrix .matrix-container .column-click .last {
+    border-right: 1px solid #319fda;
+    border-left: none;
+}
+
+.matrix .matrix-container .column-hover .first,
+.matrix .matrix-container .column-click .first {
+    border-top: 1px solid #319fda;
+    border-bottom: 1px solid #f1f6fc;
+}
+
+.matrix .matrix-container .column-hover .last,
+.matrix .matrix-container .column-click .last {
+    border-top: 1px solid #f1f6fc;
+    border-bottom: 1px solid #319fda;
+}
+
+.matrix .matrix-container .column-hover .row-hover,
+.matrix .matrix-container .column-hover .row-click,
+.matrix .matrix-container .column-click .row-hover,
+.matrix .matrix-container .column-click .row-click {
+    border-right: 1px solid #319fda !important;
+}
+
+.matrix .matrix-container .column-hover .airline-description,
+.matrix .matrix-container .column-click .airline-description {
+    border-right: none;
+}
+
+.matrix .matrix-container .column-hover .review-summary,
+.matrix .matrix-container .column-hover .airline-ecological,
+.matrix .matrix-container .column-click .review-summary,
+.matrix .matrix-container .column-click .airline-ecological {
+    border-top: 1px solid transparent;
+    border-right: none;
+    border-bottom: 1px solid transparent;
+}
+
+.matrix .matrix-container .column-hover .cell-click {
+    border-top: none;
+}
+
+.matrix .matrix-container .column-hover .last.cell-click {
+    border-top: 1px solid #319fda;
+}
+
+.matrix .matrix-container .column-click .head .airline-name span {
+    color: white;
+}
+
+.matrix .matrix-container .column-click .head .airline-description {
+    background: #319fda;
+}
+
+.matrix .matrix-container .column-click .review-summary {
+    background: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+
+.matrix .matrix-container .column-hover-left li,
+.matrix .matrix-container .column-hover-left .row-click,
+.matrix .matrix-container .column-hover-left-first li,
+.matrix .matrix-container .column-hover-left-first .row-click,
+.matrix .matrix-container .column-click-left li,
+.matrix .matrix-container .column-click-left .row-click,
+.matrix .matrix-container .column-click-left-first li,
+.matrix .matrix-container .column-click-left-first .row-click {
+    border-right: 1px solid #319fda !important;
+}
+
+.matrix .matrix-container .column-hover-left .airline-description,
+.matrix .matrix-container .column-hover-left-first .airline-description,
+.matrix .matrix-container .column-click-left .airline-description,
+.matrix .matrix-container .column-click-left-first .airline-description {
+    border-right: none;
+}
+
+.matrix .matrix-container .column-hover-left .review-summary,
+.matrix .matrix-container .column-hover-left-first .review-summary,
+.matrix .matrix-container .column-click-left .review-summary,
+.matrix .matrix-container .column-click-left-first .review-summary {
+    border-right: none !important;
+}
+
+.matrix .matrix-container .column-hover-left .matrix-scales-summary,
+.matrix .matrix-container .column-hover-left .matrix-scales-review,
+.matrix .matrix-container .column-hover-left-first .matrix-scales-summary,
+.matrix .matrix-container .column-hover-left-first .matrix-scales-review,
+.matrix .matrix-container .column-click-left .matrix-scales-summary,
+.matrix .matrix-container .column-click-left .matrix-scales-review,
+.matrix .matrix-container .column-click-left-first .matrix-scales-summary,
+.matrix .matrix- container .column-click-left-first .matrix-scales-review {
+    border-right: 1px solid transparent;
+}
+
+.matrix .matrix-container .matrix-airlines .column-review-hover li .review-summary {
+    background: #f1f6fc;
+    border-right: 1px solid #319fda;
+    border-top: 1px solid #319fda;
+    border-bottom: 1px solid #319fda;
+}
+
+.matrix .matrix-container .column-review-hover-left .review-summary {
+    border-right: 1px solid #319fda;
+}
+
+.matrix .matrix-container .row-hover,
+.matrix .matrix-container .row-click {
+    background: #f1f6fc;
+    border-top: none;
+    border-right: 1px solid #f1f6fc !important;
+    border-bottom: 1px solid #319fda !important;
+    border-left: none;
+}
+
+.matrix .matrix-container .row-click {
+    background: #f1f6fc;
+}
+
+.matrix .matrix-container .row-hover-top,
+.matrix .matrix-container .row-click-top {
+    border-bottom: 1px solid #319fda !important;
+}
+
+    .matrix .matrix-container .row-hover-top .review-summary,
+    .matrix .matrix-container .row-click-top .review-summary {
+        border-bottom: 1px solid #319fda;
+    }
+
+.matrix .matrix-container .column-visible-last .row-hover,
+.matrix .matrix-container .column-visible- last .row-click {
+    border-right: 1px solid #319fda !important;
+}
+
+.matrix .matrix-container .cell-hover,
+.matrix .matrix-container .cell-click {
+    border-top: none;
+    border-right: 1px solid #319fda !important;
+    border-bottom: 1px solid #319fda !important;
+    border-left: none;
+}
+
+.matrix .matrix-container .cell-hover {
+    background: #f1f6fc;
+}
+
+.matrix .matrix-container .cell-click {
+    background: #319fda !important;
+}
+
+.matrix .matrix-container .cell-hover-top,
+.matrix .matrix-container .cell-click-top {
+    border-bottom: 1px solid #319fda !important;
+}
+
+    .matrix .matrix-container .cell-hover-top .review-summary,
+    .matrix .matrix-container .cell-click-top .review-summary {
+        border-bottom: 1px solid #319fda;
+    }
+
+.matrix .matrix-container .cell-hover-left,
+.matrix .matrix-container .cell-click-left,
+.matrix .matrix-container .cell-hover-left-first,
+.matrix .matrix-container .cell-click-left-first {
+    border-right: 1px solid #319fda !important;
+}
+
+.matrix .matrix-container .cell-hover,
+.matrix .matrix-container .cell-click {
+    cursor: pointer;
+}
+
+.clusters {
+    /*margin: 10px 0 0;*/
+}
+
+    .clusters ul:before,
+    .clusters ul:after,
+    .clusters li:before,
+    .clusters li:after {
+        content: "";
+        display: table;
+    }
+
+    .clusters ul:after,
+    .clusters li:after {
+        clear: both;
+    }
+
+.ie7 .clusters ul,
+.ie7 .clusters li {
+    zoom: 1;
+}
+
+.clusters .baggage-fees {
+    margin-top: 10px;
+}
+
+.clusters .cluster-wishlist .flights-wishlist-item {
+    display: block !important;
+}
+
+.clusters .icon-wishlist {
+    cursor: pointer;
+}
+
+.clusters .cluster {
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-size: 11px;
+    position: relative;
+    color: #444444;
+    /*margin-top: 3px;*/
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+    .clusters .cluster:before,
+    .clusters .cluster:after {
+        content: "";
+        display: table;
+    }
+
+    .clusters .cluster:after {
+        clear: both;
+    }
+
+.ie7 .clusters .cluster {
+    zoom: 1;
+}
+
+
+.cluster:hover {
+    box-shadow: 1px 13px 83px #635F5F;
+}
+
+.clusters .cluster .cluster-content:hover {
+    /* border-radius: 1px; */
+    background-repeat: no-repeat;
+    /* background-size:    90% 1px,0px 0px,auto auto ; */
+    /* background-image: url('https://lh6.googleusercontent.com/-GJc-Ou0GAc0/TdJoeaJOOxI/AAAAAAAAA8k/Eu0VEKgwqRg/s288/cargando.gif'); */
+}
+
+
+
+.flights-cluster:hover {
+    border-radius: 0 !important;
+}
+
+
+.flights-cluster * {
+    cursor: pointer;
+}
+
+.clusters .cluster .cluster-content {
+    position: relative;
+    overflow: hidden;
+    width: 99.7%;
+    background-color: white;
+    margin-bottom: 0 !important;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    background-size: 100% 1px,0px 0px,auto auto;
+    background-repeat: no-repeat;
+}
+
+.clusters .cluster.hidden-cluster {
+    display: none;
+}
+
+.clusters .cluster ul {
+    padding-left: 0;
+    margin: 5px;
+}
+
+.clusters .cluster li {
+    list-style: none;
+}
+
+.clusters .cluster .itineraries {
+    float: left;
+    padding: 10px 0 0 10px;
+    width: 75%;
+    font-size: 11px;
+}
+
+    .clusters .cluster .itineraries ul li {
+        float: left;
+    }
+
+    .clusters .cluster .itineraries .different-airport {
+        background-color: #ffff33;
+    }
+
+    .clusters .cluster .itineraries .sub-cluster {
+        /*    margin:0 0 5px;
+        border-top:1px solid #cccccc;
+        padding:10px 0 0*/
+    }
+
+        .clusters .cluster .itineraries .sub-cluster:before,
+        .clusters .cluster .itineraries .sub-cluster:after {
+            content: "";
+            display: table;
+        }
+
+        .clusters .cluster .itineraries .sub-cluster:after {
+            clear: both;
+        }
+
+.ie7 .clusters .cluster .itineraries .sub-cluster {
+    zoom: 1;
+}
+
+.clusters .cluster .itineraries .sub-cluster:first-child {
+    border: 0;
+    padding: 0;
+    border-bottom-color: #dddddd;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.clusters .cluster .itineraries .data {
+    margin: 0 0 0px;
+    font-size: 13px;
+    color: #444444;
+}
+
+    .clusters .cluster .itineraries .data:before,
+    .clusters .cluster .itineraries .data:after {
+        content: "";
+        display: table;
+    }
+
+    .clusters .cluster .itineraries .data:after {
+        clear: both;
+    }
+
+.ie7 .clusters .cluster .itineraries .data {
+    zoom: 1;
+}
+
+.clusters .cluster .itineraries .data .route-info-item {
+    margin: 0px 2px 0px 0px !important;
+    height: 18px;
+    line-height: 18px;
+    float: left;
+}
+
+.clusters .cluster .itineraries .data .type-icon {
+    padding: 0;
+}
+
+.clusters .cluster .itineraries .data .icon-plane-outbound,
+.clusters .cluster .itineraries .data .icon-plane-inbound {
+    margin: 2px 0 0 0;
+}
+
+.clusters .cluster .itineraries .data .icon-arrow {
+    margin: 3px 0 0 0;
+}
+
+.clusters .cluster .itineraries .data .type {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px !important;
+}
+
+.clusters .cluster .itineraries .data .date {
+    color: #888888;
+}
+
+    .clusters .cluster .itineraries .data .date span {
+        display: block;
+    }
+
+        .clusters .cluster .itineraries .data .date span:first-letter {
+            text-transform: uppercase;
+        }
+
+.clusters .cluster .itineraries .itineraries-group {
+    display: block;
+}
+
+    .clusters .cluster .itineraries .itineraries-group .showing-itineraries- message {
+        display: none;
+    }
+
+    .clusters .cluster .itineraries .itineraries-group.show-hidden-itineraries .hidden-itinerary {
+        display: block !important;
+    }
+
+    .clusters .cluster .itineraries .itineraries-group.show-hidden-itineraries .showing-itineraries-message {
+        display: block;
+    }
+
+    .clusters .cluster .itineraries .itineraries-group.show-hidden-itineraries .hidden-itineraries-message {
+        display: none;
+    }
+
+    .clusters .cluster .itineraries .itineraries-group .item {
+        display: block;
+    }
+
+    .clusters .cluster .itineraries .itineraries-group .itinerary {
+        color: #888888;
+    }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary.hidden-itinerary {
+            display: none;
+        }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary li {
+            height: 25px;
+            line-height: 27px;
+            text-align: center;
+            width: 16%; /*18%*/
+        }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary .date {
+            color: #222222;
+        }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary .stops {
+            text-align: left;
+            /* color: red; */
+        }
+
+            .clusters .cluster .itineraries .itineraries-group .itinerary .stops a {
+                text-decoration: underline;
+                float: left;
+            }
+
+            .clusters .cluster .itineraries .itineraries-group .itinerary .stops .cluster-not-economy-segments {
+                background-color: #008A1D;
+            }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort img {
+            cursor: pointer;
+        }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary .time {
+            color: #666666;
+        }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary .route-arrow {
+            display: none;
+        }
+
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title li {
+        height: 16px;
+        line-height: 18px;
+    }
+
+    .clusters .cluster .itineraries .itineraries-group .itinerary,
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title {
+        float: none;
+        padding: 0;
+    }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary label,
+        .clusters .cluster .itineraries .itineraries-group .itineraries-title label {
+            display: block;
+        }
+
+            .clusters .cluster .itineraries .itineraries-group .itinerary label:before,
+            .clusters .cluster .itineraries .itineraries-group .itinerary label:after,
+            .clusters .cluster .itineraries .itineraries-group .itineraries-title label:before,
+            .clusters .cluster .itineraries .itineraries-group .itineraries-title label:after {
+                content: "";
+                display: table;
+            }
+
+            .clusters .cluster .itineraries .itineraries-group .itinerary label:after,
+            .clusters .cluster .itineraries .itineraries-group .itineraries-title label:after {
+                clear: both;
+            }
+
+.ie7 .clusters .cluster .itineraries .itineraries-group .itinerary label,
+.ie7 .clusters .cluster .itineraries .itineraries-group .itineraries-title label {
+    zoom: 1;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary ul,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title ul {
+    position: relative;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .radio,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .radio {
+    margin: 0 5px 0 0;
+}
+
+    .clusters .cluster .itineraries .itineraries-group .itinerary .radio input,
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title .radio input {
+        vertical-align: text-bottom;
+    }
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .hour-text,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .hour-text {
+    padding-right: 5px;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .delays,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .delays {
+    width: 16px;
+}
+
+    .clusters .cluster .itineraries .itineraries-group .itinerary .delays span,
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title .delays span {
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+
+.ie7 .clusters .cluster .itineraries .itineraries-group .itinerary .delays span,
+.ie7 .clusters .cluster .itineraries .itineraries-group .itineraries-title .delays span {
+    margin: 7px 7px 0 0;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .delays-icon-container,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .delays-icon-container {
+    cursor: pointer;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .stops,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .stops {
+    margin: 0px 0px 0px 0px;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .date,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .date {
+    width: 95px;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlines,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines {
+    width: 80px;
+    position: relative;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlines,
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort {
+    overflow: hidden;
+}
+
+    .clusters .cluster .itineraries .itineraries-group .itinerary .airlines .airlines-container,
+    .clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container,
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .airlines-container,
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .airlines-container {
+        display: block;
+        overflow: hidden;
+        display: block;
+    }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary .airlines .airlines-container:before,
+        .clusters .cluster .itineraries .itineraries-group .itinerary .airlines .airlines-container:after,
+        .clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container:before,
+        .clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container:after,
+        .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .airlines-container:before,
+        .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .airlines-container:after,
+        .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .airlines-container:before,
+        .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .airlines-container:after {
+            content: "";
+            display: table;
+        }
+
+        .clusters .cluster .itineraries .itineraries-group .itinerary .airlines .airlines-container:after,
+        .clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container:after,
+        .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .airlines-container:after,
+        .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .airlines-container:after {
+            clear: both;
+        }
+
+.ie7 .clusters .cluster .itineraries .itineraries-group .itinerary .airlines .airlines-container,
+.ie7 .clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container,
+.ie7 .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .airlines-container,
+.ie7 .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .airlines-container {
+    zoom: 1;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlines .image,
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .image,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .image,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .image {
+    float: left;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlines .icon-plus,
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .icon-plus,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .icon-plus,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .icon-plus {
+    float: left;
+    margin: 10px 3px 0 3px;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlines .name,
+.clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .name,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .name,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .name {
+    display: block;
+    padding: 0 0 0 3.5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+    .clusters .cluster .itineraries .itineraries-group .itinerary .airlines .name .flights-title-tooltip,
+    .clusters .cluster .itineraries .itineraries-group .itinerary .airlinesShort .name .flights-title-tooltip,
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlines .name .flights-title-tooltip,
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title .airlinesShort .name .flights-title-tooltip {
+        display: inline-block;
+    }
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .bus,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .bus {
+    width: 16px;
+    min-height: 2px;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .ecological,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .ecological {
+    float: right;
+    margin: 0;
+    width: 16px;
+}
+
+    .clusters .cluster .itineraries .itineraries-group .itinerary .ecological span,
+    .clusters .cluster .itineraries .itineraries-group .itineraries-title .ecological span {
+        float: left;
+        margin-top: 4px;
+    }
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .icon-ancillaries,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .icon-ancillaries {
+    cursor: pointer;
+}
+
+.clusters .cluster .itineraries .itineraries-group .itinerary .error,
+.clusters .cluster .itineraries .itineraries-group .itineraries-title .error {
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: -12px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+    margin: 0;
+}
+
+.ie7 .clusters .cluster .itineraries .itineraries-group .itinerary .error,
+.ie8 .clusters .cluster .itineraries .itineraries-group .itinerary .error,
+.ie7 .clusters .cluster .itineraries .itineraries-group .itineraries-title .error,
+.ie8 .clusters .cluster .itineraries .itineraries-group .itineraries-title .error {
+    right: -25px;
+}
+
+.clusters .cluster .itineraries .itineraries-group .hover {
+    cursor: default;
+}
+
+.clusters .cluster .itineraries .itineraries-group .error-message {
+    padding: 5px 0;
+    display: none;
+}
+
+.clusters .cluster .itineraries .outbound .itineraries-group .itinerary-error,
+.clusters .cluster .itineraries .outbound .itineraries-group .itinerary-error:hover,
+.clusters .cluster .itineraries .outbound .itineraries-group .itinerary-error:first-child,
+.clusters .cluster .itineraries .inbound .itineraries-group .itinerary-error,
+.clusters .cluster .itineraries .inbound .itineraries-group .itinerary-error:hover,
+.clusters .cluster .itineraries .inbound .itineraries-group .itinerary-error:first-child {
+    border: 1px solid #e20a16;
+    background: #ffe6e6;
+}
+
+.clusters .cluster .itineraries .outbound .itineraries-group .error-message,
+.clusters .cluster .itineraries .inbound .itineraries-group .error-message {
+    color: #e20a16;
+}
+
+.clusters .cluster .itineraries .actions {
+    position: relative;
+    bottom: 5px;
+}
+
+    .clusters .cluster .itineraries .actions .btn-buy {
+        display: none;
+        /*pruebatestbarra*/
+    }
+
+    .clusters .cluster .itineraries .actions .frequent-flyer {
+        margin: 0 0 0 10px;
+        font-size: 13px;
+    }
+
+        .clusters .cluster .itineraries .actions .frequent-flyer.no-link {
+            float: left;
+            color: #666666;
+        }
+
+        .clusters .cluster .itineraries .actions .frequent-flyer.with-border {
+            border-left: 1px solid #ccc;
+            padding-left: 10px;
+        }
+
+    .clusters .cluster .itineraries .actions .email-icon-container .icon-mail {
+        margin-top: 2px;
+    }
+
+.clusters .cluster .itineraries .payments {
+    float: left;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .clusters .cluster .itineraries .payments .icon-card {
+        float: left;
+        margin: 1px 3px 0 0;
+    }
+
+.clusters .cluster .itineraries .payments-text {
+    display: none;
+}
+
+.clusters .cluster .itineraries .reviews {
+    margin: 0 20px 0 0;
+    float: left;
+    font-size: 13px;
+}
+
+.clusters .cluster .itineraries .icons {
+    float: right;
+    right: 0;
+    top: 6px;
+}
+
+    .clusters .cluster .itineraries .icons .icon {
+        margin: 0 5px 0 0;
+        float: left;
+        cursor: pointer;
+    }
+
+    .clusters .cluster .itineraries .icons .ux-common-icon-favourites-selected {
+        color: #EA0013 !important;
+    }
+
+    .clusters .cluster .itineraries .icons .ux-common-icon-favourites {
+        font-size: 18px;
+        color: #A7A7A7;
+        cursor: pointer;
+    }
+
+        .clusters .cluster .itineraries .icons .ux-common-icon-favourites:hover {
+            color: #DADADA;
+        }
+
+.clusters .cluster .itineraries .message {
+    display: block;
+    clear: both;
+    padding: 3px 0 0;
+    color: #666666;
+}
+
+.clusters .cluster .flights-wishlist-item {
+    position: absolute;
+    right: 0;
+    border-style: solid;
+    border-width: 0 35px 35px 0;
+    border-color: transparent #eeeeee transparent transparent;
+    display: none;
+}
+
+    .clusters .cluster .flights-wishlist-item .ux-common-icon-favourites {
+        position: absolute;
+        right: -32px;
+        top: 3px;
+        font-size: 16px;
+        color: #EA0013;
+    }
+
+.clusters .cluster .fare-container {
+    text-align: center;
+    float: right;
+    width: 195px;
+    /* border-radius: 10px; */
+    color: #444444;
+    position: relative;
+    background-color: rgba(238, 238, 238, 0.72);
+}
+
+    .clusters .cluster .fare-container .breakdown-text {
+        display: block;
+        margin-top: 5px;
+        color: #888888;
+    }
+
+    .clusters .cluster .fare-container .fare-description,
+    .clusters .cluster .fare-container .price {
+        display: block;
+    }
+
+    .clusters .cluster .fare-container .fare-description {
+        text-align: center;
+        position: relative;
+        color: black;
+        font-weight: bold;
+    }
+
+    .clusters .cluster .fare-container .fare {
+        display: block;
+        padding-bottom: 10px;
+        margin-top: 5px;
+    }
+
+        .clusters .cluster .fare-container .fare .price-currency .currency {
+            font-size: 16px;
+        }
+
+        .clusters .cluster .fare-container .fare .price-currency .amount {
+            font-size: 28px;
+            margin: 0 0 0 5px;
+            letter-spacing: -1px;
+            color: #115a7b;
+        }
+
+    .clusters .cluster .fare-container .fare-detail {
+        padding-top: 15px;
+        margin: 0 0 13px;
+        display: block;
+    }
+
+        .clusters .cluster .fare-container .fare-detail .fare-detail-base .tickets-left {
+            display: none;
+        }
+
+        .clusters .cluster .fare-container .fare-detail .fare-difference-equals .icon-message {
+            display: inline-block;
+            padding: 10px 10px 10px 40px;
+            color: white;
+            /*    -webkit-border-radius:5px;*/
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            height: 30px;
+        }
+
+            .clusters .cluster .fare-container .fare-detail .fare-difference-equals .icon-message .icon {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 30px;
+                display: table;
+                height: 50px;
+            }
+
+    .clusters .cluster .fare-container .fare- detail .fare-difference-equals .icon-message .icon .icon-content {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-equals .icon-message {
+        background-color: #41A821;
+    }
+
+        .clusters .cluster .fare-container .fare-detail .fare-difference-equals .icon-message .icon {
+            background-color: #018A22;
+        }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-equals .fare-difference-icon .fare-difference-icon-equals {
+        display: block !important;
+        font-weight: bold;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-equals .difference-description {
+        font-size: 13px;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-less .icon-message {
+        display: inline-block;
+        padding: 10px 10px 10px 40px;
+        color: white;
+        /*    -webkit-border-radius:5px;*/
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        height: 45px;
+    }
+
+        .clusters .cluster .fare-container .fare-detail .fare-difference-less .icon-message .icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            display: table;
+            height: 65px;
+        }
+
+            .clusters .cluster .fare-container .fare-detail .fare-difference-less .icon-message .icon .icon-content {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-less .icon-message {
+        background-color: #41A821;
+    }
+
+        .clusters .cluster .fare-container .fare-detail .fare-difference-less .icon-message .icon {
+            background-color: #018A22;
+        }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-less .fare-difference-content .fare-difference-icon .fare-difference-icon-less {
+        font-size: 30px !important;
+        display: block !important;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-less .fare-difference-content .difference-description {
+        font-size: 11px;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-greater .icon-message {
+        display: inline-block;
+        padding: 10px 10px 10px 40px;
+        color: white;
+        /*    -webkit-border-radius:5px;*/
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        height: 45px;
+    }
+
+        .clusters .cluster .fare-container .fare-detail .fare-difference-greater .icon-message .icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            display: table;
+            height: 65px;
+        }
+
+            .clusters .cluster .fare-container .fare-detail .fare-difference-greater .icon-message .icon .icon-content {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-greater .icon-message {
+        background-color: #E94720;
+    }
+
+        .clusters .cluster .fare-container .fare-detail .fare-difference-greater .icon-message .icon {
+            background-color: #E10A19;
+        }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-greater .fare-difference-content .fare-difference-icon .fare-difference-icon-greater {
+        font-size: 30px !important;
+        display: block !important;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference-greater .fare-difference-content .difference-description {
+        font-size: 11px;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference {
+        margin: 0;
+    }
+
+.clusters .cluster .fare- container .fare-detail .fare-difference .fare-difference-content {
+    width: 70px;
+}
+
+.clusters .cluster .fare-container .fare-detail .fare-difference .fare-difference-content .fare-difference-icon {
+    font-size: 24px;
+    letter-spacing: -1px;
+}
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference .fare-difference-content .fare-difference-icon .fare-difference-icon-content .fare-difference-icon-equals,
+    .clusters .cluster .fare-container .fare-detail .fare-difference .fare-difference-content .fare-difference-icon .fare-difference-icon-content .fare-difference-icon-less,
+    .clusters .cluster .fare-container .fare-detail .fare-difference .fare-difference-content .fare-difference-icon .fare-difference-icon-content .fare-difference-icon-greater {
+        display: none;
+    }
+
+.clusters .cluster .fare-container .fare-detail .fare-difference .fare-difference-content .fare-difference-price .amount {
+    font-size: 16px;
+}
+
+.clusters .cluster .fare-container .fare-detail .fare-difference .fare-difference-content .fare-difference-price .currency {
+    font-size: 13px;
+}
+
+.clusters .cluster .fare-container .fare-detail .fare-difference .difference {
+    margin-right: 12px;
+    color: #e20a16;
+}
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference .difference.less {
+        font-size: 28px;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-difference .difference.greater {
+        font-size: 28px;
+    }
+
+.clusters .cluster .fare-container .fare-detail .difference-description {
+    display: block;
+}
+
+.clusters .cluster .fare-container .fare-detail li {
+    margin: 0 15px 2px;
+    display: block;
+}
+
+.clusters .cluster .fare-container .fare-detail .item-detail {
+    float: left;
+}
+
+.clusters .cluster .fare-container .fare-detail .item-price {
+    float: right;
+}
+
+    .clusters .cluster .fare-container .fare-detail .item-price .price-currency .currency {
+        margin: 0 3px 0 0;
+        color: #115a7b;
+    }
+
+.clusters .cluster .fare-container .fare-detail .fare-price {
+    margin-top: 7px;
+    padding-top: 13px;
+    line-height: 20px;
+    /*
+    background-size:100% 2px,0px 0px,auto auto ;            
+    background-image: url('https://lh6.googleusercontent.com/-GJc-Ou0GAc0/TdJoeaJOOxI/AAAAAAAAA8k/Eu0VEKgwqRg/s288/cargando.gif');    
+    background-repeat:no-repeat;*/
+}
+    /*hover de fare-detail  test*/
+
+    .clusters .cluster .fare-container .fare-detail .fare-price:hover {
+        margin-top: 7px;
+        padding-top: 13px;
+        line-height: 20px;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-price .item-detail {
+        font-size: 13px;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-price .item-price .price-currency .currency {
+        margin: 0;
+    }
+
+    .clusters .cluster .fare-container .fare-detail .fare-price .item-price .price-currency .amount {
+        font-size: 20px;
+        letter-spacing: -1px;
+        margin: 0 0 0 5px;
+        color: #115a7b;
+    }
+
+.clusters .cluster .fare-container .fare-detail .fare-left {
+    color: #888888;
+}
+
+.ie7 .clusters .cluster .fare-container .fare-detail,
+.ie8 .clusters .cluster .fare-container .fare-detail,
+.ie9 .clusters .cluster .fare-container .fare-detail {
+    background: transparent url('../../technocloud/core-flights/img/fare.jpg?1388947395') repeat-x left top;
+}
+
+.clusters .cluster .fare-container .tickets-left .icon-message {
+    display: inline-block;
+    padding: 5px 5px 5px 35px;
+    color: white;
+    /*    -webkit-border-radius:5px;*/
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+}
+
+    .clusters .cluster .fare-container .tickets-left .icon-message .icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 30px;
+        display: table;
+        height: 30px;
+    }
+
+        .clusters .cluster .fare-container .tickets-left .icon-message .icon .icon-content {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+.clusters .cluster .fare-container .tickets-left .icon-message {
+    background-color: #E94720;
+}
+
+    .clusters .cluster .fare-container .tickets-left .icon-message .icon {
+        background-color: #E10A19;
+    }
+
+.clusters .cluster .fare-container .tickets-left .icon-message {
+    margin-bottom: 10px;
+}
+
+    .clusters .cluster .fare-container .tickets-left .icon-message .icon {
+        font-size: 16px;
+    }
+
+.clusters .cluster .fare-container .tickets-left .tickets-left-text {
+    line-height: 20px;
+}
+
+.clusters .cluster .fare-container .btn-buy {
+    /*    margin:13px auto 0;*/
+    float: none;
+    /* border-radius: 10px; */
+}
+
+.clusters .cluster .fare-container .afip-caption {
+    margin: 15px 0 0;
+    display: block;
+    color: #666666;
+}
+
+.clusters .cluster .fare-container .no-breakdown {
+    margin: 0;
+    position: absolute;
+    top: 120px;
+    right: 50px;
+}
+
+.clusters .cluster.oldCluster .item {
+    margin: 0 0 1px 0;
+}
+
+.clusters .cluster.oldCluster .itinerary li {
+    margin: 0 5px 0 0;
+}
+
+.clusters .cluster.oldCluster .itinerary .leave {
+    width: 63px;
+}
+
+.clusters .cluster.oldCluster .itinerary .arrive {
+    width: 68px;
+}
+
+    .clusters .cluster.oldCluster .itinerary .leave .hour,
+    .clusters .cluster.oldCluster .itinerary .arrive .hour {
+        font-weight: bold;
+        color: black;
+    }
+
+.clusters .cluster.oldCluster .itinerary .time {
+    width: 45px;
+}
+
+.clusters .cluster.oldCluster .itinerary .stops a {
+    font-weight: bold;
+}
+
+.clusters .cluster.oldCluster .itinerary .airlinesShort span,
+.clusters .cluster.oldCluster .itinerary .airlines span {
+    font-weight: bold;
+}
+
+.clusters .cluster.oldCluster .itinerary .airlinesShort .plus,
+.clusters .cluster.oldCluster .itinerary .airlines .plus {
+    display: none;
+}
+
+.clusters .cluster.oldCluster .itinerary strong {
+    color: black;
+}
+
+.clusters .cluster.oldCluster .itinerary .time {
+    color: #666666;
+}
+
+.clusters .cluster.newCluster .itineraries {
+    font-size: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100% !important;
+    margin-right: -195px;
+}
+
+.itineraries-container {
+    margin-right: 205px;
+}
+
+
+.itineraries > detail {
+    margin-right: 205px;
+}
+
+.clusters .cluster.newCluster .itineraries .sub-cluster {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+    .clusters .cluster.newCluster .itineraries .sub-cluster.inbound {
+        padding: 15px 0;
+    }
+
+.clusters .cluster.newCluster .itineraries .data .type span {
+    font-weight: bold;
+}
+
+.clusters .cluster.newCluster .itineraries .outbound .type,
+.clusters .cluster.newCluster .itineraries .multiple .type {
+    color: #0E8A36;
+}
+
+.clusters .cluster.newCluster .itineraries .inbound .type {
+    color: #013d93;
+}
+
+.clusters .cluster.newCluster .itineraries .itineraries-group .itinerary {
+    margin: 0 0 2px !important;
+    padding: 1px 3px;
+}
+
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .radio input {
+        margin-bottom: 1px;
+        outline: none;
+    }
+
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .leave .hour,
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .arrive .hour {
+        color: #444444;
+    }
+
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .stops a {
+        text-decoration: none;
+        color: #115a7b;
+    }
+
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .time span {
+        font-weight: bold;
+        font-size: 10px;
+        color: #444444;
+    }
+
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlinesShort,
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlines {
+        color: #444444;
+        height: 100%;
+    }
+
+        .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container,
+        .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlines .airlines-container {
+            text-align: left;
+        }
+
+            .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container .airline-container,
+            .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlines .airlines-container .airline-container {
+                position: relative;
+                height: 25px;
+            }
+
+                .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container .airline-container:last-child,
+                .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlines .airlines-container .airline-container:last-child {
+                    margin-right: 0;
+                }
+
+                .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container .airline-container .image,
+                .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlines .airlines-container .airline-container .image {
+                    margin-right: 5px;
+                }
+
+                .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container .airline-container .name,
+                .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlines .airlines-container .airline-container .name {
+                    padding: 0;
+                }
+
+                .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container .airline-container .icon-plus,
+                .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlines .airlines-container .airline-container .icon-plus {
+                    display: none;
+                }
+
+            .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlinesShort .airlines-container .icon-flight,
+            .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .airlines .airlines-container .icon- flight {
+                color: #aaaaaa;
+            }
+
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .responsive-icons {
+        margin-right: 0 !important;
+    }
+
+    .clusters .cluster.newCluster .itineraries .itineraries-group .itinerary .error {
+        right: -16px;
+    }
+
+.clusters .seeMore-container {
+    margin-left: 17px;
+    padding-left: 5px;
+    line-height: 20px;
+    float: none;
+    clear: both;
+}
+
+    .clusters .seeMore-container .hideMoreItineraries {
+        display: none;
+    }
+
+.clusters .debug {
+    clear: both;
+    position: relative;
+    top: 10px;
+    padding: 0 10px 60px 10px;
+    color: #000;
+    font-size: 12px;
+}
+
+    .clusters .debug .debug-results {
+        margin: 20px 0 10px;
+    }
+
+        .clusters .debug .debug-results ul {
+            margin: 0 0 0 20px;
+        }
+
+        .clusters .debug .debug-results li {
+            margin: 5px;
+        }
+
+        .clusters .debug .debug-results p {
+            margin: 20px 0 10px;
+        }
+
+.clusters .show-and-hide-clusters {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+    .clusters .show-and-hide-clusters .description {
+        margin-right: 4px;
+    }
+
+    .clusters .show-and-hide-clusters .toggle-clusters {
+        text-decoration: none;
+    }
+
+    .clusters .show-and-hide-clusters .showing-message {
+        display: none;
+    }
+
+.clusters.show- hidden-clusters .hidden-cluster,
+.clusters.show-hidden-clusters .hidden-itinerary {
+    display: block !important;
+}
+
+.clusters.show-hidden-clusters .showing-message {
+    display: block;
+}
+
+.clusters.show-hidden-clusters .hidden-message {
+    display: none;
+}
+
+.filters {
+    /*position: relative;*/
+}
+
+.ux-common-filters {
+    margin-bottom: 20px;
+}
+
+    .ux-common-filters .ux-flights-filter-sameairports label {
+        border-top: none !important;
+    }
+
+    .ux-common-filters ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+.ux-common-filters {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+    .ux-common-filters .ux-common-filter-section {
+        padding: 1px;
+        border-top: 1px solid #dddddd;
+    }
+
+    .ux-common-filters .ux-common-filter-header {
+        cursor: pointer;
+        background-color: white;
+        outline: none;
+    }
+
+        .ux-common-filters .ux-common-filter-header:before,
+        .ux-common-filters .ux-common-filter-header:after {
+            content: "";
+            display: table;
+        }
+
+        .ux-common-filters .ux-common-filter-header:after {
+            clear: both;
+        }
+
+.ie7 .ux-common-filters .ux-common-filter-header {
+    zoom: 1;
+}
+
+.ux-common-filters .ux-common-filter-header h4 {
+    text-transform: uppercase;
+    color: #115a7b;
+    /* @alternate */
+    font-size: 11px;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    float: left;
+    min-height: 20px;
+    padding: 10px 0 0 10px;
+    margin: 0;
+}
+
+.ux-common-filters .ux-common-filter-header .ux-common-filter-toggle {
+    float: right;
+}
+
+    .ux-common-filters .ux-common-filter-header .ux-common-filter-toggle:before {
+        display: block;
+        color: #eeeeee;
+        text-align: center;
+        /* @alternate */
+        height: 30px;
+        height: 1.875rem;
+        /* @alternate */
+        width: 30px;
+        width: 1.875rem;
+        line-height: 30px;
+        content: '\2013';
+        font-weight: bold;
+    }
+
+.ux-common-filters .ux-common-filter-header:hover {
+    background-color: white;
+}
+
+.ux-common-filters .ux-common-filter-active .ux-common-filter-header h4 {
+    color: #ff9900;
+}
+
+.ux-common-filters .ux-common-filter-close .ux-common-filter-toggle:before {
+    content: '\002B';
+}
+
+.ux-common-filters .ux-common-filter- close .ux-common-filter-body {
+    display: none;
+}
+
+.ux-common-filters .ux-common-filter-options {
+    /* @alternate */
+    font-size: 13px;
+    font-size: 0.8125rem;
+}
+
+    .ux-common-filters .ux-common-filter-options label {
+        cursor: pointer;
+        display: block;
+        padding: 10px;
+        line-height: 1;
+        width: initial !important;
+    }
+
+        .ux-common-filters .ux-common-filter-options label:before,
+        .ux-common-filters .ux-common-filter-options label:after {
+            content: "";
+            display: table;
+        }
+
+        .ux-common-filters .ux-common-filter-options label:after {
+            clear: both;
+        }
+
+.ie7 .ux-common-filters .ux-common-filter-options label {
+    zoom: 1;
+}
+
+.ux-common-filters .ux-common-filter-options label:hover {
+    background-color: rgba(255, 153, 0, 0.14);
+}
+
+.ux-common-filters .ux-common-filter-options input {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.ux-common-filters .ux-common-filter-options span {
+    max-width: 145px;
+    float: left;
+    color: black;
+}
+
+    .ux-common-filters .ux-common-filter-options span:hover {
+        display: block;
+    }
+
+.ux-common-filters .ux-common-filter-options .ux-common-filter-total {
+    padding: 2px 3px;
+    text-align: center;
+    float: right;
+    min-width: 20px;
+    width: auto;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 11px;
+}
+
+.ux-common-filters .ux-common-filter-options .ux-common-filter-selected .ux-common-filter-total {
+    display: block;
+}
+
+.ux-common-filters .ux-common-filter-options .ux-common-filter-all.ux-common-filter-selected .ux-common-filter-total {
+    display: block;
+    color: white;
+}
+
+.ux-common-filters .ux-common-filter-options .ux-common-filter-disabled {
+    cursor: default;
+}
+
+    .ux-common-filters .ux-common-filter-options .ux-common-filter-disabled span {
+        display: block;
+    }
+
+        .ux-common-filters .ux-common-filter-options .ux-common-filter-disabled span:hover {
+            display: block;
+        }
+
+.ux-common-filters .ux-common-filter-tree .ux-common-filter-suboptions {
+    display: none;
+}
+
+    .ux-common-filters .ux-common-filter-tree .ux-common-filter-suboptions label {
+        padding-left: 55px;
+    }
+
+.item .ux-common-filter-suboptions {
+    background-color: #eeeeee;
+}
+
+.ux-common-filters .ux-common-filter-tree .ux-common-filter-suboptions .ux-common-filter-selected .ux-common-filter-total {
+    color: white;
+    background-color: #ffcc33;
+}
+
+.ux-common-filters .ux-common-filter-tree .ux-common-filter-expand,
+.ux-common-filters .ux-common-filter-tree .ux-common-filter-contract {
+    display: block;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    float: left;
+    margin: 11px 10px 0 10px;
+}
+
+.ux-common-filters .ux-common-filter-tree .ux-common-filter-expand {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB50RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNS4xqx9I6wAAABV0RVh0Q3JlYXRpb24gVGltZQAxLzE0LzEzjQj34gAAAD1JREFUKJFjXLVq1X8GEgETqRqoryk0NJRONuEDLMgcdCch81evXo1dE7JEaGgoCp9i51FXEy6nUd8mfAAAP5cPG8wXsCsAAAAASUVORK5CYII=') no-repeat left top;
+}
+
+.ux-common-filters .ux-common-filter-tree .ux-common-filter-contract {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAB50RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNS4xqx9I6wAAABV0RVh0Q3JlYXRpb24gVGltZQAxLzE0LzEzjQj34gAAAC1JREFUKJFjXLVq1X8GEgETqRqGqyYWbIKhoaFw9urVq4nThE0hMhjkAUE/TQB+8wgcnlQZAQAAAABJRU5ErkJggg==') no-repeat left top;
+}
+
+.ux-common-filters .ux-common-filter-more,
+.ux-common-filters .ux-common-filter-less {
+    display: block;
+    padding-left: 15px;
+    /* @alternate */
+    font-size: 13px;
+    font-size: 0.8125rem;
+    text-decoration: underline;
+    text-align: center;
+    padding: 11px 10px 7px 10px;
+    border-top: 1px solid #dddddd;
+    background-color: #eeeeee;
+}
+
+    .ux-common-filters .ux-common-filter-more:after {
+        content: " \00BB";
+    }
+
+    .ux-common-filters .ux-common-filter-less:before {
+        content: "\00AB \0020";
+    }
+
+.ux-common-filters .ux-common-filter-optionsextra {
+    display: none;
+}
+
+.ux-common-filters .ux-common-filter-apply {
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.75em;
+    color: #0c6692;
+    border: 1px solid #bbbbbb;
+    font-family: sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    text-shadow: 0 1px 0 #b0b0b0;
+    /*    -webkit-border-radius:1.1em;*/
+    -moz-border-radius: 1.1em;
+    -ms-border-radius: 1.1em;
+    -o-border-radius: 1.1em;
+    border-radius: 1.1em;
+}
+
+    .ux-common-filters .ux-common-filter-apply:active {
+        position: relative;
+        top: 1px;
+    }
+
+    .ux-common-filters .ux-common-filter-apply.disabled:active {
+        position: static;
+    }
+
+    .ux-common-filters .ux-common-filter-apply span {
+        display: block;
+        padding: 0 11px;
+    }
+
+    .ux-common-filters .ux-common-filter-apply:visited {
+        color: #0c6692;
+    }
+
+    .ux-common-filters .ux-common-filter-apply:hover {
+        text-decoration: none;
+        color: #0c6692;
+    }
+
+    .ux-common-filters .ux-common-filter-apply span,
+    .ux-common-filters .ux-common-filter-apply span:active {
+        /* @alternate */
+        background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#eeeeee),color-stop(100%,#a2a2a2));
+        /* @alternate */
+        background-image: -webkit-linear-gradient(#eeeeee,#a2a2a2);
+        /* @alternate */
+        background-image: -moz-linear-gradient(#eeeeee,#a2a2a2);
+        /* @alternate */
+        background-image: -o-linear-gradient(#eeeeee,#a2a2a2);
+        background-image: linear-gradient(#eeeeee,#a2a2a2);
+    }
+
+    .ux-common-filters .ux-common-filter-apply span {
+        background-color: #eeeeee;
+        -webkit-box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255,255,255,0.5);
+        -moz-box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255,255,255,0.5);
+        box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255,255,255,0.5);
+    }
+
+        .ux-common-filters .ux-common-filter-apply span:hover {
+            background-color: #f0ecec;
+            /* @alternate */
+            background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,rgba(255,255,255,0)),color-stop(100%,#bbbbbb));
+            /* @alternate */
+            background-image: -webkit-linear-gradient(rgba(255,255,255,0),#bbbbbb);
+            /* @alternate */
+            background-image: -moz-linear-gradient(rgba(255,255,255,0),#bbbbbb);
+            /* @alternate */
+            background-image: -o-linear-gradient(rgba(255,255,255,0),#bbbbbb);
+            /* @alternate */
+            background-image: linear-gradient(rgba(255,255,255,0),#bbbbbb);
+            -webkit-box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255,255,255,0.5),inset 0 0 1em #f0ecec;
+            -moz-box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255, 255,255,0.5),inset 0 0 1em #f0ecec;
+            box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255,255,255,0.5),inset 0 0 1em #f0ecec;
+        }
+
+        .ux-common-filters .ux-common-filter-apply span:active {
+            text-shadow: 0 -1px 0 #b0b0b0;
+            -webkit-box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.1),inset 0 0.1em 0.2em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(0,0,0,0.1),inset 0 0 1em rgba(0,0,0,0.75);
+            -moz-box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.1),inset 0 0.1em 0.2em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(0,0,0,0.1),inset 0 0 1em rgba(0,0,0,0.75);
+            box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.1),inset 0 0.1em 0.2em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(0,0,0,0.1),inset 0 0 1em rgba(0,0,0,0.75);
+        }
+
+    .ux-common-filters .ux-common-filter-apply.disabled {
+        border: 1px solid #755354;
+        cursor: not-allowed;
+        color: white;
+    }
+
+        .ux-common-filters .ux-common-filter-apply.disabled span,
+        .ux-common-filters .ux-common-filter-apply.disabled span:hover,
+        .ux-common-filters .ux-common-filter-apply.disabled span:active {
+            /* @alternate */
+            text-shadow: 0 -1px 0 black;
+            /* @alternate */
+            background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#979797),color-stop(100%,#4b4b4b));
+            /* @alternate */
+            background-image: -webkit-linear-gradient(#979797,#4b4b4b);
+            /* @alternate */
+            background-image: -moz-linear-gradient(#979797,#4b4b4b);
+            /* @alternate */
+            background-image: -o-linear-gradient(#979797,#4b4b4b);
+            background-image: linear-gradient(#979797,#4b4b4b);
+            -webkit-box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255,255,255,0.25),inset 0 0 1em rgba(0,0,0,0.75);
+            -moz-box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255,255,255,0.25),inset 0 0 1em rgba(0,0,0,0.75);
+            box-shadow: 0 0.1em 0.1em rgba(0,0,0,0.5),inset 0 0.1em 0 rgba(255,255,255,0.25),inset 0 0 1em rgba(0,0,0,0.75);
+        }
+
+.ie7 .ux-common-filters .ux-common-filter-apply span,
+.ie8 .ux-common-filters .ux-common-filter-apply span,
+.ie9 .ux-common-filters .ux-common-filter-apply span {
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#00EEEEEE',endColorstr='#FFA2A2A2');
+}
+
+    .ie7 .ux-common-filters .ux-common-filter-apply span:hover,
+    .ie8 .ux-common-filters .ux-common-filter-apply span:hover,
+    .ie9 .ux-common-filters .ux-common-filter-apply span:hover {
+        *zoom: 1;
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#00FFFFFF',endColorstr='#FFBBBBBB');
+    }
+
+    .ie7 .ux-common-filters .ux-common-filter-apply span:active,
+    .ie8 .ux-common-filters .ux-common-filter-apply span:active,
+    .ie9 .ux-common-filters .ux-common-filter-apply span:active {
+        *zoom: 1;
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#00EEEEEE',endColorstr='#FFA2A2A2');
+    }
+
+.ie7 .ux-common-filters .ux-common-filter-apply.disabled span,
+.ie7 .ux-common-filters .ux-common-filter-apply.disabled span:hover,
+.ie7 .ux-common-filters .ux-common-filter-apply.disabled span:active,
+.ie8 .ux-common-filters .ux-common-filter-apply.disabled span,
+.ie8 .ux-common-filters .ux-common-filter-apply.disabled span:hover,
+.ie8 .ux-common-filters .ux-common-filter-apply.disabled span:active,
+.ie9 .ux-common-filters .ux-common-filter-apply.disabled span,
+.ie9 .ux-common-filters .ux-common-filter-apply.disabled span:hover,
+.ie9 .ux- common-filters .ux-common-filter-apply.disabled span:active {
+    *zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FF979797',endColorstr='#FF4B4B4B');
+}
+
+.ux-common-filters .ux-common-filter-clear {
+    text-transform: uppercase;
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+    display: none;
+    margin: 10px 0 0 0;
+    line-height: 1.5;
+    /* @alternate */
+    background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#ffffff),color-stop(100%,#f5f5f5));
+    /* @alternate */
+    background-image: -webkit-linear-gradient(#ffffff,#f5f5f5);
+    /* @alternate */
+    background-image: -moz-linear-gradient(#ffffff,#f5f5f5);
+    /* @alternate */
+    background-image: -o-linear-gradient(#ffffff,#f5f5f5);
+    background-image: linear-gradient(#ffffff,#f5f5f5);
+    /* @alternate */
+    font-size: 11px;
+    font-size: 0.6875rem;
+}
+
+    .ux-common-filters .ux-common-filter-clear:before,
+    .ux-common-filters .ux-common-filter-clear:after {
+        content: "";
+        display: table;
+    }
+
+    .ux-common-filters .ux-common-filter-clear:after {
+        clear: both;
+    }
+
+.ie7 .ux-common-filters .ux-common-filter-clear {
+    zoom: 1;
+}
+
+.ux-common-filters .ux-common-filter-clear span {
+    display: block;
+    width: 16px;
+    height: 17px;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    float: right;
+}
+
+.ux-common-filters .ux-common-filter-clear:hover {
+    /* @alternate */
+    background-image: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(0%,#eeeeee),color-stop(100%,#dddddd));
+    /* @alternate */
+    background-image: -webkit-linear-gradient(#eeeeee,#dddddd);
+    /* @alternate */
+    background-image: -moz-linear-gradient(#eeeeee,#dddddd);
+    /* @alternate */
+    background-image: -o-linear-gradient(#eeeeee,#dddddd);
+    /* @alternate */
+    background-image: linear-gradient(#eeeeee,#dddddd);
+    text-decoration: none;
+}
+
+.ux-common-filters .ux-common-filter-active .ux-common-filter-clear {
+    display: block;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-body {
+    padding: 10px;
+}
+
+    .ux-common-filters .ux-common-filter-prices .ux-common-filter-body ul:before,
+    .ux-common-filters .ux-common-filter-prices .ux-common-filter-body ul:after {
+        content: "";
+        display: table;
+    }
+
+    .ux-common-filters .ux-common-filter-prices .ux-common-filter-body ul:after {
+        clear: both;
+    }
+
+.ie7 .ux-common-filters .ux-common-filter-prices .ux-common-filter-body ul {
+    zoom: 1;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-options li,
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values li {
+    float: left;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-options label,
+.ux-common- filters .ux-common-filter-prices .ux-common-filter-values label {
+    border-top: none;
+    padding: 0;
+    float: left;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-options {
+    /* @alternate */
+    font-size: 13px;
+    font-size: 0.8125rem;
+    margin-bottom: 10px;
+    color: #444444;
+}
+
+    .ux-common-filters .ux-common-filter-prices .ux-common-filter-options li:first-child,
+    .ux-common-filters .ux-common-filter-prices .ux-common-filter-options label {
+        margin-right: 10px;
+    }
+
+    .ux-common-filters .ux-common-filter-prices .ux-common-filter-options input,
+    .ux-common-filters .ux-common-filter-prices .ux-common-filter-options span {
+        float: none;
+    }
+
+    .ux-common-filters .ux-common-filter-prices .ux-common-filter-options input {
+        margin-right: 0;
+    }
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values:before,
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values:after {
+    content: "";
+    display: table;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values:after {
+    clear: both;
+}
+
+.ie7 .ux-common-filters .ux-common-filter-prices .ux-common-filter-values {
+    zoom: 1;
+}
+
+.ux- common-filters .ux-common-filter-prices .ux-common-filter-values input {
+    width: 30%;
+    height: auto;
+    /* @alternate */
+    padding: 0.38em;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #aaaaaa;
+    color: #333333;
+    /* @alternate */
+    font-size: 13px;
+    font-size: 0.8125rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    -webkit-border-radius:3px;*/
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    padding: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values input:focus {
+    outline: 0;
+    border: 1px solid #319fda;
+    -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px 0 inset,#01a9db 0 0 2px 0;
+    -moz-box-shadow: rgba(0,0,0,0.2) 0 1px 2px 0 inset,#01a9db 0 0 2px 0;
+    box-shadow: rgba(0,0,0,0.2) 0 1px 2px 0 inset,#01a9db 0 0 2px 0;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values input::-webkit-input-placeholder {
+    color: #AAA;
+    font-style: italic;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values input::-moz-placeholder {
+    color: #AAA;
+    font-style: italic;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values input:-ms-input-placeholder {
+    color: #AAA;
+    font-style: italic;
+}
+
+.ux-common-filters .ux-common-filter-prices .ux-common-filter-values .ux-common-filter-apply {
+    float: left;
+    margin-top: 4px;
+}
+
+.ux-common-filters .ux-common-filter-stars .ux-common-filter-disabled .ux-common-filter-star {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+}
+
+.ux-common-filters .ux-common-filter-stars .ux-common-filter-star {
+    display: block;
+    width: 15px;
+    height: 12px;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    float: left;
+}
+
+.ux-common-filters .ux-common-filter-stars .ux-common-filter-2stars {
+    width: 30px;
+}
+
+.ux-common-filters .ux-common-filter-stars .ux-common-filter-3stars {
+    width: 45px;
+}
+
+.ux-common-filters .ux-common-filter-stars .ux-common-filter-4stars {
+    width: 60px;
+}
+
+.ux-common-filters .ux-common-filter-stars .ux-common-filter-5stars {
+    width: 75px;
+}
+
+.ux-common-filters .ux-common-filter-points .ux-common-filter-body {
+    padding: 10px;
+}
+
+.ux-common-filters .ux-common-filter-points .ux-common-filter-options {
+    margin-top: 0;
+}
+
+    .ux-common-filters .ux-common-filter-points .ux-common-filter-options:before,
+    .ux-common-filters .ux-common-filter-points .ux-common-filter-options:after {
+        content: "";
+        display: table;
+    }
+
+    .ux-common-filters .ux-common-filter-points .ux-common-filter-options:after {
+        clear: both;
+    }
+
+.ie7 .ux-common-filters .ux-common-filter-points .ux-common-filter-options {
+    zoom: 1;
+}
+
+.ux-common-filters .ux-common-filter-points select {
+    width: 65%;
+    height: 30px;
+    /* @alternate */
+    padding: 0.38em;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #aaaaaa;
+    color: #333333;
+    /* @alternate */
+    font-size: 13px;
+    font-size: 0.8125rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    -webkit-border-radius:3px;*/
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    float: left;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+    .ux-common-filters .ux-common-filter-points select:focus {
+        outline: 0;
+        border: 1px solid #319fda;
+        -webkit-box-shadow: rgba(0,0,0,0.2) 0 1px 2px 0 inset,#01a9db 0 0 2px 0;
+        -moz-box-shadow: rgba(0,0,0,0.2) 0 1px 2px 0 inset,#01a9db 0 0 2px 0;
+        box-shadow: rgba(0,0,0,0.2) 0 1px 2px 0 inset,#01a9db 0 0 2px 0;
+    }
+
+    .ux-common-filters .ux-common-filter-points select::-webkit-input-placeholder {
+        color: #AAA;
+        font-style: italic;
+    }
+
+    .ux-common-filters .ux-common-filter-points select::-moz-placeholder {
+        color: #AAA;
+        font-style: italic;
+    }
+
+    .ux-common-filters .ux-common-filter-points select:-ms-input-placeholder {
+        color: #AAA;
+        font-style: italic;
+    }
+
+.ux-common-filters .ux-common-filter-points .ux-common-filter-apply {
+    float: left;
+    margin-top: 4px;
+}
+
+    .ux-common-filters .ux-common-filter-points .ux-common-filter-apply span {
+        margin-left: 0;
+        color: #0C6692;
+    }
+
+.ux-common-filters .ux-common-filter-widget {
+    background-color: #319fda;
+    border: 1px solid #cccccc;
+    position: fixed;
+    top: -70px;
+    z-index: 1;
+    -webkit-box-shadow: #aaaaaa 0 0 25px;
+    -moz-box-shadow: #aaaaaa 0 0 25px;
+    box-shadow: #aaaaaa 0 0 25px;
+    -webkit-transition: "0.175,0.885,0.320,1.275" top cubic-bezier(1s);
+    -webkit-transition-delay: 0ms;
+    -moz-transition: "0.175,0.885,0.320,1.275" top cubic-bezier(1s) 0ms;
+    -o-transition: "0.175,0.885,0.320,1.275" top cubic-bezier(1s) 0ms;
+    transition: "0.175,0.885,0.320,1.275" top cubic-bezier(1s) 0ms;
+    -moz-transition-delay: 0ms;
+    -o-transition-delay: 0ms;
+}
+
+    .ux-common-filters .ux-common- filter-widget:before,
+    .ux-common-filters .ux-common-filter-widget:after {
+        content: "";
+        display: table;
+    }
+
+    .ux-common-filters .ux-common-filter-widget:after {
+        clear: both;
+    }
+
+.ie7 .ux-common-filters .ux-common-filter-widget {
+    zoom: 1;
+}
+
+.ux-common-filters .ux-common-filter-widget a {
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    /* @alternate */
+    font-size: 13px;
+    font-size: 0.8125rem;
+}
+
+    .ux-common-filters .ux-common-filter-widget a:hover {
+        text-decoration: none;
+    }
+
+.ux-common-filters .ux-common-filter-widget span {
+    float: right;
+}
+
+.ux-common-filters .ux-common-filter-widget:hover {
+    background-color: #66ccff;
+}
+
+.ux-common-filters .ux-common-filter-widget.ux-common-filter-widgetbounce {
+    top: 0;
+}
+
+.ux-flights-filters .ux-flights-filter-hours-slider .ux-common-filter-values {
+    margin-top: 10px;
+    font-size: 11px;
+    color: #888888;
+}
+
+    .ux-flights-filters .ux-flights-filter-hours-slider .ux-common-filter-values li {
+        float: left;
+        width: 50%;
+        text-align: right;
+    }
+
+.ux-flights-filters .ux-common-filter-slider .ux-common-filter-body li li:last-child {
+    padding-top: 0;
+    border-top: 0;
+    margin-top: 0;
+}
+
+.ux-flights-filters .ux-flights-filter-hours-slider .ux-common-filter-values li:first-child {
+    text-align: left;
+}
+
+.ux-flights-filters .ux-flights-filter-hours-slider .ux-common-filter-options {
+    font-size: 11px;
+}
+
+.ux-flights-filters .ux-common-filter-slider .ux-common-filter-body {
+    padding: 10px;
+}
+
+
+.ux-flights-filters .ux-flights-filter-hours-slider .ux-common-filter-options li {
+    float: left;
+    border-left: 1px solid #888888;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.ux-flights-filters .ux-flights-filter-hours-slider .ux-common-filter-options:before, .ux-flights-filters .ux-flights-filter-hours-slider .ux-common-filter-options:after {
+    content: "";
+    display: table;
+}
+
+.ux-flights-filters .ux-flights-filter-hours-slider .ux-common-filter-options:after {
+    clear: both;
+}
+
+.matrix .matrix-airline-2 {
+    width: 50%;
+}
+
+.matrix {
+    position: relative;
+    font-size: 11px;
+    width: 100%;
+}
+
+    .matrix .matrix-airlines-container-2 {
+        width: 100%;
+    }
+
+.flights-alerts {
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    background: #eeeeee;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.results-content-wrapper {
+    display: block;
+    position: relative;
+}
+
+.flights-cluster {
+    margin-bottom: 15px;
+    border: 1px solid #0ca7c6;
+}
+
+
+.btnreturnsearch {
+    width: 200px;
+    display: inline-block;
+    line-height: 2.2em;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 1px;
+    cursor: pointer;
+    padding: 0 2px;
+}
+
+
+
+.guidesteps {
+    overflow: hidden;
+    display: inline-block;
+    line-height: 2.2em;
+    font-family: sans-serif;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    margin-top: 5px;
+    padding: 0 2px;
+    margin-bottom: 1px;    
+    color: white;
+}
+
+
+.cityPopupTitle {
+    font-size: 25px;
+    color: #0ca7c6;
+}
+
+.flights-button {
+    overflow: hidden;
+    display: inline-block;
+    line-height: 1.7em;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+    .flights-button span {
+        display: block;
+    }
+
+        .flights-button span, .flights-button span:active {
+        }
+
+    .flights-button span {
+        display: block;
+        padding: 0 13px;
+    }
+
+.flights-cluster .cluster-items-list .cluster-item {
+}
+
+.hour-text {
+    font-size: 11px;
+    line-height: 0;
+}
+
+.newCluster .itinerary {
+    margin-bottom: 3px;
+}
+
+.amount {
+    color: #115a7b;
+}
+
+.ux-flights-filters .ux-flights-filter-airlines img {
+    float: left;
+    margin-top: -7px;
+    margin-right: 10px;
+    background: #FFF;
+}
+
+.ux-flights-results input[type=checkbox],
+.ux-flights-results input[type=radio] {
+    /*    -webkit-appearance: none;
+        width: 13px;
+        height: 13px;
+        border: 1px solid #C6C6C6;    
+            -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        cursor: default;
+        position: relative;*/
+}
+
+    .ux-flights-results input[type=checkbox]:focus {
+        outline: none;
+        border-color: #4d90fe;
+    }
+
+.ux-flights-results input[type=radio] {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+    .ux-flights-results input[type=radio]:checked::after {
+        /*content: '';*/
+        display: block;
+        position: relative;
+        top: 3px;
+        left: 3px;
+        width: 7px;
+        height: 7px;
+        background: #666;
+        border-radius: 50%;
+    }
+
+input.flights-input, textarea.flights-input, select.flights-select {
+    width: auto;
+    height: 2.3em;
+    line-height: 1em;
+    padding: 0.38em;
+    border: 1px solid #dddddd;
+    border-top: 1px solid #aaaaaa;
+    color: #333333;
+    /* @alternate */
+    font-size: 11px;
+    font-size: 0.6875rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*    -webkit-border-radius: 3px;*/
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    -moz-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2) inset;
+}
+
+.order span {
+    font-size: 13px;
+    color: #888888;
+}
+
+.order {
+    padding: 10px;
+}
+
+    .order select {
+        margin: 0 0 0 5px;
+    }
+
+.ux-flights-results {
+    /* box-shadow: -1px 28px 67px #888888; */
+}
+
+.ui-widget-overlay-popup {
+    position: absolute;
+    z-index: 999999;
+}
+
+.popup {
+    z-index: 5;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    .popup ol, .popup ul {
+        list-style: none;
+    }
+
+.popup-detail {
+    width: 450px;
+}
+
+
+/* 768px  x 1024px tablet portrait  */
+
+@media (max-width:768px) {
+    .popup-detail {
+        width: 410px;
+        background-color: red;
+    }
+
+
+
+    .clusters .cluster {
+        overflow: hidden;
+        margin-bottom: 10px;
+        font-size: 11px;
+        position: relative;
+        color: #444444;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+
+
+        .clusters .cluster .fare-container {
+            text-align: center;
+            float: none;
+            width: 100%; /*195*/
+            border-radius: 10px;
+            color: #444444;
+            position: relative;
+            /* background-color:  red;*/
+        }
+
+    .itineraries-container {
+        margin-right: 1px;
+    }
+
+    .clusters .cluster .itineraries .itineraries-group .itinerary li {
+        width: 38%;
+    }
+
+
+    /*formulario de pago  start*/
+    .panelIzquierdoReservaVuelos {
+    }
+    /**/
+    .renglonDatosVuelosTarjeta {
+    }
+
+    .tipoPasajeroVuelosTarjeta {
+    }
+
+    .datosPasajeroVuelosTarjeta {
+    }
+
+
+    /*formulario de pago end*/
+
+
+
+
+}
+
+
+
+.popup-detail .detail {
+    padding: 10px;
+    padding-top: 0;
+}
+
+.popup-detail .segment {
+    padding: 0 5px;
+}
+
+    .popup-detail .segment:before, .popup-detail .segment:after {
+        content: "";
+        display: table;
+    }
+
+    .popup-detail .segment:after {
+        clear: both;
+    }
+
+.ie6 .popup-detail .segment, .ie7 .popup-detail .segment {
+    zoom: 1;
+}
+
+.popup-detail .segment .review-summary {
+    float: left;
+    margin: 5px 0 0 15px;
+}
+
+    .popup-detail .segment .review-summary .review-description {
+        display: block;
+    }
+
+    .popup-detail .segment .review-summary .review-description {
+        display: block;
+        text-align: right;
+    }
+
+.popup-detail .segment .detail-info {
+    float: left;
+    /*    width:520px;*/
+    padding: 0;
+    list-style: none;
+}
+
+    .popup-detail .segment .detail-info:before, .popup-detail .segment .detail-info:after {
+        content: "";
+        display: table;
+    }
+
+    .popup-detail .segment .detail-info:after {
+        clear: both;
+    }
+
+.ie6 .popup-detail .segment .detail-info, .ie7 .popup-detail .segment .detail-info {
+    zoom: 1;
+}
+
+.popup-detail .segment .detail-info li:before, .popup-detail .segment .detail-info li:after {
+    content: "";
+    display: table;
+}
+
+.popup-detail .segment .detail-info li:after {
+    clear: both;
+}
+
+.ie6 .popup-detail .segment .detail-info li, .ie7 .popup-detail .segment .detail-info li {
+    zoom: 1;
+}
+
+.popup-detail .segment .detail-info .data {
+    color: #999999;
+}
+
+    .popup-detail .segment .detail-info .data span {
+        margin: 0 4px 0 0;
+        float: left;
+        line-height: 28px;
+    }
+
+    .popup-detail .segment .detail-info .data .airline {
+        float: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    .popup-detail .segment .detail-info .data .airline {
+        padding: 0;
+        line-height: 0;
+    }
+
+.popup-detail .segment .detail-info .itinerary {
+    line-height: 14px;
+}
+
+    .popup-detail .segment .detail-info .itinerary .location {
+        float: left;
+        margin: 0 15px 0 0;
+        width: 340px;
+    }
+
+    .popup-detail .segment .detail-info .itinerary .date {
+        float: right;
+    }
+
+.popup-detail .segment .detail-info .operated-by {
+    float: left;
+}
+
+    .popup-detail .segment .detail-info .operated-by li {
+        float: left;
+        margin: 0 5px 0 0;
+        line-height: 25px;
+    }
+
+.popup-detail .segment .detail-info .operated-by {
+    line-height: 0;
+}
+
+.popup-detail .segment .detail-info .stops {
+    float: right;
+}
+
+    .popup-detail .segment .detail-info .stops .title {
+        margin: 0 0 0 -20px;
+    }
+
+.popup-detail .time {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    background: #eeeeee;
+}
+
+.popup-detail .detail-footer {
+    display: inline-block;
+    width: 100%;
+    padding-top: 3px;
+}
+
+    .popup-detail .detail-footer .bottom-box {
+        float: left;
+        width: 50%;
+    }
+
+        .popup-detail .detail-footer .bottom-box .detail-local-hour {
+            display: block;
+            padding-bottom: 0;
+        }
+
+    .popup-detail .detail-footer .baggage {
+        margin-top: 5px;
+    }
+
+.ie7 .popup-detail .detail-footer .baggage {
+    width: 680px;
+}
+
+.popup-detail .detail-footer .ecological-info {
+    float: right;
+    width: 50%;
+}
+
+    .popup-detail .detail-footer .ecological-info .ecological-preservation-container {
+        width: 100%;
+    }
+
+        .popup-detail .detail-footer .ecological-info .ecological-preservation-container .ecological-preservation {
+            float: right;
+            padding-bottom: 3px;
+        }
+
+            .popup-detail .detail-footer .ecological-info .ecological-preservation-container .ecological-preservation .ecological-preservation-label {
+                padding-right: 10px;
+                line-height: 20px;
+                float: left;
+            }
+
+            .popup-detail .detail-footer .ecological-info .ecological-preservation-container .ecological-preservation .ecological-flight {
+                float: left;
+            }
+
+    .popup-detail .detail-footer .ecological-info .preservation-description {
+        float: right;
+    }
+
+.popup-detail .rules {
+    margin: 10px 0 0;
+    /*display:none;*/
+    float: left;
+    width: 100%;
+}
+
+    .popup-detail .rules .airline {
+        display: block;
+    }
+
+        .popup-detail .rules .airline:before, .popup-detail .rules .airline:after {
+            content: "";
+            display: table;
+        }
+
+        .popup-detail .rules .airline:after {
+            clear: both;
+        }
+
+.ie6 .popup-detail .rules .airline, .ie7 .popup-detail .rules .airline {
+    zoom: 1;
+}
+
+.popup-detail .rules .airline .name {
+    float: left;
+    line-height: 28px;
+    margin: 0 0 0 5px;
+}
+
+.popup-detail .rules .airline .icon-plus {
+    margin: 10px 4px 0 4px;
+}
+
+.popup-detail .rules p {
+    margin: 10px 0 0;
+}
+
+.flights-popup {
+    padding: 10px;
+    position: relative;
+}
+
+    .flights-popup:after, .ie7 .flights-popup .after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .flights-popup .popup-header h4 {
+        line-height: 20px;
+        padding: 10px;
+    }
+
+    .flights-popup .popup-container {
+        z-index: 1;
+        overflow-y: scroll;
+        /* height: 264px;*/
+        height: 100%;
+        position: relative;
+    }
+
+    .flights-popup .popup-arrow {
+        position: absolute;
+        height: 0;
+        width: 0;
+    }
+
+    .flights-popup .popup-arrow-bottom {
+        bottom: -10px;
+        left: 10px;
+    }
+
+    .flights-popup .popup-arrow-top {
+        top: -10px;
+        left: 10px;
+    }
+
+    .flights-popup .popup-arrow-left {
+        left: -10px;
+        top: 10px;
+    }
+
+    .flights-popup .popup-arrow-right {
+        right: -10px;
+        top: 10px;
+    }
+
+    .flights-popup .popup-close {
+        position: absolute;
+        z-index: 99999;
+        text-align: center;
+        line-height: 20px;
+        height: 20px;
+        width: 20px;
+        top: -13px;
+        right: -13px;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+        .flights-popup .popup-close input {
+            border: none;
+            background: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            color: white;
+            font-weight: bolder;
+            top: -2px;
+        }
+/*.ie7 .flights-popup {
+    zoom:expression(this.runtimeStyle.zoom="1", this.appendChild( document.createElement("i") ).className="after" )
+}*/
+.ie7 .flights-popup .popup-close, .ie8 .flights-popup .popup-close {
+    line-height: 26px;
+    height: 26px;
+    width: 26px;
+    top: -13px;
+    right: -13px;
+}
+
+.flights-popup:after {
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+
+.flights-popup .popup-header {
+    background: none repeat scroll 0 0 #f7f7f7;
+    display: block;
+}
+
+    .flights-popup .popup-header h4 {
+        margin: 0;
+        color: #003770;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+.flights-popup .popup-content {
+    background: white;
+    border: 1px solid transparent;
+}
+
+.flights-popup .popup-arrow-bottom {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(0, 0, 0, 0.7);
+}
+
+.flights-popup .popup-arrow-top {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.7);
+}
+
+.flights-popup .popup-arrow-left {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid rgba(0, 0, 0, 0.7);
+}
+
+.flights-popup .popup-arrow-right {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgba(0, 0, 0, 0.7);
+}
+
+.flights-popup .popup-close {
+    cursor: pointer;
+    border: 3px solid white;
+    color: white;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    background: #319fda;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+}
+
+.ie7 .flights-popup .after {
+    background-color: black;
+    filter: alpha(opacity=70);
+}
+
+.ie8 .flights-popup:after {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAEElEQVR4nGNi2MywmYkBCAAJ8gFrYOfxtwAAAABJRU5ErkJggg==');
+}
+
+.ie7 .flights-popup .popup-arrow, .ie8 .flights-popup .popup-arrow {
+    filter: alpha(opacity=70);
+}
+
+.ie7 .flights-popup .popup-arrow-bottom, .ie8 .flights-popup .popup-arrow-bottom {
+    border-top: 10px solid black;
+}
+
+.ie7 .flights-popup .popup-arrow-top, .ie8 .flights-popup .popup-arrow-top {
+    border-bottom: 10px solid black;
+}
+
+.ie7 .flights-popup .popup-arrow-left, .ie8 .flights-popup .popup-arrow-left {
+    border-right: 10px solid black;
+}
+
+.ie7 .flights-popup .popup-arrow-right, .ie8 .flights-popup .popup-arrow-right {
+    border-left: 10px solid black;
+}
+
+.ie7 .flights-popup .popup-close, .ie8 .flights-popup .popup-close {
+    border-width: 0;
+    background-color: transparent;
+    background: url('../../technocloud/core-flights/img/picasso/popup.png');
+    background-position: 0 -1px;
+}
+
+.flights-popup .popup-content {
+    color: #444444;
+    font-size: 11px;
+}
+
+
+/* start pupup  ul li*/
+
+.itineraries-groupPopup {
+    list-style-type: none;
+}
+
+
+.cluster-itemPopup {
+    list-style-type: none;
+}
+
+
+.leavePopup, .route-arrowPopup, .arrivePopup, .timePopup, .stopsPopup, .airlinesPopup {
+    list-style-type: none;
+}
+
+
+.city-departurePopup {
+    color: #444444;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.airportPopup {
+    color: #444444;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.typePopup {
+    color: green;
+    margin: 20px;
+    font-size: 15px;
+}
+
+/*marcador 1*/
+.leavePopup {
+}
+/*flecha de sale */
+.route-arrowPopup {
+    display: block;
+    /*   background-color:gray;
+       height: 1px;*/
+    /*derecha
+  background-size:    100% 2px,
+                        0px 0px,
+                         auto auto ;
+ 
+      background-image: url('https://lh6.googleusercontent.com/-GJc-Ou0GAc0/TdJoeaJOOxI/AAAAAAAAA8k/Eu0VEKgwqRg/s288/cargando.gif');
+      
+      
+       background-repeat:no-repeat;
+    */
+}
+
+.hour-textPopup {
+    font-size: 17px;
+}
+
+.hourPopup {
+    font-size: 25px;
+}
+
+.cityPopup {
+    margin-left: 10px;
+    color: black;
+    font-size: 16px;
+}
+
+.route-arrowPopup {
+}
+
+/*marcador 2*/
+.arrivePopup {
+}
+
+
+
+.hourPopup {
+    font-size: 20px;
+}
+
+
+/*marcador 3*/
+.timePopup {
+    /* float:right ;
+    */
+}
+
+.hour-textPopup {
+    color: #888888;
+}
+
+/*directo quitar test  flecha de llega*/
+
+.stopsPopup {
+    display: none;
+    background-size: 100% 1px, 0px 0px, auto auto;
+    /*derecha */
+    background-image: url('https://lh6.googleusercontent.com/-GJc-Ou0GAc0/TdJoeaJOOxI/AAAAAAAAA8k/Eu0VEKgwqRg/s288/cargando.gif');
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+}
+
+.textPopup {
+}
+
+/*marcador 4  imajene aerolinea*/
+
+.airlinesPopup {
+}
+
+.sub-clusterPopup {
+    padding: 0;
+}
+
+
+
+
+/*poppup  end*/
+
+.newaviaturcom {
+    top: 321px !important;
+    width: 1149px !important;
+}
+/**/
+.itemiconoIda {
+    padding-left: 30px;
+    width: 20px;
+    height: 50px;
+    background-size: 20px 18px, 0px 0px, auto auto;
+    background-image: url('http://search.technocloud.com.co/static/images/ida.jpg');
+    background-repeat: no-repeat;
+}
+
+
+.itemiconoVuelta {
+    padding-left: 30px;
+    width: 20px;
+    height: 50px;
+    background-size: 18px 14px, 0px 0px, auto auto;
+    background-image: url('http://search.technocloud.com.co/static/images/avion.png');
+    background-repeat: no-repeat;
+}
+
+
+.city-arrival, .city-departure {
+    display: none;
+}
+
+/* SLIDER*/
+.goog-twothumbslider-vertical,
+.goog-twothumbslider-horizontal {
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+}
+
+.goog-twothumbslider-value-thumb {
+    position: absolute;    
+    overflow: hidden;
+}
+
+.goog-twothumbslider-extent-thumb {
+    position: absolute;    
+    overflow: hidden;
+}
+
+.goog-twothumbslider-vertical .goog-twothumbslider-value-thumb {
+    height: 20px;
+    width: 100%;
+}
+
+.goog-twothumbslider-vertical .goog-twothumbslider-extent-thumb {
+    height: 20px;
+    width: 100%;
+}
+
+.goog-twothumbslider-horizontal .goog-twothumbslider-value-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.goog-twothumbslider-horizontal .goog-twothumbslider-extent-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+}
+
+#s-h {
+    margin-bottom: 2em;
+}
+
+#out1, #out2 {
+    color: #999;
+    margin-left: 1em;
+}
+
+
+.popup {
+    /*position: absolute;*/
+    background-color: #e0ecff;
+    display: none;
+    color: black;
+    width: 100px;
+    height: 100px;
+    font-size: 80%;
+    border: solid red 1px;
+    -moz-outline: 0;
+    outline: 0;
+    z-index: 9999;
+    top: 0px;
+    left: 0px;
+}
+
+
+.goog-tooltip {
+    background: infobackground;
+    color: infotext;
+    border: 1px solid infotext;
+    padding: 1px;
+    font: menu;
+}
+
+.tooltip {
+    background: #0CA7C6;    
+    border: 1px solid white;    
+    font: menu;    
+    z-index: 999999;
+    color: white;
+    width: 200px;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 10px;
+}

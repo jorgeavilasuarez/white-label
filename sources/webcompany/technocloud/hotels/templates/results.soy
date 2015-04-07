@@ -1,0 +1,940 @@
+{namespace hotels.template.results}
+
+/** 
+* dibuja los resultados de los vuelos
+*/
+{template .results}
+<div class="{css content}">
+    <div class="{css ux-flights-results}">
+        <div class="{css ux-common-grid-row}">
+            <div class="{css ux-common-grid-col3} {css results-left-grid-row} {css filters}">
+            </div>
+            <div class="{css ux-common-grid-col9} {css results-content-container}">
+                <div class="{css results-content-wrapper} {css flights-results-content-wrapper}">
+                    <div class="{css clusters}">
+                        <div class="{css panelResultados}">
+                            <!--- box border -->
+                            <div class="{css contenidoResultados}">
+                                <div class="{css titulosResumen}">
+                                    <span id="ucResultadoHotel_lblTResultados">Resumen de Búsqueda</span>
+                                </div>
+                                <div class="{css contenidoResultado}">
+                                    <div class="{css resumenVuelos}">
+                                        <span class="{css tituloResumen}">
+                                            <span id="ucResultadoHotel_lblDestino" class="{css bold}">Destino</span>
+                                        </span>
+                                        <br>
+                                        <span id="ucResultadoHotel_lblCiudad">Bogota</span>
+                                    </div>
+                                    <div class="{css resumenVuelos}">
+                                        <span class="{css tituloResumen}">
+                                            <span id="ucResultadoHotel_Label6">Fecha Ingreso</span>
+                                        </span>
+                                        <br>
+                                        <span id="ucResultadoHotel_lblFechaSalida">02 Feb 2015</span>
+                                    </div>
+                                    <div class="{css resumenVuelos}">
+                                        <span class="{css tituloResumen}">
+                                            <span id="ucResultadoHotel_Label14">Fecha Salida</span>
+                                        </span>
+                                        <br>
+                                        <span id="ucResultadoHotel_lblFechaLlegada">03 Feb 2015</span>
+                                    </div>
+                                    <div class="{css resumenVuelos}">
+                                        <span class="{css tituloResumen}">
+                                            <span id="ucResultadoHotel_lblHuespedes" class="{css bold}">Huéspedes</span>
+                                        </span>
+                                        <br>
+                                        <span id="ucResultadoHotel_lblAcomodacion">1 Adultos / 0 Niños  X 1 habitaciones</span>
+                                    </div>
+                                    <div class="{css nuevaBusquedaVuelos}">
+                                        <input type="submit" name="ucResultadoHotel$btnBusqueda" value="Nueva Búsqueda" id="ucResultadoHotel_btnBusqueda" class="{css botonNuevaBuscar}">
+                                    </div>
+                                    <div id="ucResultadoHotel_Div1" class="{css alineacionCentro}">
+                                        <div id="ucResultadoHotel_udpEperar" style="display: none;" role="status" aria-hidden="true">
+
+                                            <div class="{css progressbar}">
+                                            </div>
+                                            <img alt="" src="../App_Themes/Imagenes/loading.gif"><br>
+                                            <span id="ucResultadoHotel_lblEsperar">Espere por favor...</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="{css panelResultados}">
+                            <!--- box border -->
+                            <div class="{css contenidoResultados}">
+                                <div class="{css titulosResumen}">
+                                    <span id="ucResultadoHotel_lblTFiltrar">Filtrar Resultados por</span>
+                                </div>
+                                <div class="{css contenidoResultado}">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr class="{css alineacionIzquierda}">
+                                                <td>
+                                                    <table id="ucResultadoHotel_chkCategoria" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input id="ucResultadoHotel_chkCategoria_0" type="radio" name="ucResultadoHotel$chkCategoria" value="0" checked="checked"><label for="ucResultadoHotel_chkCategoria_0"></label></td>
+                                                                <td colspan="5">Todos</td>
+                                                                <td>
+                                                                    <input id="ucResultadoHotel_chkCategoria_1" type="radio" name="ucResultadoHotel$chkCategoria" value="1" onclick="javascript: setTimeout('__doPostBack(\'ucResultadoHotel$chkCategoria$1\',\'\')', 0)"><label for="ucResultadoHotel_chkCategoria_1"></label></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <input id="ucResultadoHotel_chkCategoria_2" type="radio" name="ucResultadoHotel$chkCategoria" value="2" onclick="    javascript: setTimeout('__doPostBack(\'ucResultadoHotel$chkCategoria$2\',\'\')', 0)"><label for="ucResultadoHotel_chkCategoria_2"></label></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <input id="ucResultadoHotel_chkCategoria_3" type="radio" name="ucResultadoHotel$chkCategoria" value="3" onclick="    javascript: setTimeout('__doPostBack(\'ucResultadoHotel$chkCategoria$3\',\'\')', 0)"><label for="ucResultadoHotel_chkCategoria_3"></label></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <input id="ucResultadoHotel_chkCategoria_4" type="radio" name="ucResultadoHotel$chkCategoria" value="4" onclick="    javascript: setTimeout('__doPostBack(\'ucResultadoHotel$chkCategoria$4\',\'\')', 0)"><label for="ucResultadoHotel_chkCategoria_4"></label></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <input id="ucResultadoHotel_chkCategoria_5" type="radio" name="ucResultadoHotel$chkCategoria" value="5" onclick="    javascript: setTimeout('__doPostBack(\'ucResultadoHotel$chkCategoria$5\',\'\')', 0)"><label for="ucResultadoHotel_chkCategoria_5"></label></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td class="{css stars}"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table width="90%" border="0" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr align="right">
+                                                <td>
+                                                    <input type="submit" name="ucResultadoHotel$btnBack" value="Anterior" id="ucResultadoHotel_btnBack" disabled="disabled" class="{css botonImprimirCotizar}">
+                                                </td>
+                                                <td>
+                                                    <table id="ucResultadoHotel_dlPagina" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td colspan="4"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="submit" name="ucResultadoHotel$dlPagina$ctl01$btnPage" value="1" id="ucResultadoHotel_dlPagina_ctl01_btnPage" class="{css csPintar}">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="submit" name="ucResultadoHotel$dlPagina$ctl02$btnPage" value="2" id="ucResultadoHotel_dlPagina_ctl02_btnPage" class="{css csNoPintar}">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="submit" name="ucResultadoHotel$dlPagina$ctl03$btnPage" value="3" id="ucResultadoHotel_dlPagina_ctl03_btnPage" class="{css csNoPintar}">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td>
+                                                                    <table cellspacing="0" cellpadding="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <input type="submit" name="ucResultadoHotel$dlPagina$ctl04$btnPage" value="4" id="ucResultadoHotel_dlPagina_ctl04_btnPage" class="{css csNoPintar}">
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td>
+                                                    <input type="submit" name="ucResultadoHotel$btnNext" value="Siguiente" id="ucResultadoHotel_btnNext" class="{css botonImprimirCotizar}">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+{/template}
+
+/**
+* @param filters The filters.
+* dibuja los filtros
+*/
+{template .filters}
+<div>
+    <div>
+        <a class="{css btnreturnsearch} {css background-color} {css border-color} {css text-color}" href="javascript:void(0);">Volver a buscar</a>
+    </div>
+    <div class="{css search}">
+    </div>
+    <div class="{css filters}">
+        <div class="{css ux-common-filters} {css ux-flights-filters} {css border-color}" style="">
+            <div style="display: none;" class="{css ux-common-filter-section} {css ux-flights-filter-airlines} {css ux-flights-order}">
+                <div class="{css order}" style="">
+                    <form class="{css order-form}">
+                        <ul>
+                            <li class="{css orderby}">
+                                <label for="orderby">
+                                    <span>Ordenar por</span>
+                                    <select name="orderby" id="orderby" class="{css flights-select}">
+                                        <option value="FARE_ASCENDING">Precio </option>
+                                        <option value="STOPSCOUNT_ASCENDING">Escalas </option>
+                                        <option value="TOTALFARE_ASCENDING" selected="">Precio final </option>
+                                        <option value="DURATION_ASCENDING">Duración </option>
+                                        <option value="PERSONAL_ASCENDING">Más Elegidos </option>
+                                    </select>
+                                </label>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Aerolíneas</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css airlines-all}" style="">
+                            <label for="airlines-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="airlines-all" type="checkbox" disabled name="airlines" value="*" checked="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las aerolíneas</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.airLines)}</span>
+                            </label>
+                        </li>
+
+                        {foreach $airLine in $filters.airLines}
+                           
+                        <li class="{css item} {css airlines-LA}" style="">
+                            <label for="airlines-{$airLine.value}" class=" ">
+                                <input id="airlines-{$airLine.value}" type="checkbox" name="airlines" value="{$airLine.value}" enabled="" class="{$airLine}">
+                                <img src="http://search.technocloud.com.co/static/images/airline/{$airLine.value}.gif" title="Lan" onerror="this.src='http://search.technocloud.com.co/static/images/airline/00.gif'" alt="{$airLine.value}">
+                                <span class="{css label}"></span>
+                                <span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$airLine.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+
+                   
+                    </ul>
+                    <div style="display: none;" class="{css unique-airline}">
+                        <div class="{css ux-common-filter-section} {css ux-flights-filter-sameairlines}">
+                            <div class="{css ux-common-filter-body}">
+                                <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                                    <li class="{css item}">
+                                        <label for="unique-airline" class="{css enabled}">
+                                            <input id="unique-airline" type="checkbox" name="unique-airline" value="TRUE"><span>Ida y vuelta por la misma aerolínea</span></label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Precios</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css alliances-all}" style="">
+                            <label for="alliances-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="alliances-all" type="checkbox" name="amountCurrencys" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todos los precios</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.amountCurrencys)}</span></label>
+                        </li>
+                        {foreach $amountCurrency in $filters.amountCurrencys}
+                           
+                        <li class="{css item} {css alliances-ST}" style="">
+                            <label for="alliances-{$amountCurrency.value}" class="">
+                                <input id="alliances-{$amountCurrency.value}" type="checkbox" name="amountCurrencys" value="{$amountCurrency.value}" enabled="" class="{css ST}">
+                                <span class="{css label}">{$amountCurrency.value}</span><span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$amountCurrency.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-stops}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Escalas</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css stops-all}" style="">
+                            <label for="stops-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled selected} {css ux-common-filter-selected}">
+                                <input id="stops-all" type="checkbox" name="stops" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las escalas</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.stops)}</span></label>
+                        </li>
+                        {foreach $stop in $filters.stops}
+                           
+                        <li class="{css item} {css stops}-{$stop.value}" style="">
+                            <label for="stops-{$stop.value}" class="{css  ux-common-filter-disabled}">
+                                <input id="stops-{$stop.value}" type="checkbox" name="stops" value="{$stop.value}" class="{css NONE} {css ux-common-filter-disabled}">
+                                <span class="{css label}">{$stop.value}</span><span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$stop.count}</span></label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-originairports}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Aeropuertos de origen</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css airport-outbound-all}" style="">
+                            <label for="airport-outbound-all" class="{css ux-common-filter-all} {css ux-common-filter-disable} {css selected} {css ux-common-filter-selected}">
+                                <input id="airport-outbound-all" type="checkbox" name="departureAirports" value="*" checked="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todos los aeropuertos</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.departureAirports)}</span>
+                            </label>
+                        </li>
+
+                        {foreach $departureAirport in $filters.departureAirports}
+                           
+                        <li class="{css item} {css airport-outbound}" style="">
+                            <label for="airport-outbound-{$departureAirport.id}" class="">
+                                <input id="airport-outbound-{$departureAirport.id}" type="checkbox" name="departureAirports" value="{$departureAirport.id}" enabled="" class="{css BOG}">
+                                <span class="{css label}">{$departureAirport.label}</span>
+                                <span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$departureAirport.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                    <div style="display: none;" class="{css unique-airport}">
+                        <div class="{css ux-common-filter-section} {css ux-flights-filter-sameairports}">
+                            <div class="{css ux-common-filter-body}">
+                                <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                                    <li class="{css item}">
+                                        <label for="unique-airport" class="{css enabled}">
+                                            <input id="unique-airport" type="checkbox" name="departureAirports" value="TRUE">
+                                            <span>Partida y regreso por el mismo aeropuerto</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-destinyairports}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Aeropuertos de destino</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css airport-inbound-all}" style="">
+                            <label for="airport-inbound-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="airport-inbound-all" type="checkbox" name="arrivalAirPorts" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todos los aeropuertos</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.arrivalAirPorts)}</span></label>
+                        </li>
+                        {foreach $arrivalAirPort in $filters.arrivalAirPorts}
+                           
+                        <li class="{css item} {css airport-inbound-BSB}" style="">
+                            <label for="airport-inbound-{$arrivalAirPort.id}" class="">
+                                <input id="airport-inbound-{$arrivalAirPort.id}" type="checkbox" name="arrivalAirPorts" value="{$arrivalAirPort.id}" enabled="" class="{css BSB}">
+                                <span class="{css label}">{$arrivalAirPort.label}</span>
+                                <span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$arrivalAirPort.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Hora llegada</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css alliances-all}" style="">
+                            <label for="arrivalTime-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="arrivalTime-all" type="checkbox" name="arrivalTimes" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las horas</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.arrivalTimes)}</span>
+                            </label>
+                        </li>
+                        {foreach $arrivalTime in $filters.arrivalTimes}
+                           
+                        <li class="{css item} {css alliances-ST}" style="">
+                            <label for="arrivalTime-{$arrivalTime.value}" class="">
+                                <input id="arrivalTime-{$arrivalTime.value}" type="checkbox" name="arrivalTimes" value="{$arrivalTime.value}" enabled="" class="{css ST}">
+                                <span class="{css label}">{$arrivalTime.value}</span><span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$arrivalTime.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Hora salida</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css alliances-all}" style="">
+                            <label for="departureTimes-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="departureTimes-all" type="checkbox" name="departureTimes" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las horas</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color} {css text-color}">{length($filters.departureTimes)}</span>
+                            </label>
+                        </li>
+                        {foreach $departureTime in $filters.departureTimes}
+                           
+                        <li class="{css item} {css alliances-ST}" style="">
+                            <label for="alliances-{$departureTime.value}" class="">
+                                <input id="alliances-{$departureTime.value}" type="checkbox" name="departureTimes" value="{$departureTime.value}" enabled="" class="{css ST}">
+                                <span class="{css label}">{$departureTime.value}</span><span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total}">{$departureTime.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+            <div class="{css ux-common-filter-section} {css ux-flights-filter-airlines}">
+                <div class="{css ux-common-filter-header}">
+                    <h4>Duración</h4>
+                    <span class="{css ux-common-filter-toggle}"></span>
+                </div>
+                <div class="{css ux-common-filter-body}">
+                    <ul class="{css ux-common-filter-options} {css items} {css accordion-content}">
+                        <li class="{css item} {css alliances-all}" style="">
+                            <label for="estimatedTime-all" class="{css ux-common-filter-all} {css ux-common-filter-disabled} {css selected} {css ux-common-filter-selected}">
+                                <input id="estimatedTime-all" type="checkbox" name="estimatedTimes" value="*" checked="" disabled="" class="{css ux-common-filter-disabled}">
+                                <span class="{css label}">Todas las duraciones</span>
+                                <span class="{css total} {css ux-common-filter-total} {css background-color}">{length($filters.estimatedTimes)}</span></label>
+                        </li>
+                        {foreach $estimatedTime in $filters.estimatedTimes}
+                           
+                        <li class="{css item} {css alliances-ST}" style="">
+                            <label for="estimatedTime-{$estimatedTime.value}" class="">
+                                <input id="estimatedTime-{$estimatedTime.value}" type="checkbox" name="estimatedTimes" value="{$estimatedTime.value}" enabled="" class="{css ST}">
+                                <span class="{css label}">{$estimatedTime.value}</span>
+                                <span class="{css total} {css ux-common-filter-suboptions} {css ux-common-filter-total} {css text-color}">{$estimatedTime.count}</span>
+                            </label>
+                        </li>
+                        {/foreach}
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+/**
+* tabs
+*/
+{template .tabs}
+<div class="{css flights-tabs}" style="">
+    <div class="{css flights-tabs-contents}">
+        <div class="{css flights-tab-content}" style="display: block;">
+            <div id="matrix" class="{css matrix}">
+                <div class="{css matrix-filter}" style="display: none;"></div>
+                <div class="{css matrix-container}">
+                    <ul class="{css matrix-scales}">
+                        <li class="{css first} {css scales-container}">
+                            <div class="{css matrix-scales-summary}">
+                                <p>Resumen</p>
+                                <p>(precios finales)</p>
+                            </div>
+                            <div class="{css matrix-scales-review}">
+                            </div>
+                        </li>
+                        <li class="{css scale}">1 Escala</li>
+                        <li class="{css scale} {css last}">2 Escalas o más</li>
+                    </ul>
+                    <div class="{css matrix-airlines} {css  matrix-2}">
+                        <div class="{css matrix-airlines-responsive-container} {css matrix-airlines-responsive-container-2}">
+                            <div class="{css matrix-airlines-container} {css matrix-airlines-container-2}" style="left: 0px;">
+                                <ul class="{css matrix-airline} {css  matrix-airline-2} {css column-visible} {css  column-visible-first}">
+                                    <li class="{css first} {css head}">
+                                        <div class="{css airline-description}">
+                                            <div class="{css airline-description-container}">
+                                                <div class="{css airline-logo}">
+                                                    <img src="http://co.staticontent.com/img-versioned/1.23.39/common/airlines/25x25/CM.png" title="Copa" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.39/common/airlines/25x25/default.png'" alt="Copa">
+                                                </div>
+                                                <div class="{css airline-name}"><span>Copa</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="{css review-summary}"><a href="#" class="{css review-description}">Excelente, 8.4 pts</a></div>
+                                    </li>
+                                    <li class="{css priceItem} {css  price} {css flights-title-tooltip}">
+                                        <span class="{css price-currency} {css  COP}" style="">
+                                            <em><span class="{css currency} {css  price-mask}">$</span>
+                                                <span class="{css amount} {css  price-amount}">2.575.688</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                    <li class="{css priceItem} {css price} {css price-best} {css last} {css flights-title-tooltip}">
+                                        <span class="{css price-currency} {css COP}" style="">
+                                            <em>
+                                                <span class="{css currency} {css price-mask}">$</span>
+                                                <span class="{css amount} {css price-amount}">1.365.832</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="{css matrix-airline} {css matrix-airline-2} {css column-visible} {css column-visible-last}">
+                                    <li class="{css first} {css head}">
+                                        <div class="{css airline-description}">
+                                            <div class="{css airline-description-container}">
+                                                <div class="{css airline-logo}">
+                                                    <img src="http://co.staticontent.com/img-versioned/1.23.39/common/airlines/25x25/LA.png" title="Lan" onerror="this.src='http://co.staticontent.com/img-versioned/1.23.39/common/airlines/25x25/default.png'" alt="Lan">
+                                                </div>
+                                                <div class="{css airline-name}">
+                                                    <span>Lan</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="{css review-summary}">
+                                            <a href="#" class="{css review-description}">Muy Bueno, 8.3 pts</a>
+                                        </div>
+                                    </li>
+                                    <li class="{css priceItem} {css price} {css price-best} {css flights-title-tooltip}">
+                                        <span class="{css price-currency} {css COP}" style="">
+                                            <em>
+                                                <span class="{css currency} {css price-mask}">$</span>
+                                                <span class="{css amount} {css price-amount}">2.033.968</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                    <li id="C_-1357939144" class="{css priceItem} {css price} {css last} {css flights-title-tooltip}">
+                                        <span class="{css price-} {css currency} {css COP}">
+                                            <em>
+                                                <span class="{css currency} {css price-mask}">$</span>
+                                                <span class="{css amount} {css price-amount}">2.008.654</span>
+                                            </em>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="{css matrix-prev}" style="display: none;">&lt;</span>
+                            <span class="{css matrix-next}" style="display: none;">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{/template}
+
+
+/**
+* 
+* dibuja un cluster
+*/
+{template .result}
+<div class="{css panelResultados}">
+    <!--- box border -->
+    <div class="{css plb}">
+        <div class="{css prb}">
+            <div class="{css ptb}">
+                <div class="{css ptlc}">
+                    <div class="{css ptrc}">
+                        <div class="{css contenidoResultados}">
+                            <div class="{css tituloHoteles}">
+                                <div style="float: right; position: relative;">
+                                    <table id="ucResultadoHotel_rptHotel_ctl08_dlEstrellas" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <table cellspacing="0" cellpadding="0">
+                                                        <tbody>
+                                                            <tr>
+                                                            </tr>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td></td>
+                                                                <td class="{css stars}"></td>
+                                                                <td></td>
+                                                                <td class="{css stars}"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="4"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <span id="ucResultadoHotel_rptHotel_ctl08_Label1">Dann Avenida 19</span>
+                            </div>
+                            <div class="{css contenidoResultado}">
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr class="{css alineacionSuperior}">
+                                            <td>
+                                                <div class="{css bordeTablaHotel}">
+                                                    <span class="{css tituloPreciosHotel}">
+                                                        <span id="ucResultadoHotel_rptHotel_ctl08_Label4">USD</span>
+                                                        <span id="ucResultadoHotel_rptHotel_ctl08_Label5">72.31</span>
+                                                    </span>
+                                                    <br>
+                                                    <span class="{css tituloPreciosPie}">
+                                                        <span id="ucResultadoHotel_rptHotel_ctl08_lblTEconomico">Tarifa Total</span>
+                                                        <br>
+                                                        <span id="ucResultadoHotel_rptHotel_ctl08_lblTTarifaNoche">más económica</span>
+                                                    </span>
+                                                </div>
+                                                <div style="float: left; position: relative; width: 86%;">
+                                                    <div style="float: left; position: relative; margin-right: 5px;">
+                                                        <img id="ucResultadoHotel_rptHotel_ctl08_Image1" src="http://image1.urlforimages.com/Images/1200987/100x100/391424838.jpg" style="height: 100px; width: 100px; border-width: 0px;">
+                                                    </div>
+                                                    <div style="float: right;">
+                                                        <img id="ucResultadoHotel_rptHotel_ctl08_iOferta" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/oferta.jpg" style="border-width: 0px;">
+                                                    </div>
+                                                    <strong>
+                                                        <span id="ucResultadoHotel_rptHotel_ctl08_Label6"></span>
+                                                        <span id="ucResultadoHotel_rptHotel_ctl08_Label2">Avenida 19 Number 5-72 </span>
+                                                    </strong>
+                                                    <br>
+                                                    <span id="ucResultadoHotel_rptHotel_ctl08_Label3">Location
+The hotel is located in the city centre and surrounded by major government buildings and universities, as well as financial, cultural and historic areas of the capital. Links to the local public transport network are about 300 m away and restaurants can be found approximately 500 m from the hotel. The establishment is some 20 minutes from El Dorado Airport.</span><br>
+                                                    <br>
+                                                    <a id="ucResultadoHotel_rptHotel_ctl08_HyperLink1" class="{css detalles}" href="javascript:void(0);">Más información</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <!-- rptOcupacion -->
+
+                                                <table cellpadding="4" cellspacing="0" width="100%">
+                                                    <tbody>
+                                                        <tr class="{css tituloTabla}">
+                                                            <td style="width: 45%;">
+                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl00_lblTTipoHabitacion">Tipo Habitación</span></td>
+                                                            <td style="width: 15%;">
+                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl00_Label8"></span></td>
+                                                            <td style="width: 10%;">
+                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl00_lblTMoneda">Moneda</span></td>
+                                                            <td style="width: 10%;">
+                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl00_lblTTarifaTotal">Tarifa Total</span></td>
+                                                            <td style="width: 10%;"></td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td colspan="5" class="{css bold}">
+                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_Label10" class="{css bold}">Habitación</span>
+                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_lblidHabitacion" class="{css bold}">1</span>
+                                                                - Adultos
+                                                            1
+                                                            / Niños
+                                                            0
+                                                            
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="5" style="width: 100%;">
+
+                                                                <table width="100%" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 45%;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_Label11">Non Refundable Standard   SH</span>
+                                                                            </td>
+                                                                            <td style="width: 15%;">
+                                                                                <div style="float: left;">
+                                                                                    <table id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div class="{css styleGuest}"></div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <div class="{css imagenx}"></div>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <table id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div class="{css styleCama}"></div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <img id="ucResultadoHotel_rptHotel_ctl01_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_rptDesayuno_ctl00_iDesayuno" class="{css alignleft}" src="http://www.metropolitantouring.com.ec/Pagina/App_Themes/Imagenes/desayuno.jpg" style="border-width: 0px;">
+                                                                                </div>
+
+                                                                                <div style="float: left;">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_Label12">USD</span>
+                                                                            </td>
+                                                                            <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_Label13">72.31</span>
+                                                                            </td>
+                                                                            <td style="width: 10%; text-align: center;">
+                                                                                <input id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl00_rbtSeleccion" type="radio" name="ucResultadoHotel$rptHotel$ctl08$rptOcupacion$ctl01$rptTiposHabitacion$ctl00$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucResultadoHotel$rptHotel$ctl08$rptOcupacion$ctl01$rptTiposHabitacion$ctl00$rbtSeleccion\',\'\')', 0)">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <table width="100%" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 45%;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_Label11">Standard Double  SH</span>
+                                                                            </td>
+                                                                            <td style="width: 15%;">
+                                                                                <div style="float: left;">
+                                                                                    <table id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div class="{css styleGuest}"></div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <div class="{css imagenx}"></div>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <table id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div class="{css styleCama}"></div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_Label12">USD</span>
+                                                                            </td>
+                                                                            <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_Label13">78.10</span>
+                                                                            </td>
+                                                                            <td style="width: 10%; text-align: center;">
+                                                                                <input id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl01_rbtSeleccion" type="radio" name="ucResultadoHotel$rptHotel$ctl08$rptOcupacion$ctl01$rptTiposHabitacion$ctl01$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucResultadoHotel$rptHotel$ctl08$rptOcupacion$ctl01$rptTiposHabitacion$ctl01$rbtSeleccion\',\'\')', 0)">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <table width="100%" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 45%;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_Label11">Standard Flex  SH</span>
+                                                                            </td>
+                                                                            <td style="width: 15%;">
+                                                                                <div style="float: left;">
+                                                                                    <table id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div class="{css styleGuest}"></div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <div class="{css imagenx}"></div>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <table id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div class="{css styleCama}"></div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_Label12">USD</span>
+                                                                            </td>
+                                                                            <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_Label13">81.26</span>
+                                                                            </td>
+                                                                            <td style="width: 10%; text-align: center;">
+                                                                                <input id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl02_rbtSeleccion" type="radio" name="ucResultadoHotel$rptHotel$ctl08$rptOcupacion$ctl01$rptTiposHabitacion$ctl02$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucResultadoHotel$rptHotel$ctl08$rptOcupacion$ctl01$rptTiposHabitacion$ctl02$rbtSeleccion\',\'\')', 0)">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <table width="100%" cellpadding="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style="width: 45%;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_Label11">Standard  SH</span>
+                                                                            </td>
+                                                                            <td style="width: 15%;">
+                                                                                <div style="float: left;">
+                                                                                    <table id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_dlGuest" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div class="{css styleGuest}"></div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <div class="{css imagenx}"></div>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                    <table id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_dlCama" cellspacing="0" border="0" style="border-collapse: collapse;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td>
+                                                                                                    <div class="{css styleCama}"></div>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                                <div style="float: left;">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_Label12">USD</span>
+                                                                            </td>
+                                                                            <td style="text-align: center; width: 10%; vertical-align: middle;">
+                                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_Label13">95.46</span>
+                                                                            </td>
+                                                                            <td style="width: 10%; text-align: center;">
+                                                                                <input id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_rptTiposHabitacion_ctl03_rbtSeleccion" type="radio" name="ucResultadoHotel$rptHotel$ctl08$rptOcupacion$ctl01$rptTiposHabitacion$ctl03$rbtSeleccion" value="rbtSeleccion" onclick="javascript: setTimeout('__doPostBack(\'ucResultadoHotel$rptHotel$ctl08$rptOcupacion$ctl01$rptTiposHabitacion$ctl03$rbtSeleccion\',\'\')', 0)">
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="5" class="{css divisionSpacer-10}"></td>
+                                                        </tr>
+                                                        <tr style="display: none">
+                                                            <td colspan="4">
+                                                                <img id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_Image4" src="../App_Themes/Imagenes/noche.jpg" style="border-width: 0px;">
+                                                                Noche</td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr style="display: none">
+                                                            <td colspan="4">
+                                                                <img id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_Image2" src="../App_Themes/Imagenes/descuento.gif" style="border-width: 0px;">
+                                                                <span id="ucResultadoHotel_rptHotel_ctl08_rptOcupacion_ctl01_lblDescuento"></span></td>
+                                                            <td></td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align: right">
+                                                <input type="submit" name="ucResultadoHotel$rptHotel$ctl08$lbReservar" value="Reservar" id="ucResultadoHotel_rptHotel_ctl08_lbReservar" class="{css botonImprimirCotizar}"><br>
+                                                <br>
+                                                <span id="ucResultadoHotel_rptHotel_ctl08_lblError"></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="{css pieResultados}"></div>
+</div>
+{/template}
